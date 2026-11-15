@@ -536,6 +536,13 @@
           <button class="session-pill" onclick="selectSession('6')">Session 6</button>
         </div>
 
+        <!-- Master Sub-Filters -->
+        <div id="masterTypeFilterBar" style="display: none; gap: 0.5rem; margin-bottom: 1rem;">
+          <button class="btn btn-sm btn-secondary active" id="btnFilterAll" onclick="setMasterTypeFilter('all')">All Words (540)</button>
+          <button class="btn btn-sm btn-secondary" id="btnFilterReal" onclick="setMasterTypeFilter('real')">Real Words (270)</button>
+          <button class="btn btn-sm btn-secondary" id="btnFilterPseudo" onclick="setMasterTypeFilter('pseudo')">Non-Words (270)</button>
+        </div>
+
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; gap: 1rem;">
           <input type="text" id="wordSearchInput" class="form-control" style="max-width: 350px;" placeholder="Filter words by Kannada or English meaning..." oninput="filterWordsTable()">
           <div id="sessionStatsText" style="font-size: 0.8125rem; color: var(--text-muted);">Showing 95 words</div>
@@ -683,6 +690,91 @@
             <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Standard full session: 90 words (45 Real + 45 Pseudo)</div>
           </div>
 
+          
+          <!-- Word Presentation & Shuffle Sequence -->
+          <div class="form-group" style="margin-bottom: 1.5rem; background: #0b1120; padding: 1.25rem; border-radius: 6px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+              <label class="form-label" style="font-weight: 600; color: #fff; margin-bottom: 0;">Word Presentation & Shuffle Sequence</label>
+              <span id="activeShuffleLabel" class="badge badge-blue">Strict Alternating</span>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">Choose how Real words and Non-Words (Pseudo-words) are ordered during child testing sessions:</div>
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+              <!-- Option 1: Strict Alternating -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Strict Alternating')">
+                <input type="radio" name="shufflePattern" value="alternating" id="patternAlternating" checked style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Strict Alternating (1 Real : 1 Non-Word)</strong>
+                    <span class="badge badge-blue">Recommended</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Evenly alternates between real Kannada words and non-words. Prevents repeated motor response bias.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 2: Constrained Balanced -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Constrained Balanced')">
+                <input type="radio" name="shufflePattern" value="constrained" id="patternConstrained" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Constrained Balanced (Max 2 in a Row)</strong>
+                    <span class="badge badge-green">Psycholinguistic Standard</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Randomized trial order with a strict guardrail: never allows more than 2 consecutive real words or non-words.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 3: Blocked Clusters -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Block Clusters')">
+                <input type="radio" name="shufflePattern" value="blocks" id="patternBlocks" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Block Clusters (Mini-blocks of 5)</strong>
+                    <span class="badge badge-yellow">Categorical Practice</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Groups stimuli into blocks of 5 real words followed by 5 non-words throughout the session.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 4: Pure Random -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Completely Random')">
+                <input type="radio" name="shufflePattern" value="random" id="patternRandom" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Completely Random (Stanford ROAR Default)</strong>
+                    <span class="badge badge-gray">Unconstrained</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Original 50/50 probability coin flip on every trial. May produce unpredictable streaks of 4+ consecutive real or non-words.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace; color: var(--text-muted);">
+                    <span>Random 50% Real / 50% Non-Word coin flip on each trial</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
           <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
             <button type="submit" class="btn btn-primary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -803,6 +895,7 @@
         <div class="form-group">
           <label class="form-label" for="excelTargetSession">Import Destination Session</label>
           <select class="form-control" id="excelTargetSession">
+            <option value="master">Master Corpus (Complete 540 Words — Auto-Distribute across Sessions 1-6)</option>
             <option value="1">Session 1</option>
             <option value="2">Session 2</option>
             <option value="3">Session 3</option>
@@ -836,11 +929,10 @@
 
   <script>
 // ================================================================
-//  ROAR Dashboard — Pure Frontend (100% localStorage, Zero Backend)
-//  v7.0 — Vercel Static Deploy Ready
+//  ROAR Dashboard — Pure Frontend Engine (v8.0 Professional)
+//  Includes Master Corpus (540 words) + Visual Shuffle Pattern Selector
 // ================================================================
 
-// ── LocalStorage helpers ─────────────────────────────────────────
 const LS = {
   get: function(k, def) {
     if (def === undefined) def = [];
@@ -850,34 +942,35 @@ const LS = {
   del: function(k)    { try { localStorage.removeItem(k); } catch(e) {} }
 };
 
-// ── Data accessors ───────────────────────────────────────────────
 function getStudents()  { return LS.get('studentsRoster', []); }
 function setStudents(a) { LS.set('studentsRoster', a); }
 function getSettings()  {
   return LS.get('roarSettings', {
     stimulusDisplayMode: 'infinite', stimulusTimeMs: 10000, trialTimeoutMs: 12000,
-    fixationTimeMs: 1000, practiceCount: 5, wordsPerSession: 90
+    fixationTimeMs: 1000, practiceCount: 5, wordsPerSession: 90,
+    shufflePattern: 'alternating'
   });
 }
 function setSettings(s) { LS.set('roarSettings', s); }
 function getResults()   { return LS.get('roarTrialResults', []); }
 
-// ── State ────────────────────────────────────────────────────────
-var allStudents     = [];
-var allSessionsData = {};
-var currentSession  = '1';
-var editingWordId   = null;
+// State
+var allStudents      = [];
+var rawSessionsData  = {};
+var currentSession   = 'master'; // 'master' | '1'..'6'
+var masterTypeFilter = 'all';    // 'all' | 'real' | 'pseudo'
+var editingWordId    = null;
 var editingStudentId = null;
-var pendingImport   = [];
+var pendingImport    = [];
 
-// ── Toast ─────────────────────────────────────────────────────────
+// Toast
 function showToast(msg, type) {
   type = type || 'success';
   var t = document.getElementById('toast');
   if (!t) return;
   t.textContent = msg;
   t.className = '';
-  t.style.cssText = 'display:block;position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;padding:0.75rem 1.25rem;border-radius:8px;font-size:0.875rem;font-weight:600;max-width:380px;';
+  t.style.cssText = 'display:block;position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;padding:0.75rem 1.25rem;border-radius:8px;font-size:0.875rem;font-weight:600;max-width:420px;';
   if (type === 'error')   t.style.background = '#ef4444';
   else if (type === 'warning') t.style.background = '#f59e0b';
   else t.style.background = '#10b981';
@@ -885,15 +978,10 @@ function showToast(msg, type) {
   setTimeout(function() { t.style.display = 'none'; }, 3500);
 }
 
-// ── Tab navigation ───────────────────────────────────────────────
+// Tab navigation
 function switchTab(tabId) {
-  document.querySelectorAll('.tab-btn').forEach(function(b) {
-    b.classList.remove('active');
-  });
-  document.querySelectorAll('.tab-content').forEach(function(c) {
-    c.classList.remove('active');
-  });
-  // find tab button that calls switchTab(tabId)
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
   document.querySelectorAll('.tab-btn').forEach(function(b) {
     if (b.getAttribute('onclick') && b.getAttribute('onclick').indexOf("'" + tabId + "'") !== -1) {
       b.classList.add('active');
@@ -939,7 +1027,6 @@ function renderStudentsTable() {
     tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">No children registered. Click "Register Child" to add one.</td></tr>';
     return;
   }
-  // Compute accuracy per participant from results
   var results = getResults();
   var accMap = {};
   results.forEach(function(r) {
@@ -978,7 +1065,6 @@ function launchGame(idx) {
   window.open(url, '_blank');
 }
 
-// ── Student Modal (Add / Edit) ───────────────────────────────────
 function openStudentModal() {
   editingStudentId = null;
   document.getElementById('studentModalTitle').textContent = 'Register New Child';
@@ -1002,7 +1088,7 @@ function openEditStudent(idx) {
   document.getElementById('stuNameInput').value    = s.name;
   document.getElementById('stuGradeInput').value   = s.grade || 'Grade 1';
   document.getElementById('stuSessionInput').value = String(s.session || 1);
-  document.getElementById('stuIdInput').disabled   = true; // cannot change ID after creation
+  document.getElementById('stuIdInput').disabled   = true;
   document.getElementById('studentModal').style.display = 'flex';
 }
 
@@ -1021,7 +1107,6 @@ function handleStudentSubmit(event) {
 
   var students = getStudents();
   if (editingStudentId !== null) {
-    // Edit existing
     students[editingStudentId].name    = name;
     students[editingStudentId].grade   = grade;
     students[editingStudentId].session = session;
@@ -1031,7 +1116,6 @@ function handleStudentSubmit(event) {
     renderStudentsTable();
     showToast('Child record updated.');
   } else {
-    // Add new
     if (students.find(function(s) { return s.id === id; })) {
       showToast('Participant ID already exists.', 'error'); return;
     }
@@ -1046,7 +1130,7 @@ function handleStudentSubmit(event) {
 }
 
 function deleteStudent(idx) {
-  if (!confirm('Delete this child record? This cannot be undone.')) return;
+  if (!confirm('Delete this child record?')) return;
   var students = getStudents();
   students.splice(idx, 1);
   setStudents(students);
@@ -1057,29 +1141,52 @@ function deleteStudent(idx) {
 }
 
 // ================================================================
-//  TAB 2 — Word Bank & Datasets
+//  TAB 2 — Word Bank & Master Corpus Management
 // ================================================================
 function initWordsTab() {
-  if (Object.keys(allSessionsData).length > 0) {
-    renderWordsTab(); return;
+  var stored = LS.get('roarCustomSessionsData', null);
+  if (stored) {
+    rawSessionsData = stored;
+    renderWordsTab();
+    return;
   }
   fetch('/sessions_data.json')
     .then(function(r) { return r.json(); })
     .then(function(data) {
-      allSessionsData = data;
-      // Apply any localStorage edits
-      var edits = LS.get('roarWordEdits', {});
-      Object.keys(edits).forEach(function(k) {
-        var parts = k.split('-');
-        var sesKey = 'session' + parts[0];
-        var idx = parseInt(parts[1]);
-        if (allSessionsData[sesKey] && allSessionsData[sesKey][idx]) {
-          Object.assign(allSessionsData[sesKey][idx], edits[k]);
-        }
-      });
+      rawSessionsData = data;
       renderWordsTab();
     })
     .catch(function(e) { showToast('Could not load sessions_data.json', 'error'); });
+}
+
+function getMasterList() {
+  var master = [];
+  [1, 2, 3, 4, 5, 6].forEach(function(s) {
+    var sesKey = String(s);
+    var ses = rawSessionsData[sesKey] || {};
+    (ses.real || []).forEach(function(w) {
+      master.push(Object.assign({}, w, { session: s, type: 'real' }));
+    });
+    (ses.pseudo || []).forEach(function(w) {
+      master.push(Object.assign({}, w, { session: s, type: 'pseudo' }));
+    });
+  });
+  return master;
+}
+
+function getSessionList(s) {
+  var ses = rawSessionsData[String(s)] || {};
+  var list = [];
+  (ses.demo || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'demo', session: s }));
+  });
+  (ses.real || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'real', session: s }));
+  });
+  (ses.pseudo || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'pseudo', session: s }));
+  });
+  return list;
 }
 
 function renderWordsTab() {
@@ -1090,11 +1197,19 @@ function renderWordsTab() {
 function updateSessionPills() {
   var pills = document.getElementById('sessionPills');
   if (!pills) return;
-  pills.innerHTML = [1,2,3,4,5,6].map(function(n) {
+  var masterActive = currentSession === 'master' ? 'active' : '';
+  var html = '<button class="session-pill ' + masterActive + '" style="font-weight:700;border-color:var(--accent);" onclick="selectSession(\'master\')">Master Corpus (540 Words)</button>';
+  
+  [1, 2, 3, 4, 5, 6].forEach(function(n) {
     var active = currentSession === String(n) ? 'active' : '';
-    return '<button class="session-pill ' + active + '" onclick="selectSession(\'' + n + '\')">' +
-      'Session ' + n + '</button>';
-  }).join('');
+    html += '<button class="session-pill ' + active + '" onclick="selectSession(\'' + n + '\')">Session ' + n + '</button>';
+  });
+  pills.innerHTML = html;
+
+  var subBar = document.getElementById('masterTypeFilterBar');
+  if (subBar) {
+    subBar.style.display = currentSession === 'master' ? 'flex' : 'none';
+  }
 }
 
 function selectSession(n) {
@@ -1102,53 +1217,79 @@ function selectSession(n) {
   renderWordsTab();
 }
 
+function setMasterTypeFilter(f) {
+  masterTypeFilter = f;
+  ['btnFilterAll', 'btnFilterReal', 'btnFilterPseudo'].forEach(function(id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.classList.remove('active');
+  });
+  if (f === 'all') document.getElementById('btnFilterAll')?.classList.add('active');
+  if (f === 'real') document.getElementById('btnFilterReal')?.classList.add('active');
+  if (f === 'pseudo') document.getElementById('btnFilterPseudo')?.classList.add('active');
+  renderWordsTable();
+}
+
 function renderWordsTable() {
   var tbody = document.getElementById('wordsTableBody');
   if (!tbody) return;
-  var sesKey = 'session' + currentSession;
-  var words  = allSessionsData[sesKey] || [];
-  var q = '';
-  var searchEl = document.getElementById('wordSearchInput');
-  if (searchEl) q = searchEl.value.toLowerCase();
-  if (q) words = words.filter(function(w) {
-    return (w.word||w.text||'').toLowerCase().includes(q) ||
-           (w.type||'').toLowerCase().includes(q) ||
-           (w.meaning||w.english||'').toLowerCase().includes(q);
-  });
 
-  var total = (allSessionsData[sesKey] || []).length;
+  var isMaster = currentSession === 'master';
+  var words = isMaster ? getMasterList() : getSessionList(currentSession);
+
+  if (isMaster && masterTypeFilter !== 'all') {
+    words = words.filter(function(w) { return w.type === masterTypeFilter; });
+  }
+
+  var q = (document.getElementById('wordSearchInput')?.value || '').toLowerCase().trim();
+  if (q) {
+    words = words.filter(function(w) {
+      return (w.word||w.text||'').toLowerCase().includes(q) ||
+             (w.type||'').toLowerCase().includes(q) ||
+             (w.meaning||w.english||'').toLowerCase().includes(q) ||
+             (w.transcription||w.ipa||'').toLowerCase().includes(q);
+    });
+  }
+
   var statsEl = document.getElementById('sessionStatsText');
-  if (statsEl) statsEl.textContent = 'Showing ' + words.length + ' / ' + total + ' words in Session ' + currentSession;
+  if (statsEl) {
+    if (isMaster) {
+      var totalReal = getMasterList().filter(function(w){return w.type==='real';}).length;
+      var totalPseudo = getMasterList().filter(function(w){return w.type==='pseudo';}).length;
+      statsEl.textContent = 'Showing ' + words.length + ' / 540 Master Words (' + totalReal + ' Real + ' + totalPseudo + ' Non-Words)';
+    } else {
+      var total = getSessionList(currentSession).length;
+      statsEl.textContent = 'Showing ' + words.length + ' / ' + total + ' words in Session ' + currentSession;
+    }
+  }
 
   if (!words.length) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No words found.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No words found matching criteria.</td></tr>';
     return;
   }
-  var allWords = allSessionsData[sesKey] || [];
-  tbody.innerHTML = words.map(function(w) {
-    var realIdx = allWords.indexOf(w);
-    var word  = w.word || w.text || '';
-    var type  = w.type || 'real';
-    var trans = w.ipa || w.transcription || w.trans || '';
-    var meaning = w.meaning || w.english || '';
-    var typeBadge = type === 'real' || type === 'word' ? 'badge-blue' :
-                    type === 'demo' || type === 'practice' ? 'badge-green' : 'badge-yellow';
+
+  tbody.innerHTML = words.map(function(w, idx) {
+    var word = w.word || w.text || '';
+    var type = w.type || 'real';
+    var trans = w.transcription || w.ipa || '';
+    var meaning = w.meaning || w.english || (w.source_word ? 'Source: ' + w.source_word : '');
+    var typeBadge = type === 'real' ? 'badge-blue' : (type === 'demo' ? 'badge-green' : 'badge-yellow');
+    var sesBadge = '<span class="badge badge-gray">Session ' + (w.session || 1) + '</span>';
+
     return '<tr>' +
-      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(String(realIdx + 1)) + '</td>' +
-      '<td class="kannada-text" style="font-size:1.1rem">' + esc(word) + '</td>' +
-      '<td><span class="badge ' + typeBadge + '">' + esc(type) + '</span></td>' +
-      '<td style="font-size:0.8rem;color:var(--text-muted)">' + esc(trans) + '</td>' +
-      '<td style="font-size:0.8rem">' + esc(meaning) + '</td>' +
+      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(String(idx + 1)) + '</td>' +
+      '<td class="kannada-text" style="font-size:1.15rem;font-weight:600">' + esc(word) + '</td>' +
+      '<td><span class="badge ' + typeBadge + '">' + esc(type === 'pseudo' ? 'Non-Word' : type) + '</span></td>' +
+      '<td>' + (isMaster ? sesBadge : esc(trans)) + '</td>' +
+      '<td style="font-size:0.8rem">' + esc(meaning || trans || '—') + '</td>' +
       '<td style="display:flex;gap:0.4rem">' +
-        '<button class="btn btn-sm" onclick="openEditWord(' + realIdx + ')">Edit</button>' +
-        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteWord(' + realIdx + ')">Delete</button>' +
+        '<button class="btn btn-sm" onclick="openEditWord(' + idx + ', \'' + (w.id||'') + '\')">Edit</button>' +
+        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteWord(' + idx + ', \'' + (w.id||'') + '\', \'' + (w.session||currentSession) + '\')">Delete</button>' +
       '</td></tr>';
   }).join('');
 }
 
 function filterWordsTable() { renderWordsTable(); }
 
-// ── Word Modal (Add / Edit) ──────────────────────────────────────
 function openAddWordModal() {
   editingWordId = null;
   document.getElementById('wordModalTitle').textContent = 'Add Kannada Word';
@@ -1157,22 +1298,23 @@ function openAddWordModal() {
   document.getElementById('wordTransInput').value   = '';
   document.getElementById('wordMeaningInput').value = '';
   document.getElementById('wordTypeSelect').value   = 'real';
-  document.getElementById('wordSessionSelect').value = currentSession;
+  document.getElementById('wordSessionSelect').value = currentSession === 'master' ? '1' : currentSession;
   document.getElementById('wordModal').style.display = 'flex';
 }
 
-function openEditWord(idx) {
-  var sesKey = 'session' + currentSession;
-  var w = (allSessionsData[sesKey] || [])[idx];
+function openEditWord(idx, wordId) {
+  var isMaster = currentSession === 'master';
+  var list = isMaster ? getMasterList() : getSessionList(currentSession);
+  var w = list[idx];
   if (!w) return;
   editingWordId = idx;
-  document.getElementById('wordModalTitle').textContent = 'Edit Word';
+  document.getElementById('wordModalTitle').textContent = 'Edit Kannada Word';
   document.getElementById('editWordId').value       = idx;
-  document.getElementById('wordTextInput').value    = w.word || w.text || '';
-  document.getElementById('wordTransInput').value   = w.ipa || w.transcription || w.trans || '';
+  document.getElementById('wordTextInput').value    = w.word || '';
+  document.getElementById('wordTransInput').value   = w.transcription || w.ipa || '';
   document.getElementById('wordMeaningInput').value = w.meaning || w.english || '';
   document.getElementById('wordTypeSelect').value   = w.type || 'real';
-  document.getElementById('wordSessionSelect').value = currentSession;
+  document.getElementById('wordSessionSelect').value = String(w.session || 1);
   document.getElementById('wordModal').style.display = 'flex';
 }
 
@@ -1190,40 +1332,53 @@ function handleWordSubmit(event) {
   var sesNum  = document.getElementById('wordSessionSelect').value;
   if (!word) { showToast('Kannada word is required.', 'error'); return; }
 
-  var sesKey = 'session' + sesNum;
-  if (!allSessionsData[sesKey]) allSessionsData[sesKey] = [];
+  var sesKey = String(sesNum);
+  if (!rawSessionsData[sesKey]) rawSessionsData[sesKey] = { real: [], pseudo: [], demo: [] };
 
   if (editingWordId !== null) {
-    // Edit
-    allSessionsData[sesKey][editingWordId].word = word;
-    allSessionsData[sesKey][editingWordId].text = word;
-    allSessionsData[sesKey][editingWordId].type = type;
-    allSessionsData[sesKey][editingWordId].ipa  = trans;
-    allSessionsData[sesKey][editingWordId].meaning = meaning;
-    // persist edit to localStorage
-    var edits = LS.get('roarWordEdits', {});
-    edits[sesNum + '-' + editingWordId] = { word: word, type: type };
-    LS.set('roarWordEdits', edits);
-    showToast('Word updated.');
+    // Edit existing word
+    var targetArray = type === 'pseudo' ? rawSessionsData[sesKey].pseudo : rawSessionsData[sesKey].real;
+    if (targetArray && targetArray[editingWordId]) {
+      targetArray[editingWordId].word = word;
+      targetArray[editingWordId].transcription = trans;
+      targetArray[editingWordId].meaning = meaning;
+    }
+    showToast('Word updated successfully.');
   } else {
-    // Add
-    allSessionsData[sesKey].push({ word: word, text: word, type: type, ipa: trans, meaning: meaning });
-    if (sesNum !== currentSession) { currentSession = sesNum; }
-    showToast('Word added to Session ' + sesNum + '.');
+    // Add new word
+    var item = { id: (type === 'real' ? 'R' : 'N') + Date.now().toString().slice(-4), word: word, transcription: trans, meaning: meaning };
+    if (type === 'pseudo') rawSessionsData[sesKey].pseudo.push(item);
+    else rawSessionsData[sesKey].real.push(item);
+    showToast('Added new word to Session ' + sesNum + '.');
   }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
   closeWordModal();
   renderWordsTab();
 }
 
-function deleteWord(idx) {
-  if (!confirm('Delete this word?')) return;
-  var sesKey = 'session' + currentSession;
-  allSessionsData[sesKey].splice(idx, 1);
+function deleteWord(idx, wordId, sesNum) {
+  if (!confirm('Delete this word from the corpus?')) return;
+  var sesKey = String(sesNum);
+  if (!rawSessionsData[sesKey]) return;
+
+  var found = false;
+  ['real', 'pseudo'].forEach(function(group) {
+    var arr = rawSessionsData[sesKey][group] || [];
+    var i = arr.findIndex(function(x) { return x.id === wordId || x.word === wordId; });
+    if (i !== -1) { arr.splice(i, 1); found = true; }
+  });
+
+  if (!found) {
+    if (rawSessionsData[sesKey].real && rawSessionsData[sesKey].real[idx]) rawSessionsData[sesKey].real.splice(idx, 1);
+  }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
   renderWordsTab();
-  showToast('Word deleted.', 'warning');
+  showToast('Word removed.', 'warning');
 }
 
-// ── Excel / CSV Import ───────────────────────────────────────────
+// Excel Import
 function openExcelUploadModal() {
   pendingImport = [];
   document.getElementById('excelPreviewSection').style.display = 'none';
@@ -1248,7 +1403,7 @@ function handleExcelFile(event) {
         lines.forEach(function(line, i) {
           if (i === 0 && (line.toLowerCase().includes('word') || line.toLowerCase().includes('type'))) return;
           var cols = line.split(',').map(function(c) { return c.trim().replace(/^"|"$/g,''); });
-          if (cols[0]) words.push({ word: cols[0], text: cols[0], type: normType(cols[1] || 'real'), meaning: cols[2] || '' });
+          if (cols[0]) words.push({ word: cols[0], type: normType(cols[1] || 'real'), meaning: cols[2] || '' });
         });
       } else {
         var data = new Uint8Array(e.target.result);
@@ -1271,7 +1426,7 @@ function handleExcelFile(event) {
           if (!word2) continue;
           var type2 = normType(typeCol >= 0 ? String(row[typeCol] || 'real') : 'real');
           var mean2 = meanCol >= 0 ? String(row[meanCol] || '') : '';
-          words.push({ word: word2, text: word2, type: type2, meaning: mean2 });
+          words.push({ word: word2, type: type2, meaning: mean2 });
         }
       }
       pendingImport = words;
@@ -1285,8 +1440,7 @@ function handleExcelFile(event) {
 function normType(t) {
   t = String(t).toLowerCase().trim();
   if (['real','word','ನೈಜ'].indexOf(t) !== -1) return 'real';
-  if (['pseudo','nonword','non-word','nw'].indexOf(t) !== -1) return 'pseudo';
-  if (['demo','practice'].indexOf(t) !== -1) return 'demo';
+  if (['pseudo','nonword','non-word','nw','ಕೃತಕ'].indexOf(t) !== -1) return 'pseudo';
   return 'real';
 }
 
@@ -1295,13 +1449,15 @@ function renderExcelPreview(words) {
   var body = document.getElementById('excelPreviewContent');
   var title = document.getElementById('excelPreviewTitle');
   if (!sec || !body) return;
-  if (title) title.textContent = words.length + ' words found — Preview (first 50):';
+  var realCount = words.filter(function(w){return w.type==='real';}).length;
+  var pseudoCount = words.filter(function(w){return w.type==='pseudo';}).length;
+  if (title) title.textContent = words.length + ' words detected (' + realCount + ' Real + ' + pseudoCount + ' Non-Words):';
   sec.style.display = 'block';
   if (!words.length) { body.textContent = 'No words found in file.'; return; }
   body.innerHTML = '<table style="width:100%;border-collapse:collapse"><thead><tr>' +
     '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Word</th>' +
     '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Type</th>' +
-    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Meaning</th>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Context/Meaning</th>' +
     '</tr></thead><tbody>' +
     words.slice(0, 50).map(function(w) {
       return '<tr><td class="kannada-text" style="padding:0.3rem 0.5rem">' + esc(w.word) + '</td>' +
@@ -1314,19 +1470,48 @@ function renderExcelPreview(words) {
 
 function commitExcelImport() {
   if (!pendingImport.length) { showToast('No words to import.', 'warning'); return; }
-  var sesNum = document.getElementById('excelTargetSession').value;
-  var sesKey = 'session' + sesNum;
-  if (!allSessionsData[sesKey]) allSessionsData[sesKey] = [];
-  pendingImport.forEach(function(w) { allSessionsData[sesKey].push(w); });
+  var target = document.getElementById('excelTargetSession').value;
+
+  if (target === 'master') {
+    // Distribute evenly across 6 sessions
+    var realWords = pendingImport.filter(function(w){return w.type==='real';});
+    var pseudoWords = pendingImport.filter(function(w){return w.type==='pseudo';});
+
+    [1, 2, 3, 4, 5, 6].forEach(function(s) {
+      var k = String(s);
+      if (!rawSessionsData[k]) rawSessionsData[k] = { real: [], pseudo: [], demo: [] };
+      rawSessionsData[k].real = [];
+      rawSessionsData[k].pseudo = [];
+    });
+
+    realWords.forEach(function(w, i) {
+      var s = String((i % 6) + 1);
+      rawSessionsData[s].real.push({ id: 'R' + (i+1), word: w.word, meaning: w.meaning });
+    });
+    pseudoWords.forEach(function(w, i) {
+      var s = String((i % 6) + 1);
+      rawSessionsData[s].pseudo.push({ id: 'N' + (i+1), word: w.word, meaning: w.meaning });
+    });
+
+    showToast('Imported ' + pendingImport.length + ' words and partitioned across 6 sessions (45 real + 45 non-words each).');
+  } else {
+    var k = String(target);
+    if (!rawSessionsData[k]) rawSessionsData[k] = { real: [], pseudo: [], demo: [] };
+    pendingImport.forEach(function(w) {
+      if (w.type === 'pseudo') rawSessionsData[k].pseudo.push(w);
+      else rawSessionsData[k].real.push(w);
+    });
+    showToast('Imported ' + pendingImport.length + ' words into Session ' + target + '.');
+  }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
   closeExcelModal();
-  if (currentSession !== sesNum) { currentSession = sesNum; }
   renderWordsTab();
-  showToast('Imported ' + pendingImport.length + ' words to Session ' + sesNum + '.');
   pendingImport = [];
 }
 
 // ================================================================
-//  TAB 3 — Results & Telemetry
+//  TAB 3 — Assessment Results & Telemetry
 // ================================================================
 function initResultsTab() {
   var results = getResults();
@@ -1365,7 +1550,7 @@ function renderResultsTable(results) {
       '<td><code style="font-size:0.8rem">' + esc(r.participant||'—') + '</code></td>' +
       '<td>' + esc(String(r.session||'—')) + '</td>' +
       '<td style="font-size:0.75rem">' + esc(r.stage||'—') + '</td>' +
-      '<td class="kannada-text" style="font-size:1.1rem">' + esc(r.word||'—') + '</td>' +
+      '<td class="kannada-text" style="font-size:1.15rem">' + esc(r.word||'—') + '</td>' +
       '<td><span class="badge ' + okClass + '">' + (r.correct ? 'Correct' : 'Incorrect') + '</span></td>' +
       '<td>' + (r.rt ? r.rt + ' ms' : '—') + '</td>' +
       '<td style="font-size:0.75rem">' + esc(r.response||'—') + '</td>' +
@@ -1406,7 +1591,7 @@ function clearResults() {
 }
 
 // ================================================================
-//  TAB 4 — Engine Settings
+//  TAB 4 — Engine Settings & Shuffle Sequence
 // ================================================================
 function initSettingsTab() {
   var s = getSettings();
@@ -1428,7 +1613,19 @@ function initSettingsTab() {
   if (pcEl) pcEl.value = s.practiceCount   || 5;
   if (wpEl) wpEl.value = s.wordsPerSession || 90;
 
+  // Shuffle Pattern Radio
+  var pat = s.shufflePattern || 'alternating';
+  if (pat === 'alternating') { document.getElementById('patternAlternating').checked = true; updateShuffleLabel('Strict Alternating'); }
+  if (pat === 'constrained') { document.getElementById('patternConstrained').checked = true; updateShuffleLabel('Constrained Balanced'); }
+  if (pat === 'blocks')      { document.getElementById('patternBlocks').checked = true; updateShuffleLabel('Block Clusters'); }
+  if (pat === 'random')      { document.getElementById('patternRandom').checked = true; updateShuffleLabel('Completely Random'); }
+
   toggleTimingInputs();
+}
+
+function updateShuffleLabel(name) {
+  var el = document.getElementById('activeShuffleLabel');
+  if (el) el.textContent = name;
 }
 
 function toggleTimingInputs() {
@@ -1449,17 +1646,23 @@ function saveSettings(event) {
   var pc    = parseInt(document.getElementById('practiceCount')?.value || 5);
   var wp    = parseInt(document.getElementById('wordsPerSession')?.value || 90);
 
+  var pat = 'alternating';
+  if (document.getElementById('patternConstrained')?.checked) pat = 'constrained';
+  if (document.getElementById('patternBlocks')?.checked)      pat = 'blocks';
+  if (document.getElementById('patternRandom')?.checked)      pat = 'random';
+
   var s = {
     stimulusDisplayMode: mode,
     stimulusTimeMs:  Math.round(stSec * 1000),
     trialTimeoutMs:  Math.round(ttSec * 1000),
     fixationTimeMs:  ft,
     practiceCount:   pc,
-    wordsPerSession: wp
+    wordsPerSession: wp,
+    shufflePattern:  pat
   };
   setSettings(s);
   updateRosterMetrics();
-  showToast('Settings saved. Next game launch will use these values.');
+  showToast('Settings saved. Shuffle pattern set to ' + pat + '.');
 }
 
 function resetSettings() {
@@ -1469,33 +1672,12 @@ function resetSettings() {
   showToast('Settings reset to defaults.', 'warning');
 }
 
-// ================================================================
-//  UTILITIES
-// ================================================================
 function esc(s) {
   if (s === undefined || s === null) return '';
-  return String(s)
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;');
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function copyLink(type) {
-  var base = window.location.origin;
-  var url  = type === 'game'
-    ? base + '/?consent=false&storyoption=false'
-    : base + '/dashboard.html';
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(url).then(function() { showToast('Link copied: ' + url); });
-  } else {
-    prompt('Copy this URL:', url);
-  }
-}
-
-// ── Init ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
-  // Load initial tab
   initRosterTab();
 });
 </script>

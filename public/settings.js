@@ -15,6 +15,7 @@ window.ROAR_SETTINGS = (function() {
     fixationTimeMs: 1000,
     practiceCount: 5,
     wordsPerSession: 90,
-    audioFeedback: true
+    audioFeedback: true,
+    shufflePattern: "alternating" // "alternating" | "constrained" | "blocks" | "random"
   };
 })();
