@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -589,10 +589,10 @@
           </div>
           <div style="display: flex; gap: 0.5rem;">
             <button class="btn btn-secondary btn-sm" onclick="clearResults()">Clear Log</button>
-            <a href="/api/results/export" class="btn btn-primary btn-sm">
+            <button onclick="exportCSV()" class="btn btn-primary btn-sm">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               Export CSV
-            </a>
+            </button>
           </div>
         </div>
 
@@ -835,529 +835,669 @@
   <div id="toast"></div>
 
   <script>
-    let currentSession = '1';
-    let allSessionsData = {};
-    let allStudents = [];
-    let pendingExcelWords = [];
+// ================================================================
+//  ROAR Dashboard — Pure Frontend (100% localStorage, Zero Backend)
+//  v7.0 — Vercel Static Deploy Ready
+// ================================================================
 
-    // Toast Helper
-    function showToast(msg) {
-      const t = document.getElementById('toast');
-      t.textContent = msg;
-      t.style.display = 'block';
-      setTimeout(() => { t.style.display = 'none'; }, 3000);
+// ── LocalStorage helpers ─────────────────────────────────────────
+const LS = {
+  get: function(k, def) {
+    if (def === undefined) def = [];
+    try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
+  },
+  set: function(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {} },
+  del: function(k)    { try { localStorage.removeItem(k); } catch(e) {} }
+};
+
+// ── Data accessors ───────────────────────────────────────────────
+function getStudents()  { return LS.get('studentsRoster', []); }
+function setStudents(a) { LS.set('studentsRoster', a); }
+function getSettings()  {
+  return LS.get('roarSettings', {
+    stimulusDisplayMode: 'infinite', stimulusTimeMs: 10000, trialTimeoutMs: 12000,
+    fixationTimeMs: 1000, practiceCount: 5, wordsPerSession: 90
+  });
+}
+function setSettings(s) { LS.set('roarSettings', s); }
+function getResults()   { return LS.get('roarTrialResults', []); }
+
+// ── State ────────────────────────────────────────────────────────
+var allStudents     = [];
+var allSessionsData = {};
+var currentSession  = '1';
+var editingWordId   = null;
+var editingStudentId = null;
+var pendingImport   = [];
+
+// ── Toast ─────────────────────────────────────────────────────────
+function showToast(msg, type) {
+  type = type || 'success';
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.className = '';
+  t.style.cssText = 'display:block;position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;padding:0.75rem 1.25rem;border-radius:8px;font-size:0.875rem;font-weight:600;max-width:380px;';
+  if (type === 'error')   t.style.background = '#ef4444';
+  else if (type === 'warning') t.style.background = '#f59e0b';
+  else t.style.background = '#10b981';
+  t.style.color = '#fff';
+  setTimeout(function() { t.style.display = 'none'; }, 3500);
+}
+
+// ── Tab navigation ───────────────────────────────────────────────
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-btn').forEach(function(b) {
+    b.classList.remove('active');
+  });
+  document.querySelectorAll('.tab-content').forEach(function(c) {
+    c.classList.remove('active');
+  });
+  // find tab button that calls switchTab(tabId)
+  document.querySelectorAll('.tab-btn').forEach(function(b) {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').indexOf("'" + tabId + "'") !== -1) {
+      b.classList.add('active');
     }
+  });
+  var tabEl = document.getElementById(tabId);
+  if (tabEl) tabEl.classList.add('active');
 
-    // Tab Switching
-    function switchTab(tabId) {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
-      if (activeBtn) activeBtn.classList.add('active');
-      const target = document.getElementById(tabId);
-      if (target) target.classList.add('active');
+  if (tabId === 'rosterTab')   initRosterTab();
+  if (tabId === 'wordsTab')    initWordsTab();
+  if (tabId === 'resultsTab')  initResultsTab();
+  if (tabId === 'settingsTab') initSettingsTab();
+}
 
-      if (tabId === 'rosterTab') loadStudents();
-      if (tabId === 'wordsTab') loadSessions();
-      if (tabId === 'resultsTab') loadResults();
-      if (tabId === 'settingsTab') loadSettings();
+// ================================================================
+//  TAB 1 — Children & Test Sessions
+// ================================================================
+function initRosterTab() {
+  allStudents = getStudents();
+  renderStudentsTable();
+  updateRosterMetrics();
+}
+
+function updateRosterMetrics() {
+  var students = getStudents();
+  var completed = students.filter(function(s) { return s.status === 'Completed'; }).length;
+  var settings  = getSettings();
+  var el1 = document.getElementById('countStudents');
+  var el2 = document.getElementById('countCompleted');
+  var el3 = document.getElementById('dispTimingMode');
+  if (el1) el1.textContent = students.length;
+  if (el2) el2.textContent = completed;
+  if (el3) el3.textContent = settings.stimulusDisplayMode === 'timed'
+    ? (settings.stimulusTimeMs / 1000).toFixed(1) + 's Timed'
+    : 'Infinite';
+}
+
+function renderStudentsTable() {
+  var tbody = document.getElementById('studentsTableBody');
+  if (!tbody) return;
+  var students = getStudents();
+  if (!students.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">No children registered. Click "Register Child" to add one.</td></tr>';
+    return;
+  }
+  // Compute accuracy per participant from results
+  var results = getResults();
+  var accMap = {};
+  results.forEach(function(r) {
+    if (!accMap[r.participant]) accMap[r.participant] = { total: 0, correct: 0 };
+    accMap[r.participant].total++;
+    if (r.correct) accMap[r.participant].correct++;
+  });
+
+  tbody.innerHTML = students.map(function(s, i) {
+    var acc = accMap[s.id] ? Math.round(accMap[s.id].correct / accMap[s.id].total * 100) + '%' : '—';
+    var statusClass = s.status === 'Completed' ? 'badge-green' : s.status === 'In Progress' ? 'badge-yellow' : 'badge-gray';
+    return '<tr>' +
+      '<td><code style="font-size:0.8rem;color:var(--accent)">' + esc(s.id) + '</code></td>' +
+      '<td>' + esc(s.name) + '</td>' +
+      '<td>' + esc(s.grade || '—') + '</td>' +
+      '<td><span class="badge badge-blue">Session ' + esc(String(s.session || 1)) + '</span></td>' +
+      '<td><span class="badge ' + statusClass + '">' + esc(s.status || 'Pending') + '</span></td>' +
+      '<td>' + esc(acc) + '</td>' +
+      '<td style="display:flex;gap:0.4rem;flex-wrap:wrap;">' +
+        '<button class="btn btn-primary btn-sm" onclick="launchGame(' + i + ')">Launch</button>' +
+        '<button class="btn btn-sm" onclick="openEditStudent(' + i + ')">Edit</button>' +
+        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteStudent(' + i + ')">Delete</button>' +
+      '</td></tr>';
+  }).join('');
+}
+
+function launchGame(idx) {
+  var students = getStudents();
+  var s = students[idx];
+  if (!s) return;
+  var url = '/?consent=false&storyoption=false&participant=' + encodeURIComponent(s.id) + '&session=' + (s.session || 1);
+  s.status = 'In Progress';
+  students[idx] = s;
+  setStudents(students);
+  renderStudentsTable();
+  window.open(url, '_blank');
+}
+
+// ── Student Modal (Add / Edit) ───────────────────────────────────
+function openStudentModal() {
+  editingStudentId = null;
+  document.getElementById('studentModalTitle').textContent = 'Register New Child';
+  document.getElementById('studentSubmitBtn').textContent  = 'Save Participant';
+  document.getElementById('stuIdInput').value      = '';
+  document.getElementById('stuNameInput').value    = '';
+  document.getElementById('stuGradeInput').value   = 'Grade 1';
+  document.getElementById('stuSessionInput').value = '1';
+  document.getElementById('stuIdInput').disabled   = false;
+  document.getElementById('studentModal').style.display = 'flex';
+}
+
+function openEditStudent(idx) {
+  var students = getStudents();
+  var s = students[idx];
+  if (!s) return;
+  editingStudentId = idx;
+  document.getElementById('studentModalTitle').textContent = 'Edit Child Record';
+  document.getElementById('studentSubmitBtn').textContent  = 'Update Participant';
+  document.getElementById('stuIdInput').value      = s.id;
+  document.getElementById('stuNameInput').value    = s.name;
+  document.getElementById('stuGradeInput').value   = s.grade || 'Grade 1';
+  document.getElementById('stuSessionInput').value = String(s.session || 1);
+  document.getElementById('stuIdInput').disabled   = true; // cannot change ID after creation
+  document.getElementById('studentModal').style.display = 'flex';
+}
+
+function closeStudentModal() {
+  document.getElementById('studentModal').style.display = 'none';
+  editingStudentId = null;
+}
+
+function handleStudentSubmit(event) {
+  event.preventDefault();
+  var id      = document.getElementById('stuIdInput').value.trim();
+  var name    = document.getElementById('stuNameInput').value.trim();
+  var grade   = document.getElementById('stuGradeInput').value;
+  var session = parseInt(document.getElementById('stuSessionInput').value) || 1;
+  if (!id || !name) { showToast('Participant ID and Name are required.', 'error'); return; }
+
+  var students = getStudents();
+  if (editingStudentId !== null) {
+    // Edit existing
+    students[editingStudentId].name    = name;
+    students[editingStudentId].grade   = grade;
+    students[editingStudentId].session = session;
+    setStudents(students);
+    closeStudentModal();
+    allStudents = students;
+    renderStudentsTable();
+    showToast('Child record updated.');
+  } else {
+    // Add new
+    if (students.find(function(s) { return s.id === id; })) {
+      showToast('Participant ID already exists.', 'error'); return;
     }
+    students.push({ id: id, name: name, grade: grade, session: session, status: 'Pending', registeredAt: new Date().toISOString() });
+    setStudents(students);
+    allStudents = students;
+    closeStudentModal();
+    renderStudentsTable();
+    updateRosterMetrics();
+    showToast('Child registered successfully.');
+  }
+}
 
-    // Toggle Timing Inputs
-    function toggleTimingInputs() {
-      const isTimed = document.getElementById('modeTimed').checked;
-      document.getElementById('timedSettingsRow').style.display = isTimed ? 'flex' : 'none';
-    }
+function deleteStudent(idx) {
+  if (!confirm('Delete this child record? This cannot be undone.')) return;
+  var students = getStudents();
+  students.splice(idx, 1);
+  setStudents(students);
+  allStudents = students;
+  renderStudentsTable();
+  updateRosterMetrics();
+  showToast('Record deleted.', 'warning');
+}
 
-    // ==========================================
-    // MODULE 1: ROSTER & STUDENTS
-    // ==========================================
-    async function loadStudents() {
-      try {
-        const res = await fetch('/api/students');
-        allStudents = await res.json();
-        document.getElementById('countStudents').textContent = allStudents.length;
-        document.getElementById('countCompleted').textContent = allStudents.filter(s => s.status === 'Completed').length;
-
-        const tbody = document.getElementById('studentsTableBody');
-        if (allStudents.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">No participants registered yet. Click "Register Child" above to add.</td></tr>';
-          return;
+// ================================================================
+//  TAB 2 — Word Bank & Datasets
+// ================================================================
+function initWordsTab() {
+  if (Object.keys(allSessionsData).length > 0) {
+    renderWordsTab(); return;
+  }
+  fetch('/sessions_data.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      allSessionsData = data;
+      // Apply any localStorage edits
+      var edits = LS.get('roarWordEdits', {});
+      Object.keys(edits).forEach(function(k) {
+        var parts = k.split('-');
+        var sesKey = 'session' + parts[0];
+        var idx = parseInt(parts[1]);
+        if (allSessionsData[sesKey] && allSessionsData[sesKey][idx]) {
+          Object.assign(allSessionsData[sesKey][idx], edits[k]);
         }
+      });
+      renderWordsTab();
+    })
+    .catch(function(e) { showToast('Could not load sessions_data.json', 'error'); });
+}
 
-        tbody.innerHTML = allStudents.map(s => {
-          let badgeClass = 'badge-pending';
-          if (s.status === 'Completed') badgeClass = 'badge-completed';
-          if (s.status === 'In Progress') badgeClass = 'badge-progress';
+function renderWordsTab() {
+  updateSessionPills();
+  renderWordsTable();
+}
 
-          const gameUrl = `/?consent=false&storyoption=false&participant=${encodeURIComponent(s.id)}&session=${s.session}&t=${Date.now()}`;
-          return `
-            <tr>
-              <td style="font-weight: 600; color: var(--text-main); font-family: monospace;">${escapeHtml(s.id)}</td>
-              <td>${escapeHtml(s.name)}</td>
-              <td>${escapeHtml(s.grade || '-')}</td>
-              <td><span style="font-weight: 600;">Session ${s.session}</span></td>
-              <td><span class="badge ${badgeClass}">${s.status}</span></td>
-              <td style="font-family: monospace;">${s.lastScore || '-'}</td>
-              <td>
-                <div style="display: flex; gap: 0.375rem;">
-                  <a href="${gameUrl}" target="_blank" class="btn btn-primary btn-sm">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                    Start Test
-                  </a>
-                  <button class="btn btn-secondary btn-sm" onclick="editStudent('${s.id}')">Edit</button>
-                  <button class="btn btn-danger btn-sm" onclick="deleteStudent('${s.id}')">Delete</button>
-                </div>
-              </td>
-            </tr>
-          `;
-        }).join('');
-      } catch (e) {
-        console.error(e);
-      }
-    }
+function updateSessionPills() {
+  var pills = document.getElementById('sessionPills');
+  if (!pills) return;
+  pills.innerHTML = [1,2,3,4,5,6].map(function(n) {
+    var active = currentSession === String(n) ? 'active' : '';
+    return '<button class="session-pill ' + active + '" onclick="selectSession(\'' + n + '\')">' +
+      'Session ' + n + '</button>';
+  }).join('');
+}
 
-    function openStudentModal(editId = null) {
-      document.getElementById('studentForm').reset();
-      document.getElementById('editStudentId').value = '';
-      if (editId) {
-        const s = allStudents.find(x => x.id === editId);
-        if (s) {
-          document.getElementById('studentModalTitle').textContent = 'Edit Child Record';
-          document.getElementById('editStudentId').value = s.id;
-          document.getElementById('stuIdInput').value = s.id;
-          document.getElementById('stuIdInput').disabled = true;
-          document.getElementById('stuNameInput').value = s.name;
-          document.getElementById('stuGradeInput').value = s.grade || 'Grade 1';
-          document.getElementById('stuSessionInput').value = s.session || 1;
-        }
+function selectSession(n) {
+  currentSession = String(n);
+  renderWordsTab();
+}
+
+function renderWordsTable() {
+  var tbody = document.getElementById('wordsTableBody');
+  if (!tbody) return;
+  var sesKey = 'session' + currentSession;
+  var words  = allSessionsData[sesKey] || [];
+  var q = '';
+  var searchEl = document.getElementById('wordSearchInput');
+  if (searchEl) q = searchEl.value.toLowerCase();
+  if (q) words = words.filter(function(w) {
+    return (w.word||w.text||'').toLowerCase().includes(q) ||
+           (w.type||'').toLowerCase().includes(q) ||
+           (w.meaning||w.english||'').toLowerCase().includes(q);
+  });
+
+  var total = (allSessionsData[sesKey] || []).length;
+  var statsEl = document.getElementById('sessionStatsText');
+  if (statsEl) statsEl.textContent = 'Showing ' + words.length + ' / ' + total + ' words in Session ' + currentSession;
+
+  if (!words.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No words found.</td></tr>';
+    return;
+  }
+  var allWords = allSessionsData[sesKey] || [];
+  tbody.innerHTML = words.map(function(w) {
+    var realIdx = allWords.indexOf(w);
+    var word  = w.word || w.text || '';
+    var type  = w.type || 'real';
+    var trans = w.ipa || w.transcription || w.trans || '';
+    var meaning = w.meaning || w.english || '';
+    var typeBadge = type === 'real' || type === 'word' ? 'badge-blue' :
+                    type === 'demo' || type === 'practice' ? 'badge-green' : 'badge-yellow';
+    return '<tr>' +
+      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(String(realIdx + 1)) + '</td>' +
+      '<td class="kannada-text" style="font-size:1.1rem">' + esc(word) + '</td>' +
+      '<td><span class="badge ' + typeBadge + '">' + esc(type) + '</span></td>' +
+      '<td style="font-size:0.8rem;color:var(--text-muted)">' + esc(trans) + '</td>' +
+      '<td style="font-size:0.8rem">' + esc(meaning) + '</td>' +
+      '<td style="display:flex;gap:0.4rem">' +
+        '<button class="btn btn-sm" onclick="openEditWord(' + realIdx + ')">Edit</button>' +
+        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteWord(' + realIdx + ')">Delete</button>' +
+      '</td></tr>';
+  }).join('');
+}
+
+function filterWordsTable() { renderWordsTable(); }
+
+// ── Word Modal (Add / Edit) ──────────────────────────────────────
+function openAddWordModal() {
+  editingWordId = null;
+  document.getElementById('wordModalTitle').textContent = 'Add Kannada Word';
+  document.getElementById('editWordId').value       = '';
+  document.getElementById('wordTextInput').value    = '';
+  document.getElementById('wordTransInput').value   = '';
+  document.getElementById('wordMeaningInput').value = '';
+  document.getElementById('wordTypeSelect').value   = 'real';
+  document.getElementById('wordSessionSelect').value = currentSession;
+  document.getElementById('wordModal').style.display = 'flex';
+}
+
+function openEditWord(idx) {
+  var sesKey = 'session' + currentSession;
+  var w = (allSessionsData[sesKey] || [])[idx];
+  if (!w) return;
+  editingWordId = idx;
+  document.getElementById('wordModalTitle').textContent = 'Edit Word';
+  document.getElementById('editWordId').value       = idx;
+  document.getElementById('wordTextInput').value    = w.word || w.text || '';
+  document.getElementById('wordTransInput').value   = w.ipa || w.transcription || w.trans || '';
+  document.getElementById('wordMeaningInput').value = w.meaning || w.english || '';
+  document.getElementById('wordTypeSelect').value   = w.type || 'real';
+  document.getElementById('wordSessionSelect').value = currentSession;
+  document.getElementById('wordModal').style.display = 'flex';
+}
+
+function closeWordModal() {
+  document.getElementById('wordModal').style.display = 'none';
+  editingWordId = null;
+}
+
+function handleWordSubmit(event) {
+  event.preventDefault();
+  var word    = document.getElementById('wordTextInput').value.trim();
+  var trans   = document.getElementById('wordTransInput').value.trim();
+  var meaning = document.getElementById('wordMeaningInput').value.trim();
+  var type    = document.getElementById('wordTypeSelect').value;
+  var sesNum  = document.getElementById('wordSessionSelect').value;
+  if (!word) { showToast('Kannada word is required.', 'error'); return; }
+
+  var sesKey = 'session' + sesNum;
+  if (!allSessionsData[sesKey]) allSessionsData[sesKey] = [];
+
+  if (editingWordId !== null) {
+    // Edit
+    allSessionsData[sesKey][editingWordId].word = word;
+    allSessionsData[sesKey][editingWordId].text = word;
+    allSessionsData[sesKey][editingWordId].type = type;
+    allSessionsData[sesKey][editingWordId].ipa  = trans;
+    allSessionsData[sesKey][editingWordId].meaning = meaning;
+    // persist edit to localStorage
+    var edits = LS.get('roarWordEdits', {});
+    edits[sesNum + '-' + editingWordId] = { word: word, type: type };
+    LS.set('roarWordEdits', edits);
+    showToast('Word updated.');
+  } else {
+    // Add
+    allSessionsData[sesKey].push({ word: word, text: word, type: type, ipa: trans, meaning: meaning });
+    if (sesNum !== currentSession) { currentSession = sesNum; }
+    showToast('Word added to Session ' + sesNum + '.');
+  }
+  closeWordModal();
+  renderWordsTab();
+}
+
+function deleteWord(idx) {
+  if (!confirm('Delete this word?')) return;
+  var sesKey = 'session' + currentSession;
+  allSessionsData[sesKey].splice(idx, 1);
+  renderWordsTab();
+  showToast('Word deleted.', 'warning');
+}
+
+// ── Excel / CSV Import ───────────────────────────────────────────
+function openExcelUploadModal() {
+  pendingImport = [];
+  document.getElementById('excelPreviewSection').style.display = 'none';
+  document.getElementById('excelFileInput').value = '';
+  document.getElementById('excelModal').style.display = 'flex';
+}
+
+function closeExcelModal() {
+  document.getElementById('excelModal').style.display = 'none';
+}
+
+function handleExcelFile(event) {
+  var file = event.target.files[0];
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var words = [];
+      if (file.name.endsWith('.csv')) {
+        var text  = e.target.result;
+        var lines = text.split(/\r?\n/).filter(function(l) { return l.trim(); });
+        lines.forEach(function(line, i) {
+          if (i === 0 && (line.toLowerCase().includes('word') || line.toLowerCase().includes('type'))) return;
+          var cols = line.split(',').map(function(c) { return c.trim().replace(/^"|"$/g,''); });
+          if (cols[0]) words.push({ word: cols[0], text: cols[0], type: normType(cols[1] || 'real'), meaning: cols[2] || '' });
+        });
       } else {
-        document.getElementById('studentModalTitle').textContent = 'Register Child';
-        document.getElementById('stuIdInput').disabled = false;
-        document.getElementById('stuIdInput').value = 'STU-' + Math.floor(100 + Math.random() * 900);
-      }
-      document.getElementById('studentModal').classList.add('active');
-    }
-
-    function closeStudentModal() {
-      document.getElementById('studentModal').classList.remove('active');
-    }
-
-    async function handleStudentSubmit(e) {
-      e.preventDefault();
-      const editId = document.getElementById('editStudentId').value;
-      const id = document.getElementById('stuIdInput').value.trim();
-      const name = document.getElementById('stuNameInput').value.trim();
-      const grade = document.getElementById('stuGradeInput').value;
-      const session = parseInt(document.getElementById('stuSessionInput').value, 10);
-
-      try {
-        if (editId) {
-          await fetch('/api/students/update', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id: editId, name, grade, session })
-          });
-          showToast('Participant updated');
-        } else {
-          await fetch('/api/students', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id, name, grade, session })
-          });
-          showToast('Participant registered');
-        }
-        closeStudentModal();
-        loadStudents();
-      } catch (err) {
-        alert('Failed to save student: ' + err.message);
-      }
-    }
-
-    function editStudent(id) { openStudentModal(id); }
-
-    async function deleteStudent(id) {
-      if (!confirm(`Delete participant ${id}?`)) return;
-      try {
-        await fetch('/api/students/delete', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id })
-        });
-        showToast('Participant deleted');
-        loadStudents();
-      } catch (e) {
-        alert('Delete failed');
-      }
-    }
-
-    // ==========================================
-    // MODULE 2: WORD BANK & SESSIONS
-    // ==========================================
-    async function loadSessions() {
-      try {
-        const res = await fetch('/api/sessions');
-        allSessionsData = await res.json();
-        renderSessionWords();
-      } catch (e) {
-        console.error(e);
-      }
-    }
-
-    function selectSession(sessId) {
-      currentSession = sessId;
-      document.querySelectorAll('.session-pill').forEach(p => p.classList.remove('active'));
-      const pill = Array.from(document.querySelectorAll('.session-pill')).find(p => p.textContent.includes(`Session ${sessId}`));
-      if (pill) pill.classList.add('active');
-      renderSessionWords();
-    }
-
-    function renderSessionWords() {
-      const sess = allSessionsData[currentSession];
-      if (!sess) return;
-
-      const wordsList = [];
-      (sess.demo || []).forEach(w => wordsList.push({ ...w, category: 'demo' }));
-      (sess.real || []).forEach(w => wordsList.push({ ...w, category: 'real' }));
-      (sess.pseudo || []).forEach(w => wordsList.push({ ...w, category: 'pseudo' }));
-
-      document.getElementById('sessionStatsText').textContent = 
-        `Session ${currentSession}: ${wordsList.length} Total (${(sess.real||[]).length} Real, ${(sess.pseudo||[]).length} Pseudo, ${(sess.demo||[]).length} Demo)`;
-
-      filterWordsTable(wordsList);
-    }
-
-    function filterWordsTable(words = null) {
-      if (!words) {
-        const sess = allSessionsData[currentSession];
-        if (!sess) return;
-        words = [];
-        (sess.demo || []).forEach(w => words.push({ ...w, category: 'demo' }));
-        (sess.real || []).forEach(w => words.push({ ...w, category: 'real' }));
-        (sess.pseudo || []).forEach(w => words.push({ ...w, category: 'pseudo' }));
-      }
-
-      const q = (document.getElementById('wordSearchInput').value || '').toLowerCase().trim();
-      const filtered = q ? words.filter(w => 
-        (w.word || '').toLowerCase().includes(q) || 
-        (w.meaning || '').toLowerCase().includes(q) || 
-        (w.transcription || '').toLowerCase().includes(q)
-      ) : words;
-
-      const tbody = document.getElementById('wordsTableBody');
-      if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">No matching words found.</td></tr>';
-        return;
-      }
-
-      tbody.innerHTML = filtered.map(w => {
-        let badge = '<span class="badge badge-real">Real Word</span>';
-        if (w.category === 'pseudo' || w.realpseudo === 'pseudo') badge = '<span class="badge badge-pseudo">Non-Word</span>';
-        if (w.category === 'demo' || w.block === 'practice') badge = '<span class="badge badge-demo">Demo</span>';
-
-        return `
-          <tr>
-            <td style="font-family: monospace; font-size: 0.75rem; color: var(--text-muted);">${escapeHtml(w.id || w.nonword_id || '-')}</td>
-            <td class="kannada-text" style="font-size: 1.125rem; font-weight: 700;">${escapeHtml(w.word)}</td>
-            <td>${badge}</td>
-            <td style="font-style: italic; color: #cbd5e1;">${escapeHtml(w.transcription || '-')}</td>
-            <td>${escapeHtml(w.meaning || '-')}</td>
-            <td>
-              <div style="display: flex; gap: 0.375rem;">
-                <button class="btn btn-secondary btn-sm" onclick="editWord('${w.id || w.word}')">Edit</button>
-                <button class="btn btn-danger btn-sm" onclick="deleteWord('${w.id || w.word}')">Delete</button>
-              </div>
-            </td>
-          </tr>
-        `;
-      }).join('');
-    }
-
-    function openAddWordModal() {
-      document.getElementById('wordForm').reset();
-      document.getElementById('editWordId').value = '';
-      document.getElementById('wordSessionSelect').value = currentSession;
-      document.getElementById('wordModalTitle').textContent = 'Add Kannada Word';
-      document.getElementById('wordModal').classList.add('active');
-    }
-
-    function closeWordModal() {
-      document.getElementById('wordModal').classList.remove('active');
-    }
-
-    async function handleWordSubmit(e) {
-      e.preventDefault();
-      const editId = document.getElementById('editWordId').value;
-      const session = document.getElementById('wordSessionSelect').value;
-      const type = document.getElementById('wordTypeSelect').value;
-      const word = document.getElementById('wordTextInput').value.trim();
-      const transcription = document.getElementById('wordTransInput').value.trim();
-      const meaning = document.getElementById('wordMeaningInput').value.trim();
-
-      try {
-        if (editId) {
-          await fetch('/api/words/update', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ session, wordId: editId, newWord: word, newMeaning: meaning, newTranscription: transcription })
-          });
-          showToast('Word updated successfully');
-        } else {
-          await fetch('/api/words/add', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ session, type, word, transcription, meaning })
-          });
-          showToast('Word added to Session ' + session);
-        }
-        closeWordModal();
-        await loadSessions();
-      } catch (err) {
-        alert('Failed to save word: ' + err.message);
-      }
-    }
-
-    function editWord(wordId) {
-      const sess = allSessionsData[currentSession];
-      if (!sess) return;
-      const allWords = [...(sess.demo||[]), ...(sess.real||[]), ...(sess.pseudo||[])];
-      const w = allWords.find(x => (x.id === wordId || x.word === wordId));
-      if (!w) return;
-
-      document.getElementById('wordModalTitle').textContent = 'Edit Kannada Word';
-      document.getElementById('editWordId').value = w.id || w.word;
-      document.getElementById('wordSessionSelect').value = currentSession;
-      document.getElementById('wordTypeSelect').value = (w.realpseudo === 'pseudo' || w.category === 'pseudo') ? 'pseudo' : 'real';
-      document.getElementById('wordTextInput').value = w.word;
-      document.getElementById('wordTransInput').value = w.transcription || '';
-      document.getElementById('wordMeaningInput').value = w.meaning || '';
-      document.getElementById('wordModal').classList.add('active');
-    }
-
-    async function deleteWord(wordId) {
-      if (!confirm(`Delete word from Session ${currentSession}?`)) return;
-      try {
-        await fetch('/api/words/delete', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ session: currentSession, wordId })
-        });
-        showToast('Word deleted');
-        await loadSessions();
-      } catch (e) {
-        alert('Delete failed');
-      }
-    }
-
-    // ==========================================
-    // EXCEL / CSV IMPORT
-    // ==========================================
-    function openExcelUploadModal() {
-      document.getElementById('excelTargetSession').value = currentSession;
-      document.getElementById('excelFileInput').value = '';
-      document.getElementById('excelPreviewSection').style.display = 'none';
-      document.getElementById('excelModal').classList.add('active');
-    }
-
-    function closeExcelModal() {
-      document.getElementById('excelModal').classList.remove('active');
-    }
-
-    function handleExcelFileSelected(e) {
-      const file = e.target.files[0];
-      if (!file) return;
-
-      const reader = new FileReader();
-      reader.onload = function(evt) {
-        try {
-          const data = new Uint8Array(evt.target.result);
-          const workbook = XLSX.read(data, { type: 'array' });
-          const firstSheetName = workbook.SheetNames[0];
-          const sheet = workbook.Sheets[firstSheetName];
-          const json = XLSX.utils.sheet_to_json(sheet);
-
-          if (!json || json.length === 0) {
-            alert('Spreadsheet is empty.');
-            return;
-          }
-
-          // Parse rows into standard format
-          pendingExcelWords = json.map(row => {
-            const word = row.word || row.Kannada || row.nonword || row.Word || Object.values(row)[0] || '';
-            const type = (row.realpseudo || row.type || row.Type || (row.nonword ? 'pseudo' : 'real')).toLowerCase();
-            const transcription = row.transcription || row.IPA || row.trans || '';
-            const meaning = row.meaning || row.Meaning || '';
-            return { word, type, transcription, meaning };
-          }).filter(x => x.word);
-
-          document.getElementById('excelPreviewTitle').textContent = `Parsed ${pendingExcelWords.length} words from ${file.name}:`;
-          document.getElementById('excelPreviewContent').innerHTML = pendingExcelWords.slice(0, 15).map(w => 
-            `<div style="margin-bottom: 0.25rem;">• <strong class="kannada-text">${escapeHtml(w.word)}</strong> [${escapeHtml(w.type)}] - ${escapeHtml(w.meaning || w.transcription)}</div>`
-          ).join('') + (pendingExcelWords.length > 15 ? `<div style="color: var(--accent); margin-top: 0.25rem;">+ ${pendingExcelWords.length - 15} more words...</div>` : '');
-
-          document.getElementById('excelPreviewSection').style.display = 'block';
-        } catch (err) {
-          alert('Error parsing Excel: ' + err.message);
-        }
-      };
-      reader.readAsArrayBuffer(file);
-    }
-
-    async function commitExcelImport() {
-      const session = document.getElementById('excelTargetSession').value;
-      if (!pendingExcelWords || pendingExcelWords.length === 0) return;
-
-      try {
-        const res = await fetch('/api/words/bulk', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ session, words: pendingExcelWords })
-        });
-        const data = await res.json();
-        if (data.success) {
-          showToast(`Imported ${data.addedReal} real and ${data.addedPseudo} pseudo words into Session ${session}`);
-          closeExcelModal();
-          selectSession(session);
-          await loadSessions();
-        }
-      } catch (err) {
-        alert('Import failed: ' + err.message);
-      }
-    }
-
-    // ==========================================
-    // MODULE 3: RESULTS & TELEMETRY
-    // ==========================================
-    async function loadResults() {
-      try {
-        const res = await fetch('/api/results');
-        const results = await res.json();
-
-        document.getElementById('metricTotalTrials').textContent = results.length;
-        if (results.length > 0) {
-          const correctCount = results.filter(r => r.correct).length;
-          const acc = Math.round((correctCount / results.length) * 100);
-          document.getElementById('metricAccuracy').textContent = `${acc}%`;
-
-          const validRts = results.filter(r => r.reaction_time || r.rt).map(r => r.reaction_time || r.rt);
-          if (validRts.length > 0) {
-            const avgRt = Math.round(validRts.reduce((a, b) => a + b, 0) / validRts.length);
-            document.getElementById('metricMeanRt').textContent = `${avgRt} ms`;
+        var data = new Uint8Array(e.target.result);
+        var wb   = XLSX.read(data, { type: 'array' });
+        var ws   = wb.Sheets[wb.SheetNames[0]];
+        var rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
+        var headerRow = 0;
+        for (var i = 0; i < Math.min(5, rows.length); i++) {
+          if (rows[i] && rows[i].some(function(c) { return typeof c === 'string' && c.toLowerCase().includes('word'); })) {
+            headerRow = i; break;
           }
         }
-
-        const tbody = document.getElementById('resultsTableBody');
-        if (results.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">No responses recorded yet. Responses will appear here in real time as children play.</td></tr>';
-          return;
+        var headers  = (rows[headerRow] || []).map(function(h) { return String(h||'').toLowerCase().trim(); });
+        var wordCol  = headers.findIndex(function(h) { return h.includes('word') || h.includes('stimulus') || h.includes('item'); });
+        var typeCol  = headers.findIndex(function(h) { return h.includes('type') || h.includes('category') || h.includes('class'); });
+        var meanCol  = headers.findIndex(function(h) { return h.includes('meaning') || h.includes('english'); });
+        for (var r = headerRow + 1; r < rows.length; r++) {
+          var row  = rows[r] || [];
+          var word2 = String(row[wordCol >= 0 ? wordCol : 0] || '').trim();
+          if (!word2) continue;
+          var type2 = normType(typeCol >= 0 ? String(row[typeCol] || 'real') : 'real');
+          var mean2 = meanCol >= 0 ? String(row[meanCol] || '') : '';
+          words.push({ word: word2, text: word2, type: type2, meaning: mean2 });
         }
-
-        // Show recent first
-        const recent = [...results].reverse().slice(0, 100);
-        tbody.innerHTML = recent.map(r => {
-          const outcome = r.correct ? '<span style="color: var(--success); font-weight: 600;">Correct</span>' : '<span style="color: var(--danger); font-weight: 600;">Incorrect</span>';
-          const time = r.recordedAt ? new Date(r.recordedAt).toLocaleTimeString() : '-';
-          return `
-            <tr>
-              <td style="color: var(--text-muted); font-size: 0.75rem;">${time}</td>
-              <td style="font-weight: 600;">${escapeHtml(r.participant || 'Anonymous')}</td>
-              <td>Session ${r.session || '1'}</td>
-              <td style="font-size: 0.75rem; color: var(--text-muted);">${escapeHtml(r.stage || r.assessment_stage || '-')}</td>
-              <td class="kannada-text" style="font-weight: 700; font-size: 1rem;">${escapeHtml(r.word || '-')}</td>
-              <td>${outcome}</td>
-              <td style="font-family: monospace;">${r.reaction_time || r.rt || '-'} ms</td>
-              <td><code>${escapeHtml(r.key_response || r.response || '-')}</code></td>
-            </tr>
-          `;
-        }).join('');
-      } catch (e) {
-        console.error(e);
       }
-    }
+      pendingImport = words;
+      renderExcelPreview(words);
+    } catch(err) { showToast('Error parsing file: ' + err.message, 'error'); }
+  };
+  if (file.name.endsWith('.csv')) reader.readAsText(file);
+  else reader.readAsArrayBuffer(file);
+}
 
-    async function clearResults() {
-      if (!confirm('Clear all telemetry records?')) return;
-      try {
-        await fetch('/api/results/clear', { method: 'POST' });
-        showToast('Results log cleared');
-        loadResults();
-      } catch (e) {
-        alert('Failed to clear');
-      }
-    }
+function normType(t) {
+  t = String(t).toLowerCase().trim();
+  if (['real','word','ನೈಜ'].indexOf(t) !== -1) return 'real';
+  if (['pseudo','nonword','non-word','nw'].indexOf(t) !== -1) return 'pseudo';
+  if (['demo','practice'].indexOf(t) !== -1) return 'demo';
+  return 'real';
+}
 
-    // ==========================================
-    // MODULE 4: SETTINGS
-    // ==========================================
-    async function loadSettings() {
-      try {
-        const res = await fetch('/api/settings');
-        const s = await res.json();
+function renderExcelPreview(words) {
+  var sec = document.getElementById('excelPreviewSection');
+  var body = document.getElementById('excelPreviewContent');
+  var title = document.getElementById('excelPreviewTitle');
+  if (!sec || !body) return;
+  if (title) title.textContent = words.length + ' words found — Preview (first 50):';
+  sec.style.display = 'block';
+  if (!words.length) { body.textContent = 'No words found in file.'; return; }
+  body.innerHTML = '<table style="width:100%;border-collapse:collapse"><thead><tr>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Word</th>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Type</th>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Meaning</th>' +
+    '</tr></thead><tbody>' +
+    words.slice(0, 50).map(function(w) {
+      return '<tr><td class="kannada-text" style="padding:0.3rem 0.5rem">' + esc(w.word) + '</td>' +
+        '<td style="padding:0.3rem 0.5rem"><span class="badge badge-' + (w.type==='real'?'blue':'yellow') + '">' + esc(w.type) + '</span></td>' +
+        '<td style="padding:0.3rem 0.5rem;color:var(--text-muted)">' + esc(w.meaning) + '</td></tr>';
+    }).join('') +
+    (words.length > 50 ? '<tr><td colspan="3" style="text-align:center;color:var(--text-muted);padding:0.5rem">… and ' + (words.length - 50) + ' more</td></tr>' : '') +
+    '</tbody></table>';
+}
 
-        if (s.stimulusDisplayMode === 'timed') {
-          document.getElementById('modeTimed').checked = true;
-          document.getElementById('dispTimingMode').textContent = `${(s.stimulusTimeMs/1000).toFixed(0)}s Timed`;
-        } else {
-          document.getElementById('modeInfinite').checked = true;
-          document.getElementById('dispTimingMode').textContent = 'Infinite (Demo)';
-        }
-        toggleTimingInputs();
+function commitExcelImport() {
+  if (!pendingImport.length) { showToast('No words to import.', 'warning'); return; }
+  var sesNum = document.getElementById('excelTargetSession').value;
+  var sesKey = 'session' + sesNum;
+  if (!allSessionsData[sesKey]) allSessionsData[sesKey] = [];
+  pendingImport.forEach(function(w) { allSessionsData[sesKey].push(w); });
+  closeExcelModal();
+  if (currentSession !== sesNum) { currentSession = sesNum; }
+  renderWordsTab();
+  showToast('Imported ' + pendingImport.length + ' words to Session ' + sesNum + '.');
+  pendingImport = [];
+}
 
-        document.getElementById('stimulusTimeSec').value = (s.stimulusTimeMs || 10000) / 1000;
-        document.getElementById('trialTimeoutSec').value = (s.trialTimeoutMs || 12000) / 1000;
-        document.getElementById('fixationTimeMs').value = s.fixationTimeMs || 1000;
-        document.getElementById('practiceCount').value = s.practiceCount || 5;
-        document.getElementById('wordsPerSession').value = s.wordsPerSession || 90;
-      } catch (e) {
-        console.error(e);
-      }
-    }
+// ================================================================
+//  TAB 3 — Results & Telemetry
+// ================================================================
+function initResultsTab() {
+  var results = getResults();
+  updateResultsMetrics(results);
+  renderResultsTable(results);
+}
 
-    async function saveSettings(e) {
-      e.preventDefault();
-      const mode = document.querySelector('input[name="stimulusDisplayMode"]:checked').value;
-      const stimSec = parseFloat(document.getElementById('stimulusTimeSec').value) || 10;
-      const timeoutSec = parseFloat(document.getElementById('trialTimeoutSec').value) || 12;
-      const fixationMs = parseInt(document.getElementById('fixationTimeMs').value, 10) || 1000;
-      const practiceCount = parseInt(document.getElementById('practiceCount').value, 10) || 5;
-      const wordsPerSession = parseInt(document.getElementById('wordsPerSession').value, 10) || 90;
+function updateResultsMetrics(results) {
+  var total   = results.length;
+  var correct = results.filter(function(r) { return r.correct; }).length;
+  var acc     = total ? Math.round(correct / total * 100) : 0;
+  var rts     = results.filter(function(r) { return r.rt > 0; }).map(function(r) { return r.rt; });
+  var meanRt  = rts.length ? Math.round(rts.reduce(function(a,b) { return a+b; }, 0) / rts.length) : 0;
 
-      const payload = {
-        stimulusDisplayMode: mode,
-        stimulusTimeMs: Math.round(stimSec * 1000),
-        trialTimeoutMs: Math.round(timeoutSec * 1000),
-        fixationTimeMs: fixationMs,
-        practiceCount: practiceCount,
-        wordsPerSession: wordsPerSession
-      };
+  var el1 = document.getElementById('metricTotalTrials');
+  var el2 = document.getElementById('metricAccuracy');
+  var el3 = document.getElementById('metricMeanRt');
+  if (el1) el1.textContent = total;
+  if (el2) el2.textContent = acc + '%';
+  if (el3) el3.textContent = meanRt + ' ms';
+}
 
-      try {
-        const res = await fetch('/api/settings', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-        const data = await res.json();
-        if (data.success) {
-          showToast('Engine Settings Saved Successfully');
-          document.getElementById('dispTimingMode').textContent = mode === 'timed' ? `${stimSec}s Timed` : 'Infinite (Demo)';
-        }
-      } catch (err) {
-        alert('Failed to save settings: ' + err.message);
-      }
-    }
+function renderResultsTable(results) {
+  var tbody = document.getElementById('resultsTableBody');
+  if (!tbody) return;
+  if (!results.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:2rem;">No trial responses recorded yet. Responses will appear here as children play.</td></tr>';
+    return;
+  }
+  var rows = results.slice(-200).reverse();
+  tbody.innerHTML = rows.map(function(r) {
+    var ts  = r.ts ? new Date(r.ts).toLocaleString() : '—';
+    var okClass = r.correct ? 'badge-green' : 'badge-danger';
+    return '<tr>' +
+      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(ts) + '</td>' +
+      '<td><code style="font-size:0.8rem">' + esc(r.participant||'—') + '</code></td>' +
+      '<td>' + esc(String(r.session||'—')) + '</td>' +
+      '<td style="font-size:0.75rem">' + esc(r.stage||'—') + '</td>' +
+      '<td class="kannada-text" style="font-size:1.1rem">' + esc(r.word||'—') + '</td>' +
+      '<td><span class="badge ' + okClass + '">' + (r.correct ? 'Correct' : 'Incorrect') + '</span></td>' +
+      '<td>' + (r.rt ? r.rt + ' ms' : '—') + '</td>' +
+      '<td style="font-size:0.75rem">' + esc(r.response||'—') + '</td>' +
+      '</tr>';
+  }).join('');
+}
 
-    // Helper: Escape HTML
-    function escapeHtml(str) {
-      if (!str) return '';
-      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-    }
+function exportCSV() {
+  var results = getResults();
+  if (!results.length) { showToast('No results to export.', 'warning'); return; }
+  var cols = ['ts','participant','session','stage','word','correct','rt','response','trial_index'];
+  var lines = [cols.join(',')].concat(results.map(function(r) {
+    return cols.map(function(c) {
+      var v = r[c];
+      if (v === undefined || v === null) return '';
+      var s = String(v);
+      return s.includes(',') ? '"' + s.replace(/"/g,'""') + '"' : s;
+    }).join(',');
+  }));
+  var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  a.href = url;
+  a.download = 'roar_results_' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('CSV exported (' + results.length + ' rows).');
+}
 
-    // Startup
-    window.addEventListener('DOMContentLoaded', () => {
-      loadStudents();
-      loadSettings();
-    });
-  </script>
+function clearResults() {
+  if (!confirm('Clear ALL trial results? This cannot be undone.')) return;
+  LS.del('roarTrialResults');
+  LS.del('roarSessionComplete');
+  initResultsTab();
+  showToast('Results cleared.', 'warning');
+}
+
+// ================================================================
+//  TAB 4 — Engine Settings
+// ================================================================
+function initSettingsTab() {
+  var s = getSettings();
+  var isInfinite = s.stimulusDisplayMode !== 'timed';
+  var inf = document.getElementById('modeInfinite');
+  var tim = document.getElementById('modeTimed');
+  if (inf) inf.checked = isInfinite;
+  if (tim) tim.checked = !isInfinite;
+
+  var stEl = document.getElementById('stimulusTimeSec');
+  var ttEl = document.getElementById('trialTimeoutSec');
+  var ftEl = document.getElementById('fixationTimeMs');
+  var pcEl = document.getElementById('practiceCount');
+  var wpEl = document.getElementById('wordsPerSession');
+
+  if (stEl) stEl.value = ((s.stimulusTimeMs  || 10000) / 1000).toFixed(1);
+  if (ttEl) ttEl.value = ((s.trialTimeoutMs  || 12000) / 1000).toFixed(1);
+  if (ftEl) ftEl.value = s.fixationTimeMs  || 1000;
+  if (pcEl) pcEl.value = s.practiceCount   || 5;
+  if (wpEl) wpEl.value = s.wordsPerSession || 90;
+
+  toggleTimingInputs();
+}
+
+function toggleTimingInputs() {
+  var tim = document.getElementById('modeTimed');
+  var row = document.getElementById('timedSettingsRow');
+  if (!row) return;
+  row.style.display = (tim && tim.checked) ? 'grid' : 'none';
+}
+
+function saveSettings(event) {
+  if (event) event.preventDefault();
+  var inf = document.getElementById('modeInfinite');
+  var mode = (inf && inf.checked) ? 'infinite' : 'timed';
+
+  var stSec = parseFloat(document.getElementById('stimulusTimeSec')?.value || 10);
+  var ttSec = parseFloat(document.getElementById('trialTimeoutSec')?.value || 12);
+  var ft    = parseInt(document.getElementById('fixationTimeMs')?.value || 1000);
+  var pc    = parseInt(document.getElementById('practiceCount')?.value || 5);
+  var wp    = parseInt(document.getElementById('wordsPerSession')?.value || 90);
+
+  var s = {
+    stimulusDisplayMode: mode,
+    stimulusTimeMs:  Math.round(stSec * 1000),
+    trialTimeoutMs:  Math.round(ttSec * 1000),
+    fixationTimeMs:  ft,
+    practiceCount:   pc,
+    wordsPerSession: wp
+  };
+  setSettings(s);
+  updateRosterMetrics();
+  showToast('Settings saved. Next game launch will use these values.');
+}
+
+function resetSettings() {
+  if (!confirm('Reset settings to defaults?')) return;
+  LS.del('roarSettings');
+  initSettingsTab();
+  showToast('Settings reset to defaults.', 'warning');
+}
+
+// ================================================================
+//  UTILITIES
+// ================================================================
+function esc(s) {
+  if (s === undefined || s === null) return '';
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function copyLink(type) {
+  var base = window.location.origin;
+  var url  = type === 'game'
+    ? base + '/?consent=false&storyoption=false'
+    : base + '/dashboard.html';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(function() { showToast('Link copied: ' + url); });
+  } else {
+    prompt('Copy this URL:', url);
+  }
+}
+
+// ── Init ─────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  // Load initial tab
+  initRosterTab();
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,4820 @@
+{
+  "1": {
+    "real": [
+      {
+        "id": "R001",
+        "word": "ಹೂ",
+        "meaning": "flower",
+        "transcription": "huu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.12,
+        "syllables": 1,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R007",
+        "word": "ಊದು",
+        "meaning": "blow",
+        "transcription": "uudu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.65,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R013",
+        "word": "ಚೂರು",
+        "meaning": "piece, little",
+        "transcription": "cuuru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.86,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R019",
+        "word": "ಮೂರು",
+        "meaning": "three",
+        "transcription": "muuru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.35,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R025",
+        "word": "ಗಾಜು",
+        "meaning": "glass",
+        "transcription": "gaaju",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.28,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R031",
+        "word": "ಬೀಸು",
+        "meaning": "flutter",
+        "transcription": "biisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.84,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R037",
+        "word": "ಸುರಿ",
+        "meaning": "pour",
+        "transcription": "suri",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.28,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R043",
+        "word": "ಕೊರೆ",
+        "meaning": "to pierce",
+        "transcription": "kore",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.64,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R049",
+        "word": "ಎಲ್ಲಿ",
+        "meaning": "where",
+        "transcription": "elli",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.65,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R055",
+        "word": "ಆಟವು",
+        "meaning": "game",
+        "transcription": "aaTavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.45,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R061",
+        "word": "ಈಗಲೂ",
+        "meaning": "still",
+        "transcription": "iigaluu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.84,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R067",
+        "word": "ಆಲವು",
+        "meaning": "banyan tree",
+        "transcription": "aalavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.18,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R073",
+        "word": "ಅರಿವು",
+        "meaning": "aware",
+        "transcription": "arivu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.8,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R079",
+        "word": "ಬಗ್ಗು",
+        "meaning": "bend",
+        "transcription": "baggu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.73,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R085",
+        "word": "ಸುಳ್ಳು",
+        "meaning": "lie",
+        "transcription": "suLLu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.3,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R091",
+        "word": "ಸಿಹಿಯು",
+        "meaning": "sweet",
+        "transcription": "sihiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.77,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R097",
+        "word": "ಹೆಸರು",
+        "meaning": "name",
+        "transcription": "hesaru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.04,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R103",
+        "word": "ಮಲಗು",
+        "meaning": "sleep",
+        "transcription": "malagu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.05,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R109",
+        "word": "ಹೇಗಿವೆ",
+        "meaning": "how are they",
+        "transcription": "heegive",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.88,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R115",
+        "word": "ರಾಣಿಯು",
+        "meaning": "the queen",
+        "transcription": "raaNiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.41,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R121",
+        "word": "ಹಿತವು",
+        "meaning": "good",
+        "transcription": "hitavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.69,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R127",
+        "word": "ಬೋಳಾಗಿ",
+        "meaning": "became bald",
+        "transcription": "booLaagi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.59,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R133",
+        "word": "ಬಯಸು",
+        "meaning": "wish",
+        "transcription": "bayasu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.7,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R139",
+        "word": "ಸವಾರಿ",
+        "meaning": "ride",
+        "transcription": "savaari",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.01,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R145",
+        "word": "ಅಜ್ಜಿಯು",
+        "meaning": "grandmother",
+        "transcription": "ajjiyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.32,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R151",
+        "word": "ಅತ್ತೆಯು",
+        "meaning": "mother in law",
+        "transcription": "atteyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.12,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R157",
+        "word": "ಉಣ್ಣೆಯು",
+        "meaning": "wool",
+        "transcription": "uNNeyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.92,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R163",
+        "word": "ಅಲುಗಿಸು",
+        "meaning": "shake",
+        "transcription": "alugisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.2,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R169",
+        "word": "ಹಾಗೆಲ್ಲಾ",
+        "meaning": "like all that",
+        "transcription": "haagellaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.07,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R175",
+        "word": "ಒಪ್ಪುತ್ತಾ",
+        "meaning": "by agreeing",
+        "transcription": "opputtaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.07,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R181",
+        "word": "ತಂಪಾಗಿ",
+        "meaning": "being cool",
+        "transcription": "tampaagi",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 3.91,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R187",
+        "word": "ನೆರೆಯದು",
+        "meaning": "neighbouring one",
+        "transcription": "nereyadu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.07,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R193",
+        "word": "ಒಳ್ಳೆಯದು",
+        "meaning": "good thing",
+        "transcription": "oLLeyadu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.54,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R199",
+        "word": "ಆಹ್ವಾನವು",
+        "meaning": "invitation",
+        "transcription": "aahvaanavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.09,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R205",
+        "word": "ಅಂಗಳವು",
+        "meaning": "frontyard",
+        "transcription": "angaLavu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 3.54,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R211",
+        "word": "ಶಿಕ್ಷಕಿಯು",
+        "meaning": "teacher (female)",
+        "transcription": "shikShakiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.59,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R217",
+        "word": "ಪರೀಕ್ಷಿಸು",
+        "meaning": "examine",
+        "transcription": "pariikShisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.55,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R223",
+        "word": "ದೊಡ್ಡದಾಗಿ",
+        "meaning": "being big",
+        "transcription": "doDDadaagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.39,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R229",
+        "word": "ದೇಶಕ್ಕಾಗಿ",
+        "meaning": "for the nation",
+        "transcription": "deeshakkaagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.57,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R235",
+        "word": "ಮಸೆಯುತ್ತಾ",
+        "meaning": "sharpening",
+        "transcription": "maseyuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.09,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R241",
+        "word": "ಗಾಳಿಪಟವು",
+        "meaning": "kite",
+        "transcription": "gaaLipaTavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.96,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R247",
+        "word": "ನೆನಪಿಸುತ್ತಾ",
+        "meaning": "recalling",
+        "transcription": "nenapisuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.96,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R253",
+        "word": "ಕಟ್ಟುನಿಟ್ಟಾಗಿ",
+        "meaning": "strictly",
+        "transcription": "kaTTuniTTaagi",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R259",
+        "word": "ಮುಜುಗರದಿಂದ",
+        "meaning": "with hesitation",
+        "transcription": "mujugaradinda",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 5.05,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R265",
+        "word": "ನರ್ತನವಾಡುತ್ತಾ",
+        "meaning": "performing dance",
+        "transcription": "nartanavaaDuttaa",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.39,
+        "syllables": 6,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N001",
+        "word": "ಹೀ",
+        "method": "A_vowel",
+        "source_word": "ಹೂ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N007",
+        "word": "ಗೋಜು",
+        "method": "A_vowel",
+        "source_word": "ಗಾಜು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N013",
+        "word": "ಒಲ್ಲಿ",
+        "method": "A_vowel",
+        "source_word": "ಎಲ್ಲಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N019",
+        "word": "ಅರಿವೊ",
+        "method": "A_vowel",
+        "source_word": "ಅರಿವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N025",
+        "word": "ಹೆಸರೀ",
+        "method": "A_vowel",
+        "source_word": "ಹೆಸರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N031",
+        "word": "ಹಿತಾವು",
+        "method": "A_vowel",
+        "source_word": "ಹಿತವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N037",
+        "word": "ಅಕ್ಕನೆ",
+        "method": "A_vowel",
+        "source_word": "ಅಕ್ಕನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N043",
+        "word": "ಪೃಚ್ಚಾಗಿ",
+        "method": "A_vowel",
+        "source_word": "ಪೆಚ್ಚಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N049",
+        "word": "ಈಜೊಡುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಈಜಾಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N055",
+        "word": "ಪುಸ್ತುಕವು",
+        "method": "A_vowel",
+        "source_word": "ಪುಸ್ತಕವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N061",
+        "word": "ಅಕೇಸ್ಮಾತಾಗಿ",
+        "method": "A_vowel",
+        "source_word": "ಅಕಸ್ಮಾತಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N067",
+        "word": "ಕವೃಡೆಬಳಸುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಕವಡೆಬಳಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N073",
+        "word": "ದೀನು",
+        "method": "B_consonant",
+        "source_word": "ಮೀನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N079",
+        "word": "ಟುಡಿ",
+        "method": "B_consonant",
+        "source_word": "ಮುಡಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N085",
+        "word": "ಉಯಿದು",
+        "method": "B_consonant",
+        "source_word": "ಉಳಿದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N091",
+        "word": "ನಿಸಿಯು",
+        "method": "B_consonant",
+        "source_word": "ಬಿಸಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N097",
+        "word": "ಪಾಯಿಯು",
+        "method": "B_consonant",
+        "source_word": "ಕಾಯಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N103",
+        "word": "ಶೊರಕು",
+        "method": "B_consonant",
+        "source_word": "ದೊರಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N109",
+        "word": "ಉತುಳಾಡು",
+        "method": "B_consonant",
+        "source_word": "ಉರುಳಾಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N115",
+        "word": "ಹಿಪಿಮೆಯು",
+        "method": "B_consonant",
+        "source_word": "ಹಿರಿಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N121",
+        "word": "ಇರುರೆಗಳು",
+        "method": "B_consonant",
+        "source_word": "ಇರುವೆಗಳು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N127",
+        "word": "ಜಲ್ಮಶವು",
+        "method": "B_consonant",
+        "source_word": "ಕಲ್ಮಶವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N133",
+        "word": "ಅರಟಿಕೊಳ್ಳುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಅರಚಿಕೊಳ್ಳುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N139",
+        "word": "ಮೆಯುಎದೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಆಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N145",
+        "word": "ಗಿಲುಅಜ್ಜಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಬಾಗಿಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N151",
+        "word": "ತ್ತೆಯುಖುಷಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅತ್ತೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N157",
+        "word": "ರುತ್ತಾಬೇಳೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಇರುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N163",
+        "word": "ಡಿಯುಹಿತ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಚಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N169",
+        "word": "ಪಾಗಿಹಾಗೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ತಂಪಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N175",
+        "word": "ಷ್ಠವುಆಕಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಶ್ರೇಷ್ಠವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N181",
+        "word": "ಮೆಯುಆಹ್ವಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಹಿರಿಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N187",
+        "word": "ಕಿಯುದಯ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಶಿಕ್ಷಕಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N193",
+        "word": "ಸುತ್ತಾಎಡಗ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N199",
+        "word": "ಕರವುಭರವ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಆರೋಗ್ಯಕರವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N205",
+        "word": "ಇಲಿಮೇಲೆ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಇಲಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N211",
+        "word": "ಅಪ್ಪಲಗು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಪ್ಪನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N217",
+        "word": "ಬಿಳಿರುಚು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಬಿಳಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N223",
+        "word": "ಹೊಸರಿಸು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಹೊಸತು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N229",
+        "word": "ಸಮಳಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸಮನೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N235",
+        "word": "ಉಜ್ಜುಟನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉಜ್ಜುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N241",
+        "word": "ಸ್ವಲ್ಪದ್ದುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸ್ವಲ್ಪವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N247",
+        "word": "ಕಣನೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಕಣಜವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N253",
+        "word": "ದೊಡ್ಡಕನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ದೊಡ್ಡದಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N259",
+        "word": "ಕಲ್ಮಬ್ಬಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಕಲ್ಮಶವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N265",
+        "word": "ನಿಯಂತ್ರಿರದಿಂದ",
+        "method": "D_prefix_suffix",
+        "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  },
+  "2": {
+    "real": [
+      {
+        "id": "R002",
+        "word": "ಊರು",
+        "meaning": "town",
+        "transcription": "uuru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.97,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R008",
+        "word": "ಏರು",
+        "meaning": "climb",
+        "transcription": "eeru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.3,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R014",
+        "word": "ಹಾಡು",
+        "meaning": "song",
+        "transcription": "haaDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.31,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R020",
+        "word": "ಸಾರು",
+        "meaning": "rasam",
+        "transcription": "saaru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.54,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R026",
+        "word": "ಗೂಡು",
+        "meaning": "nest",
+        "transcription": "guuDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.04,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R032",
+        "word": "ಚಾಚು",
+        "meaning": "extend",
+        "transcription": "caacu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.69,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R038",
+        "word": "ಮೆದು",
+        "meaning": "soft",
+        "transcription": "medu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.62,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R044",
+        "word": "ಭೇಟಿ",
+        "meaning": "visit",
+        "transcription": "bheeTi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.27,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R050",
+        "word": "ಉಪ್ಪು",
+        "meaning": "salt",
+        "transcription": "uppu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.5,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R056",
+        "word": "ಊಟವು",
+        "meaning": "meal",
+        "transcription": "uuTavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.46,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R062",
+        "word": "ಆಮೆಯು",
+        "meaning": "tortoise",
+        "transcription": "aameyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.04,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R068",
+        "word": "ಅಡಿಯು",
+        "meaning": "foot",
+        "transcription": "aDiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.39,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R074",
+        "word": "ಬೆಕ್ಕು",
+        "meaning": "cat",
+        "transcription": "bekku",
+        "akshara_type": "Otthakshara",
+        "aoa": 1.85,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R080",
+        "word": "ಬನ್ನಿ",
+        "meaning": "(please) come",
+        "transcription": "banni",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.61,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R086",
+        "word": "ಹುಚ್ಚು",
+        "meaning": "madness",
+        "transcription": "huccu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.04,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R092",
+        "word": "ಹಸಿರು",
+        "meaning": "green",
+        "transcription": "hasiru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.51,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R098",
+        "word": "ಜಾಮೂನು",
+        "meaning": "a sweet dish",
+        "transcription": "jaamuunu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.77,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R104",
+        "word": "ಭಾರವು",
+        "meaning": "weight",
+        "transcription": "bhaaravu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.36,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R110",
+        "word": "ಜೋರಾಗಿ",
+        "meaning": "forcefully",
+        "transcription": "jooraagi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.2,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R116",
+        "word": "ಬೆರೆಸು",
+        "meaning": "blend",
+        "transcription": "beresu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.97,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R122",
+        "word": "ಲೋಹವು",
+        "meaning": "metal",
+        "transcription": "loohavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.86,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R128",
+        "word": "ಹೀಗಾಗಿ",
+        "meaning": "so",
+        "transcription": "hiigaagi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.36,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R134",
+        "word": "ಭಾವಿಸು",
+        "meaning": "think",
+        "transcription": "bhaavisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.88,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R140",
+        "word": "ದೋಷವು",
+        "meaning": "flaw",
+        "transcription": "dooShavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.15,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R146",
+        "word": "ಅಕ್ಕನು",
+        "meaning": "elder sister",
+        "transcription": "akkanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.39,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R152",
+        "word": "ಆಡುತ್ತಾ",
+        "meaning": "playing",
+        "transcription": "aaDuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.12,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R158",
+        "word": "ಅಟ್ಟಿಸು",
+        "meaning": "chase",
+        "transcription": "aTTisu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.41,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R164",
+        "word": "ಸುಮ್ಮನೆ",
+        "meaning": "causelessly",
+        "transcription": "summane",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.97,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R170",
+        "word": "ಪೆಚ್ಚಾಗಿ",
+        "meaning": "become dull",
+        "transcription": "peccaagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.95,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R176",
+        "word": "ಗಂಟಲು",
+        "meaning": "throat",
+        "transcription": "gantalu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 2.92,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R182",
+        "word": "ಮೂರ್ಖನು",
+        "meaning": "idiot",
+        "transcription": "muurKhanu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.59,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R188",
+        "word": "ಸಮಿತಿಯು",
+        "meaning": "association",
+        "transcription": "samitiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.3,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R194",
+        "word": "ಈಜಾಡುತ್ತಾ",
+        "meaning": "swimming",
+        "transcription": "iijaaDuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.62,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R200",
+        "word": "ಉದ್ಗರಿಸು",
+        "meaning": "say",
+        "transcription": "udgarisu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.11,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R206",
+        "word": "ಆನಂದಿಸು",
+        "meaning": "enjoy",
+        "transcription": "aanandisu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.3,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R212",
+        "word": "ಎಡಗಡೆಯು",
+        "meaning": "left side",
+        "transcription": "eDagaDeyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.04,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R218",
+        "word": "ಪುಸ್ತಕವು",
+        "meaning": "book",
+        "transcription": "pustakavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.93,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R224",
+        "word": "ಗಟ್ಟಿಯಾಗಿ",
+        "meaning": "hardly",
+        "transcription": "gaTTiyaagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.35,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R230",
+        "word": "ವಿಸ್ಮಯವು",
+        "meaning": "wonder",
+        "transcription": "vismayavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.15,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R236",
+        "word": "ನಶಿಸುತ್ತಾ",
+        "meaning": "by destroying",
+        "transcription": "nashisuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.08,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R242",
+        "word": "ಅಕಸ್ಮಾತಾಗಿ",
+        "meaning": "unexpectedly",
+        "transcription": "akasmaataagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.76,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R248",
+        "word": "ಪ್ರಾಥಮಿಕವು",
+        "meaning": "primary",
+        "transcription": "praathamikavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.77,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R254",
+        "word": "ಪ್ರತಿಧ್ವನಿಯು",
+        "meaning": "echo",
+        "transcription": "pratidhvaniyu",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.07,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R260",
+        "word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
+        "meaning": "regulating",
+        "transcription": "niyantrisuttaa",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 5.04,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R266",
+        "word": "ಕವಡೆಬಳಸುತ್ತಾ",
+        "meaning": "using cowry",
+        "transcription": "kavaDebaLasuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.01,
+        "syllables": 7,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N002",
+        "word": "ಊಡು",
+        "method": "A_vowel",
+        "source_word": "ಇಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N008",
+        "word": "ಮೈಜು",
+        "method": "A_vowel",
+        "source_word": "ಮೇಜು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N014",
+        "word": "ಅತ್ತೇ",
+        "method": "A_vowel",
+        "source_word": "ಅತ್ತು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N020",
+        "word": "ಮೂದ್ದು",
+        "method": "A_vowel",
+        "source_word": "ಮುದ್ದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N026",
+        "word": "ತೋರೋಸು",
+        "method": "A_vowel",
+        "source_word": "ತೋರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N032",
+        "word": "ನಾಣುಪು",
+        "method": "A_vowel",
+        "source_word": "ನುಣುಪು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N038",
+        "word": "ಊದ್ದವು",
+        "method": "A_vowel",
+        "source_word": "ಉದ್ದವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N044",
+        "word": "ಒಜ್ಜುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಉಜ್ಜುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N050",
+        "word": "ಎದುರುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಉದುರುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N056",
+        "word": "ಚಿಕ್ಕದೈಗಿ",
+        "method": "A_vowel",
+        "source_word": "ಚಿಕ್ಕದಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N062",
+        "word": "ಕೆಳುಹಿಸುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಕಳುಹಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N068",
+        "word": "ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N074",
+        "word": "ಕೂದು",
+        "method": "B_consonant",
+        "source_word": "ಬೂದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N080",
+        "word": "ಹಿಮ",
+        "method": "B_consonant",
+        "source_word": "ಹಿತ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N086",
+        "word": "ಊಹಿಶು",
+        "method": "B_consonant",
+        "source_word": "ಊಹಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N092",
+        "word": "ಜಾಯಿಯು",
+        "method": "B_consonant",
+        "source_word": "ತಾಯಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N098",
+        "word": "ಮೊರಟು",
+        "method": "B_consonant",
+        "source_word": "ಹೊರಟು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N104",
+        "word": "ಬಿಳಿಜು",
+        "method": "B_consonant",
+        "source_word": "ಬಿಳಿಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N110",
+        "word": "ಳುಷ್ಟನು",
+        "method": "B_consonant",
+        "source_word": "ದುಷ್ಟನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N116",
+        "word": "ಯೋಜನೆಮು",
+        "method": "B_consonant",
+        "source_word": "ಯೋಜನೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N122",
+        "word": "ಪಕ್ಷಣವು",
+        "method": "B_consonant",
+        "source_word": "ಲಕ್ಷಣವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N128",
+        "word": "ಸತ್ಕತಿಸು",
+        "method": "B_consonant",
+        "source_word": "ಸತ್ಕರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N134",
+        "word": "ಜ್ಞಾನಿಗಶೆಲ್ಲರು",
+        "method": "B_consonant",
+        "source_word": "ಜ್ಞಾನಿಗಳೆಲ್ಲರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N140",
+        "word": "ಣಗುಈಗ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಒಣಗು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N146",
+        "word": "ಜ್ಜನುಅಣ್ಣ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಜ್ಜನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N152",
+        "word": "ಳಕುಜೋರಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಕೊಳಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N158",
+        "word": "ರೆಸುಹಳ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಬೆರೆಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N164",
+        "word": "ವಿಸುಆಪ್ತ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಧಾವಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N170",
+        "word": "ರ್ಜನೆಥಟ್ಟ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಘರ್ಜನೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N176",
+        "word": "ಳಾಡುಅಲು",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉರುಳಾಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N182",
+        "word": "ರಿಸುನಮೂ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉದ್ಗರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N188",
+        "word": "ಮೆಚ್ಚುದೇಶ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಚ್ಚುಮೆಚ್ಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N194",
+        "word": "ರಾಟವುಗಾಳಿಪ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉಸಿರಾಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N200",
+        "word": "ರದಿಂದಕುಳಿತು",
+        "method": "C_suffix_prefix",
+        "source_word": "ಮುಜುಗರದಿಂದ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N206",
+        "word": "ಆಮೆದೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಆಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N212",
+        "word": "ಬಾಗಿಜ್ಜಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಬಾಗಿಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N218",
+        "word": "ಅತ್ತೆಷಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅತ್ತೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N224",
+        "word": "ಇರುಳೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಇರುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N230",
+        "word": "ಚಡಿತವು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಚಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N236",
+        "word": "ತಂಪಾಗೆಲ್ಲಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ತಂಪಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N242",
+        "word": "ಶ್ರೇಷ್ಠಶವು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಶ್ರೇಷ್ಠವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N248",
+        "word": "ಹಿರಿನವು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಹಿರಿಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N254",
+        "word": "ಶಿಕ್ಷವಿಟ್ಟು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಶಿಕ್ಷಕಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N260",
+        "word": "ಸ್ಥಾಪಿಗಡೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N266",
+        "word": "ಆರೋಗ್ಯಸೆಯಿಂದ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಆರೋಗ್ಯಕರವು",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  },
+  "3": {
+    "real": [
+      {
+        "id": "R003",
+        "word": "ಅಳು",
+        "meaning": "cry",
+        "transcription": "aLu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.07,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R009",
+        "word": "ಹಾಲು",
+        "meaning": "milk",
+        "transcription": "haalu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 1.69,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R015",
+        "word": "ಹುಳು",
+        "meaning": "insect",
+        "transcription": "huLu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.72,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R021",
+        "word": "ನಡೆ",
+        "meaning": "move",
+        "transcription": "naDe",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.72,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R027",
+        "word": "ಜೇನು",
+        "meaning": "honey",
+        "transcription": "jeenu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.2,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R033",
+        "word": "ಕಡಿ",
+        "meaning": "bite, cut",
+        "transcription": "kaDi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.35,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R039",
+        "word": "ಮೋಜು",
+        "meaning": "fun",
+        "transcription": "mooju",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.64,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R045",
+        "word": "ಹೆಣೆ",
+        "meaning": "weave",
+        "transcription": "heNe",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.35,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R051",
+        "word": "ಒಮ್ಮೆ",
+        "meaning": "once",
+        "transcription": "omme",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.55,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R057",
+        "word": "ಎಲೆಯು",
+        "meaning": "leaf",
+        "transcription": "eleyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.86,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R063",
+        "word": "ಎದೆಯು",
+        "meaning": "chest",
+        "transcription": "edeyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.35,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R069",
+        "word": "ಒದಗು",
+        "meaning": "become available",
+        "transcription": "odagu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.89,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R075",
+        "word": "ಕಣ್ಣು",
+        "meaning": "eye",
+        "transcription": "kaNNu",
+        "akshara_type": "Otthakshara",
+        "aoa": 1.77,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R081",
+        "word": "ಕಚ್ಚು",
+        "meaning": "bite",
+        "transcription": "kaccu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.32,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R087",
+        "word": "ಕೊಬ್ಬು",
+        "meaning": "fat",
+        "transcription": "kobbu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.38,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R093",
+        "word": "ಕೋತಿಯು",
+        "meaning": "monkey",
+        "transcription": "kootiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.72,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R099",
+        "word": "ಕೂದಲು",
+        "meaning": "hair",
+        "transcription": "kuudalu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.2,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R105",
+        "word": "ಹೊಸತು",
+        "meaning": "new",
+        "transcription": "hosatu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.57,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R111",
+        "word": "ಸಾಲಾಗಿ",
+        "meaning": "in a line",
+        "transcription": "saalaagi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.53,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R117",
+        "word": "ಧರಿಸು",
+        "meaning": "wear",
+        "transcription": "dharisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.62,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R123",
+        "word": "ಮಜವು",
+        "meaning": "fun",
+        "transcription": "majavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.18,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R129",
+        "word": "ಚಡಿಯು",
+        "meaning": "stick",
+        "transcription": "caDiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.65,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R135",
+        "word": "ಧಾವಿಸು",
+        "meaning": "rush",
+        "transcription": "dhaavisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.76,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R141",
+        "word": "ಬಿಳಿಚು",
+        "meaning": "become pale",
+        "transcription": "biLicu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.19,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R147",
+        "word": "ಅಣ್ಣನು",
+        "meaning": "elder brother",
+        "transcription": "aNNanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.43,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R153",
+        "word": "ಏಳುತ್ತಾ",
+        "meaning": "getting up",
+        "transcription": "eeLuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.19,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R159",
+        "word": "ಆಕಾಶವು",
+        "meaning": "sky",
+        "transcription": "aakaashavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.77,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R165",
+        "word": "ದುಷ್ಟನು",
+        "meaning": "wicked",
+        "transcription": "duShTanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.58,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R171",
+        "word": "ಥಟ್ಟನೆ",
+        "meaning": "immediately",
+        "transcription": "thaTTane",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.14,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R177",
+        "word": "ಗೊಂಬೆಯು",
+        "meaning": "doll",
+        "transcription": "gombeyu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 2.45,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R183",
+        "word": "ಘರ್ಜನೆ",
+        "meaning": "roar",
+        "transcription": "gharjane",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.08,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R189",
+        "word": "ಯೋಜನೆಯು",
+        "meaning": "plan",
+        "transcription": "yoojaneyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R195",
+        "word": "ಉತ್ತಮವು",
+        "meaning": "good",
+        "transcription": "uttamavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.38,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R201",
+        "word": "ಸ್ವಲ್ಪವು",
+        "meaning": "a little",
+        "transcription": "swalpavu",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.2,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R207",
+        "word": "ಸ್ಪರ್ಶಿಸು",
+        "meaning": "touch",
+        "transcription": "sparshisu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.65,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R213",
+        "word": "ಲಕ್ಷಣವು",
+        "meaning": "characteristic",
+        "transcription": "lakShaNavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.81,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R219",
+        "word": "ಸಕ್ಕರೆಯು",
+        "meaning": "sugar",
+        "transcription": "sakkareyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.81,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R225",
+        "word": "ಜಿಗಿಯುತ್ತಾ",
+        "meaning": "jumping",
+        "transcription": "jigiyuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.61,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R231",
+        "word": "ದಾಟಿಯಲ್ಲೂ",
+        "meaning": "in that manner also",
+        "transcription": "daaTiyalluu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.01,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R237",
+        "word": "ಸತ್ಕರಿಸು",
+        "meaning": "treat",
+        "transcription": "satkarisu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.12,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R243",
+        "word": "ತಬ್ಬಿಬ್ಬಾಗಿ",
+        "meaning": "confused",
+        "transcription": "tabbibbaagi",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.12,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R249",
+        "word": "ಅಪ್ಪಳಿಸುತ್ತಾ",
+        "meaning": "banging",
+        "transcription": "appaLisuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.89,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R255",
+        "word": "ಅವಸರದಿಂದ",
+        "meaning": "hurriedly",
+        "transcription": "avasaradinda",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.23,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R261",
+        "word": "ಜ್ಞಾನಿಗಳೆಲ್ಲರು",
+        "meaning": "all the scholars",
+        "transcription": "jnaanigaLellaru",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.2,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R267",
+        "word": "ತೆಂಗಿನಕಾಯಿಗಳು",
+        "meaning": "coconuts",
+        "transcription": "tenginakaayigaLu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 3.47,
+        "syllables": 7,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N003",
+        "word": "ಹಾಲೊ",
+        "method": "A_vowel",
+        "source_word": "ಹಾಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N009",
+        "word": "ಕೌಡಿ",
+        "method": "A_vowel",
+        "source_word": "ಕಡಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N015",
+        "word": "ಎಲೆಯೃ",
+        "method": "A_vowel",
+        "source_word": "ಎಲೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N021",
+        "word": "ಕೃಚ್ಚು",
+        "method": "A_vowel",
+        "source_word": "ಕಚ್ಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N027",
+        "word": "ಹೊಸೇತು",
+        "method": "A_vowel",
+        "source_word": "ಹೊಸತು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N033",
+        "word": "ಚೀಡಿಯು",
+        "method": "A_vowel",
+        "source_word": "ಚಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N039",
+        "word": "ಇರಿತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಇರುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N045",
+        "word": "ಸೊಂಡಿಲೆ",
+        "method": "A_vowel",
+        "source_word": "ಸೊಂಡಿಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N051",
+        "word": "ತಿದ್ದುತ್ತೂ",
+        "method": "A_vowel",
+        "source_word": "ತಿದ್ದುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N057",
+        "word": "ಕಟ್ಟಿಹುಕು",
+        "method": "A_vowel",
+        "source_word": "ಕಟ್ಟಿಹಾಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N063",
+        "word": "ಉದ್ದೇಶೃಸುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಉದ್ದೇಶಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N069",
+        "word": "ಊಗು",
+        "method": "B_consonant",
+        "source_word": "ಊರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N075",
+        "word": "ಹೂಡು",
+        "method": "B_consonant",
+        "source_word": "ಗೂಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N081",
+        "word": "ಶೂ",
+        "method": "B_consonant",
+        "source_word": "ಹೂ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N087",
+        "word": "ತೆಕ್ಕು",
+        "method": "B_consonant",
+        "source_word": "ಬೆಕ್ಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N093",
+        "word": "ಜಾಮೂಕು",
+        "method": "B_consonant",
+        "source_word": "ಜಾಮೂನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N099",
+        "word": "ಲೋಸವು",
+        "method": "B_consonant",
+        "source_word": "ಲೋಹವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N105",
+        "word": "ಅಜ್ಜಿಟು",
+        "method": "B_consonant",
+        "source_word": "ಅಜ್ಜಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N111",
+        "word": "ಹಾಪೆಲ್ಲಾ",
+        "method": "B_consonant",
+        "source_word": "ಹಾಗೆಲ್ಲಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N117",
+        "word": "ಒಳ್ಳೆವದು",
+        "method": "B_consonant",
+        "source_word": "ಒಳ್ಳೆಯದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N123",
+        "word": "ದರೀಕ್ಷಿಸು",
+        "method": "B_consonant",
+        "source_word": "ಪರೀಕ್ಷಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N129",
+        "word": "ಚಾಳಿಪಟವು",
+        "method": "B_consonant",
+        "source_word": "ಗಾಳಿಪಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N135",
+        "word": "ನರ್ತನಶಾಡುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ನರ್ತನವಾಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N141",
+        "word": "ಳಿದುಅನಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉಳಿದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N147",
+        "word": "ಯಿಯುಟೋಪಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ತಾಯಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N153",
+        "word": "ಣನುಭಾರ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಜಾಣನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N159",
+        "word": "ಡಿಯುಕೆದ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಜೋಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N165",
+        "word": "ವಿಸುನೆರೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಭಾವಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N171",
+        "word": "ಭ್ರವುದುಷ್ಟ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಶುಭ್ರವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N177",
+        "word": "ರವುಒಳ್ಳೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಎತ್ತರವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N183",
+        "word": "ತಿಯುಸಕ್ಕ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸಮಿತಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N189",
+        "word": "ಮೆಯುವಿಜ್ಞಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಹುಣ್ಣಿಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N195",
+        "word": "ಸ್ಮಾತಾಗಿಕಳುಹಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಕಸ್ಮಾತಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N201",
+        "word": "ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಂಟಿಸುತ್ತಿದ್ದಾಗ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N207",
+        "word": "ಒಣಗಲೂ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಒಣಗು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N213",
+        "word": "ಅಜ್ಜಣ್ಣನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಜ್ಜನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N219",
+        "word": "ಕೊಳರಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಕೊಳಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N225",
+        "word": "ಬೆರೆಳತು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಬೆರೆಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N231",
+        "word": "ಧಾವಿಪ್ತನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಧಾವಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N237",
+        "word": "ಘರ್ಜಟ್ಟನೆ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಘರ್ಜನೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N243",
+        "word": "ಉರುಗಿಸು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉರುಳಾಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N249",
+        "word": "ಉದ್ಗನೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉದ್ಗರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N255",
+        "word": "ಅಚ್ಚುಕ್ಕಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಚ್ಚುಮೆಚ್ಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N261",
+        "word": "ಉಸಿರಾಪಟವು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉಸಿರಾಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N267",
+        "word": "ಮುಜುಗಕೊಳ್ಳುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಮುಜುಗರದಿಂದ",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  },
+  "4": {
+    "real": [
+      {
+        "id": "R004",
+        "word": "ಎಸೆ",
+        "meaning": "throw",
+        "transcription": "ese",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.78,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R010",
+        "word": "ನೀರು",
+        "meaning": "water",
+        "transcription": "niiru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 1.76,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R016",
+        "word": "ಮಾತು",
+        "meaning": "talk",
+        "transcription": "maatu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.49,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R022",
+        "word": "ಬೂದು",
+        "meaning": "gray",
+        "transcription": "buudu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.95,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R028",
+        "word": "ಕಾಡು",
+        "meaning": "forest",
+        "transcription": "kaaDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.04,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R034",
+        "word": "ಕಲಿ",
+        "meaning": "learn",
+        "transcription": "kali",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.09,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R040",
+        "word": "ಸದಾ",
+        "meaning": "always",
+        "transcription": "sadaa",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.05,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R046",
+        "word": "ಹಿತ",
+        "meaning": "good",
+        "transcription": "hita",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.53,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R052",
+        "word": "ಇಟ್ಟು",
+        "meaning": "was kept",
+        "transcription": "iTTu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.24,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R058",
+        "word": "ಇಲಿಯು",
+        "meaning": "rat",
+        "transcription": "iliyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.8,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R064",
+        "word": "ಏಣಿಯು",
+        "meaning": "ladder",
+        "transcription": "eeNiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.27,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R070",
+        "word": "ಊಹಿಸು",
+        "meaning": "imagine",
+        "transcription": "uuhisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.81,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R076",
+        "word": "ತಿನ್ನು",
+        "meaning": "eat",
+        "transcription": "tinnu",
+        "akshara_type": "Otthakshara",
+        "aoa": 1.97,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R082",
+        "word": "ಮಾತ್ರ",
+        "meaning": "only",
+        "transcription": "maatra",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.53,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R088",
+        "word": "ಹಕ್ಕು",
+        "meaning": "right",
+        "transcription": "hakku",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.12,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R094",
+        "word": "ತಾಯಿಯು",
+        "meaning": "mother",
+        "transcription": "taayiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.47,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R100",
+        "word": "ಹುಡುಕು",
+        "meaning": "search",
+        "transcription": "huDuku",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.77,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R106",
+        "word": "ಜಾಣನು",
+        "meaning": "intelligent one",
+        "transcription": "jaaNanu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.27,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R112",
+        "word": "ಬೇಳೆಯು",
+        "meaning": "lentil",
+        "transcription": "beeLeyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.95,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R118",
+        "word": "ಹೊರಟು",
+        "meaning": "set out",
+        "transcription": "horaTu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.43,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R124",
+        "word": "ತಾಜವು",
+        "meaning": "fresh",
+        "transcription": "taajavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.57,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R130",
+        "word": "ಜೋಡಿಯು",
+        "meaning": "pair",
+        "transcription": "jooDiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.08,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R136",
+        "word": "ಧುಮುಕು",
+        "meaning": "dive",
+        "transcription": "dhumuku",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.24,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R142",
+        "word": "ಅಮ್ಮನು",
+        "meaning": "mother",
+        "transcription": "ammanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 1.69,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R148",
+        "word": "ಓಡುತ್ತಾ",
+        "meaning": "by running",
+        "transcription": "ooDuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.84,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R154",
+        "word": "ಇರುತ್ತಾ",
+        "meaning": "being",
+        "transcription": "iruttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.8,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R160",
+        "word": "ಆಟಿಕೆಯು",
+        "meaning": "toy",
+        "transcription": "aaTikeyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.99,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R166",
+        "word": "ಹೆಮ್ಮೆಯು",
+        "meaning": "pride",
+        "transcription": "hemmeyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.91,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R172",
+        "word": "ಕಾವ್ಯವು",
+        "meaning": "poem",
+        "transcription": "kaavyavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.18,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R178",
+        "word": "ಸೊಂಡಿಲು",
+        "meaning": "trunk",
+        "transcription": "sonDilu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 2.96,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R184",
+        "word": "ಕಣಜವು",
+        "meaning": "place to store grains",
+        "transcription": "kaNajavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R190",
+        "word": "ಕಬಳಿಸು",
+        "meaning": "swallow",
+        "transcription": "kabaLisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.04,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R196",
+        "word": "ಆರಿಸುತ್ತಾ",
+        "meaning": "opting",
+        "transcription": "aarisuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.27,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R202",
+        "word": "ತಿದ್ದುತ್ತಾ",
+        "meaning": "correcting",
+        "transcription": "tidduttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.68,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R208",
+        "word": "ಆದರ್ಶವು",
+        "meaning": "ideal",
+        "transcription": "aadarshavu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 5.11,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R214",
+        "word": "ಉಸಿರಾಟವು",
+        "meaning": "breathing",
+        "transcription": "usiraaTavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.18,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R220",
+        "word": "ಬರೆಯುತ್ತಾ",
+        "meaning": "writing",
+        "transcription": "bareyuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.88,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R226",
+        "word": "ಕಟ್ಟಿಹಾಕು",
+        "meaning": "tie it up",
+        "transcription": "kaTTihaaku",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.27,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R232",
+        "word": "ಜಿಗುಪ್ಸೆಯು",
+        "meaning": "disgust",
+        "transcription": "jigupseyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.45,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R238",
+        "word": "ಎತ್ತಿಕೊಳ್ಳು",
+        "meaning": "lift",
+        "transcription": "ettikoLLu",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 2.76,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R244",
+        "word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
+        "meaning": "establishing",
+        "transcription": "sthaapisuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.16,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R250",
+        "word": "ಉದ್ದೇಶಿಸುತ್ತಾ",
+        "meaning": "contemplating",
+        "transcription": "uddeeshisuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.32,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R256",
+        "word": "ಯುದ್ಧಕಾಲಿನವು",
+        "meaning": "war duration",
+        "transcription": "yuddhakaaliinavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.36,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R262",
+        "word": "ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ",
+        "meaning": "by sitting",
+        "transcription": "kuLitukoLLuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.26,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R268",
+        "word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
+        "meaning": "sighing",
+        "transcription": "niTTusirubiDuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.07,
+        "syllables": 7,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N004",
+        "word": "ಚೃರು",
+        "method": "A_vowel",
+        "source_word": "ಚೂರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N010",
+        "word": "ಸುರೈ",
+        "method": "A_vowel",
+        "source_word": "ಸುರಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N016",
+        "word": "ಈಗೂಲೂ",
+        "method": "A_vowel",
+        "source_word": "ಈಗಲೂ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N022",
+        "word": "ಸುಳ್ಳಿ",
+        "method": "A_vowel",
+        "source_word": "ಸುಳ್ಳು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N028",
+        "word": "ಹೇಗೆವೆ",
+        "method": "A_vowel",
+        "source_word": "ಹೇಗಿವೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N034",
+        "word": "ಬೀಯಸು",
+        "method": "A_vowel",
+        "source_word": "ಬಯಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N040",
+        "word": "ಓಟ್ಟಿಸು",
+        "method": "A_vowel",
+        "source_word": "ಅಟ್ಟಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N046",
+        "word": "ಮೂರ್ಖನೂ",
+        "method": "A_vowel",
+        "source_word": "ಮೂರ್ಖನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N052",
+        "word": "ಆನಂದಿಸೌ",
+        "method": "A_vowel",
+        "source_word": "ಆನಂದಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N058",
+        "word": "ವಿಸ್ಮಯೇವು",
+        "method": "A_vowel",
+        "source_word": "ವಿಸ್ಮಯವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N064",
+        "word": "ಪ್ರತಿಧ್ವನಿಯೃ",
+        "method": "A_vowel",
+        "source_word": "ಪ್ರತಿಧ್ವನಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N070",
+        "word": "ಇಜಿ",
+        "method": "B_consonant",
+        "source_word": "ಇಳಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N076",
+        "word": "ಹಾಗು",
+        "method": "B_consonant",
+        "source_word": "ಬಾಗು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N082",
+        "word": "ಆರೇಲೆ",
+        "method": "B_consonant",
+        "source_word": "ಆಮೇಲೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N088",
+        "word": "ಮಪ್ಪು",
+        "method": "B_consonant",
+        "source_word": "ತಪ್ಪು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N094",
+        "word": "ಟಿರುಚು",
+        "method": "B_consonant",
+        "source_word": "ಕಿರುಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N100",
+        "word": "ಸಪನೆ",
+        "method": "B_consonant",
+        "source_word": "ಸಮನೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N106",
+        "word": "ಒದ್ದೆಕು",
+        "method": "B_consonant",
+        "source_word": "ಒದ್ದೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N112",
+        "word": "ನೇಯ್ಗೆಜು",
+        "method": "B_consonant",
+        "source_word": "ನೇಯ್ಗೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N118",
+        "word": "ಅಗೆನುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಅಗೆಯುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N124",
+        "word": "ಮಾತಾಳುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಮಾತಾಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N130",
+        "word": "ಅವಲಂಭಿನು",
+        "method": "B_consonant",
+        "source_word": "ಅವಲಂಭಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N136",
+        "word": "ಲಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N142",
+        "word": "ಡಿಯುಊಹಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N148",
+        "word": "ರಿಸುಕೋತಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ತೋರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N154",
+        "word": "ಗವುರಾಣಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಜಾಗವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N160",
+        "word": "ಮುಕುಇಲ್ಲೇ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಧುಮುಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N166",
+        "word": "ಷವುಬಿಳಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ದೋಷವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N172",
+        "word": "ಮ್ಮೆಯುಪೆಚ್ಚಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಹೆಮ್ಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N178",
+        "word": "ಡುತ್ತಾಆರಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಈಜಾಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N184",
+        "word": "ಯುತ್ತಾಮಾತಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಬರೆಯುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N190",
+        "word": "ಯಲ್ಲೂಮಸೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ದಾಟಿಯಲ್ಲೂ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N196",
+        "word": "ಪಿಸುತ್ತಾಅಪ್ಪಳಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ನೆನಪಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N202",
+        "word": "ಲ್ಲಿಡುತ್ತಾಕವಡೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N208",
+        "word": "ಉಳಿನಿಸು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉಳಿದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N214",
+        "word": "ತಾಯಿಪಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ತಾಯಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N220",
+        "word": "ಜಾಣರವು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಜಾಣನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N226",
+        "word": "ಜೋಡಿದರು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಜೋಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N232",
+        "word": "ಭಾವಿರೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಭಾವಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N238",
+        "word": "ಶುಭ್ರಷ್ಟನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಶುಭ್ರವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N244",
+        "word": "ಎತ್ತಯದು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಎತ್ತರವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N250",
+        "word": "ಸಮಿರೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸಮಿತಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N256",
+        "word": "ಹುಣ್ಣಿನಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಹುಣ್ಣಿಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N262",
+        "word": "ಅಕಸ್ಮಾಹಿಸುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಕಸ್ಮಾತಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N268",
+        "word": "ಅಂಟಿಸುಳೆಲ್ಲರು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಂಟಿಸುತ್ತಿದ್ದಾಗ",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  },
+  "5": {
+    "real": [
+      {
+        "id": "R005",
+        "word": "ಇಡು",
+        "meaning": "keep",
+        "transcription": "iDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.51,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R011",
+        "word": "ಬೇಗ",
+        "meaning": "soon",
+        "transcription": "beega",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.54,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R017",
+        "word": "ಮಗು",
+        "meaning": "baby",
+        "transcription": "magu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.27,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R023",
+        "word": "ಹಾಗೆ",
+        "meaning": "in that manner",
+        "transcription": "haage",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.32,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R029",
+        "word": "ಮೇಜು",
+        "meaning": "table",
+        "transcription": "meeju",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.14,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R035",
+        "word": "ಲಾಗ",
+        "meaning": "tumble",
+        "transcription": "laaga",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.92,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R041",
+        "word": "ತೀರು",
+        "meaning": "die",
+        "transcription": "tiiru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.92,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R047",
+        "word": "ಸಾಗು",
+        "meaning": "move",
+        "transcription": "saagu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.34,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R053",
+        "word": "ಅತ್ತು",
+        "meaning": "cry",
+        "transcription": "attu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.04,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R059",
+        "word": "ಅಳಿಲು",
+        "meaning": "squirrel",
+        "transcription": "aLilu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.74,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R065",
+        "word": "ಅಪಾಯ",
+        "meaning": "danger",
+        "transcription": "apaaya",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.66,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R071",
+        "word": "ಆದೇಶ",
+        "meaning": "order",
+        "transcription": "aadeesha",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.84,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R077",
+        "word": "ಮುದ್ದು",
+        "meaning": "dearness",
+        "transcription": "muddu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.93,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R083",
+        "word": "ಮತ್ತೆ",
+        "meaning": "again",
+        "transcription": "matte",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.2,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R089",
+        "word": "ಬಿಳಿಯು",
+        "meaning": "white color",
+        "transcription": "biLiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.84,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R095",
+        "word": "ಟೋಪಿಯು",
+        "meaning": "hat",
+        "transcription": "toopiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.59,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R101",
+        "word": "ತೋರಿಸು",
+        "meaning": "show",
+        "transcription": "toorisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.62,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R107",
+        "word": "ಖುಷಿಯು",
+        "meaning": "fun",
+        "transcription": "khuShiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.16,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R113",
+        "word": "ಜಾಗವು",
+        "meaning": "place",
+        "transcription": "jaagavu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.38,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R119",
+        "word": "ಕೂಡಿಸು",
+        "meaning": "add",
+        "transcription": "kuuDisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.41,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R125",
+        "word": "ನುಣುಪು",
+        "meaning": "refine",
+        "transcription": "nuNupu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.64,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R131",
+        "word": "ಕಾಕನು",
+        "meaning": "uncle, crow",
+        "transcription": "kaakanu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.23,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R137",
+        "word": "ದೊರಕು",
+        "meaning": "get",
+        "transcription": "doraku",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.47,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R143",
+        "word": "ಅಪ್ಪನು",
+        "meaning": "father",
+        "transcription": "appanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 1.84,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R149",
+        "word": "ಒದ್ದೆಯು",
+        "meaning": "wet",
+        "transcription": "oddeyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.34,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R155",
+        "word": "ಆಪ್ತನು",
+        "meaning": "close friend",
+        "transcription": "aaptanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.78,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R161",
+        "word": "ಉರುಳಾಡು",
+        "meaning": "roll over",
+        "transcription": "uruLaaDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.62,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R167",
+        "word": "ಮುಖ್ಯವು",
+        "meaning": "important",
+        "transcription": "muKhyavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.46,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R173",
+        "word": "ನೇಯ್ಗೆಯು",
+        "meaning": "weaving",
+        "transcription": "neeygeyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.2,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R179",
+        "word": "ಕುಂಟನು",
+        "meaning": "cripple",
+        "transcription": "kunTanu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 3.86,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R185",
+        "word": "ಹಿರಿಮೆಯು",
+        "meaning": "greatness",
+        "transcription": "hirimeyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.05,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R191",
+        "word": "ದ್ರಾಕ್ಷಿಯು",
+        "meaning": "grape",
+        "transcription": "draakShiyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.97,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R197",
+        "word": "ಅಗೆಯುತ್ತಾ",
+        "meaning": "digging",
+        "transcription": "ageyuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.32,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R203",
+        "word": "ಶ್ರೇಷ್ಠವು",
+        "meaning": "excellent",
+        "transcription": "shreeShTavu",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.93,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R209",
+        "word": "ಇರುವೆಗಳು",
+        "meaning": "ants",
+        "transcription": "iruvegaLu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.95,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R215",
+        "word": "ವಿಜ್ಞಾನಿಯು",
+        "meaning": "scientist",
+        "transcription": "vijnaaniyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.89,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R221",
+        "word": "ಮಾತಾಡುತ್ತಾ",
+        "meaning": "speaking",
+        "transcription": "maataaDuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.96,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R227",
+        "word": "ಹುಣ್ಣಿಮೆಯು",
+        "meaning": "fullmoon",
+        "transcription": "huNNimeyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.69,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R233",
+        "word": "ಕಲ್ಮಶವು",
+        "meaning": "dirt",
+        "transcription": "kalmashavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.3,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R239",
+        "word": "ಎಬ್ಬಿಸುತ್ತಾ",
+        "meaning": "waking up",
+        "transcription": "ebbisuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.46,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R245",
+        "word": "ಅವಲಂಭಿಸು",
+        "meaning": "depend upon",
+        "transcription": "avalambhisu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 5.14,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R251",
+        "word": "ತರಕಾರಿಗಳು",
+        "meaning": "vegetables",
+        "transcription": "tarakaarigaLu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.12,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R257",
+        "word": "ಅರಚಿಕೊಳ್ಳುತ್ತಾ",
+        "meaning": "screaming loudly",
+        "transcription": "aracikoLLuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.46,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R263",
+        "word": "ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ",
+        "meaning": "placing on the wrist",
+        "transcription": "naaDiyalliDuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 5.39,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R269",
+        "word": "ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ",
+        "meaning": "wearing dress",
+        "transcription": "baTTehaakikoLLuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.16,
+        "syllables": 7,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N005",
+        "word": "ಮಗಾ",
+        "method": "A_vowel",
+        "source_word": "ಮಗು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N011",
+        "word": "ತೂರು",
+        "method": "A_vowel",
+        "source_word": "ತೀರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N017",
+        "word": "ಅಪಾಯಿ",
+        "method": "A_vowel",
+        "source_word": "ಅಪಾಯ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N023",
+        "word": "ಬಿಳಿಯಿ",
+        "method": "A_vowel",
+        "source_word": "ಬಿಳಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N029",
+        "word": "ಜಾಗೃವು",
+        "method": "A_vowel",
+        "source_word": "ಜಾಗವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N035",
+        "word": "ಕೆದರೆ",
+        "method": "A_vowel",
+        "source_word": "ಕೆದರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N041",
+        "word": "ಏಕೆರುವೆ",
+        "method": "A_vowel",
+        "source_word": "ಏಕಿರುವೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N047",
+        "word": "ನಮೂನೇಯು",
+        "method": "A_vowel",
+        "source_word": "ನಮೂನೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N053",
+        "word": "ಶಿಕ್ಷಕನೃ",
+        "method": "A_vowel",
+        "source_word": "ಶಿಕ್ಷಕನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N059",
+        "word": "ಕಲ್ಪನೌಯು",
+        "method": "A_vowel",
+        "source_word": "ಕಲ್ಪನೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N065",
+        "word": "ಭರವಸೇಯಿಂದ",
+        "method": "A_vowel",
+        "source_word": "ಭರವಸೆಯಿಂದ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N071",
+        "word": "ಮೀರು",
+        "method": "B_consonant",
+        "source_word": "ನೀರು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N077",
+        "word": "ಕಮಿ",
+        "method": "B_consonant",
+        "source_word": "ಕಲಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N083",
+        "word": "ಇನಿಯು",
+        "method": "B_consonant",
+        "source_word": "ಇಲಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N089",
+        "word": "ಶಾತ್ರ",
+        "method": "B_consonant",
+        "source_word": "ಮಾತ್ರ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N095",
+        "word": "ಶಾಣನು",
+        "method": "B_consonant",
+        "source_word": "ಜಾಣನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N101",
+        "word": "ಜೋಜಿಯು",
+        "method": "B_consonant",
+        "source_word": "ಜೋಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N107",
+        "word": "ಏಡುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಏಳುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N113",
+        "word": "ಗೊಂಬೆಪು",
+        "method": "B_consonant",
+        "source_word": "ಗೊಂಬೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N119",
+        "word": "ಸ್ವಲ್ಪದು",
+        "method": "B_consonant",
+        "source_word": "ಸ್ವಲ್ಪವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N125",
+        "word": "ಜಿಗಿಬುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಜಿಗಿಯುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N131",
+        "word": "ಅಪ್ಪಳಿನುತ್ತಾ",
+        "method": "B_consonant",
+        "source_word": "ಅಪ್ಪಳಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N137",
+        "word": "ಟವುಅಳಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಆಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N143",
+        "word": "ದೇಶಅಮ್ಮ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಆದೇಶ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N149",
+        "word": "ಹಿಯುಹುಡು",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸಿಹಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N155",
+        "word": "ಡಿಸುಸಾಲಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಕೂಡಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N161",
+        "word": "ಟ್ಟಿಸುದೊರ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಟ್ಟಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N167",
+        "word": "ಟಲುಸೊಂಡಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಗಂಟಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N173",
+        "word": "ಯ್ಗೆಯುಚಂದ್ರ",
+        "method": "C_suffix_prefix",
+        "source_word": "ನೇಯ್ಗೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N179",
+        "word": "ದಿಸುಅಗೆ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಆನಂದಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N185",
+        "word": "ದಾಗಿಗಟ್ಟಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಚಿಕ್ಕದಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N191",
+        "word": "ರಿಸುಕಲ್ಪ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸತ್ಕರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N197",
+        "word": "ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉದ್ದೇಶಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N203",
+        "word": "ಬಿಡುತ್ತಾಸರಿಪ",
+        "method": "C_suffix_prefix",
+        "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N209",
+        "word": "ಅಡಿಹಿಸು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಡಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N215",
+        "word": "ತೋರಿತಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ತೋರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N221",
+        "word": "ಜಾಗಣಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಜಾಗವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N227",
+        "word": "ಧುಮುಲ್ಲೇನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಧುಮುಕು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N233",
+        "word": "ದೋಷಳಿಚು",
+        "method": "D_prefix_suffix",
+        "source_word": "ದೋಷವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N239",
+        "word": "ಹೆಮ್ಮೆಚ್ಚಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಹೆಮ್ಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N245",
+        "word": "ಈಜಾಸುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಈಜಾಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N251",
+        "word": "ಬರೆಡುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಬರೆಯುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N257",
+        "word": "ದಾಟಿಯುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ದಾಟಿಯಲ್ಲೂ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N263",
+        "word": "ನೆನಪಿಳಿಸುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ನೆನಪಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N269",
+        "word": "ನಾಡಿಯಳಸುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  },
+  "6": {
+    "real": [
+      {
+        "id": "R006",
+        "word": "ಇಳಿ",
+        "meaning": "get down",
+        "transcription": "iLi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.45,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R012",
+        "word": "ಕೈಯು",
+        "meaning": "hand",
+        "transcription": "kaiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.69,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R018",
+        "word": "ಮೀನು",
+        "meaning": "fish",
+        "transcription": "miinu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.34,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R024",
+        "word": "ಧೂಳು",
+        "meaning": "dust",
+        "transcription": "dhuuLu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.22,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R030",
+        "word": "ಬಾಗು",
+        "meaning": "bend",
+        "transcription": "baagu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.53,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R036",
+        "word": "ನೆಡು",
+        "meaning": "plant",
+        "transcription": "neDu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.77,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R042",
+        "word": "ಮುಡಿ",
+        "meaning": "wear flower on head",
+        "transcription": "muDi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.09,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R048",
+        "word": "ಸವಿ",
+        "meaning": "taste",
+        "transcription": "savi",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.27,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R054",
+        "word": "ಆಮೇಲೆ",
+        "meaning": "afterwards",
+        "transcription": "aameele",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.89,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R060",
+        "word": "ಒಣಗು",
+        "meaning": "dry up",
+        "transcription": "oNagu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.45,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R066",
+        "word": "ಉಳಿದು",
+        "meaning": "remaining",
+        "transcription": "uLidu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.05,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R072",
+        "word": "ಅನಿಸು",
+        "meaning": "think",
+        "transcription": "anisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.35,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R078",
+        "word": "ತಪ್ಪು",
+        "meaning": "error",
+        "transcription": "tappu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.77,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R084",
+        "word": "ಬಗ್ಗೆ",
+        "meaning": "about",
+        "transcription": "bagge",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.99,
+        "syllables": 2,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R090",
+        "word": "ಬಿಸಿಯು",
+        "meaning": "hot",
+        "transcription": "bisiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.66,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R096",
+        "word": "ಬಾಗಿಲು",
+        "meaning": "door",
+        "transcription": "baagilu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.08,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R102",
+        "word": "ಕಿರುಚು",
+        "meaning": "scream",
+        "transcription": "kirucu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 2.96,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R108",
+        "word": "ಕೊಳಕು",
+        "meaning": "dirty",
+        "transcription": "koLaku",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.16,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R114",
+        "word": "ಕಾಯಿಯು",
+        "meaning": "unripe fruit",
+        "transcription": "kaayiyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.57,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R120",
+        "word": "ಹಳತು",
+        "meaning": "old",
+        "transcription": "haLatu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.04,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R126",
+        "word": "ಸಮನೆ",
+        "meaning": "equally",
+        "transcription": "samane",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.59,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R132",
+        "word": "ನೆರೆಯು",
+        "meaning": "flood",
+        "transcription": "nereyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.89,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R138",
+        "word": "ಕೆದರು",
+        "meaning": "scatter",
+        "transcription": "kedaru",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.19,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R144",
+        "word": "ಅಜ್ಜನು",
+        "meaning": "grandfather",
+        "transcription": "ajjanu",
+        "akshara_type": "Otthakshara",
+        "aoa": 2.38,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R150",
+        "word": "ಉದ್ದವು",
+        "meaning": "tall",
+        "transcription": "uddavu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.39,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R156",
+        "word": "ಇಲ್ಲೇನು",
+        "meaning": "what's here",
+        "transcription": "illeenu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.24,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R162",
+        "word": "ಏಕಿರುವೆ",
+        "meaning": "why are you here",
+        "transcription": "eekiruve",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.55,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R168",
+        "word": "ಶುಭ್ರವು",
+        "meaning": "clean",
+        "transcription": "shubhravu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.55,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R174",
+        "word": "ಉಜ್ಜುತ್ತಾ",
+        "meaning": "rubbing",
+        "transcription": "ujjuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 3.64,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R180",
+        "word": "ಖಂಡಿತ",
+        "meaning": "definitely",
+        "transcription": "kHanDita",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 3.91,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R186",
+        "word": "ನಮೂನೆಯು",
+        "meaning": "sample",
+        "transcription": "namuuneyu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 5.14,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R192",
+        "word": "ಎತ್ತರವು",
+        "meaning": "tall",
+        "transcription": "ettaravu",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.45,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R198",
+        "word": "ಉದುರುತ್ತಾ",
+        "meaning": "shedding",
+        "transcription": "uduruttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.27,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R204",
+        "word": "ಚಂದ್ರನು",
+        "meaning": "moon",
+        "transcription": "candranu",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 2.59,
+        "syllables": 3,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R210",
+        "word": "ಶಿಕ್ಷಕನು",
+        "meaning": "teacher (male)",
+        "transcription": "shikShakanu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 3.57,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R216",
+        "word": "ಅನುಭವಿಸು",
+        "meaning": "experience",
+        "transcription": "anubhavisu",
+        "akshara_type": "Gunithakshara",
+        "aoa": 4.81,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R222",
+        "word": "ಚಿಕ್ಕದಾಗಿ",
+        "meaning": "being small",
+        "transcription": "cikkadaagi",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.23,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R228",
+        "word": "ದಯವಿಟ್ಟು",
+        "meaning": "please",
+        "transcription": "dayaviTTu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.12,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R234",
+        "word": "ಕಲ್ಪನೆಯು",
+        "meaning": "thought",
+        "transcription": "kalpaneyu",
+        "akshara_type": "Otthakshara",
+        "aoa": 5.19,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R240",
+        "word": "ಅಚ್ಚುಮೆಚ್ಚು",
+        "meaning": "beloved",
+        "transcription": "accumeccu",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.28,
+        "syllables": 4,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R246",
+        "word": "ಕಳುಹಿಸುತ್ತಾ",
+        "meaning": "sending",
+        "transcription": "kaLuhisuttaa",
+        "akshara_type": "Otthakshara",
+        "aoa": 3.93,
+        "syllables": 5,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R252",
+        "word": "ಆರೋಗ್ಯಕರವು",
+        "meaning": "healthy",
+        "transcription": "aaroogyakaravu",
+        "akshara_type": "Otthakshara",
+        "aoa": 4.53,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R258",
+        "word": "ಭರವಸೆಯಿಂದ",
+        "meaning": "with confidence",
+        "transcription": "bharavaseyinda",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 5.04,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R264",
+        "word": "ಅಂಟಿಸುತ್ತಿದ್ದಾಗ",
+        "meaning": "while pasting",
+        "transcription": "anTisuttiddaaga",
+        "akshara_type": "Anuswara and Arka",
+        "aoa": 4.03,
+        "syllables": 6,
+        "realpseudo": "real"
+      },
+      {
+        "id": "R270",
+        "word": "ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ",
+        "meaning": "repairing",
+        "transcription": "saripaDisikoLLuttaa",
+        "akshara_type": "More than 1 Otthakshara",
+        "aoa": 4.65,
+        "syllables": 8,
+        "realpseudo": "real"
+      }
+    ],
+    "pseudo": [
+      {
+        "id": "N006",
+        "word": "ನೃಡೆ",
+        "method": "A_vowel",
+        "source_word": "ನಡೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N012",
+        "word": "ಹುಣೆ",
+        "method": "A_vowel",
+        "source_word": "ಹೆಣೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N018",
+        "word": "ಒದಗೋ",
+        "method": "A_vowel",
+        "source_word": "ಒದಗು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N024",
+        "word": "ಕೋತಿಯೌ",
+        "method": "A_vowel",
+        "source_word": "ಕೋತಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N030",
+        "word": "ಧರೇಸು",
+        "method": "A_vowel",
+        "source_word": "ಧರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N036",
+        "word": "ಐಮ್ಮನು",
+        "method": "A_vowel",
+        "source_word": "ಅಮ್ಮನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N042",
+        "word": "ಹೆಮ್ಮೂಯು",
+        "method": "A_vowel",
+        "source_word": "ಹೆಮ್ಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N048",
+        "word": "ಕಬಳೌಸು",
+        "method": "A_vowel",
+        "source_word": "ಕಬಳಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N054",
+        "word": "ಉಸಿರಾಟೇವು",
+        "method": "A_vowel",
+        "source_word": "ಉಸಿರಾಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N060",
+        "word": "ಎತ್ತೆಕೊಳ್ಳು",
+        "method": "A_vowel",
+        "source_word": "ಎತ್ತಿಕೊಳ್ಳು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N066",
+        "word": "ಕುಳಿತುಕಿಳ್ಳುತ್ತಾ",
+        "method": "A_vowel",
+        "source_word": "ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N072",
+        "word": "ರಾಡು",
+        "method": "B_consonant",
+        "source_word": "ಹಾಡು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N078",
+        "word": "ಮೆಜು",
+        "method": "B_consonant",
+        "source_word": "ಮೆದು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N084",
+        "word": "ಆಮೆಜು",
+        "method": "B_consonant",
+        "source_word": "ಆಮೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N090",
+        "word": "ರುಚ್ಚು",
+        "method": "B_consonant",
+        "source_word": "ಹುಚ್ಚು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N096",
+        "word": "ಜೋದಾಗಿ",
+        "method": "B_consonant",
+        "source_word": "ಜೋರಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N102",
+        "word": "ಭಾಚಿಸು",
+        "method": "B_consonant",
+        "source_word": "ಭಾವಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N108",
+        "word": "ಉಣ್ಣೆಪು",
+        "method": "B_consonant",
+        "source_word": "ಉಣ್ಣೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N114",
+        "word": "ತಂಪಾಳಿ",
+        "method": "B_consonant",
+        "source_word": "ತಂಪಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N120",
+        "word": "ಅಂಗಜವು",
+        "method": "B_consonant",
+        "source_word": "ಅಂಗಳವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N126",
+        "word": "ಬೇಶಕ್ಕಾಗಿ",
+        "method": "B_consonant",
+        "source_word": "ದೇಶಕ್ಕಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N132",
+        "word": "ಕಟ್ಟುಹಿಟ್ಟಾಗಿ",
+        "method": "B_consonant",
+        "source_word": "ಕಟ್ಟುನಿಟ್ಟಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N138",
+        "word": "ಲಿಯುಆಮೇ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಇಲಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N144",
+        "word": "ಪ್ಪನುಮಲ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಅಪ್ಪನು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N150",
+        "word": "ಳಿಯುಕಿರು",
+        "method": "C_suffix_prefix",
+        "source_word": "ಬಿಳಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N156",
+        "word": "ಸತುಧರಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಹೊಸತು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N162",
+        "word": "ಮನೆಬೋಳಾ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸಮನೆ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N168",
+        "word": "ಜ್ಜುತ್ತಾಕುಂಟ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಉಜ್ಜುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N174",
+        "word": "ಲ್ಪವುತಿದ್ದು",
+        "method": "C_suffix_prefix",
+        "source_word": "ಸ್ವಲ್ಪವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N180",
+        "word": "ಜವುಯೋಜ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಕಣಜವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N186",
+        "word": "ದಾಗಿಶಿಕ್ಷ",
+        "method": "C_suffix_prefix",
+        "source_word": "ದೊಡ್ಡದಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N192",
+        "word": "ಶವುತಬ್ಬಿ",
+        "method": "C_suffix_prefix",
+        "source_word": "ಕಲ್ಮಶವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N198",
+        "word": "ತ್ರಿಸುತ್ತಾಅವಸ",
+        "method": "C_suffix_prefix",
+        "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N204",
+        "word": "ಆಟಳಿಲು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಆಟವು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N210",
+        "word": "ಆದೇಮ್ಮನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಆದೇಶ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N216",
+        "word": "ಸಿಹಿಡುಕು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸಿಹಿಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N222",
+        "word": "ಕೂಡಿಲಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಕೂಡಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N228",
+        "word": "ಅಟ್ಟಿರಕು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಅಟ್ಟಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N234",
+        "word": "ಗಂಟಡಿಲು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಗಂಟಲು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N240",
+        "word": "ನೇಯ್ಗೆದ್ರನು",
+        "method": "D_prefix_suffix",
+        "source_word": "ನೇಯ್ಗೆಯು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N246",
+        "word": "ಆನಂಯುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಆನಂದಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N252",
+        "word": "ಚಿಕ್ಕಯಾಗಿ",
+        "method": "D_prefix_suffix",
+        "source_word": "ಚಿಕ್ಕದಾಗಿ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N258",
+        "word": "ಸತ್ಕನೆಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಸತ್ಕರಿಸು",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N264",
+        "word": "ಉದ್ದೇಶಿಧ್ವನಿಯು",
+        "method": "D_prefix_suffix",
+        "source_word": "ಉದ್ದೇಶಿಸುತ್ತಾ",
+        "realpseudo": "pseudo"
+      },
+      {
+        "id": "N270",
+        "word": "ನಿಟ್ಟುಸಿಕೊಳ್ಳುತ್ತಾ",
+        "method": "D_prefix_suffix",
+        "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
+        "realpseudo": "pseudo"
+      }
+    ],
+    "demo": [
+      {
+        "word": "ಹೀ",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 1
+      },
+      {
+        "word": "ಹಾಲು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 2
+      },
+      {
+        "word": "ನೀರು",
+        "realpseudo": "real",
+        "block": "practice",
+        "order": 3
+      },
+      {
+        "word": "ಚೃರು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 4
+      },
+      {
+        "word": "ಊಡು",
+        "realpseudo": "pseudo",
+        "block": "practice",
+        "order": 5
+      }
+    ]
+  }
+}

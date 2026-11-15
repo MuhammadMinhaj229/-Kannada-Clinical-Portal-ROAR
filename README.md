@@ -3,6 +3,8 @@
 
 A fully localized, psychometrically calibrated Single Word Recognition (SWR) assessment platform adapted for Kannada-speaking children and psycholinguistic researchers.
 
+**100% Pure Frontend Architecture — Zero Server Dependencies — Runs seamlessly on Vercel Free Tier!**
+
 ---
 
 ## 1. Provenance & Scientific Origins
@@ -24,16 +26,20 @@ This application is an adapted replica of the **Stanford ROAR (Rapid Online Asse
 ## 2. Key Architecture & Features
 
 1. **Two Core Portals:**
-   - 🎮 **Participant Game:** `/?consent=false&storyoption=false` (Local or child-assigned `?participant=ID&session=N`).
-   - 📊 **Clinical Research Dashboard:** `/dashboard.html` (Hidden, zero-emoji, professional clinical research UI).
-2. **Dynamic Presentation Timing:**
+   - **Participant Game:** `/?consent=false&storyoption=false` (or child-assigned `?participant=ID&session=N`).
+   - **Clinical Research Dashboard:** `/dashboard.html` (Hidden, zero-emoji, professional clinical research UI).
+2. **Pure Frontend Architecture (Zero Backend Required):**
+   - **100% Client-Side Storage:** Settings, student roster, word bank edits, and trial telemetry are stored in high-performance browser `localStorage`.
+   - **Zero Cold Boot / Zero Server Costs:** Operates flawlessly on Vercel's free tier with zero backend, zero database maintenance, and instant CDN asset delivery.
+   - **1-Click Offline CSV Export:** Downloads complete psychometric logs directly from the browser memory.
+3. **Dynamic Presentation Timing:**
    - **Infinite Mode (Recommended):** Stimulus remains on screen indefinitely until the child responds (matching practice demo mechanics).
    - **Timed Mode:** Configurable in dashboard settings (5s, 8s, 10s, 12s, or custom duration).
-3. **Session-Aware Filtering:**
+4. **Session-Aware Filtering:**
    - Automatically partitions the 540-word corpus into 6 balanced sessions (90 test words each: 45 Real + 45 Pseudo).
-4. **Live Telemetry & Results:**
-   - Captures every trial (reaction time, key pressed, accuracy) in real-time, stores data locally in `student_results.json`, and provides 1-click CSV export.
-5. **Offline Excel / CSV Importer:**
+5. **Live Telemetry & Results:**
+   - Captures every trial (reaction time, key pressed, accuracy) in real-time, displays live metrics in the dashboard, and allows instant export.
+6. **Offline Excel / CSV Importer:**
    - Integrated SheetJS client-side parser to import `.xlsx`, `.xlsm`, or `.csv` word lists directly into any session.
 
 ---
@@ -45,8 +51,10 @@ This application is an adapted replica of the **Stanford ROAR (Rapid Online Asse
 git clone https://github.com/MuhammadMinhaj229/-Kannada-Clinical-Portal-ROAR.git
 cd -Kannada-Clinical-Portal-ROAR
 
-# Start the Node.js server (zero npm dependencies required!)
+# Start locally with any static server or Node:
 npm start
+# OR
+npx serve public -p 8080
 ```
 
 Access the application:
@@ -55,32 +63,24 @@ Access the application:
 
 ---
 
-## 4. Production Deployment Guide
+## 4. 1-Click Vercel Deployment Guide (100% Free Tier)
 
-### Option A: Render.com (Recommended for Persistent Storage)
-Render runs the Node.js process 24/7 and supports local JSON file persistence.
-1. Sign in to [Render.com](https://render.com).
-2. Click **New +** -> **Web Service**.
-3. Connect your GitHub repository `MuhammadMinhaj229/-Kannada-Clinical-Portal-ROAR`.
-4. Configure:
-   - **Environment:** `Node`
-   - **Build Command:** *(leave empty or `npm install`)*
-   - **Start Command:** `node server.js`
-5. Click **Deploy Web Service**. Your app is live with full REST APIs, audio streaming, and data persistence!
+Because this application is 100% static with client-side localStorage state, it is completely free, instant, and never sleeps:
 
-### Option B: Railway.app (Zero-Config 1-Click)
-1. Sign in to [Railway.app](https://railway.app).
-2. Click **New Project** -> **Deploy from GitHub repo**.
-3. Select `MuhammadMinhaj229/-Kannada-Clinical-Portal-ROAR`.
-4. Railway detects `server.js` and `package.json` and deploys automatically.
+1. Sign in to your [Vercel Dashboard](https://vercel.com).
+2. Click **Add New...** -> **Project**.
+3. Import `MuhammadMinhaj229/-Kannada-Clinical-Portal-ROAR`.
+4. In the project configuration:
+   - **Framework Preset:** `Other`
+   - **Root Directory:** `./` (or leave default)
+   - **Build Command:** *(leave empty)*
+   - **Output Directory:** `public` (handled automatically by `vercel.json`)
+5. Click **Deploy**.
+6. Within seconds, your app will be deployed with a live HTTPS URL (e.g. `https://kannada-portal-roar.vercel.app`).
 
-### Option C: Vercel (Edge / Serverless)
-A production `vercel.json` is included in this repository.
-1. Sign in to [Vercel](https://vercel.com).
-2. Click **Add New Project** and import `MuhammadMinhaj229/-Kannada-Clinical-Portal-ROAR`.
-3. Select **Other** as the framework preset (or let Vercel auto-detect).
-4. Deploy. Vercel will route all requests through `server.js` using `@vercel/node`.
-*(Note: Vercel serverless functions have ephemeral file storage. For permanent cloud persistence on Vercel, attach a free Vercel KV or PostgreSQL database, or use Render/Railway for simple file-based JSON storage).*
+### Production URLs:
+- **Game Portal:** `https://<your-vercel-domain>/?consent=false&storyoption=false`
+- **Clinical Dashboard:** `https://<your-vercel-domain>/dashboard.html`
 
 ---
 
@@ -90,17 +90,15 @@ A production `vercel.json` is included in this repository.
 ├── public/
 │   ├── index.html              # Main game bootstrapper with settings hook
 │   ├── dashboard.html          # Clinical research & assessment dashboard
+│   ├── settings.js             # Static settings loader reading from localStorage
+│   ├── sessions_data.json      # 6 partitioned word sessions (540 words + demos)
 │   ├── xlsx.full.min.js        # Local offline SheetJS library
 │   ├── index.*.bundle.js       # Patched ROAR Webpack psychometric bundle
 │   └── audio/
 │       ├── kn/desktop/         # 42 localized Kannada voiceover MP3s
 │       └── shared/             # Feedback sounds (coin, beep, fail, etc.)
-├── server.js                   # Node.js REST server & proxy router
-├── game_settings.json          # Live psychometric timing & engine settings
-├── sessions_data.json          # 6 partitioned word sessions (540 words + demos)
-├── students_roster.json        # Enrolled child participant roster
-├── student_results.json        # Live trial telemetry logs
-├── vercel.json                 # Vercel deployment configuration
+├── server.js                   # Optional local development server
+├── vercel.json                 # Vercel static routing & cache headers
 └── package.json                # Project manifest
 ```
 
