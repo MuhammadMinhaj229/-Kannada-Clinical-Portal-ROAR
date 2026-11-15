@@ -1,9 +1,10 @@
 {
-  "name": "roar-word-reading-replica",
+  "name": "kannada-clinical-portal-roar",
   "version": "1.0.0",
-  "description": "Full local replica and unpacked architecture of Stanford ROAR Single Word Recognition (SWR)",
-  "main": "server.js",
+  "description": "Kannada Clinical Portal — Stanford ROAR Adaptation",
+  "main": "index.html",
   "scripts": {
+    "build": "node -e \"console.log('Production build ready')\"",
     "start": "node server.js",
     "dev": "node server.js"
   },
@@ -11,10 +12,10 @@
     "roar",
     "reading",
     "assessment",
+    "kannada",
     "jspsych",
-    "jscat",
-    "replica"
+    "clinical"
   ],
-  "author": "Yeatman Lab / Stanford GSE (Extracted Replica)",
+  "author": "Antigravity Engineering / Stanford GSE Adaptations",
   "license": "Stanford Academic Software License"
 }

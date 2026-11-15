@@ -1,0 +1,1685 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kannada ROAR — Clinical Research & Assessment Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="/xlsx.full.min.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --accent: #38bdf8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .kannada-text {
+      font-family: 'Noto Sans Kannada', 'Inter', sans-serif;
+    }
+
+    /* Header */
+    header {
+      background-color: #0b1120;
+      border-bottom: 1px solid var(--card-border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .brand-title h1 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand-title p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .header-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      background-color: #111827;
+      border-bottom: 1px solid var(--card-border);
+      padding: 0 2rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-main);
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Cards */
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Metric Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .metric-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .metric-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .metric-sub {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 0.25rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { background-color: var(--primary-hover); }
+
+    .btn-secondary {
+      background-color: #334155;
+      color: var(--text-main);
+      border-color: #475569;
+    }
+    .btn-secondary:hover { background-color: #475569; }
+
+    .btn-danger {
+      background-color: #7f1d1d;
+      color: #fca5a5;
+      border-color: #991b1b;
+    }
+    .btn-danger:hover { background-color: #991b1b; }
+
+    .btn-success {
+      background-color: #065f46;
+      color: #6ee7b7;
+      border-color: #047857;
+    }
+    .btn-success:hover { background-color: #047857; }
+
+    .btn-sm {
+      padding: 0.375rem 0.625rem;
+      font-size: 0.75rem;
+    }
+
+    /* Forms */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      margin-bottom: 0.375rem;
+      color: var(--text-muted);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.625rem 0.75rem;
+      background-color: #0b1120;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      color: var(--text-main);
+      font-size: 0.875rem;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .form-row {
+      display: flex;
+      gap: 1rem;
+    }
+    .form-row > * { flex: 1; }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+    thead {
+      background-color: #0b1120;
+      border-bottom: 1px solid var(--card-border);
+    }
+    th {
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    td {
+      padding: 0.875rem 1rem;
+      border-bottom: 1px solid #1e293b;
+      vertical-align: middle;
+    }
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+    .badge-real { background-color: #064e3b; color: #6ee7b7; }
+    .badge-pseudo { background-color: #451a03; color: #fcd34d; }
+    .badge-demo { background-color: #1e1b4b; color: #a5b4fc; }
+    .badge-pending { background-color: #374151; color: #9ca3af; }
+    .badge-progress { background-color: #1e3a8a; color: #93c5fd; }
+    .badge-completed { background-color: #064e3b; color: #6ee7b7; }
+
+    /* Session Pills */
+    .session-pills {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .session-pill {
+      background-color: #0b1120;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .session-pill:hover {
+      color: var(--text-main);
+      border-color: #475569;
+    }
+    .session-pill.active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 1rem;
+    }
+    .modal-backdrop.active { display: flex; }
+    .modal {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      width: 100%;
+      max-width: 540px;
+      padding: 1.5rem;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .modal-title { font-size: 1.125rem; font-weight: 600; }
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background-color: #1e293b;
+      border: 1px solid var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Drag & Drop Zone */
+    .drop-zone {
+      border: 2px dashed var(--card-border);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+      background-color: #0b1120;
+    }
+    .drop-zone:hover, .drop-zone.dragover {
+      border-color: var(--primary);
+      background-color: rgba(37, 99, 235, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">K</div>
+      <div class="brand-title">
+        <h1>ROAR SWR — Kannada Clinical Portal</h1>
+        <p>Single Word Recognition Assessment Platform</p>
+      </div>
+    </div>
+    <div class="header-links">
+      <a href="/?consent=false&storyoption=false" target="_blank" class="btn btn-secondary btn-sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        Launch Standalone Game
+      </a>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('rosterTab')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      Children & Test Sessions
+    </button>
+    <button class="tab-btn" onclick="switchTab('wordsTab')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      Word Bank & Datasets
+    </button>
+    <button class="tab-btn" onclick="switchTab('resultsTab')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+      Assessment Results & Telemetry
+    </button>
+    <button class="tab-btn" onclick="switchTab('settingsTab')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      Engine Settings
+    </button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- TAB 1: CHILDREN & ROSTER -->
+    <section id="rosterTab" class="tab-content active">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Enrolled Children</div>
+          <div class="metric-value" id="countStudents">0</div>
+          <div class="metric-sub">Active testing roster</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Assessments Completed</div>
+          <div class="metric-value" id="countCompleted">0</div>
+          <div class="metric-sub">Full runs recorded</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Current Stimulus Display</div>
+          <div class="metric-value" id="dispTimingMode">Infinite</div>
+          <div class="metric-sub">Word visibility mode</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Available Sessions</div>
+          <div class="metric-value">6</div>
+          <div class="metric-sub">90 words / session</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            Enrolled Children & Test Launchers
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="openStudentModal()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Register Child
+          </button>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Participant ID</th>
+                <th>Child Name</th>
+                <th>Grade</th>
+                <th>Assigned Session</th>
+                <th>Status</th>
+                <th>Last Accuracy</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="studentsTableBody">
+              <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading participants...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: WORD BANK & SESSIONS -->
+    <section id="wordsTab" class="tab-content">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            Session Word Bank Management
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary btn-sm" onclick="openExcelUploadModal()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              Import Excel / CSV
+            </button>
+            <button class="btn btn-primary btn-sm" onclick="openAddWordModal()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              Add Word
+            </button>
+          </div>
+        </div>
+
+        <!-- Session Selection Pills -->
+        <div class="session-pills" id="sessionPills">
+          <button class="session-pill active" onclick="selectSession('1')">Session 1</button>
+          <button class="session-pill" onclick="selectSession('2')">Session 2</button>
+          <button class="session-pill" onclick="selectSession('3')">Session 3</button>
+          <button class="session-pill" onclick="selectSession('4')">Session 4</button>
+          <button class="session-pill" onclick="selectSession('5')">Session 5</button>
+          <button class="session-pill" onclick="selectSession('6')">Session 6</button>
+        </div>
+
+        <!-- Master Sub-Filters -->
+        <div id="masterTypeFilterBar" style="display: none; gap: 0.5rem; margin-bottom: 1rem;">
+          <button class="btn btn-sm btn-secondary active" id="btnFilterAll" onclick="setMasterTypeFilter('all')">All Words (540)</button>
+          <button class="btn btn-sm btn-secondary" id="btnFilterReal" onclick="setMasterTypeFilter('real')">Real Words (270)</button>
+          <button class="btn btn-sm btn-secondary" id="btnFilterPseudo" onclick="setMasterTypeFilter('pseudo')">Non-Words (270)</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+          <input type="text" id="wordSearchInput" class="form-control" style="max-width: 350px;" placeholder="Filter words by Kannada or English meaning..." oninput="filterWordsTable()">
+          <div id="sessionStatsText" style="font-size: 0.8125rem; color: var(--text-muted);">Showing 95 words</div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Item ID</th>
+                <th>Kannada Word</th>
+                <th>Type</th>
+                <th>IPA Transcription</th>
+                <th>English Meaning</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="wordsTableBody">
+              <tr><td colspan="6" style="text-align: center; color: var(--text-muted);">Loading session words...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: RESULTS & TELEMETRY -->
+    <section id="resultsTab" class="tab-content">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-label">Total Trials Recorded</div>
+          <div class="metric-value" id="metricTotalTrials">0</div>
+          <div class="metric-sub">Across all children</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Average Accuracy</div>
+          <div class="metric-value" id="metricAccuracy">-%</div>
+          <div class="metric-sub">Real vs Pseudo correctness</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Average Reaction Time</div>
+          <div class="metric-value" id="metricMeanRt">- ms</div>
+          <div class="metric-sub">Response latency</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            Live Response Telemetry Log
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary btn-sm" onclick="clearResults()">Clear Log</button>
+            <button onclick="exportCSV()" class="btn btn-primary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Export CSV
+            </button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Participant</th>
+                <th>Session</th>
+                <th>Stage</th>
+                <th>Kannada Word</th>
+                <th>Outcome</th>
+                <th>Reaction Time</th>
+                <th>Key Pressed</th>
+              </tr>
+            </thead>
+            <tbody id="resultsTableBody">
+              <tr><td colspan="8" style="text-align: center; color: var(--text-muted);">No trial responses recorded yet. Responses will appear here in real time as children play.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: ENGINE SETTINGS -->
+    <section id="settingsTab" class="tab-content">
+      <div class="card" style="max-width: 780px;">
+        <div class="card-header">
+          <div class="card-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Psychometric Presentation & Timing Settings
+          </div>
+        </div>
+
+        <form id="settingsForm" onsubmit="saveSettings(event)">
+          <!-- Stimulus Mode Selection -->
+          <div class="form-group" style="margin-bottom: 1.5rem; background: #0b1120; padding: 1rem; border-radius: 6px; border: 1px solid var(--card-border);">
+            <label class="form-label" style="font-weight: 600; color: #fff; margin-bottom: 0.75rem;">Word Visibility Presentation Mode</label>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <label style="display: flex; align-items: flex-start; gap: 0.625rem; cursor: pointer;">
+                <input type="radio" name="stimulusDisplayMode" value="infinite" id="modeInfinite" checked style="margin-top: 0.25rem;" onchange="toggleTimingInputs()">
+                <div>
+                  <div style="font-weight: 600;">Stay visible until child responds (Recommended / Demo Warm-up style)</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">The word remains on screen indefinitely until the child taps Left or Right arrow. Gives children full time to process complex Kannada characters without rush.</div>
+                </div>
+              </label>
+
+              <label style="display: flex; align-items: flex-start; gap: 0.625rem; cursor: pointer;">
+                <input type="radio" name="stimulusDisplayMode" value="timed" id="modeTimed" style="margin-top: 0.25rem;" onchange="toggleTimingInputs()">
+                <div>
+                  <div style="font-weight: 600;">Fixed display duration (Timed presentation)</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);">Word flashes or displays for a specific number of seconds before blanking out.</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row" id="timedSettingsRow" style="display: none;">
+            <div class="form-group">
+              <label class="form-label" for="stimulusTimeSec">Word Display Duration (Seconds)</label>
+              <input type="number" step="0.5" min="1" max="30" class="form-control" id="stimulusTimeSec" value="10">
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Default recommendation: 10 to 12 seconds</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="trialTimeoutSec">Response Timeout Limit (Seconds)</label>
+              <input type="number" step="1" min="2" max="60" class="form-control" id="trialTimeoutSec" value="12">
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Auto-advances if child does not respond</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fixationTimeMs">Fixation Cross Gap (Milliseconds)</label>
+              <input type="number" step="100" min="200" max="3000" class="form-control" id="fixationTimeMs" value="1000">
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Cross interval between trials (default: 1000ms)</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="practiceCount">Practice Demo Words Count</label>
+              <input type="number" min="1" max="10" class="form-control" id="practiceCount" value="5">
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Number of warm-up words at start</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="wordsPerSession">Test Words Per Session</label>
+            <input type="number" min="10" max="180" class="form-control" id="wordsPerSession" value="90">
+            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Standard full session: 90 words (45 Real + 45 Pseudo)</div>
+          </div>
+
+          
+          <!-- Word Presentation & Shuffle Sequence -->
+          <div class="form-group" style="margin-bottom: 1.5rem; background: #0b1120; padding: 1.25rem; border-radius: 6px; border: 1px solid var(--card-border);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+              <label class="form-label" style="font-weight: 600; color: #fff; margin-bottom: 0;">Word Presentation & Shuffle Sequence</label>
+              <span id="activeShuffleLabel" class="badge badge-blue">Strict Alternating</span>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 1rem;">Choose how Real words and Non-Words (Pseudo-words) are ordered during child testing sessions:</div>
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
+              <!-- Option 1: Strict Alternating -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Strict Alternating')">
+                <input type="radio" name="shufflePattern" value="alternating" id="patternAlternating" checked style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Strict Alternating (1 Real : 1 Non-Word)</strong>
+                    <span class="badge badge-blue">Recommended</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Evenly alternates between real Kannada words and non-words. Prevents repeated motor response bias.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 2: Constrained Balanced -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Constrained Balanced')">
+                <input type="radio" name="shufflePattern" value="constrained" id="patternConstrained" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Constrained Balanced (Max 2 in a Row)</strong>
+                    <span class="badge badge-green">Psycholinguistic Standard</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Randomized trial order with a strict guardrail: never allows more than 2 consecutive real words or non-words.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 3: Blocked Clusters -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Block Clusters')">
+                <input type="radio" name="shufflePattern" value="blocks" id="patternBlocks" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Block Clusters (Mini-blocks of 5)</strong>
+                    <span class="badge badge-yellow">Categorical Practice</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Groups stimuli into blocks of 5 real words followed by 5 non-words throughout the session.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace;">
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Non-Word</span> &rarr; 
+                    <span style="background: #1e3a8a; color: #93c5fd; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Real</span> &rarr; 
+                    <span style="background: #854d0e; color: #fde047; padding: 0.15rem 0.4rem; border-radius: 3px;">5x Non-Word</span>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Option 4: Pure Random -->
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Completely Random')">
+                <input type="radio" name="shufflePattern" value="random" id="patternRandom" style="margin-top: 0.25rem;">
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                    <strong style="color: #38bdf8;">Completely Random (Stanford ROAR Default)</strong>
+                    <span class="badge badge-gray">Unconstrained</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">Original 50/50 probability coin flip on every trial. May produce unpredictable streaks of 4+ consecutive real or non-words.</div>
+                  <div style="display: flex; gap: 0.35rem; align-items: center; font-size: 0.7rem; font-family: monospace; color: var(--text-muted);">
+                    <span>Random 50% Real / 50% Non-Word coin flip on each trial</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Save Engine Settings
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: REGISTER / EDIT CHILD -->
+  <div class="modal-backdrop" id="studentModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title" id="studentModalTitle">Register Child</div>
+        <button class="modal-close" onclick="closeStudentModal()">&times;</button>
+      </div>
+      <form id="studentForm" onsubmit="handleStudentSubmit(event)">
+        <input type="hidden" id="editStudentId">
+        <div class="form-group">
+          <label class="form-label" for="stuIdInput">Participant / Student ID</label>
+          <input type="text" class="form-control" id="stuIdInput" required placeholder="e.g. STU-001">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="stuNameInput">Child Name</label>
+          <input type="text" class="form-control" id="stuNameInput" required placeholder="e.g. Rahul">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="stuGradeInput">Grade / Class</label>
+            <select class="form-control" id="stuGradeInput">
+              <option value="Grade 1">Grade 1</option>
+              <option value="Grade 2">Grade 2</option>
+              <option value="Grade 3">Grade 3</option>
+              <option value="Grade 4">Grade 4</option>
+              <option value="Grade 5">Grade 5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="stuSessionInput">Assigned Session</label>
+            <select class="form-control" id="stuSessionInput">
+              <option value="1">Session 1</option>
+              <option value="2">Session 2</option>
+              <option value="3">Session 3</option>
+              <option value="4">Session 4</option>
+              <option value="5">Session 5</option>
+              <option value="6">Session 6</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+          <button type="button" class="btn btn-secondary" onclick="closeStudentModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="studentSubmitBtn">Save Participant</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT WORD -->
+  <div class="modal-backdrop" id="wordModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title" id="wordModalTitle">Add Kannada Word</div>
+        <button class="modal-close" onclick="closeWordModal()">&times;</button>
+      </div>
+      <form id="wordForm" onsubmit="handleWordSubmit(event)">
+        <input type="hidden" id="editWordId">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="wordSessionSelect">Target Session</label>
+            <select class="form-control" id="wordSessionSelect">
+              <option value="1">Session 1</option>
+              <option value="2">Session 2</option>
+              <option value="3">Session 3</option>
+              <option value="4">Session 4</option>
+              <option value="5">Session 5</option>
+              <option value="6">Session 6</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="wordTypeSelect">Word Classification</label>
+            <select class="form-control" id="wordTypeSelect">
+              <option value="real">Real Word (ನೈಜ ಪದ)</option>
+              <option value="pseudo">Non-Word / Pseudo (ಕೃತಕ ಪದ)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wordTextInput">Kannada Word (ಕನ್ನಡ ಅಕ್ಷರಗಳಲ್ಲಿ)</label>
+          <input type="text" class="form-control kannada-text" id="wordTextInput" required placeholder="ಉದಾ: ಮನೆ">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wordTransInput">IPA / Phonetic Transcription</label>
+          <input type="text" class="form-control" id="wordTransInput" placeholder="e.g. mane">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wordMeaningInput">English Meaning / Context</label>
+          <input type="text" class="form-control" id="wordMeaningInput" placeholder="e.g. house">
+        </div>
+        <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+          <button type="button" class="btn btn-secondary" onclick="closeWordModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Word</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: EXCEL UPLOAD -->
+  <div class="modal-backdrop" id="excelModal">
+    <div class="modal" style="max-width: 640px;">
+      <div class="modal-header">
+        <div class="modal-title">Import Excel / CSV Word Bank</div>
+        <button class="modal-close" onclick="closeExcelModal()">&times;</button>
+      </div>
+      <div>
+        <div class="form-group">
+          <label class="form-label" for="excelTargetSession">Import Destination Session</label>
+          <select class="form-control" id="excelTargetSession">
+            <option value="master">Master Corpus (Complete 540 Words — Auto-Distribute across Sessions 1-6)</option>
+            <option value="1">Session 1</option>
+            <option value="2">Session 2</option>
+            <option value="3">Session 3</option>
+            <option value="4">Session 4</option>
+            <option value="5">Session 5</option>
+            <option value="6">Session 6</option>
+          </select>
+        </div>
+
+        <div class="drop-zone" id="excelDropZone" onclick="document.getElementById('excelFileInput').click()">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 0.75rem; display: block; color: var(--text-muted);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">Drop your Excel (.xlsx, .xlsm) or CSV file here</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">or click to browse your computer</div>
+          <input type="file" id="excelFileInput" accept=".xlsx,.xlsm,.xls,.csv" style="display: none;" onchange="handleExcelFileSelected(event)">
+        </div>
+
+        <div id="excelPreviewSection" style="margin-top: 1rem; display: none;">
+          <div style="font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.5rem;" id="excelPreviewTitle">Parsed Words Preview:</div>
+          <div style="max-height: 180px; overflow-y: auto; border: 1px solid var(--card-border); border-radius: 6px; padding: 0.5rem; font-size: 0.75rem; background: #0b1120;" id="excelPreviewContent"></div>
+          <div style="margin-top: 1rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+            <button class="btn btn-secondary" onclick="closeExcelModal()">Cancel</button>
+            <button class="btn btn-success" onclick="commitExcelImport()">Commit Import to Session</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast"></div>
+
+  <script>
+// ================================================================
+//  ROAR Dashboard — Pure Frontend Engine (v8.0 Professional)
+//  Includes Master Corpus (540 words) + Visual Shuffle Pattern Selector
+// ================================================================
+
+const LS = {
+  get: function(k, def) {
+    if (def === undefined) def = [];
+    try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
+  },
+  set: function(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {} },
+  del: function(k)    { try { localStorage.removeItem(k); } catch(e) {} }
+};
+
+function getStudents()  { return LS.get('studentsRoster', []); }
+function setStudents(a) { LS.set('studentsRoster', a); }
+function getSettings()  {
+  return LS.get('roarSettings', {
+    stimulusDisplayMode: 'infinite', stimulusTimeMs: 10000, trialTimeoutMs: 12000,
+    fixationTimeMs: 1000, practiceCount: 5, wordsPerSession: 90,
+    shufflePattern: 'alternating'
+  });
+}
+function setSettings(s) { LS.set('roarSettings', s); }
+function getResults()   { return LS.get('roarTrialResults', []); }
+
+// State
+var allStudents      = [];
+var rawSessionsData  = {};
+var currentSession   = 'master'; // 'master' | '1'..'6'
+var masterTypeFilter = 'all';    // 'all' | 'real' | 'pseudo'
+var editingWordId    = null;
+var editingStudentId = null;
+var pendingImport    = [];
+
+// Toast
+function showToast(msg, type) {
+  type = type || 'success';
+  var t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.className = '';
+  t.style.cssText = 'display:block;position:fixed;bottom:1.5rem;right:1.5rem;z-index:9999;padding:0.75rem 1.25rem;border-radius:8px;font-size:0.875rem;font-weight:600;max-width:420px;';
+  if (type === 'error')   t.style.background = '#ef4444';
+  else if (type === 'warning') t.style.background = '#f59e0b';
+  else t.style.background = '#10b981';
+  t.style.color = '#fff';
+  setTimeout(function() { t.style.display = 'none'; }, 3500);
+}
+
+// Tab navigation
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b) {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').indexOf("'" + tabId + "'") !== -1) {
+      b.classList.add('active');
+    }
+  });
+  var tabEl = document.getElementById(tabId);
+  if (tabEl) tabEl.classList.add('active');
+
+  if (tabId === 'rosterTab')   initRosterTab();
+  if (tabId === 'wordsTab')    initWordsTab();
+  if (tabId === 'resultsTab')  initResultsTab();
+  if (tabId === 'settingsTab') initSettingsTab();
+}
+
+// ================================================================
+//  TAB 1 — Children & Test Sessions
+// ================================================================
+function initRosterTab() {
+  allStudents = getStudents();
+  renderStudentsTable();
+  updateRosterMetrics();
+}
+
+function updateRosterMetrics() {
+  var students = getStudents();
+  var completed = students.filter(function(s) { return s.status === 'Completed'; }).length;
+  var settings  = getSettings();
+  var el1 = document.getElementById('countStudents');
+  var el2 = document.getElementById('countCompleted');
+  var el3 = document.getElementById('dispTimingMode');
+  if (el1) el1.textContent = students.length;
+  if (el2) el2.textContent = completed;
+  if (el3) el3.textContent = settings.stimulusDisplayMode === 'timed'
+    ? (settings.stimulusTimeMs / 1000).toFixed(1) + 's Timed'
+    : 'Infinite';
+}
+
+function renderStudentsTable() {
+  var tbody = document.getElementById('studentsTableBody');
+  if (!tbody) return;
+  var students = getStudents();
+  if (!students.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">No children registered. Click "Register Child" to add one.</td></tr>';
+    return;
+  }
+  var results = getResults();
+  var accMap = {};
+  results.forEach(function(r) {
+    if (!accMap[r.participant]) accMap[r.participant] = { total: 0, correct: 0 };
+    accMap[r.participant].total++;
+    if (r.correct) accMap[r.participant].correct++;
+  });
+
+  tbody.innerHTML = students.map(function(s, i) {
+    var acc = accMap[s.id] ? Math.round(accMap[s.id].correct / accMap[s.id].total * 100) + '%' : '—';
+    var statusClass = s.status === 'Completed' ? 'badge-green' : s.status === 'In Progress' ? 'badge-yellow' : 'badge-gray';
+    return '<tr>' +
+      '<td><code style="font-size:0.8rem;color:var(--accent)">' + esc(s.id) + '</code></td>' +
+      '<td>' + esc(s.name) + '</td>' +
+      '<td>' + esc(s.grade || '—') + '</td>' +
+      '<td><span class="badge badge-blue">Session ' + esc(String(s.session || 1)) + '</span></td>' +
+      '<td><span class="badge ' + statusClass + '">' + esc(s.status || 'Pending') + '</span></td>' +
+      '<td>' + esc(acc) + '</td>' +
+      '<td style="display:flex;gap:0.4rem;flex-wrap:wrap;">' +
+        '<button class="btn btn-primary btn-sm" onclick="launchGame(' + i + ')">Launch</button>' +
+        '<button class="btn btn-sm" onclick="openEditStudent(' + i + ')">Edit</button>' +
+        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteStudent(' + i + ')">Delete</button>' +
+      '</td></tr>';
+  }).join('');
+}
+
+function launchGame(idx) {
+  var students = getStudents();
+  var s = students[idx];
+  if (!s) return;
+  var url = '/?consent=false&storyoption=false&participant=' + encodeURIComponent(s.id) + '&session=' + (s.session || 1);
+  s.status = 'In Progress';
+  students[idx] = s;
+  setStudents(students);
+  renderStudentsTable();
+  window.open(url, '_blank');
+}
+
+function openStudentModal() {
+  editingStudentId = null;
+  document.getElementById('studentModalTitle').textContent = 'Register New Child';
+  document.getElementById('studentSubmitBtn').textContent  = 'Save Participant';
+  document.getElementById('stuIdInput').value      = '';
+  document.getElementById('stuNameInput').value    = '';
+  document.getElementById('stuGradeInput').value   = 'Grade 1';
+  document.getElementById('stuSessionInput').value = '1';
+  document.getElementById('stuIdInput').disabled   = false;
+  document.getElementById('studentModal').style.display = 'flex';
+}
+
+function openEditStudent(idx) {
+  var students = getStudents();
+  var s = students[idx];
+  if (!s) return;
+  editingStudentId = idx;
+  document.getElementById('studentModalTitle').textContent = 'Edit Child Record';
+  document.getElementById('studentSubmitBtn').textContent  = 'Update Participant';
+  document.getElementById('stuIdInput').value      = s.id;
+  document.getElementById('stuNameInput').value    = s.name;
+  document.getElementById('stuGradeInput').value   = s.grade || 'Grade 1';
+  document.getElementById('stuSessionInput').value = String(s.session || 1);
+  document.getElementById('stuIdInput').disabled   = true;
+  document.getElementById('studentModal').style.display = 'flex';
+}
+
+function closeStudentModal() {
+  document.getElementById('studentModal').style.display = 'none';
+  editingStudentId = null;
+}
+
+function handleStudentSubmit(event) {
+  event.preventDefault();
+  var id      = document.getElementById('stuIdInput').value.trim();
+  var name    = document.getElementById('stuNameInput').value.trim();
+  var grade   = document.getElementById('stuGradeInput').value;
+  var session = parseInt(document.getElementById('stuSessionInput').value) || 1;
+  if (!id || !name) { showToast('Participant ID and Name are required.', 'error'); return; }
+
+  var students = getStudents();
+  if (editingStudentId !== null) {
+    students[editingStudentId].name    = name;
+    students[editingStudentId].grade   = grade;
+    students[editingStudentId].session = session;
+    setStudents(students);
+    closeStudentModal();
+    allStudents = students;
+    renderStudentsTable();
+    showToast('Child record updated.');
+  } else {
+    if (students.find(function(s) { return s.id === id; })) {
+      showToast('Participant ID already exists.', 'error'); return;
+    }
+    students.push({ id: id, name: name, grade: grade, session: session, status: 'Pending', registeredAt: new Date().toISOString() });
+    setStudents(students);
+    allStudents = students;
+    closeStudentModal();
+    renderStudentsTable();
+    updateRosterMetrics();
+    showToast('Child registered successfully.');
+  }
+}
+
+function deleteStudent(idx) {
+  if (!confirm('Delete this child record?')) return;
+  var students = getStudents();
+  students.splice(idx, 1);
+  setStudents(students);
+  allStudents = students;
+  renderStudentsTable();
+  updateRosterMetrics();
+  showToast('Record deleted.', 'warning');
+}
+
+// ================================================================
+//  TAB 2 — Word Bank & Master Corpus Management
+// ================================================================
+function initWordsTab() {
+  var stored = LS.get('roarCustomSessionsData', null);
+  if (stored) {
+    rawSessionsData = stored;
+    renderWordsTab();
+    return;
+  }
+  fetch('/sessions_data.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      rawSessionsData = data;
+      renderWordsTab();
+    })
+    .catch(function(e) { showToast('Could not load sessions_data.json', 'error'); });
+}
+
+function getMasterList() {
+  var master = [];
+  [1, 2, 3, 4, 5, 6].forEach(function(s) {
+    var sesKey = String(s);
+    var ses = rawSessionsData[sesKey] || {};
+    (ses.real || []).forEach(function(w) {
+      master.push(Object.assign({}, w, { session: s, type: 'real' }));
+    });
+    (ses.pseudo || []).forEach(function(w) {
+      master.push(Object.assign({}, w, { session: s, type: 'pseudo' }));
+    });
+  });
+  return master;
+}
+
+function getSessionList(s) {
+  var ses = rawSessionsData[String(s)] || {};
+  var list = [];
+  (ses.demo || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'demo', session: s }));
+  });
+  (ses.real || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'real', session: s }));
+  });
+  (ses.pseudo || []).forEach(function(w) {
+    list.push(Object.assign({}, w, { type: 'pseudo', session: s }));
+  });
+  return list;
+}
+
+function renderWordsTab() {
+  updateSessionPills();
+  renderWordsTable();
+}
+
+function updateSessionPills() {
+  var pills = document.getElementById('sessionPills');
+  if (!pills) return;
+  var masterActive = currentSession === 'master' ? 'active' : '';
+  var html = '<button class="session-pill ' + masterActive + '" style="font-weight:700;border-color:var(--accent);" onclick="selectSession(\'master\')">Master Corpus (540 Words)</button>';
+  
+  [1, 2, 3, 4, 5, 6].forEach(function(n) {
+    var active = currentSession === String(n) ? 'active' : '';
+    html += '<button class="session-pill ' + active + '" onclick="selectSession(\'' + n + '\')">Session ' + n + '</button>';
+  });
+  pills.innerHTML = html;
+
+  var subBar = document.getElementById('masterTypeFilterBar');
+  if (subBar) {
+    subBar.style.display = currentSession === 'master' ? 'flex' : 'none';
+  }
+}
+
+function selectSession(n) {
+  currentSession = String(n);
+  renderWordsTab();
+}
+
+function setMasterTypeFilter(f) {
+  masterTypeFilter = f;
+  ['btnFilterAll', 'btnFilterReal', 'btnFilterPseudo'].forEach(function(id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.classList.remove('active');
+  });
+  if (f === 'all') document.getElementById('btnFilterAll')?.classList.add('active');
+  if (f === 'real') document.getElementById('btnFilterReal')?.classList.add('active');
+  if (f === 'pseudo') document.getElementById('btnFilterPseudo')?.classList.add('active');
+  renderWordsTable();
+}
+
+function renderWordsTable() {
+  var tbody = document.getElementById('wordsTableBody');
+  if (!tbody) return;
+
+  var isMaster = currentSession === 'master';
+  var words = isMaster ? getMasterList() : getSessionList(currentSession);
+
+  if (isMaster && masterTypeFilter !== 'all') {
+    words = words.filter(function(w) { return w.type === masterTypeFilter; });
+  }
+
+  var q = (document.getElementById('wordSearchInput')?.value || '').toLowerCase().trim();
+  if (q) {
+    words = words.filter(function(w) {
+      return (w.word||w.text||'').toLowerCase().includes(q) ||
+             (w.type||'').toLowerCase().includes(q) ||
+             (w.meaning||w.english||'').toLowerCase().includes(q) ||
+             (w.transcription||w.ipa||'').toLowerCase().includes(q);
+    });
+  }
+
+  var statsEl = document.getElementById('sessionStatsText');
+  if (statsEl) {
+    if (isMaster) {
+      var totalReal = getMasterList().filter(function(w){return w.type==='real';}).length;
+      var totalPseudo = getMasterList().filter(function(w){return w.type==='pseudo';}).length;
+      statsEl.textContent = 'Showing ' + words.length + ' / 540 Master Words (' + totalReal + ' Real + ' + totalPseudo + ' Non-Words)';
+    } else {
+      var total = getSessionList(currentSession).length;
+      statsEl.textContent = 'Showing ' + words.length + ' / ' + total + ' words in Session ' + currentSession;
+    }
+  }
+
+  if (!words.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No words found matching criteria.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = words.map(function(w, idx) {
+    var word = w.word || w.text || '';
+    var type = w.type || 'real';
+    var trans = w.transcription || w.ipa || '';
+    var meaning = w.meaning || w.english || (w.source_word ? 'Source: ' + w.source_word : '');
+    var typeBadge = type === 'real' ? 'badge-blue' : (type === 'demo' ? 'badge-green' : 'badge-yellow');
+    var sesBadge = '<span class="badge badge-gray">Session ' + (w.session || 1) + '</span>';
+
+    return '<tr>' +
+      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(String(idx + 1)) + '</td>' +
+      '<td class="kannada-text" style="font-size:1.15rem;font-weight:600">' + esc(word) + '</td>' +
+      '<td><span class="badge ' + typeBadge + '">' + esc(type === 'pseudo' ? 'Non-Word' : type) + '</span></td>' +
+      '<td>' + (isMaster ? sesBadge : esc(trans)) + '</td>' +
+      '<td style="font-size:0.8rem">' + esc(meaning || trans || '—') + '</td>' +
+      '<td style="display:flex;gap:0.4rem">' +
+        '<button class="btn btn-sm" onclick="openEditWord(' + idx + ', \'' + (w.id||'') + '\')">Edit</button>' +
+        '<button class="btn btn-sm" style="background:var(--danger);color:#fff" onclick="deleteWord(' + idx + ', \'' + (w.id||'') + '\', \'' + (w.session||currentSession) + '\')">Delete</button>' +
+      '</td></tr>';
+  }).join('');
+}
+
+function filterWordsTable() { renderWordsTable(); }
+
+function openAddWordModal() {
+  editingWordId = null;
+  document.getElementById('wordModalTitle').textContent = 'Add Kannada Word';
+  document.getElementById('editWordId').value       = '';
+  document.getElementById('wordTextInput').value    = '';
+  document.getElementById('wordTransInput').value   = '';
+  document.getElementById('wordMeaningInput').value = '';
+  document.getElementById('wordTypeSelect').value   = 'real';
+  document.getElementById('wordSessionSelect').value = currentSession === 'master' ? '1' : currentSession;
+  document.getElementById('wordModal').style.display = 'flex';
+}
+
+function openEditWord(idx, wordId) {
+  var isMaster = currentSession === 'master';
+  var list = isMaster ? getMasterList() : getSessionList(currentSession);
+  var w = list[idx];
+  if (!w) return;
+  editingWordId = idx;
+  document.getElementById('wordModalTitle').textContent = 'Edit Kannada Word';
+  document.getElementById('editWordId').value       = idx;
+  document.getElementById('wordTextInput').value    = w.word || '';
+  document.getElementById('wordTransInput').value   = w.transcription || w.ipa || '';
+  document.getElementById('wordMeaningInput').value = w.meaning || w.english || '';
+  document.getElementById('wordTypeSelect').value   = w.type || 'real';
+  document.getElementById('wordSessionSelect').value = String(w.session || 1);
+  document.getElementById('wordModal').style.display = 'flex';
+}
+
+function closeWordModal() {
+  document.getElementById('wordModal').style.display = 'none';
+  editingWordId = null;
+}
+
+function handleWordSubmit(event) {
+  event.preventDefault();
+  var word    = document.getElementById('wordTextInput').value.trim();
+  var trans   = document.getElementById('wordTransInput').value.trim();
+  var meaning = document.getElementById('wordMeaningInput').value.trim();
+  var type    = document.getElementById('wordTypeSelect').value;
+  var sesNum  = document.getElementById('wordSessionSelect').value;
+  if (!word) { showToast('Kannada word is required.', 'error'); return; }
+
+  var sesKey = String(sesNum);
+  if (!rawSessionsData[sesKey]) rawSessionsData[sesKey] = { real: [], pseudo: [], demo: [] };
+
+  if (editingWordId !== null) {
+    // Edit existing word
+    var targetArray = type === 'pseudo' ? rawSessionsData[sesKey].pseudo : rawSessionsData[sesKey].real;
+    if (targetArray && targetArray[editingWordId]) {
+      targetArray[editingWordId].word = word;
+      targetArray[editingWordId].transcription = trans;
+      targetArray[editingWordId].meaning = meaning;
+    }
+    showToast('Word updated successfully.');
+  } else {
+    // Add new word
+    var item = { id: (type === 'real' ? 'R' : 'N') + Date.now().toString().slice(-4), word: word, transcription: trans, meaning: meaning };
+    if (type === 'pseudo') rawSessionsData[sesKey].pseudo.push(item);
+    else rawSessionsData[sesKey].real.push(item);
+    showToast('Added new word to Session ' + sesNum + '.');
+  }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
+  closeWordModal();
+  renderWordsTab();
+}
+
+function deleteWord(idx, wordId, sesNum) {
+  if (!confirm('Delete this word from the corpus?')) return;
+  var sesKey = String(sesNum);
+  if (!rawSessionsData[sesKey]) return;
+
+  var found = false;
+  ['real', 'pseudo'].forEach(function(group) {
+    var arr = rawSessionsData[sesKey][group] || [];
+    var i = arr.findIndex(function(x) { return x.id === wordId || x.word === wordId; });
+    if (i !== -1) { arr.splice(i, 1); found = true; }
+  });
+
+  if (!found) {
+    if (rawSessionsData[sesKey].real && rawSessionsData[sesKey].real[idx]) rawSessionsData[sesKey].real.splice(idx, 1);
+  }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
+  renderWordsTab();
+  showToast('Word removed.', 'warning');
+}
+
+// Excel Import
+function openExcelUploadModal() {
+  pendingImport = [];
+  document.getElementById('excelPreviewSection').style.display = 'none';
+  document.getElementById('excelFileInput').value = '';
+  document.getElementById('excelModal').style.display = 'flex';
+}
+
+function closeExcelModal() {
+  document.getElementById('excelModal').style.display = 'none';
+}
+
+function handleExcelFile(event) {
+  var file = event.target.files[0];
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var words = [];
+      if (file.name.endsWith('.csv')) {
+        var text  = e.target.result;
+        var lines = text.split(/\r?\n/).filter(function(l) { return l.trim(); });
+        lines.forEach(function(line, i) {
+          if (i === 0 && (line.toLowerCase().includes('word') || line.toLowerCase().includes('type'))) return;
+          var cols = line.split(',').map(function(c) { return c.trim().replace(/^"|"$/g,''); });
+          if (cols[0]) words.push({ word: cols[0], type: normType(cols[1] || 'real'), meaning: cols[2] || '' });
+        });
+      } else {
+        var data = new Uint8Array(e.target.result);
+        var wb   = XLSX.read(data, { type: 'array' });
+        var ws   = wb.Sheets[wb.SheetNames[0]];
+        var rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
+        var headerRow = 0;
+        for (var i = 0; i < Math.min(5, rows.length); i++) {
+          if (rows[i] && rows[i].some(function(c) { return typeof c === 'string' && c.toLowerCase().includes('word'); })) {
+            headerRow = i; break;
+          }
+        }
+        var headers  = (rows[headerRow] || []).map(function(h) { return String(h||'').toLowerCase().trim(); });
+        var wordCol  = headers.findIndex(function(h) { return h.includes('word') || h.includes('stimulus') || h.includes('item'); });
+        var typeCol  = headers.findIndex(function(h) { return h.includes('type') || h.includes('category') || h.includes('class'); });
+        var meanCol  = headers.findIndex(function(h) { return h.includes('meaning') || h.includes('english'); });
+        for (var r = headerRow + 1; r < rows.length; r++) {
+          var row  = rows[r] || [];
+          var word2 = String(row[wordCol >= 0 ? wordCol : 0] || '').trim();
+          if (!word2) continue;
+          var type2 = normType(typeCol >= 0 ? String(row[typeCol] || 'real') : 'real');
+          var mean2 = meanCol >= 0 ? String(row[meanCol] || '') : '';
+          words.push({ word: word2, type: type2, meaning: mean2 });
+        }
+      }
+      pendingImport = words;
+      renderExcelPreview(words);
+    } catch(err) { showToast('Error parsing file: ' + err.message, 'error'); }
+  };
+  if (file.name.endsWith('.csv')) reader.readAsText(file);
+  else reader.readAsArrayBuffer(file);
+}
+
+function normType(t) {
+  t = String(t).toLowerCase().trim();
+  if (['real','word','ನೈಜ'].indexOf(t) !== -1) return 'real';
+  if (['pseudo','nonword','non-word','nw','ಕೃತಕ'].indexOf(t) !== -1) return 'pseudo';
+  return 'real';
+}
+
+function renderExcelPreview(words) {
+  var sec = document.getElementById('excelPreviewSection');
+  var body = document.getElementById('excelPreviewContent');
+  var title = document.getElementById('excelPreviewTitle');
+  if (!sec || !body) return;
+  var realCount = words.filter(function(w){return w.type==='real';}).length;
+  var pseudoCount = words.filter(function(w){return w.type==='pseudo';}).length;
+  if (title) title.textContent = words.length + ' words detected (' + realCount + ' Real + ' + pseudoCount + ' Non-Words):';
+  sec.style.display = 'block';
+  if (!words.length) { body.textContent = 'No words found in file.'; return; }
+  body.innerHTML = '<table style="width:100%;border-collapse:collapse"><thead><tr>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Word</th>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Type</th>' +
+    '<th style="text-align:left;padding:0.4rem 0.5rem;border-bottom:1px solid #334155">Context/Meaning</th>' +
+    '</tr></thead><tbody>' +
+    words.slice(0, 50).map(function(w) {
+      return '<tr><td class="kannada-text" style="padding:0.3rem 0.5rem">' + esc(w.word) + '</td>' +
+        '<td style="padding:0.3rem 0.5rem"><span class="badge badge-' + (w.type==='real'?'blue':'yellow') + '">' + esc(w.type) + '</span></td>' +
+        '<td style="padding:0.3rem 0.5rem;color:var(--text-muted)">' + esc(w.meaning) + '</td></tr>';
+    }).join('') +
+    (words.length > 50 ? '<tr><td colspan="3" style="text-align:center;color:var(--text-muted);padding:0.5rem">… and ' + (words.length - 50) + ' more</td></tr>' : '') +
+    '</tbody></table>';
+}
+
+function commitExcelImport() {
+  if (!pendingImport.length) { showToast('No words to import.', 'warning'); return; }
+  var target = document.getElementById('excelTargetSession').value;
+
+  if (target === 'master') {
+    // Distribute evenly across 6 sessions
+    var realWords = pendingImport.filter(function(w){return w.type==='real';});
+    var pseudoWords = pendingImport.filter(function(w){return w.type==='pseudo';});
+
+    [1, 2, 3, 4, 5, 6].forEach(function(s) {
+      var k = String(s);
+      if (!rawSessionsData[k]) rawSessionsData[k] = { real: [], pseudo: [], demo: [] };
+      rawSessionsData[k].real = [];
+      rawSessionsData[k].pseudo = [];
+    });
+
+    realWords.forEach(function(w, i) {
+      var s = String((i % 6) + 1);
+      rawSessionsData[s].real.push({ id: 'R' + (i+1), word: w.word, meaning: w.meaning });
+    });
+    pseudoWords.forEach(function(w, i) {
+      var s = String((i % 6) + 1);
+      rawSessionsData[s].pseudo.push({ id: 'N' + (i+1), word: w.word, meaning: w.meaning });
+    });
+
+    showToast('Imported ' + pendingImport.length + ' words and partitioned across 6 sessions (45 real + 45 non-words each).');
+  } else {
+    var k = String(target);
+    if (!rawSessionsData[k]) rawSessionsData[k] = { real: [], pseudo: [], demo: [] };
+    pendingImport.forEach(function(w) {
+      if (w.type === 'pseudo') rawSessionsData[k].pseudo.push(w);
+      else rawSessionsData[k].real.push(w);
+    });
+    showToast('Imported ' + pendingImport.length + ' words into Session ' + target + '.');
+  }
+
+  LS.set('roarCustomSessionsData', rawSessionsData);
+  closeExcelModal();
+  renderWordsTab();
+  pendingImport = [];
+}
+
+// ================================================================
+//  TAB 3 — Assessment Results & Telemetry
+// ================================================================
+function initResultsTab() {
+  var results = getResults();
+  updateResultsMetrics(results);
+  renderResultsTable(results);
+}
+
+function updateResultsMetrics(results) {
+  var total   = results.length;
+  var correct = results.filter(function(r) { return r.correct; }).length;
+  var acc     = total ? Math.round(correct / total * 100) : 0;
+  var rts     = results.filter(function(r) { return r.rt > 0; }).map(function(r) { return r.rt; });
+  var meanRt  = rts.length ? Math.round(rts.reduce(function(a,b) { return a+b; }, 0) / rts.length) : 0;
+
+  var el1 = document.getElementById('metricTotalTrials');
+  var el2 = document.getElementById('metricAccuracy');
+  var el3 = document.getElementById('metricMeanRt');
+  if (el1) el1.textContent = total;
+  if (el2) el2.textContent = acc + '%';
+  if (el3) el3.textContent = meanRt + ' ms';
+}
+
+function renderResultsTable(results) {
+  var tbody = document.getElementById('resultsTableBody');
+  if (!tbody) return;
+  if (!results.length) {
+    tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:2rem;">No trial responses recorded yet. Responses will appear here as children play.</td></tr>';
+    return;
+  }
+  var rows = results.slice(-200).reverse();
+  tbody.innerHTML = rows.map(function(r) {
+    var ts  = r.ts ? new Date(r.ts).toLocaleString() : '—';
+    var okClass = r.correct ? 'badge-green' : 'badge-danger';
+    return '<tr>' +
+      '<td style="font-size:0.75rem;color:var(--text-muted)">' + esc(ts) + '</td>' +
+      '<td><code style="font-size:0.8rem">' + esc(r.participant||'—') + '</code></td>' +
+      '<td>' + esc(String(r.session||'—')) + '</td>' +
+      '<td style="font-size:0.75rem">' + esc(r.stage||'—') + '</td>' +
+      '<td class="kannada-text" style="font-size:1.15rem">' + esc(r.word||'—') + '</td>' +
+      '<td><span class="badge ' + okClass + '">' + (r.correct ? 'Correct' : 'Incorrect') + '</span></td>' +
+      '<td>' + (r.rt ? r.rt + ' ms' : '—') + '</td>' +
+      '<td style="font-size:0.75rem">' + esc(r.response||'—') + '</td>' +
+      '</tr>';
+  }).join('');
+}
+
+function exportCSV() {
+  var results = getResults();
+  if (!results.length) { showToast('No results to export.', 'warning'); return; }
+  var cols = ['ts','participant','session','stage','word','correct','rt','response','trial_index'];
+  var lines = [cols.join(',')].concat(results.map(function(r) {
+    return cols.map(function(c) {
+      var v = r[c];
+      if (v === undefined || v === null) return '';
+      var s = String(v);
+      return s.includes(',') ? '"' + s.replace(/"/g,'""') + '"' : s;
+    }).join(',');
+  }));
+  var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  a.href = url;
+  a.download = 'roar_results_' + new Date().toISOString().slice(0,10) + '.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('CSV exported (' + results.length + ' rows).');
+}
+
+function clearResults() {
+  if (!confirm('Clear ALL trial results? This cannot be undone.')) return;
+  LS.del('roarTrialResults');
+  LS.del('roarSessionComplete');
+  initResultsTab();
+  showToast('Results cleared.', 'warning');
+}
+
+// ================================================================
+//  TAB 4 — Engine Settings & Shuffle Sequence
+// ================================================================
+function initSettingsTab() {
+  var s = getSettings();
+  var isInfinite = s.stimulusDisplayMode !== 'timed';
+  var inf = document.getElementById('modeInfinite');
+  var tim = document.getElementById('modeTimed');
+  if (inf) inf.checked = isInfinite;
+  if (tim) tim.checked = !isInfinite;
+
+  var stEl = document.getElementById('stimulusTimeSec');
+  var ttEl = document.getElementById('trialTimeoutSec');
+  var ftEl = document.getElementById('fixationTimeMs');
+  var pcEl = document.getElementById('practiceCount');
+  var wpEl = document.getElementById('wordsPerSession');
+
+  if (stEl) stEl.value = ((s.stimulusTimeMs  || 10000) / 1000).toFixed(1);
+  if (ttEl) ttEl.value = ((s.trialTimeoutMs  || 12000) / 1000).toFixed(1);
+  if (ftEl) ftEl.value = s.fixationTimeMs  || 1000;
+  if (pcEl) pcEl.value = s.practiceCount   || 5;
+  if (wpEl) wpEl.value = s.wordsPerSession || 90;
+
+  // Shuffle Pattern Radio
+  var pat = s.shufflePattern || 'alternating';
+  if (pat === 'alternating') { document.getElementById('patternAlternating').checked = true; updateShuffleLabel('Strict Alternating'); }
+  if (pat === 'constrained') { document.getElementById('patternConstrained').checked = true; updateShuffleLabel('Constrained Balanced'); }
+  if (pat === 'blocks')      { document.getElementById('patternBlocks').checked = true; updateShuffleLabel('Block Clusters'); }
+  if (pat === 'random')      { document.getElementById('patternRandom').checked = true; updateShuffleLabel('Completely Random'); }
+
+  toggleTimingInputs();
+}
+
+function updateShuffleLabel(name) {
+  var el = document.getElementById('activeShuffleLabel');
+  if (el) el.textContent = name;
+}
+
+function toggleTimingInputs() {
+  var tim = document.getElementById('modeTimed');
+  var row = document.getElementById('timedSettingsRow');
+  if (!row) return;
+  row.style.display = (tim && tim.checked) ? 'grid' : 'none';
+}
+
+function saveSettings(event) {
+  if (event) event.preventDefault();
+  var inf = document.getElementById('modeInfinite');
+  var mode = (inf && inf.checked) ? 'infinite' : 'timed';
+
+  var stSec = parseFloat(document.getElementById('stimulusTimeSec')?.value || 10);
+  var ttSec = parseFloat(document.getElementById('trialTimeoutSec')?.value || 12);
+  var ft    = parseInt(document.getElementById('fixationTimeMs')?.value || 1000);
+  var pc    = parseInt(document.getElementById('practiceCount')?.value || 5);
+  var wp    = parseInt(document.getElementById('wordsPerSession')?.value || 90);
+
+  var pat = 'alternating';
+  if (document.getElementById('patternConstrained')?.checked) pat = 'constrained';
+  if (document.getElementById('patternBlocks')?.checked)      pat = 'blocks';
+  if (document.getElementById('patternRandom')?.checked)      pat = 'random';
+
+  var s = {
+    stimulusDisplayMode: mode,
+    stimulusTimeMs:  Math.round(stSec * 1000),
+    trialTimeoutMs:  Math.round(ttSec * 1000),
+    fixationTimeMs:  ft,
+    practiceCount:   pc,
+    wordsPerSession: wp,
+    shufflePattern:  pat
+  };
+  setSettings(s);
+  updateRosterMetrics();
+  showToast('Settings saved. Shuffle pattern set to ' + pat + '.');
+}
+
+function resetSettings() {
+  if (!confirm('Reset settings to defaults?')) return;
+  LS.del('roarSettings');
+  initSettingsTab();
+  showToast('Settings reset to defaults.', 'warning');
+}
+
+function esc(s) {
+  if (s === undefined || s === null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initRosterTab();
+});
+</script>
+</body>
+</html>
