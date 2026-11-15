@@ -1,0 +1,140 @@
+{
+  "loading": "ಪ್ರಯೋಗ ಲೋಡ್ ಆಗುತ್ತಿದೆ... (Loading...)",
+  "labID": "ಪ್ರಯೋಗಾಲಯ ಐಡಿ (Lab ID)",
+  "participantID": "ಭಾಗವಹಿಸುವವರ ಐಡಿ (Participant ID)",
+  "progressBar": "ಪ್ರಗತಿ / Progress Complete",
+  "buttonLabel": "ಮುಂದುವರಿಸಿ (Continue)",
+  "preloadTrial": {
+    "messageText": "ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ, ಪ್ರಯೋಗವು ಲೋಡ್ ಆಗುತ್ತಿದೆ. (Please wait while the experiment loads.)"
+  },
+  "fullScreenTrial": {
+    "prompt": "ಪ್ರಯೋಗವು ಪೂರ್ಣ ಪರದೆ ಮೋಡ್‌ಗೆ (Full Screen) ಬದಲಾಗುತ್ತದೆ. <br/> ಮುಂದುವರಿಯಲು ಕೆಳಗಿನ ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "buttonText": "ಮುಂದುವರಿಸಿ (Continue)"
+  },
+  "navigation": {
+    "continueButtonText": "{{action}} ಮಾಡಲು <span class='yellow'>ಯಾವುದೇ ಕೀಲಿಯನ್ನು (ANY KEY)</span> ಒತ್ತಿ",
+    "continueButtonTextMobile": "{{action}} ಮಾಡಲು <span class='yellow'>ಇಲ್ಲಿ (HERE)</span> ಒತ್ತಿ"
+  },
+  "introTrials": {
+    "trial1": {
+      "header1": "ಲೆಕ್ಸಿಕಾಲಿಟಿಯ ಜಗತ್ತಿಗೆ ಸ್ವಾಗತ!",
+      "paragraph1": "ನೀವು ಭೂಮಿಗೆ ಹಿಂತಿರುಗಲು ದ್ವಾರವನ್ನು ಹುಡುಕುತ್ತಿರುವ ಮಾಂತ್ರಿಕರು.",
+      "paragraph2": "ಮುಂದೆ ಸಾಗಲು ನೀವು ಕಾಲ್ಪನಿಕ ಮತ್ತು ನೈಜ ಪದಗಳ ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ತಿಳಿಸಬೇಕು.&nbsp;",
+      "header2": "ಏಕ ಪದ ಗುರುತಿಸುವಿಕೆ (Single Word Recognition) ಚಟುವಟಿಕೆಗೆ ಸ್ವಾಗತ!",
+      "paragraph3": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ, ಪರದೆಯ ಮೇಲೆ ಮೂಡುವ ಪದಗಳನ್ನು ನೀವು ಗಮನಿಸುತ್ತೀರಿ.",
+      "paragraph4": "ನಂತರ ನೀವು ಕಾಲ್ಪನಿಕ ಪದಗಳು (Made-up Words) ಮತ್ತು ನೈಜ ಪದಗಳ (Real Words) ನಡುವಿನ ವ್ಯತ್ಯಾಸವನ್ನು ಗುರುತಿಸಬೇಕು.&nbsp;"
+    },
+    "trial2": {
+      "header": "ಪರದೆಯ ಮಧ್ಯದಲ್ಲಿ ಒಂದು ನೈಜ ಅಥವಾ ಕಾಲ್ಪನಿಕ ಪದವು ವೇಗವಾಗಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.",
+      "paragraph1": "ಕಾಲ್ಪನಿಕ ಪದಗಳು ನೋಡಲು ಸಾಮಾನ್ಯ ಪದಗಳಂತೆ ಕಂಡರೂ ಅವುಗಳಿಗೆ ಯಾವುದೇ ಅರ್ಥವಿರುವುದಿಲ್ಲ. <br/><span class='orange'><b>ನೀವು ಕಾಲ್ಪನಿಕ ಪದ ಕಂಡರೆ, ಎಡ ಬಾಣದ ಕೀಲಿ (LEFT ARROW ←) ಒತ್ತಿ.</b></span>",
+      "paragraph2": "ನೈಜ ಪದಗಳು ನಿಮಗೆ ಪರಿಚಿತವಾಗಿರುತ್ತವೆ. <br/><span class='blue'><b>ನೀವು ನೈಜ ಪದ ಕಂಡರೆ, ಬಲ ಬಾಣದ ಕೀಲಿ (RIGHT ARROW →) ಒತ್ತಿ.</b></span>"
+    },
+    "trial3": {
+      "header": "ಕಾಲ್ಪನಿಕ ಮತ್ತು ನೈಜ ಪದಗಳಿಗೆ ಯಾವ ಬಾಣದ ಕೀಲಿ ಒತ್ತಬೇಕೆಂದು ನೆನಪಿಸಿಕೊಳ್ಳಿ.",
+      "paragraph1": "ಸಾಧ್ಯವಾದಷ್ಟು ನಿಖರವಾಗಿ ಉತ್ತರಿಸಲು ಪ್ರಯತ್ನಿಸಿ.",
+      "paragraph2": "ಕೆಲವು ಪದಗಳು ಕಠಿಣವಾಗಿರಬಹುದು, ಪರವಾಗಿಲ್ಲ. ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ ನಿಮ್ಮ ಅತ್ಯುತ್ತಮ ಊಹೆಯೊಂದಿಗೆ ಉತ್ತರಿಸಿ!"
+    },
+    "postPracticeTrial": {
+      "header1": "ಅದ್ಭುತ! ನೀವು ಪಯಣವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಿ!",
+      "header2": "ಅದ್ಭುತ ಕೆಲಸ! ನೀವು ನಿಜವಾದ ಚಟುವಟಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಿ!",
+      "paragraph1": "ದಾರಿಯುದ್ದಕ್ಕೂ ನೀವು ನಾಣ್ಯಗಳನ್ನು ಗಳಿಸುವಿರಿ.",
+      "paragraph2": "ಶುಭವಾಗಲಿ! (Good luck!)"
+    }
+  },
+  "practiceFeedbackTrial": {
+    "paragraph1": "ನೀವು {{direction}} ಬಾಣದ ಕೀಲಿ ಒತ್ತಿದ್ದೀರಿ, ಇದು {{typeWord}} ಪದಗಳಿಗಾಗಿ!",
+    "paragraph2": "ಒಂದು {{typeWord}} ಪದ. ಮುಂದುವರಿಯಲು {{direction}} ಬಾಣದ ಕೀಲಿಯನ್ನು (Arrow) ಒತ್ತಿ.",
+    "arrowChoicesImgAlt": "arrowChoices"
+  },
+  "gameBreakTrials": {
+    "midBlockTrials": {
+      "trial1": {
+        "header1": "ಉತ್ತಮ ಕೆಲಸ!",
+        "paragraph1": "ನೀವು ಅರ್ಧದಾರಿಯನ್ನು ಕ್ರಮಿಸಿದ್ದೀರಿ.",
+        "paragraph2": "ಹೊಸ ಸಾಹಸಿ ನಿಮ್ಮೊಂದಿಗೆ ಸೇರುತ್ತಾರೆ!",
+        "header2": "ಉತ್ತಮ ಕೆಲಸ! (Good Work!)",
+        "paragraph3": "ನೀವು ಮೊದಲ ಭಾಗವನ್ನು (Block 1) ಅರ್ಧದಷ್ಟು ಮುಗಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ (Break) ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      },
+      "trial2": {
+        "header1": "ಅದ್ಭುತ!",
+        "paragraph1": "ಪ್ರಯಾಣ ಮುಂದುವರಿಯುತ್ತಿದೆ!",
+        "paragraph2": "ಮುಂದಿನ ಹಂತಕ್ಕೆ ಸಿದ್ಧರಾಗಿ!",
+        "header2": "ಅದ್ಭುತ! (Amazing!)",
+        "paragraph3": "ನೀವು ಎರಡನೇ ಭಾಗವನ್ನು (Block 2) ಅರ್ಧದಷ್ಟು ಮುಗಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      },
+      "trial3": {
+        "header1": "ಅತ್ಯುತ್ತಮ ಕೆಲಸ!",
+        "paragraph1": "ನೀವು ಗುರಿಯ ಸಮೀಪದಲ್ಲಿದ್ದೀರಿ.",
+        "paragraph2": "ಮುಂದೆ ಸಾಗಿ!",
+        "header2": "ಅತ್ಯುತ್ತಮ ಕೆಲಸ! (Fantastic Work!)",
+        "paragraph3": "ನೀವು ಮೂರನೇ ಭಾಗವನ್ನು (Block 3) ಅರ್ಧದಷ್ಟು ಮುಗಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      }
+    },
+    "postBlockTrials": {
+      "trial1": {
+        "header1": "ಅಭಿನಂದನೆಗಳು!",
+        "paragraph1": "ನೀವು ಮೊದಲ ಕಣಿವೆಯನ್ನು ದಾಟಿದ್ದೀರಿ.",
+        "paragraph2": "ನೀವು ದ್ವಾರಕ್ಕೆ ಹತ್ತಿರವಾಗುತ್ತಿದ್ದೀರಿ!",
+        "header2": "ಅಭಿನಂದನೆಗಳು! (Congratulations!)",
+        "paragraph3": "ನೀವು ಮೊದಲ ಭಾಗವನ್ನು (Block 1) ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      },
+      "trial2": {
+        "header1": "ಅಭಿನಂದನೆಗಳು!",
+        "paragraph1": "ದ್ವಾರವನ್ನು ತಲುಪಲು ಇನ್ನು ಕೇವಲ ಒಂದು ಕಣಿವೆ ಬಾಕಿ ಇದೆ!",
+        "paragraph2": "ಉತ್ತಮ ಪ್ರಗತಿ ಸಾಧಿಸುತ್ತಿದ್ದೀರಿ!",
+        "header2": "ಅಭಿನಂದನೆಗಳು! (Congratulations!)",
+        "paragraph3": "ನೀವು ಎರಡನೇ ಭಾಗವನ್ನು (Block 2) ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      },
+      "trial3": {
+        "header1": "ಅಭಿನಂದನೆಗಳು!",
+        "paragraph1": "ನೀವು ದ್ವಾರಕ್ಕೆ ಹತ್ತಿರವಾಗುತ್ತಿದ್ದೀರಿ!",
+        "paragraph2": "ಅಂತಿಮ ಹಂತ ತಲುಪಿದ್ದೀರಿ!",
+        "header2": "ಅದ್ಭುತ ಕೆಲಸ! (Great Work!)",
+        "paragraph3": "ನೀವು ಒಂದು ಹೊಸ ಭಾಗವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ.",
+        "paragraph4": "ಸ್ವಲ್ಪ ಸಮಯ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಿದ್ಧವಾದಾಗ ಮುಂದುವರಿಯಿರಿ."
+      }
+    },
+    "finalTrial": {
+      "header1": "ಅಂತಿಮವಾಗಿ, ನಿಮ್ಮನ್ನು ಮನೆಗೆ ತಲುಪಿಸುವ ದ್ವಾರವನ್ನು ನೀವು ತಲುಪಿದ್ದೀರಿ!",
+      "paragraph1": "ದ್ವಾರವನ್ನು ತೆರೆಯಲು ನಿಮ್ಮ ನಾಣ್ಯಗಳನ್ನು ಬಳಸಿ.",
+      "paragraph2": "ಮತ್ತೆ ಭೇಟಿಯಾಗುವವರೆಗೆ ಶುಭ ವಿದಾಯ!",
+      "header2": "ಅಭಿನಂದನೆಗಳು! (Congratulations!)",
+      "paragraph3": "ನೀವು ಏಕ ಪದ ಗುರುತಿಸುವಿಕೆ (Single Word Recognition) ಚಟುವಟಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ.",
+      "paragraph4": "ನಿಮ್ಮ ಅದ್ಭುತ ಸಹಕಾರಕ್ಕೆ ಹೃತ್ಪೂರ್ವಕ ಧನ್ಯವಾದಗಳು! (Thank you!)"
+    }
+  },
+  "imagesAlt": {
+    "arrowKeys": "arrow keys",
+    "leftArrow": "left arrow",
+    "rightArrow": "right arrow",
+    "valley": "background image with hills and trees",
+    "adventurer1": "adventurer with harp",
+    "adventurer2": "adventuerer making rainbows",
+    "adventurer3": "adventurer making heart shapes",
+    "wizardCoin": "wizard making coins",
+    "guardian1": "orange dinosaur guardian",
+    "guardian2": "blue dragon guardian",
+    "endingBackground": "landscape with trees",
+    "guardian3": "winking unicorn",
+    "endingGateCoinbag": "gate with coinbag animation",
+    "wizardWand": "wizard waving a magic wand",
+    "leftArrowIntro": "made-up word, press the left arrow key",
+    "rightArrowIntro": "real Word, press the Right Arrow key"
+  },
+  "terms": {
+    "continue": "ಮುಂದುವರಿಸಿ (Continue)",
+    "practice": "ಅಭ್ಯಾಸ (Practice)",
+    "begin": "ಪ್ರಾರಂಭಿಸಿ (Begin)",
+    "gold": "ಚಿನ್ನ (Gold)",
+    "left": "ಎಡ (Left ←)",
+    "right": "ಬಲ (Right →)",
+    "real": "ನೈಜ (Real)",
+    "made-up": "ಕಾಲ್ಪನಿಕ (Made-up)",
+    "save": "ಉಳಿಸಿ (Save)"
+  }
+}

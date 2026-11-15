@@ -1,0 +1,4901 @@
+{
+  "practice": [
+    {
+      "word": "ಹೀ",
+      "realpseudo": "pseudo",
+      "block": "practice",
+      "order": 1,
+      "difficulty": -1.5
+    },
+    {
+      "word": "ಹಾಲು",
+      "realpseudo": "real",
+      "block": "practice",
+      "order": 2,
+      "difficulty": -1.5
+    },
+    {
+      "word": "ನೀರು",
+      "realpseudo": "real",
+      "block": "practice",
+      "order": 3,
+      "difficulty": -1.5
+    },
+    {
+      "word": "ಚೃರು",
+      "realpseudo": "pseudo",
+      "block": "practice",
+      "order": 4,
+      "difficulty": -1.5
+    },
+    {
+      "word": "ಊಡು",
+      "realpseudo": "pseudo",
+      "block": "practice",
+      "order": 5,
+      "difficulty": -1.5
+    }
+  ],
+  "validated": [
+    {
+      "word": "ಹೂ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಸೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.72,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.99,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಳಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.2,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.81,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೀರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೇಗ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.96,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೈಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.81,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚೂರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಾತು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.01,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೀನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೂರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಾರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.96,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಡೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೂದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಗೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧೂಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.28,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಾಜು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.22,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗೂಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೇನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಾಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೇಜು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.36,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಾಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೀಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಾಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಡಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಲಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲಾಗ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೆಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುರಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.22,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೋಜು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸದಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೀರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುಡಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.59,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೊರೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭೇಟಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಣೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿತ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಾಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.84,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸವಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಲ್ಲಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಪ್ಪು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.0,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಮ್ಮೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಟ್ಟು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅತ್ತು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಮೇಲೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಟವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊಟವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಲೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಲಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಳಿಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.76,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಣಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಈಗಲೂ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಮೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎದೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏಣಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪಾಯ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಳಿದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಲವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಡಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒದಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊಹಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆದೇಶ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅನಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅರಿವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೆಕ್ಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಣ್ಣು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಿನ್ನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುದ್ದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಪ್ಪು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಗ್ಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬನ್ನಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಚ್ಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಾತ್ರ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮತ್ತೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಗ್ಗೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.49,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುಳ್ಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.2,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಚ್ಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೊಬ್ಬು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಕ್ಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಳಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಸಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.84,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಿಹಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಸಿರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.99,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೋತಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಾಯಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟೋಪಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಾಗಿಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಸರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಮೂನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೂದಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಡುಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೋರಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಿರುಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಲಗು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭಾರವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೊಸತು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಣನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಖುಷಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೊಳಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೇಗಿವೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೋರಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಾಲಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೇಳೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಗವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಾಯಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಾಣಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೆರೆಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.47,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧರಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೊರಟು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೂಡಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಳತು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿತವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲೋಹವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.36,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಜವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಾಜವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನುಣುಪು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಮನೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೋಳಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೀಗಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.86,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಡಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೋಡಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಾಕನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೆರೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಯಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.2,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭಾವಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧಾವಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧುಮುಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೊರಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.97,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೆದರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸವಾರಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೋಷವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಳಿಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಮ್ಮನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.81,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪ್ಪನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಜ್ಜನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಜ್ಜಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಕ್ಕನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಣ್ಣನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಓಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒದ್ದೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ದವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅತ್ತೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏಳುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇರುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಪ್ತನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.28,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಲ್ಲೇನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಣ್ಣೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಟ್ಟಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಕಾಶವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಟಿಕೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉರುಳಾಡು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏಕಿರುವೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಲುಗಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುಮ್ಮನೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದುಷ್ಟನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.08,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಮ್ಮೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುಖ್ಯವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.96,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶುಭ್ರವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಗೆಲ್ಲಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪೆಚ್ಚಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಥಟ್ಟನೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಾವ್ಯವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೇಯ್ಗೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಜ್ಜುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಪ್ಪುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಂಟಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗೊಂಬೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸೊಂಡಿಲು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕುಂಟನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.36,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಖಂಡಿತ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಂಪಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೂರ್ಖನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಘರ್ಜನೆ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಣಜವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿರಿಮೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಮೂನೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೆರೆಯದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಮಿತಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯೋಜನೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಬಳಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದ್ರಾಕ್ಷಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎತ್ತರವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಳ್ಳೆಯದು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಈಜಾಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉತ್ತಮವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆರಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಗೆಯುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದುರುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಹ್ವಾನವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.59,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ಗರಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ವಲ್ಪವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಿದ್ದುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶ್ರೇಷ್ಠವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಂದ್ರನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಂಗಳವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆನಂದಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ಪರ್ಶಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆದರ್ಶವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇರುವೆಗಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಿಕ್ಷಕನು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಿಕ್ಷಕಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಡಗಡೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲಕ್ಷಣವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಸಿರಾಟವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ವಿಜ್ಞಾನಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅನುಭವಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪರೀಕ್ಷಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪುಸ್ತಕವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಕ್ಕರೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬರೆಯುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಾತಾಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಿಕ್ಕದಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೊಡ್ಡದಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಟ್ಟಿಯಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಿಗಿಯುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಟ್ಟಿಹಾಕು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಣ್ಣಿಮೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಯವಿಟ್ಟು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೇಶಕ್ಕಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ವಿಸ್ಮಯವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಾಟಿಯಲ್ಲೂ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಿಗುಪ್ಸೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.95,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಲ್ಮಶವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಲ್ಪನೆಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಸೆಯುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.59,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಶಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸತ್ಕರಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎತ್ತಿಕೊಳ್ಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಬ್ಬಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಚ್ಚುಮೆಚ್ಚು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಾಳಿಪಟವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಕಸ್ಮಾತಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಬ್ಬಿಬ್ಬಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅವಲಂಭಿಸು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಳುಹಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೆನಪಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪ್ರಾಥಮಿಕವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪ್ಪಳಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ದೇಶಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತರಕಾರಿಗಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆರೋಗ್ಯಕರವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಟ್ಟುನಿಟ್ಟಾಗಿ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪ್ರತಿಧ್ವನಿಯು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅವಸರದಿಂದ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯುದ್ಧಕಾಲಿನವು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.86,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅರಚಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.96,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭರವಸೆಯಿಂದ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುಜುಗರದಿಂದ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜ್ಞಾನಿಗಳೆಲ್ಲರು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.24,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಂಟಿಸುತ್ತಿದ್ದಾಗ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನರ್ತನವಾಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕವಡೆಬಳಸುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೆಂಗಿನಕಾಯಿಗಳು",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "real",
+      "corpusId": "kn-real",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೀ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊಡು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.99,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಲೊ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.81,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚೃರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಗಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೃಡೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗೋಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.22,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೈಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.36,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೌಡಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುರೈ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.22,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೂರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಣೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಲ್ಲಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.85,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅತ್ತೇ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎಲೆಯೃ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಈಗೂಲೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪಾಯಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒದಗೋ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅರಿವೊ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೂದ್ದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೃಚ್ಚು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುಳ್ಳಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.2,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಳಿಯಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೋತಿಯೌ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಸರೀ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೋರೋಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೊಸೇತು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೇಗೆವೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಗೃವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧರೇಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿತಾವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಾಣುಪು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚೀಡಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೀಯಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.2,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೆದರೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಐಮ್ಮನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.81,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಕ್ಕನೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊದ್ದವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇರಿತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಓಟ್ಟಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏಕೆರುವೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಮ್ಮೂಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪೃಚ್ಚಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಜ್ಜುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸೊಂಡಿಲೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೂರ್ಖನೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಮೂನೇಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಬಳೌಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಈಜೊಡುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎದುರುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.77,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಿದ್ದುತ್ತೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆನಂದಿಸೌ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಿಕ್ಷಕನೃ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಸಿರಾಟೇವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪುಸ್ತುಕವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಿಕ್ಕದೈಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಟ್ಟಿಹುಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ವಿಸ್ಮಯೇವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಲ್ಪನೌಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎತ್ತೆಕೊಳ್ಳು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಕೇಸ್ಮಾತಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೆಳುಹಿಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ದೇಶೃಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪ್ರತಿಧ್ವನಿಯೃ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭರವಸೇಯಿಂದ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕುಳಿತುಕಿಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.24,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕವೃಡೆಬಳಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊಗು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಜಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೀರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಾಡು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೀನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೂದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.45,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೂಡು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಗು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಮಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟುಡಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.59,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿಮ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆರೇಲೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇನಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಮೆಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಯಿದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಊಹಿಶು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೆಕ್ಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಪ್ಪು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಾತ್ರ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರುಚ್ಚು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಿಸಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.84,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಯಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಮೂಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟಿರುಚು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಾಣನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೋದಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪಾಯಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೊರಟು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲೋಸವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.36,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಪನೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೋಜಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭಾಚಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶೊರಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.97,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಳಿಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.69,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಜ್ಜಿಟು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.18,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒದ್ದೆಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.16,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಏಡುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಣ್ಣೆಪು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉತುಳಾಡು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಳುಷ್ಟನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.08,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಾಪೆಲ್ಲಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೇಯ್ಗೆಜು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗೊಂಬೆಪು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಂಪಾಳಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿಪಿಮೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯೋಜನೆಮು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಳ್ಳೆವದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಗೆನುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ವಲ್ಪದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಂಗಜವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.04,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇರುರೆಗಳು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪಕ್ಷಣವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.31,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದರೀಕ್ಷಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮಾತಾಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಿಗಿಬುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೇಶಕ್ಕಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಲ್ಮಶವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸತ್ಕತಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಾಳಿಪಟವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅವಲಂಭಿನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.64,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪ್ಪಳಿನುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.39,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಟ್ಟುಹಿಟ್ಟಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅರಟಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.96,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜ್ಞಾನಿಗಶೆಲ್ಲರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನರ್ತನಶಾಡುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟವುಅಳಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲಿಯುಆಮೇ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆಯುಎದೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಣಗುಈಗ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಳಿದುಅನಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಡಿಯುಊಹಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೇಶಅಮ್ಮ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪ್ಪನುಮಲ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಿಲುಅಜ್ಜಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜ್ಜನುಅಣ್ಣ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯಿಯುಟೋಪಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಿಸುಕೋತಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿಯುಹುಡು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಳಿಯುಕಿರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತ್ತೆಯುಖುಷಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಳಕುಜೋರಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಣನುಭಾರ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗವುರಾಣಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಡಿಸುಸಾಲಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸತುಧರಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರುತ್ತಾಬೇಳೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರೆಸುಹಳ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.47,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಡಿಯುಕೆದ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುಕುಇಲ್ಲೇ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟ್ಟಿಸುದೊರ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮನೆಬೋಳಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಡಿಯುಹಿತ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ವಿಸುಆಪ್ತ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ವಿಸುನೆರೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಷವುಬಿಳಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಟಲುಸೊಂಡಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜ್ಜುತ್ತಾಕುಂಟ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪಾಗಿಹಾಗೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರ್ಜನೆಥಟ್ಟ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭ್ರವುದುಷ್ಟ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮ್ಮೆಯುಪೆಚ್ಚಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯ್ಗೆಯುಚಂದ್ರ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲ್ಪವುತಿದ್ದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಷ್ಠವುಆಕಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಳಾಡುಅಲು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರವುಒಳ್ಳೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಡುತ್ತಾಆರಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಿಸುಅಗೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜವುಯೋಜ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆಯುಆಹ್ವಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಿಸುನಮೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಿಯುಸಕ್ಕ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯುತ್ತಾಮಾತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಾಗಿಗಟ್ಟಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಾಗಿಶಿಕ್ಷ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಿಯುದಯ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆಚ್ಚುದೇಶ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮೆಯುವಿಜ್ಞಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಯಲ್ಲೂಮಸೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಿಸುಕಲ್ಪ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶವುತಬ್ಬಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸುತ್ತಾಎಡಗ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರಾಟವುಗಾಳಿಪ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ಮಾತಾಗಿಕಳುಹಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಪಿಸುತ್ತಾಅಪ್ಪಳಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತ್ರಿಸುತ್ತಾಅವಸ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕರವುಭರವ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ರದಿಂದಕುಳಿತು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಲ್ಲಿಡುತ್ತಾಕವಡೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಡುತ್ತಾಸರಿಪ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಟಳಿಲು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇಲಿಮೇಲೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆಮೆದೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಒಣಗಲೂ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಳಿನಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಡಿಹಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆದೇಮ್ಮನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಪ್ಪಲಗು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಾಗಿಜ್ಜಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.42,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಜ್ಜಣ್ಣನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಾಯಿಪಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತೋರಿತಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.88,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಿಹಿಡುಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.73,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬಿಳಿರುಚು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅತ್ತೆಷಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೊಳರಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.34,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಣರವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.23,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜಾಗಣಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕೂಡಿಲಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೊಸರಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.07,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಇರುಳೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬೆರೆಳತು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.47,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಜೋಡಿದರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧುಮುಲ್ಲೇನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.74,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಟ್ಟಿರಕು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.91,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಮಳಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಡಿತವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.15,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಧಾವಿಪ್ತನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಭಾವಿರೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.38,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೋಷಳಿಚು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.65,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಗಂಟಡಿಲು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಜ್ಜುಟನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.14,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ತಂಪಾಗೆಲ್ಲಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಘರ್ಜಟ್ಟನೆ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.58,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶುಭ್ರಷ್ಟನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹೆಮ್ಮೆಚ್ಚಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.41,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೇಯ್ಗೆದ್ರನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.7,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ವಲ್ಪದ್ದುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.3,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶ್ರೇಷ್ಠಶವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.43,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉರುಗಿಸು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಎತ್ತಯದು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.05,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಈಜಾಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.12,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆನಂಯುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಣನೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.5,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹಿರಿನವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ಗನೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.61,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸಮಿರೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಬರೆಡುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಚಿಕ್ಕಯಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.27,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದೊಡ್ಡಕನು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": -0.11,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಶಿಕ್ಷವಿಟ್ಟು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.09,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಚ್ಚುಕ್ಕಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.78,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಹುಣ್ಣಿನಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.19,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ದಾಟಿಯುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.51,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸತ್ಕನೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.62,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಕಲ್ಮಬ್ಬಾಗಿ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.8,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಸ್ಥಾಪಿಗಡೆಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.66,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉಸಿರಾಪಟವು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.68,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಕಸ್ಮಾಹಿಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.26,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನೆನಪಿಳಿಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.46,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಉದ್ದೇಶಿಧ್ವನಿಯು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.82,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಿಯಂತ್ರಿರದಿಂದ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.54,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಆರೋಗ್ಯಸೆಯಿಂದ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.03,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಮುಜುಗಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.55,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ಅಂಟಿಸುಳೆಲ್ಲರು",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 0.53,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಾಡಿಯಳಸುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.89,
+      "c": 0.25,
+      "d": 0.0
+    },
+    {
+      "word": "ನಿಟ್ಟುಸಿಕೊಳ್ಳುತ್ತಾ",
+      "realpseudo": "pseudo",
+      "corpusId": "kn-pseudo",
+      "a": 1.0,
+      "b": 1.57,
+      "c": 0.25,
+      "d": 0.0
+    }
+  ]
+}

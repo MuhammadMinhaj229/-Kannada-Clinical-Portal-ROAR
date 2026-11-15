@@ -1,0 +1,20 @@
+{
+  "name": "roar-word-reading-replica",
+  "version": "1.0.0",
+  "description": "Full local replica and unpacked architecture of Stanford ROAR Single Word Recognition (SWR)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "roar",
+    "reading",
+    "assessment",
+    "jspsych",
+    "jscat",
+    "replica"
+  ],
+  "author": "Yeatman Lab / Stanford GSE (Extracted Replica)",
+  "license": "Stanford Academic Software License"
+}
