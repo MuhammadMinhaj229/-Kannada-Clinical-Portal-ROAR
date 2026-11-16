@@ -1,1 +1,237 @@
-﻿<!doctype html><html><head><meta charset="utf-8"><title>Rapid Online Assessment of Reading - SWR</title><meta name="viewport" content="width=device-width,initial-scale=1"><script src="/settings.js?v=kn7"></script><script defer="defer" src="runtime.976005cd64b3ad553746.bundle.js?v=kn7"></script><script defer="defer" src="npm.lodash.66a3141893d53ef72196.bundle.js?v=kn7"></script><script defer="defer" src="npm.sentry.6477725b039f8c745154.bundle.js?v=kn7"></script><script defer="defer" src="npm.ajv.b90efe808a37452a4af7.bundle.js?v=kn7"></script><script defer="defer" src="npm.bdelab.a7f3bf496058c0b99e77.bundle.js?v=kn7"></script><script defer="defer" src="npm.sentry-internal.e711c455651cba6d729b.bundle.js?v=kn7"></script><script defer="defer" src="npm.jspsych.beba56b75d3a1c8da799.bundle.js?v=kn7"></script><script defer="defer" src="npm.seedrandom.f73f84ebf379295fe603.bundle.js?v=kn7"></script><script defer="defer" src="npm.vue.b5eacf619bbc5278d6d2.bundle.js?v=kn7"></script><script defer="defer" src="npm.firebase.f971373c966309b3beb5.bundle.js?v=kn7"></script><script defer="defer" src="npm.path.b654916571b2af49cf09.bundle.js?v=kn7"></script><script defer="defer" src="npm.fast-uri.70c468f8c5a8ba2be13b.bundle.js?v=kn7"></script><script defer="defer" src="npm.jspsych-contrib.84357c105a6aef70f538.bundle.js?v=kn7"></script><script defer="defer" src="npm.mime-db.60efd87df75a15410c13.bundle.js?v=kn7"></script><script defer="defer" src="npm.i18next.f0cd99eb24983c4b4852.bundle.js?v=kn7"></script><script defer="defer" src="npm.regenerator-runtime.556bafb4ca1e3dd9a29d.bundle.js?v=kn7"></script><script defer="defer" src="npm.optimization-js.11f4b2385328e0d663e8.bundle.js?v=kn7"></script><script defer="defer" src="index.f9505d51fec8273c6b0b.bundle.js?v=kn7"></script></head><body></body></html>
+﻿<!doctype html>
+<html lang="kn">
+<head>
+  <meta charset="utf-8">
+  <title>Rapid Online Assessment of Reading - Kannada SWR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#1e293b">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ====== KANNADA ROAR UNIVERSAL RESPONSIVE ENGINE ====== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background-color: #ffffff;
+      font-family: 'Noto Sans Kannada', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      overflow-x: hidden;
+      touch-action: manipulation;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body.jspsych-display-element,
+    .jspsych-display-element {
+      margin: 0 !important;
+      padding: clamp(0.75rem, 2vw, 2rem) !important;
+      min-height: 100vh !important;
+      min-height: 100dvh !important;
+      width: 100vw !important;
+      max-width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+      background: #ffffff !important;
+    }
+
+    #jspsych-content {
+      margin: auto !important;
+      width: 100% !important;
+      max-width: min(94vw, 900px) !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    /* Kannada Stimulus Typography: Big, crisp, and never clipped */
+    .jspsych-display-element .stimulus,
+    .stimulus,
+    [class*="stimulus"],
+    .word-stimulus {
+      font-family: 'Noto Sans Kannada', sans-serif !important;
+      font-size: clamp(3rem, 10vw, 6rem) !important;
+      font-weight: 700 !important;
+      line-height: 1.4 !important;
+      letter-spacing: 0.02em !important;
+      color: #0f172a !important;
+      margin: clamp(1rem, 4vh, 3rem) 0 !important;
+      word-break: keep-all !important;
+      overflow-wrap: normal !important;
+      text-rendering: optimizeLegibility !important;
+      user-select: none !important;
+      -webkit-user-select: none !important;
+    }
+
+    /* Universal Responsive Choice Buttons (Mobile touch friendly) */
+    .jspsych-display-element .jspsych-btn,
+    .jspsych-btn,
+    button[class*="jspsych-btn"],
+    .jspsych-content button {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: clamp(52px, 8vh, 68px) !important;
+      min-width: clamp(130px, 34vw, 240px) !important;
+      padding: clamp(0.75rem, 2vh, 1.25rem) clamp(1.25rem, 4vw, 2.5rem) !important;
+      font-family: 'Noto Sans Kannada', -apple-system, sans-serif !important;
+      font-size: clamp(1.15rem, 3.5vw, 1.65rem) !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      border-radius: 14px !important;
+      border: 2px solid #2563eb !important;
+      background-color: #2563eb !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.25), 0 2px 4px -2px rgba(37, 99, 235, 0.25) !important;
+      cursor: pointer !important;
+      touch-action: manipulation !important;
+      margin: clamp(0.4rem, 1.5vw, 1rem) !important;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .jspsych-display-element .jspsych-btn:hover,
+    .jspsych-btn:hover {
+      background-color: #1d4ed8 !important;
+      border-color: #1d4ed8 !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3) !important;
+    }
+
+    .jspsych-display-element .jspsych-btn:active,
+    .jspsych-btn:active {
+      transform: scale(0.96) !important;
+    }
+
+    /* Button group layout */
+    .jspsych-btn-group,
+    div:has(> .jspsych-btn) {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: clamp(0.5rem, 2vw, 1.5rem) !important;
+      width: 100% !important;
+      margin-top: clamp(1rem, 3vh, 2rem) !important;
+    }
+
+    /* Responsive Images & Animations (Game avatars, coins, breaks) */
+    img, svg, canvas, video {
+      max-width: 100% !important;
+      height: auto !important;
+      object-fit: contain !important;
+    }
+
+    .jspsych-display-element img {
+      max-height: clamp(180px, 40vh, 450px) !important;
+    }
+
+    /* Progress bar */
+    #jspsych-progressbar-container {
+      width: 100% !important;
+      max-width: min(90vw, 800px) !important;
+      margin: 1rem auto !important;
+    }
+    #jspsych-progressbar-outer {
+      background-color: #e2e8f0 !important;
+      border-radius: 9999px !important;
+      height: 12px !important;
+      overflow: hidden !important;
+    }
+    #jspsych-progressbar-inner {
+      background: linear-gradient(90deg, #2563eb, #38bdf8) !important;
+      border-radius: 9999px !important;
+      height: 100% !important;
+      transition: width 0.3s ease !important;
+    }
+
+    /* Instruction / Dialog screens */
+    .jspsych-display-element p:not(.stimulus, .feedback) {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem) !important;
+      line-height: 1.6 !important;
+      max-width: min(90vw, 750px) !important;
+      margin: 1rem auto !important;
+    }
+
+    /* Mobile phone specifics (< 640px) */
+    @media (max-width: 640px) {
+      .jspsych-display-element {
+        padding: 0.75rem !important;
+      }
+      .stimulus, [class*="stimulus"] {
+        font-size: clamp(2.4rem, 11vw, 3.8rem) !important;
+        margin: 1.5rem 0 !important;
+      }
+      .jspsych-display-element .jspsych-btn {
+        width: 100% !important;
+        max-width: 320px !important;
+        min-height: 56px !important;
+        font-size: 1.3rem !important;
+      }
+    }
+
+    /* Landscape mode on phones (low vertical height) */
+    @media (max-height: 500px) and (orientation: landscape) {
+      .jspsych-display-element {
+        padding: 0.25rem 1rem !important;
+        justify-content: space-evenly !important;
+      }
+      .stimulus, [class*="stimulus"] {
+        font-size: clamp(2rem, 9vh, 3.2rem) !important;
+        margin: 0.4rem 0 !important;
+      }
+      .jspsych-display-element img {
+        max-height: 25vh !important;
+      }
+      .jspsych-display-element .jspsych-btn {
+        min-height: 44px !important;
+        padding: 0.4rem 1.2rem !important;
+        font-size: 1.1rem !important;
+        margin: 0.25rem !important;
+      }
+      .jspsych-btn-group, div:has(> .jspsych-btn) {
+        margin-top: 0.25rem !important;
+      }
+    }
+  </style>
+
+  <script src="/settings.js?v=kn8"></script>
+  <script defer="defer" src="runtime.976005cd64b3ad553746.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.lodash.66a3141893d53ef72196.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.sentry.6477725b039f8c745154.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.ajv.b90efe808a37452a4af7.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.bdelab.a7f3bf496058c0b99e77.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.sentry-internal.e711c455651cba6d729b.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.jspsych.beba56b75d3a1c8da799.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.seedrandom.f73f84ebf379295fe603.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.vue.b5eacf619bbc5278d6d2.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.firebase.f971373c966309b3beb5.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.path.b654916571b2af49cf09.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.fast-uri.70c468f8c5a8ba2be13b.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.jspsych-contrib.84357c105a6aef70f538.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.mime-db.60efd87df75a15410c13.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.i18next.f0cd99eb24983c4b4852.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.regenerator-runtime.556bafb4ca1e3dd9a29d.bundle.js?v=kn8"></script>
+  <script defer="defer" src="npm.optimization-js.11f4b2385328e0d663e8.bundle.js?v=kn8"></script>
+  <script defer="defer" src="index.f9505d51fec8273c6b0b.bundle.js?v=kn8"></script>
+</head>
+<body></body>
+</html>
