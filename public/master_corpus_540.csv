@@ -1,0 +1,541 @@
+word,realpseudo,pos,rule_logic,source_word,transformation,syllables,meaning,age_band
+ಹೂ,real,noun,Original Real Word,,,1,flower,2-3 years
+ಊರು,real,noun,Original Real Word,,,2,town,2-3 years
+ಅಳು,real,verb,Original Real Word,,,2,cry,2-3 years
+ಎಸೆ,real,verb,Original Real Word,,,2,throw,2-3 years
+ಇಡು,real,verb,Original Real Word,,,2,keep,2-3 years
+ಇಳಿ,real,verb,Original Real Word,,,2,get down,2-3 years
+ಊದು,real,verb,Original Real Word,,,2,blow,2-3 years
+ಏರು,real,verb,Original Real Word,,,2,climb,4-5 years
+ಹಾಲು,real,noun,Original Real Word,,,2,milk,0-1 year
+ನೀರು,real,noun,Original Real Word,,,2,water,0-1 year
+ಬೇಗ,real,adverb,Original Real Word,,,2,soon,2-3 years
+ಕೈಯು,real,noun,Original Real Word,,,2,hand,2-3 years
+ಚೂರು,real,noun,Original Real Word,,,2,"piece, little",2-3 years
+ಹಾಡು,real,noun,Original Real Word,,,2,song,2-3 years
+ಹುಳು,real,noun,Original Real Word,,,2,insect,2-3 years
+ಮಾತು,real,noun,Original Real Word,,,2,talk,2-3 years
+ಮಗು,real,noun,Original Real Word,,,2,baby,2-3 years
+ಮೀನು,real,noun,Original Real Word,,,2,fish,2-3 years
+ಮೂರು,real,noun,Original Real Word,,,2,three,2-3 years
+ಸಾರು,real,noun,Original Real Word,,,2,rasam,2-3 years
+ನಡೆ,real,verb,Original Real Word,,,2,move,2-3 years
+ಬೂದು,real,adjective,Original Real Word,,,2,gray,4-5 years
+ಹಾಗೆ,real,adverb,Original Real Word,,,2,in that manner,4-5 years
+ಧೂಳು,real,noun,Original Real Word,,,2,dust,4-5 years
+ಗಾಜು,real,noun,Original Real Word,,,2,glass,4-5 years
+ಗೂಡು,real,noun,Original Real Word,,,2,nest,4-5 years
+ಜೇನು,real,noun,Original Real Word,,,2,honey,4-5 years
+ಕಾಡು,real,noun,Original Real Word,,,2,forest,4-5 years
+ಮೇಜು,real,noun,Original Real Word,,,2,table,4-5 years
+ಬಾಗು,real,verb,Original Real Word,,,2,bend,4-5 years
+ಬೀಸು,real,verb,Original Real Word,,,2,flutter,4-5 years
+ಚಾಚು,real,verb,Original Real Word,,,2,extend,4-5 years
+ಕಡಿ,real,verb,Original Real Word,,,2,"bite, cut",4-5 years
+ಕಲಿ,real,verb,Original Real Word,,,2,learn,4-5 years
+ಲಾಗ,real,verb,Original Real Word,,,2,tumble,4-5 years
+ನೆಡು,real,verb,Original Real Word,,,2,plant,4-5 years
+ಸುರಿ,real,verb,Original Real Word,,,2,pour,4-5 years
+ಮೆದು,real,adjective,Original Real Word,,,2,soft,6-7 years
+ಮೋಜು,real,adjective,Original Real Word,,,2,fun,6-7 years
+ಸದಾ,real,adverb,Original Real Word,,,2,always,6-7 years
+ತೀರು,real,verb,Original Real Word,,,2,die,6-7 years
+ಮುಡಿ,real,verb,Original Real Word,,,2,wear flower on head,6-7 years
+ಕೊರೆ,real,verb,Original Real Word,,,2,to pierce,6-7 years
+ಭೇಟಿ,real,verb,Original Real Word,,,2,visit,6-7 years
+ಹೆಣೆ,real,verb,Original Real Word,,,2,weave,6-7 years
+ಹಿತ,real,verb,Original Real Word,,,2,good,6-7 years
+ಸಾಗು,real,verb,Original Real Word,,,2,move,6-7 years
+ಸವಿ,real,verb,Original Real Word,,,2,taste,6-7 years
+ಎಲ್ಲಿ,real,adverb,Original Real Word,,,2,where,2-3 years
+ಉಪ್ಪು,real,noun,Original Real Word,,,2,salt,2-3 years
+ಒಮ್ಮೆ,real,adverb,Original Real Word,,,2,once,4-5 years
+ಇಟ್ಟು,real,verb,Original Real Word,,,2,was kept,4-5 years
+ಅತ್ತು,real,verb,Original Real Word,,,2,cry,4-5 years
+ಆಮೇಲೆ,real,adverb,Original Real Word,,,3,afterwards,2-3 years
+ಆಟವು,real,noun,Original Real Word,,,3,game,2-3 years
+ಊಟವು,real,noun,Original Real Word,,,3,meal,2-3 years
+ಎಲೆಯು,real,noun,Original Real Word,,,3,leaf,2-3 years
+ಇಲಿಯು,real,noun,Original Real Word,,,3,rat,2-3 years
+ಅಳಿಲು,real,noun,Original Real Word,,,3,squirrel,2-3 years
+ಒಣಗು,real,adjective,Original Real Word,,,3,dry up,4-5 years
+ಈಗಲೂ,real,noun,Original Real Word,,,3,still,4-5 years
+ಆಮೆಯು,real,noun,Original Real Word,,,3,tortoise,4-5 years
+ಎದೆಯು,real,noun,Original Real Word,,,3,chest,4-5 years
+ಏಣಿಯು,real,noun,Original Real Word,,,3,ladder,4-5 years
+ಅಪಾಯ,real,verb,Original Real Word,,,3,danger,4-5 years
+ಉಳಿದು,real,adjective,Original Real Word,,,3,remaining,6-7 years
+ಆಲವು,real,noun,Original Real Word,,,3,banyan tree,6-7 years
+ಅಡಿಯು,real,noun,Original Real Word,,,3,foot,6-7 years
+ಒದಗು,real,verb,Original Real Word,,,3,become available,6-7 years
+ಊಹಿಸು,real,verb,Original Real Word,,,3,imagine,6-7 years
+ಆದೇಶ,real,verb,Original Real Word,,,3,order,6-7 years
+ಅನಿಸು,real,verb,Original Real Word,,,3,think,6-7 years
+ಅರಿವು,real,verb,Original Real Word,,,3,aware,6-7 years
+ಬೆಕ್ಕು,real,noun,Original Real Word,,,2,cat,0-1 year
+ಕಣ್ಣು,real,noun,Original Real Word,,,2,eye,0-1 year
+ತಿನ್ನು,real,verb,Original Real Word,,,2,eat,0-1 year
+ಮುದ್ದು,real,adjective,Original Real Word,,,2,dearness,2-3 years
+ತಪ್ಪು,real,adjective,Original Real Word,,,2,error,2-3 years
+ಬಗ್ಗು,real,verb,Original Real Word,,,2,bend,2-3 years
+ಬನ್ನಿ,real,verb,Original Real Word,,,2,(please) come,2-3 years
+ಕಚ್ಚು,real,verb,Original Real Word,,,2,bite,2-3 years
+ಮಾತ್ರ,real,adverb,Original Real Word,,,2,only,4-5 years
+ಮತ್ತೆ,real,adverb,Original Real Word,,,2,again,4-5 years
+ಬಗ್ಗೆ,real,adverb,Original Real Word,,,2,about,4-5 years
+ಸುಳ್ಳು,real,noun,Original Real Word,,,2,lie,4-5 years
+ಹುಚ್ಚು,real,adjective,Original Real Word,,,2,madness,6-7 years
+ಕೊಬ್ಬು,real,adjective,Original Real Word,,,2,fat,6-7 years
+ಹಕ್ಕು,real,noun,Original Real Word,,,2,right,8-9 years
+ಬಿಳಿಯು,real,adjective,Original Real Word,,,3,white color,2-3 years
+ಬಿಸಿಯು,real,adjective,Original Real Word,,,3,hot,2-3 years
+ಸಿಹಿಯು,real,adjective,Original Real Word,,,3,sweet,2-3 years
+ಹಸಿರು,real,adjective,Original Real Word,,,3,green,2-3 years
+ಕೋತಿಯು,real,noun,Original Real Word,,,3,monkey,2-3 years
+ತಾಯಿಯು,real,noun,Original Real Word,,,3,mother,2-3 years
+ಟೋಪಿಯು,real,noun,Original Real Word,,,3,hat,2-3 years
+ಬಾಗಿಲು,real,noun,Original Real Word,,,3,door,2-3 years
+ಹೆಸರು,real,noun,Original Real Word,,,3,name,2-3 years
+ಜಾಮೂನು,real,noun,Original Real Word,,,3,a sweet dish,2-3 years
+ಕೂದಲು,real,noun,Original Real Word,,,3,hair,2-3 years
+ಹುಡುಕು,real,verb,Original Real Word,,,3,search,2-3 years
+ತೋರಿಸು,real,verb,Original Real Word,,,3,show,2-3 years
+ಕಿರುಚು,real,verb,Original Real Word,,,3,scream,2-3 years
+ಮಲಗು,real,verb,Original Real Word,,,3,sleep,2-3 years
+ಭಾರವು,real,adjective,Original Real Word,,,3,weight,4-5 years
+ಹೊಸತು,real,adjective,Original Real Word,,,3,new,4-5 years
+ಜಾಣನು,real,adjective,Original Real Word,,,3,intelligent one,4-5 years
+ಖುಷಿಯು,real,adjective,Original Real Word,,,3,fun,4-5 years
+ಕೊಳಕು,real,adjective,Original Real Word,,,3,dirty,4-5 years
+ಹೇಗಿವೆ,real,adverb,Original Real Word,,,3,how are they,4-5 years
+ಜೋರಾಗಿ,real,adverb,Original Real Word,,,3,forcefully,4-5 years
+ಸಾಲಾಗಿ,real,adverb,Original Real Word,,,3,in a line,4-5 years
+ಬೇಳೆಯು,real,noun,Original Real Word,,,3,lentil,4-5 years
+ಜಾಗವು,real,noun,Original Real Word,,,3,place,4-5 years
+ಕಾಯಿಯು,real,noun,Original Real Word,,,3,unripe fruit,4-5 years
+ರಾಣಿಯು,real,noun,Original Real Word,,,3,the queen,4-5 years
+ಬೆರೆಸು,real,verb,Original Real Word,,,3,blend,4-5 years
+ಧರಿಸು,real,verb,Original Real Word,,,3,wear,4-5 years
+ಹೊರಟು,real,verb,Original Real Word,,,3,set out,4-5 years
+ಕೂಡಿಸು,real,verb,Original Real Word,,,3,add,4-5 years
+ಹಳತು,real,adjective,Original Real Word,,,3,old,6-7 years
+ಹಿತವು,real,adjective,Original Real Word,,,3,good,6-7 years
+ಲೋಹವು,real,adjective,Original Real Word,,,3,metal,6-7 years
+ಮಜವು,real,adjective,Original Real Word,,,3,fun,6-7 years
+ತಾಜವು,real,adjective,Original Real Word,,,3,fresh,6-7 years
+ನುಣುಪು,real,adjective,Original Real Word,,,3,refine,6-7 years
+ಸಮನೆ,real,adverb,Original Real Word,,,3,equally,6-7 years
+ಬೋಳಾಗಿ,real,adverb,Original Real Word,,,3,became bald,6-7 years
+ಹೀಗಾಗಿ,real,adverb,Original Real Word,,,3,so,6-7 years
+ಚಡಿಯು,real,noun,Original Real Word,,,3,stick,6-7 years
+ಜೋಡಿಯು,real,noun,Original Real Word,,,3,pair,6-7 years
+ಕಾಕನು,real,noun,Original Real Word,,,3,"uncle, crow",6-7 years
+ನೆರೆಯು,real,noun,Original Real Word,,,3,flood,6-7 years
+ಬಯಸು,real,verb,Original Real Word,,,3,wish,6-7 years
+ಭಾವಿಸು,real,verb,Original Real Word,,,3,think,6-7 years
+ಧಾವಿಸು,real,verb,Original Real Word,,,3,rush,6-7 years
+ಧುಮುಕು,real,verb,Original Real Word,,,3,dive,6-7 years
+ದೊರಕು,real,verb,Original Real Word,,,3,get,6-7 years
+ಕೆದರು,real,verb,Original Real Word,,,3,scatter,6-7 years
+ಸವಾರಿ,real,verb,Original Real Word,,,3,ride,6-7 years
+ದೋಷವು,real,noun,Original Real Word,,,3,flaw,8-9 years
+ಬಿಳಿಚು,real,verb,Original Real Word,,,3,become pale,8-9 years
+ಅಮ್ಮನು,real,noun,Original Real Word,,,3,mother,0-1 year
+ಅಪ್ಪನು,real,noun,Original Real Word,,,3,father,0-1 year
+ಅಜ್ಜನು,real,noun,Original Real Word,,,3,grandfather,2-3 years
+ಅಜ್ಜಿಯು,real,noun,Original Real Word,,,3,grandmother,2-3 years
+ಅಕ್ಕನು,real,noun,Original Real Word,,,3,elder sister,2-3 years
+ಅಣ್ಣನು,real,noun,Original Real Word,,,3,elder brother,2-3 years
+ಓಡುತ್ತಾ,real,verb,Original Real Word,,,3,by running,2-3 years
+ಒದ್ದೆಯು,real,adjective,Original Real Word,,,3,wet,4-5 years
+ಉದ್ದವು,real,adjective,Original Real Word,,,3,tall,4-5 years
+ಅತ್ತೆಯು,real,noun,Original Real Word,,,3,mother in law,4-5 years
+ಆಡುತ್ತಾ,real,verb,Original Real Word,,,3,playing,4-5 years
+ಏಳುತ್ತಾ,real,verb,Original Real Word,,,3,getting up,4-5 years
+ಇರುತ್ತಾ,real,verb,Original Real Word,,,3,being,4-5 years
+ಆಪ್ತನು,real,adjective,Original Real Word,,,3,close friend,6-7 years
+ಇಲ್ಲೇನು,real,adverb,Original Real Word,,,3,what's here,6-7 years
+ಉಣ್ಣೆಯು,real,noun,Original Real Word,,,3,wool,6-7 years
+ಅಟ್ಟಿಸು,real,verb,Original Real Word,,,3,chase,6-7 years
+ಆಕಾಶವು,real,noun,Original Real Word,,,4,sky,2-3 years
+ಆಟಿಕೆಯು,real,noun,Original Real Word,,,4,toy,2-3 years
+ಉರುಳಾಡು,real,verb,Original Real Word,,,4,roll over,4-5 years
+ಏಕಿರುವೆ,real,adverb,Original Real Word,,,4,why are you here,6-7 years
+ಅಲುಗಿಸು,real,verb,Original Real Word,,,4,shake,6-7 years
+ಸುಮ್ಮನೆ,real,adverb,Original Real Word,,,3,causelessly,2-3 years
+ದುಷ್ಟನು,real,adjective,Original Real Word,,,3,wicked,6-7 years
+ಹೆಮ್ಮೆಯು,real,adjective,Original Real Word,,,3,pride,6-7 years
+ಮುಖ್ಯವು,real,adjective,Original Real Word,,,3,important,6-7 years
+ಶುಭ್ರವು,real,adjective,Original Real Word,,,3,clean,6-7 years
+ಹಾಗೆಲ್ಲಾ,real,adverb,Original Real Word,,,3,like all that,6-7 years
+ಪೆಚ್ಚಾಗಿ,real,adverb,Original Real Word,,,3,become dull,6-7 years
+ಥಟ್ಟನೆ,real,adverb,Original Real Word,,,3,immediately,6-7 years
+ಕಾವ್ಯವು,real,noun,Original Real Word,,,3,poem,8-9 years
+ನೇಯ್ಗೆಯು,real,noun,Original Real Word,,,3,weaving,8-9 years
+ಉಜ್ಜುತ್ತಾ,real,verb,Original Real Word,,,3,rubbing,4-5 years
+ಒಪ್ಪುತ್ತಾ,real,verb,Original Real Word,,,3,by agreeing,6-7 years
+ಗಂಟಲು,real,noun,Original Real Word,,,3,throat,2-3 years
+ಗೊಂಬೆಯು,real,noun,Original Real Word,,,3,doll,2-3 years
+ಸೊಂಡಿಲು,real,noun,Original Real Word,,,3,trunk,2-3 years
+ಕುಂಟನು,real,adjective,Original Real Word,,,3,cripple,4-5 years
+ಖಂಡಿತ,real,adverb,Original Real Word,,,3,definitely,4-5 years
+ತಂಪಾಗಿ,real,adverb,Original Real Word,,,3,being cool,4-5 years
+ಮೂರ್ಖನು,real,adjective,Original Real Word,,,3,idiot,6-7 years
+ಘರ್ಜನೆ,real,verb,Original Real Word,,,3,roar,6-7 years
+ಕಣಜವು,real,noun,Original Real Word,,,4,place to store grains,8-9 years
+ಹಿರಿಮೆಯು,real,noun,Original Real Word,,,4,greatness,8-9 years
+ನಮೂನೆಯು,real,noun,Original Real Word,,,4,sample,8-9 years
+ನೆರೆಯದು,real,noun,Original Real Word,,,4,neighbouring one,8-9 years
+ಸಮಿತಿಯು,real,noun,Original Real Word,,,4,association,8-9 years
+ಯೋಜನೆಯು,real,noun,Original Real Word,,,4,plan,8-9 years
+ಕಬಳಿಸು,real,verb,Original Real Word,,,4,swallow,8-9 years
+ದ್ರಾಕ್ಷಿಯು,real,noun,Original Real Word,,,3,grape,2-3 years
+ಎತ್ತರವು,real,adjective,Original Real Word,,,4,tall,4-5 years
+ಒಳ್ಳೆಯದು,real,adjective,Original Real Word,,,4,good thing,4-5 years
+ಈಜಾಡುತ್ತಾ,real,verb,Original Real Word,,,4,swimming,4-5 years
+ಉತ್ತಮವು,real,adjective,Original Real Word,,,4,good,6-7 years
+ಆರಿಸುತ್ತಾ,real,verb,Original Real Word,,,4,opting,6-7 years
+ಅಗೆಯುತ್ತಾ,real,verb,Original Real Word,,,4,digging,6-7 years
+ಉದುರುತ್ತಾ,real,verb,Original Real Word,,,4,shedding,6-7 years
+ಆಹ್ವಾನವು,real,noun,Original Real Word,,,4,invitation,8-9 years
+ಉದ್ಗರಿಸು,real,verb,Original Real Word,,,4,say,8-9 years
+ಸ್ವಲ್ಪವು,real,adjective,Original Real Word,,,3,a little,4-5 years
+ತಿದ್ದುತ್ತಾ,real,verb,Original Real Word,,,3,correcting,4-5 years
+ಶ್ರೇಷ್ಠವು,real,adjective,Original Real Word,,,3,excellent,6-7 years
+ಚಂದ್ರನು,real,noun,Original Real Word,,,3,moon,2-3 years
+ಅಂಗಳವು,real,noun,Original Real Word,,,4,frontyard,4-5 years
+ಆನಂದಿಸು,real,verb,Original Real Word,,,4,enjoy,6-7 years
+ಸ್ಪರ್ಶಿಸು,real,verb,Original Real Word,,,3,touch,6-7 years
+ಆದರ್ಶವು,real,adjective,Original Real Word,,,4,ideal,8-9 years
+ಇರುವೆಗಳು,real,noun,Original Real Word,,,5,ants,2-3 years
+ಶಿಕ್ಷಕನು,real,noun,Original Real Word,,,4,teacher (male),4-5 years
+ಶಿಕ್ಷಕಿಯು,real,noun,Original Real Word,,,4,teacher (female),4-5 years
+ಎಡಗಡೆಯು,real,noun,Original Real Word,,,5,left side,6-7 years
+ಲಕ್ಷಣವು,real,noun,Original Real Word,,,4,characteristic,6-7 years
+ಉಸಿರಾಟವು,real,noun,Original Real Word,,,5,breathing,6-7 years
+ವಿಜ್ಞಾನಿಯು,real,noun,Original Real Word,,,4,scientist,6-7 years
+ಅನುಭವಿಸು,real,verb,Original Real Word,,,5,experience,6-7 years
+ಪರೀಕ್ಷಿಸು,real,verb,Original Real Word,,,4,examine,4-5 years
+ಪುಸ್ತಕವು,real,noun,Original Real Word,,,4,book,2-3 years
+ಸಕ್ಕರೆಯು,real,noun,Original Real Word,,,4,sugar,2-3 years
+ಬರೆಯುತ್ತಾ,real,verb,Original Real Word,,,4,writing,2-3 years
+ಮಾತಾಡುತ್ತಾ,real,verb,Original Real Word,,,4,speaking,2-3 years
+ಚಿಕ್ಕದಾಗಿ,real,adverb,Original Real Word,,,4,being small,4-5 years
+ದೊಡ್ಡದಾಗಿ,real,adverb,Original Real Word,,,4,being big,4-5 years
+ಗಟ್ಟಿಯಾಗಿ,real,adverb,Original Real Word,,,4,hardly,4-5 years
+ಜಿಗಿಯುತ್ತಾ,real,verb,Original Real Word,,,4,jumping,4-5 years
+ಕಟ್ಟಿಹಾಕು,real,verb,Original Real Word,,,4,tie it up,4-5 years
+ಹುಣ್ಣಿಮೆಯು,real,adjective,Original Real Word,,,4,fullmoon,6-7 years
+ದಯವಿಟ್ಟು,real,adverb,Original Real Word,,,4,please,6-7 years
+ದೇಶಕ್ಕಾಗಿ,real,adverb,Original Real Word,,,4,for the nation,6-7 years
+ವಿಸ್ಮಯವು,real,adjective,Original Real Word,,,4,wonder,8-9 years
+ದಾಟಿಯಲ್ಲೂ,real,noun,Original Real Word,,,4,in that manner also,8-9 years
+ಜಿಗುಪ್ಸೆಯು,real,noun,Original Real Word,,,4,disgust,8-9 years
+ಕಲ್ಮಶವು,real,noun,Original Real Word,,,4,dirt,8-9 years
+ಕಲ್ಪನೆಯು,real,noun,Original Real Word,,,4,thought,8-9 years
+ಮಸೆಯುತ್ತಾ,real,verb,Original Real Word,,,4,sharpening,8-9 years
+ನಶಿಸುತ್ತಾ,real,verb,Original Real Word,,,4,by destroying,8-9 years
+ಸತ್ಕರಿಸು,real,verb,Original Real Word,,,4,treat,8-9 years
+ಎತ್ತಿಕೊಳ್ಳು,real,verb,Original Real Word,,,4,lift,2-3 years
+ಎಬ್ಬಿಸುತ್ತಾ,real,verb,Original Real Word,,,4,waking up,4-5 years
+ಅಚ್ಚುಮೆಚ್ಚು,real,adjective,Original Real Word,,,4,beloved,6-7 years
+ಗಾಳಿಪಟವು,real,noun,Original Real Word,,,5,kite,2-3 years
+ಅಕಸ್ಮಾತಾಗಿ,real,adverb,Original Real Word,,,5,unexpectedly,6-7 years
+ತಬ್ಬಿಬ್ಬಾಗಿ,real,adverb,Original Real Word,,,4,confused,8-9 years
+ಸ್ಥಾಪಿಸುತ್ತಾ,real,verb,Original Real Word,,,4,establishing,8-9 years
+ಅವಲಂಭಿಸು,real,verb,Original Real Word,,,5,depend upon,8-9 years
+ಕಳುಹಿಸುತ್ತಾ,real,verb,Original Real Word,,,5,sending,4-5 years
+ನೆನಪಿಸುತ್ತಾ,real,verb,Original Real Word,,,5,recalling,4-5 years
+ಪ್ರಾಥಮಿಕವು,real,noun,Original Real Word,,,5,primary,6-7 years
+ಅಪ್ಪಳಿಸುತ್ತಾ,real,verb,Original Real Word,,,5,banging,6-7 years
+ಉದ್ದೇಶಿಸುತ್ತಾ,real,verb,Original Real Word,,,5,contemplating,8-9 years
+ತರಕಾರಿಗಳು,real,noun,Original Real Word,,,6,vegetables,4-5 years
+ಆರೋಗ್ಯಕರವು,real,adjective,Original Real Word,,,6,healthy,6-7 years
+ಕಟ್ಟುನಿಟ್ಟಾಗಿ,real,adverb,Original Real Word,,,5,strictly,8-9 years
+ಪ್ರತಿಧ್ವನಿಯು,real,noun,Original Real Word,,,5,echo,8-9 years
+ಅವಸರದಿಂದ,real,adverb,Original Real Word,,,6,hurriedly,6-7 years
+ಯುದ್ಧಕಾಲಿನವು,real,noun,Original Real Word,,,6,war duration,8-9 years
+ಅರಚಿಕೊಳ್ಳುತ್ತಾ,real,verb,Original Real Word,,,6,screaming loudly,6-7 years
+ಭರವಸೆಯಿಂದ,real,adverb,Original Real Word,,,6,with confidence,8-9 years
+ಮುಜುಗರದಿಂದ,real,adverb,Original Real Word,,,6,with hesitation,8-9 years
+ನಿಯಂತ್ರಿಸುತ್ತಾ,real,verb,Original Real Word,,,5,regulating,8-9 years
+ಜ್ಞಾನಿಗಳೆಲ್ಲರು,real,noun,Original Real Word,,,6,all the scholars,8-9 years
+ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,real,verb,Original Real Word,,,6,by sitting,4-5 years
+ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,real,verb,Original Real Word,,,6,placing on the wrist,8-9 years
+ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,real,verb,Original Real Word,,,6,while pasting,6-7 years
+ನರ್ತನವಾಡುತ್ತಾ,real,verb,Original Real Word,,,6,performing dance,6-7 years
+ಕವಡೆಬಳಸುತ್ತಾ,real,verb,Original Real Word,,,7,using cowry,8-9 years
+ತೆಂಗಿನಕಾಯಿಗಳು,real,noun,Original Real Word,,,7,coconuts,4-5 years
+ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,real,verb,Original Real Word,,,7,sighing,8-9 years
+ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,real,verb,Original Real Word,,,7,wearing dress,4-5 years
+ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,real,verb,Original Real Word,,,8,repairing,6-7 years
+ಹೀ,pseudo,noun,Logic 2: Vowel Replacement,ಹೂ,ಹೂ → ಹೀ,1,,
+ಊಡು,pseudo,verb,Logic 2: Vowel Replacement,ಇಡು,ಇ → ಊ,2,,
+ಹಾಲೊ,pseudo,noun,Logic 2: Vowel Replacement,ಹಾಲು,ಲು → ಲೊ,2,,
+ಚೃರು,pseudo,noun,Logic 2: Vowel Replacement,ಚೂರು,ಚೂ → ಚೃ,2,,
+ಮಗಾ,pseudo,noun,Logic 2: Vowel Replacement,ಮಗು,ಗು → ಗಾ,2,,
+ನೃಡೆ,pseudo,verb,Logic 2: Vowel Replacement,ನಡೆ,ನ → ನೃ,2,,
+ಗೋಜು,pseudo,noun,Logic 2: Vowel Replacement,ಗಾಜು,ಗಾ → ಗೋ,2,,
+ಮೈಜು,pseudo,noun,Logic 2: Vowel Replacement,ಮೇಜು,ಮೇ → ಮೈ,2,,
+ಕೌಡಿ,pseudo,verb,Logic 2: Vowel Replacement,ಕಡಿ,ಕ → ಕೌ,2,,
+ಸುರೈ,pseudo,verb,Logic 2: Vowel Replacement,ಸುರಿ,ರಿ → ರೈ,2,,
+ತೂರು,pseudo,verb,Logic 2: Vowel Replacement,ತೀರು,ತೀ → ತೂ,2,,
+ಹುಣೆ,pseudo,verb,Logic 2: Vowel Replacement,ಹೆಣೆ,ಹೆ → ಹು,2,,
+ಒಲ್ಲಿ,pseudo,adverb,Logic 2: Vowel Replacement,ಎಲ್ಲಿ,ಎ → ಒ,2,,
+ಅತ್ತೇ,pseudo,verb,Logic 2: Vowel Replacement,ಅತ್ತು,ತು → ತೇ,2,,
+ಎಲೆಯೃ,pseudo,noun,Logic 2: Vowel Replacement,ಎಲೆಯು,ಯು → ಯೃ,3,,
+ಈಗೂಲೂ,pseudo,noun,Logic 2: Vowel Replacement,ಈಗಲೂ,ಗ → ಗೂ,3,,
+ಅಪಾಯಿ,pseudo,verb,Logic 2: Vowel Replacement,ಅಪಾಯ,ಯ → ಯಿ,3,,
+ಒದಗೋ,pseudo,verb,Logic 2: Vowel Replacement,ಒದಗು,ಗು → ಗೋ,3,,
+ಅರಿವೊ,pseudo,verb,Logic 2: Vowel Replacement,ಅರಿವು,ವು → ವೊ,3,,
+ಮೂದ್ದು,pseudo,adjective,Logic 2: Vowel Replacement,ಮುದ್ದು,ಮು → ಮೂ,2,,
+ಕೃಚ್ಚು,pseudo,verb,Logic 2: Vowel Replacement,ಕಚ್ಚು,ಕ → ಕೃ,2,,
+ಸುಳ್ಳಿ,pseudo,noun,Logic 2: Vowel Replacement,ಸುಳ್ಳು,ಳು → ಳಿ,2,,
+ಬಿಳಿಯಿ,pseudo,adjective,Logic 2: Vowel Replacement,ಬಿಳಿಯು,ಯು → ಯಿ,3,,
+ಕೋತಿಯೌ,pseudo,noun,Logic 2: Vowel Replacement,ಕೋತಿಯು,ಯು → ಯೌ,3,,
+ಹೆಸರೀ,pseudo,noun,Logic 2: Vowel Replacement,ಹೆಸರು,ರು → ರೀ,3,,
+ತೋರೋಸು,pseudo,verb,Logic 2: Vowel Replacement,ತೋರಿಸು,ರಿ → ರೋ,3,,
+ಹೊಸೇತು,pseudo,adjective,Logic 2: Vowel Replacement,ಹೊಸತು,ಸ → ಸೇ,3,,
+ಹೇಗೆವೆ,pseudo,adverb,Logic 2: Vowel Replacement,ಹೇಗಿವೆ,ಗಿ → ಗೆ,3,,
+ಜಾಗೃವು,pseudo,noun,Logic 2: Vowel Replacement,ಜಾಗವು,ಗ → ಗೃ,3,,
+ಧರೇಸು,pseudo,verb,Logic 2: Vowel Replacement,ಧರಿಸು,ರಿ → ರೇ,3,,
+ಹಿತಾವು,pseudo,adjective,Logic 2: Vowel Replacement,ಹಿತವು,ತ → ತಾ,3,,
+ನಾಣುಪು,pseudo,adjective,Logic 2: Vowel Replacement,ನುಣುಪು,ನು → ನಾ,3,,
+ಚೀಡಿಯು,pseudo,noun,Logic 2: Vowel Replacement,ಚಡಿಯು,ಚ → ಚೀ,3,,
+ಬೀಯಸು,pseudo,verb,Logic 2: Vowel Replacement,ಬಯಸು,ಬ → ಬೀ,3,,
+ಕೆದರೆ,pseudo,verb,Logic 2: Vowel Replacement,ಕೆದರು,ರು → ರೆ,3,,
+ಐಮ್ಮನು,pseudo,noun,Logic 2: Vowel Replacement,ಅಮ್ಮನು,ಅ → ಐ,3,,
+ಅಕ್ಕನೆ,pseudo,noun,Logic 2: Vowel Replacement,ಅಕ್ಕನು,ನು → ನೆ,3,,
+ಊದ್ದವು,pseudo,adjective,Logic 2: Vowel Replacement,ಉದ್ದವು,ಉ → ಊ,3,,
+ಇರಿತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಇರುತ್ತಾ,ರು → ರಿ,3,,
+ಓಟ್ಟಿಸು,pseudo,verb,Logic 2: Vowel Replacement,ಅಟ್ಟಿಸು,ಅ → ಓ,3,,
+ಏಕೆರುವೆ,pseudo,adverb,Logic 2: Vowel Replacement,ಏಕಿರುವೆ,ಕಿ → ಕೆ,4,,
+ಹೆಮ್ಮೂಯು,pseudo,adjective,Logic 2: Vowel Replacement,ಹೆಮ್ಮೆಯು,ಮೆ → ಮೂ,3,,
+ಪೃಚ್ಚಾಗಿ,pseudo,adverb,Logic 2: Vowel Replacement,ಪೆಚ್ಚಾಗಿ,ಪೆ → ಪೃ,3,,
+ಒಜ್ಜುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಉಜ್ಜುತ್ತಾ,ಉ → ಒ,3,,
+ಸೊಂಡಿಲೆ,pseudo,noun,Logic 2: Vowel Replacement,ಸೊಂಡಿಲು,ಲು → ಲೆ,3,,
+ಮೂರ್ಖನೂ,pseudo,adjective,Logic 2: Vowel Replacement,ಮೂರ್ಖನು,ನು → ನೂ,3,,
+ನಮೂನೇಯು,pseudo,noun,Logic 2: Vowel Replacement,ನಮೂನೆಯು,ನೆ → ನೇ,4,,
+ಕಬಳೌಸು,pseudo,verb,Logic 2: Vowel Replacement,ಕಬಳಿಸು,ಳಿ → ಳೌ,4,,
+ಈಜೊಡುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಈಜಾಡುತ್ತಾ,ಜಾ → ಜೊ,4,,
+ಎದುರುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಉದುರುತ್ತಾ,ಉ → ಎ,4,,
+ತಿದ್ದುತ್ತೂ,pseudo,verb,Logic 2: Vowel Replacement,ತಿದ್ದುತ್ತಾ,ತಾ → ತೂ,3,,
+ಆನಂದಿಸೌ,pseudo,verb,Logic 2: Vowel Replacement,ಆನಂದಿಸು,ಸು → ಸೌ,4,,
+ಶಿಕ್ಷಕನೃ,pseudo,noun,Logic 2: Vowel Replacement,ಶಿಕ್ಷಕನು,ನು → ನೃ,4,,
+ಉಸಿರಾಟೇವು,pseudo,noun,Logic 2: Vowel Replacement,ಉಸಿರಾಟವು,ಟ → ಟೇ,5,,
+ಪುಸ್ತುಕವು,pseudo,noun,Logic 2: Vowel Replacement,ಪುಸ್ತಕವು,ತ → ತು,4,,
+ಚಿಕ್ಕದೈಗಿ,pseudo,adverb,Logic 2: Vowel Replacement,ಚಿಕ್ಕದಾಗಿ,ದಾ → ದೈ,4,,
+ಕಟ್ಟಿಹುಕು,pseudo,verb,Logic 2: Vowel Replacement,ಕಟ್ಟಿಹಾಕು,ಹಾ → ಹು,4,,
+ವಿಸ್ಮಯೇವು,pseudo,adjective,Logic 2: Vowel Replacement,ವಿಸ್ಮಯವು,ಯ → ಯೇ,4,,
+ಕಲ್ಪನೌಯು,pseudo,noun,Logic 2: Vowel Replacement,ಕಲ್ಪನೆಯು,ನೆ → ನೌ,4,,
+ಎತ್ತೆಕೊಳ್ಳು,pseudo,verb,Logic 2: Vowel Replacement,ಎತ್ತಿಕೊಳ್ಳು,ತಿ → ತೆ,4,,
+ಅಕೇಸ್ಮಾತಾಗಿ,pseudo,adverb,Logic 2: Vowel Replacement,ಅಕಸ್ಮಾತಾಗಿ,ಕ → ಕೇ,5,,
+ಕೆಳುಹಿಸುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಕಳುಹಿಸುತ್ತಾ,ಕ → ಕೆ,5,,
+ಉದ್ದೇಶೃಸುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಉದ್ದೇಶಿಸುತ್ತಾ,ಶಿ → ಶೃ,5,,
+ಪ್ರತಿಧ್ವನಿಯೃ,pseudo,noun,Logic 2: Vowel Replacement,ಪ್ರತಿಧ್ವನಿಯು,ಯು → ಯೃ,5,,
+ಭರವಸೇಯಿಂದ,pseudo,adverb,Logic 2: Vowel Replacement,ಭರವಸೆಯಿಂದ,ಸೆ → ಸೇ,6,,
+ಕುಳಿತುಕಿಳ್ಳುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,ಕೊ → ಕಿ,6,,
+ಕವೃಡೆಬಳಸುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಕವಡೆಬಳಸುತ್ತಾ,ವ → ವೃ,7,,
+ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,pseudo,verb,Logic 2: Vowel Replacement,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,ಸ → ಸೂ,8,,
+ಊಗು,pseudo,noun,Logic 1: Consonant Replacement,ಊರು,ರ → ಗ,2,,
+ಇಜಿ,pseudo,verb,Logic 1: Consonant Replacement,ಇಳಿ,ಳ → ಜ,2,,
+ಮೀರು,pseudo,noun,Logic 1: Consonant Replacement,ನೀರು,ನ → ಮ,2,,
+ರಾಡು,pseudo,noun,Logic 1: Consonant Replacement,ಹಾಡು,ಹ → ರ,2,,
+ದೀನು,pseudo,noun,Logic 1: Consonant Replacement,ಮೀನು,ಮ → ದ,2,,
+ಕೂದು,pseudo,adjective,Logic 1: Consonant Replacement,ಬೂದು,ಬ → ಕ,2,,
+ಹೂಡು,pseudo,noun,Logic 1: Consonant Replacement,ಗೂಡು,ಗ → ಹ,2,,
+ಹಾಗು,pseudo,verb,Logic 1: Consonant Replacement,ಬಾಗು,ಬ → ಹ,2,,
+ಕಮಿ,pseudo,verb,Logic 1: Consonant Replacement,ಕಲಿ,ಲ → ಮ,2,,
+ಮೆಜು,pseudo,adjective,Logic 1: Consonant Replacement,ಮೆದು,ದ → ಜ,2,,
+ಟುಡಿ,pseudo,verb,Logic 1: Consonant Replacement,ಮುಡಿ,ಮ → ಟ,2,,
+ಹಿಮ,pseudo,verb,Logic 1: Consonant Replacement,ಹಿತ,ತ → ಮ,2,,
+ಶೂ,pseudo,noun,Logic 1: Consonant Replacement,ಹೂ,ಹ → ಶ,1,,
+ಆರೇಲೆ,pseudo,adverb,Logic 1: Consonant Replacement,ಆಮೇಲೆ,ಮ → ರ,3,,
+ಇನಿಯು,pseudo,noun,Logic 1: Consonant Replacement,ಇಲಿಯು,ಲ → ನ,3,,
+ಆಮೆಜು,pseudo,noun,Logic 1: Consonant Replacement,ಆಮೆಯು,ಯ → ಜ,3,,
+ಉಯಿದು,pseudo,adjective,Logic 1: Consonant Replacement,ಉಳಿದು,ಳ → ಯ,3,,
+ಊಹಿಶು,pseudo,verb,Logic 1: Consonant Replacement,ಊಹಿಸು,ಸ → ಶ,3,,
+ತೆಕ್ಕು,pseudo,noun,Logic 1: Consonant Replacement,ಬೆಕ್ಕು,ಬ → ತ,2,,
+ಮಪ್ಪು,pseudo,adjective,Logic 1: Consonant Replacement,ತಪ್ಪು,ತ → ಮ,2,,
+ಶಾತ್ರ,pseudo,adverb,Logic 1: Consonant Replacement,ಮಾತ್ರ,ಮ → ಶ,2,,
+ರುಚ್ಚು,pseudo,adjective,Logic 1: Consonant Replacement,ಹುಚ್ಚು,ಹ → ರ,2,,
+ನಿಸಿಯು,pseudo,adjective,Logic 1: Consonant Replacement,ಬಿಸಿಯು,ಬ → ನ,3,,
+ಜಾಯಿಯು,pseudo,noun,Logic 1: Consonant Replacement,ತಾಯಿಯು,ತ → ಜ,3,,
+ಜಾಮೂಕು,pseudo,noun,Logic 1: Consonant Replacement,ಜಾಮೂನು,ನ → ಕ,3,,
+ಟಿರುಚು,pseudo,verb,Logic 1: Consonant Replacement,ಕಿರುಚು,ಕ → ಟ,3,,
+ಶಾಣನು,pseudo,adjective,Logic 1: Consonant Replacement,ಜಾಣನು,ಜ → ಶ,3,,
+ಜೋದಾಗಿ,pseudo,adverb,Logic 1: Consonant Replacement,ಜೋರಾಗಿ,ರ → ದ,3,,
+ಪಾಯಿಯು,pseudo,noun,Logic 1: Consonant Replacement,ಕಾಯಿಯು,ಕ → ಪ,3,,
+ಮೊರಟು,pseudo,verb,Logic 1: Consonant Replacement,ಹೊರಟು,ಹ → ಮ,3,,
+ಲೋಸವು,pseudo,adjective,Logic 1: Consonant Replacement,ಲೋಹವು,ಹ → ಸ,3,,
+ಸಪನೆ,pseudo,adverb,Logic 1: Consonant Replacement,ಸಮನೆ,ಮ → ಪ,3,,
+ಜೋಜಿಯು,pseudo,noun,Logic 1: Consonant Replacement,ಜೋಡಿಯು,ಡ → ಜ,3,,
+ಭಾಚಿಸು,pseudo,verb,Logic 1: Consonant Replacement,ಭಾವಿಸು,ವ → ಚ,3,,
+ಶೊರಕು,pseudo,verb,Logic 1: Consonant Replacement,ದೊರಕು,ದ → ಶ,3,,
+ಬಿಳಿಜು,pseudo,verb,Logic 1: Consonant Replacement,ಬಿಳಿಚು,ಚ → ಜ,3,,
+ಅಜ್ಜಿಟು,pseudo,noun,Logic 1: Consonant Replacement,ಅಜ್ಜಿಯು,ಯ → ಟ,3,,
+ಒದ್ದೆಕು,pseudo,adjective,Logic 1: Consonant Replacement,ಒದ್ದೆಯು,ಯ → ಕ,3,,
+ಏಡುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಏಳುತ್ತಾ,ಳ → ಡ,3,,
+ಉಣ್ಣೆಪು,pseudo,noun,Logic 1: Consonant Replacement,ಉಣ್ಣೆಯು,ಯ → ಪ,3,,
+ಉತುಳಾಡು,pseudo,verb,Logic 1: Consonant Replacement,ಉರುಳಾಡು,ರ → ತ,4,,
+ಳುಷ್ಟನು,pseudo,adjective,Logic 1: Consonant Replacement,ದುಷ್ಟನು,ದ → ಳ,3,,
+ಹಾಪೆಲ್ಲಾ,pseudo,adverb,Logic 1: Consonant Replacement,ಹಾಗೆಲ್ಲಾ,ಗ → ಪ,3,,
+ನೇಯ್ಗೆಜು,pseudo,noun,Logic 1: Consonant Replacement,ನೇಯ್ಗೆಯು,ಯ → ಜ,3,,
+ಗೊಂಬೆಪು,pseudo,noun,Logic 1: Consonant Replacement,ಗೊಂಬೆಯು,ಯ → ಪ,3,,
+ತಂಪಾಳಿ,pseudo,adverb,Logic 1: Consonant Replacement,ತಂಪಾಗಿ,ಗ → ಳ,3,,
+ಹಿಪಿಮೆಯು,pseudo,noun,Logic 1: Consonant Replacement,ಹಿರಿಮೆಯು,ರ → ಪ,4,,
+ಯೋಜನೆಮು,pseudo,noun,Logic 1: Consonant Replacement,ಯೋಜನೆಯು,ಯ → ಮ,4,,
+ಒಳ್ಳೆವದು,pseudo,adjective,Logic 1: Consonant Replacement,ಒಳ್ಳೆಯದು,ಯ → ವ,4,,
+ಅಗೆನುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಅಗೆಯುತ್ತಾ,ಯ → ನ,4,,
+ಸ್ವಲ್ಪದು,pseudo,adjective,Logic 1: Consonant Replacement,ಸ್ವಲ್ಪವು,ವ → ದ,3,,
+ಅಂಗಜವು,pseudo,noun,Logic 1: Consonant Replacement,ಅಂಗಳವು,ಳ → ಜ,4,,
+ಇರುರೆಗಳು,pseudo,noun,Logic 1: Consonant Replacement,ಇರುವೆಗಳು,ವ → ರ,5,,
+ಪಕ್ಷಣವು,pseudo,noun,Logic 1: Consonant Replacement,ಲಕ್ಷಣವು,ಲ → ಪ,4,,
+ದರೀಕ್ಷಿಸು,pseudo,verb,Logic 1: Consonant Replacement,ಪರೀಕ್ಷಿಸು,ಪ → ದ,4,,
+ಮಾತಾಳುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಮಾತಾಡುತ್ತಾ,ಡ → ಳ,4,,
+ಜಿಗಿಬುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಜಿಗಿಯುತ್ತಾ,ಯ → ಬ,4,,
+ಬೇಶಕ್ಕಾಗಿ,pseudo,adverb,Logic 1: Consonant Replacement,ದೇಶಕ್ಕಾಗಿ,ದ → ಬ,4,,
+ಜಲ್ಮಶವು,pseudo,noun,Logic 1: Consonant Replacement,ಕಲ್ಮಶವು,ಕ → ಜ,4,,
+ಸತ್ಕತಿಸು,pseudo,verb,Logic 1: Consonant Replacement,ಸತ್ಕರಿಸು,ರ → ತ,4,,
+ಚಾಳಿಪಟವು,pseudo,noun,Logic 1: Consonant Replacement,ಗಾಳಿಪಟವು,ಗ → ಚ,5,,
+ಅವಲಂಭಿನು,pseudo,verb,Logic 1: Consonant Replacement,ಅವಲಂಭಿಸು,ಸ → ನ,5,,
+ಅಪ್ಪಳಿನುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಅಪ್ಪಳಿಸುತ್ತಾ,ಸ → ನ,5,,
+ಕಟ್ಟುಹಿಟ್ಟಾಗಿ,pseudo,adverb,Logic 1: Consonant Replacement,ಕಟ್ಟುನಿಟ್ಟಾಗಿ,ನ → ಹ,5,,
+ಅರಟಿಕೊಳ್ಳುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಅರಚಿಕೊಳ್ಳುತ್ತಾ,ಚ → ಟ,6,,
+ಜ್ಞಾನಿಗಶೆಲ್ಲರು,pseudo,noun,Logic 1: Consonant Replacement,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,ಳ → ಶ,6,,
+ನರ್ತನಶಾಡುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ನರ್ತನವಾಡುತ್ತಾ,ವ → ಶ,6,,
+ಲಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,pseudo,verb,Logic 1: Consonant Replacement,ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,ಬ → ಲ,7,,
+ಟವುಅಳಿ,pseudo,noun,Logic 3: Affix Splicing,ಆಟವು,suffix(2-3) + prefix(1-2),3,,
+ಲಿಯುಆಮೇ,pseudo,noun,Logic 3: Affix Splicing,ಇಲಿಯು,suffix(2-3) + prefix(1-2),3,,
+ಮೆಯುಎದೆ,pseudo,noun,Logic 3: Affix Splicing,ಆಮೆಯು,suffix(2-3) + prefix(1-2),3,,
+ಣಗುಈಗ,pseudo,adjective,Logic 3: Affix Splicing,ಒಣಗು,suffix(2-3) + prefix(1-2),3,,
+ಳಿದುಅನಿ,pseudo,adjective,Logic 3: Affix Splicing,ಉಳಿದು,suffix(2-3) + prefix(1-2),3,,
+ಡಿಯುಊಹಿ,pseudo,noun,Logic 3: Affix Splicing,ಅಡಿಯು,suffix(2-3) + prefix(1-2),3,,
+ದೇಶಅಮ್ಮ,pseudo,verb,Logic 3: Affix Splicing,ಆದೇಶ,suffix(2-3) + prefix(1-2),3,,
+ಪ್ಪನುಮಲ,pseudo,noun,Logic 3: Affix Splicing,ಅಪ್ಪನು,suffix(2-3) + prefix(1-2),3,,
+ಗಿಲುಅಜ್ಜಿ,pseudo,noun,Logic 3: Affix Splicing,ಬಾಗಿಲು,suffix(2-3) + prefix(1-2),3,,
+ಜ್ಜನುಅಣ್ಣ,pseudo,noun,Logic 3: Affix Splicing,ಅಜ್ಜನು,suffix(2-3) + prefix(1-2),3,,
+ಯಿಯುಟೋಪಿ,pseudo,noun,Logic 3: Affix Splicing,ತಾಯಿಯು,suffix(2-3) + prefix(1-2),3,,
+ರಿಸುಕೋತಿ,pseudo,verb,Logic 3: Affix Splicing,ತೋರಿಸು,suffix(2-3) + prefix(1-2),3,,
+ಹಿಯುಹುಡು,pseudo,adjective,Logic 3: Affix Splicing,ಸಿಹಿಯು,suffix(2-3) + prefix(1-2),3,,
+ಳಿಯುಕಿರು,pseudo,adjective,Logic 3: Affix Splicing,ಬಿಳಿಯು,suffix(2-3) + prefix(1-2),3,,
+ತ್ತೆಯುಖುಷಿ,pseudo,noun,Logic 3: Affix Splicing,ಅತ್ತೆಯು,suffix(2-3) + prefix(1-2),3,,
+ಳಕುಜೋರಾ,pseudo,adjective,Logic 3: Affix Splicing,ಕೊಳಕು,suffix(2-3) + prefix(1-2),3,,
+ಣನುಭಾರ,pseudo,adjective,Logic 3: Affix Splicing,ಜಾಣನು,suffix(2-3) + prefix(1-2),3,,
+ಗವುರಾಣಿ,pseudo,noun,Logic 3: Affix Splicing,ಜಾಗವು,suffix(2-3) + prefix(1-2),3,,
+ಡಿಸುಸಾಲಾ,pseudo,verb,Logic 3: Affix Splicing,ಕೂಡಿಸು,suffix(2-3) + prefix(1-2),3,,
+ಸತುಧರಿ,pseudo,adjective,Logic 3: Affix Splicing,ಹೊಸತು,suffix(2-3) + prefix(1-2),3,,
+ರುತ್ತಾಬೇಳೆ,pseudo,verb,Logic 3: Affix Splicing,ಇರುತ್ತಾ,suffix(2-3) + prefix(1-2),3,,
+ರೆಸುಹಳ,pseudo,verb,Logic 3: Affix Splicing,ಬೆರೆಸು,suffix(2-3) + prefix(1-2),3,,
+ಡಿಯುಕೆದ,pseudo,noun,Logic 3: Affix Splicing,ಜೋಡಿಯು,suffix(2-3) + prefix(1-2),3,,
+ಮುಕುಇಲ್ಲೇ,pseudo,verb,Logic 3: Affix Splicing,ಧುಮುಕು,suffix(2-3) + prefix(1-2),3,,
+ಟ್ಟಿಸುದೊರ,pseudo,verb,Logic 3: Affix Splicing,ಅಟ್ಟಿಸು,suffix(2-3) + prefix(1-2),3,,
+ಮನೆಬೋಳಾ,pseudo,adverb,Logic 3: Affix Splicing,ಸಮನೆ,suffix(2-3) + prefix(1-2),3,,
+ಡಿಯುಹಿತ,pseudo,noun,Logic 3: Affix Splicing,ಚಡಿಯು,suffix(2-3) + prefix(1-2),3,,
+ವಿಸುಆಪ್ತ,pseudo,verb,Logic 3: Affix Splicing,ಧಾವಿಸು,suffix(2-3) + prefix(1-2),3,,
+ವಿಸುನೆರೆ,pseudo,verb,Logic 3: Affix Splicing,ಭಾವಿಸು,suffix(2-3) + prefix(1-2),3,,
+ಷವುಬಿಳಿ,pseudo,noun,Logic 3: Affix Splicing,ದೋಷವು,suffix(2-3) + prefix(1-2),3,,
+ಟಲುಸೊಂಡಿ,pseudo,noun,Logic 3: Affix Splicing,ಗಂಟಲು,suffix(2-3) + prefix(1-2),3,,
+ಜ್ಜುತ್ತಾಕುಂಟ,pseudo,verb,Logic 3: Affix Splicing,ಉಜ್ಜುತ್ತಾ,suffix(2-3) + prefix(1-2),3,,
+ಪಾಗಿಹಾಗೆ,pseudo,adverb,Logic 3: Affix Splicing,ತಂಪಾಗಿ,suffix(2-3) + prefix(1-2),3,,
+ರ್ಜನೆಥಟ್ಟ,pseudo,verb,Logic 3: Affix Splicing,ಘರ್ಜನೆ,suffix(2-3) + prefix(1-2),3,,
+ಭ್ರವುದುಷ್ಟ,pseudo,adjective,Logic 3: Affix Splicing,ಶುಭ್ರವು,suffix(2-3) + prefix(1-2),3,,
+ಮ್ಮೆಯುಪೆಚ್ಚಾ,pseudo,adjective,Logic 3: Affix Splicing,ಹೆಮ್ಮೆಯು,suffix(2-3) + prefix(1-2),3,,
+ಯ್ಗೆಯುಚಂದ್ರ,pseudo,noun,Logic 3: Affix Splicing,ನೇಯ್ಗೆಯು,suffix(2-3) + prefix(1-2),3,,
+ಲ್ಪವುತಿದ್ದು,pseudo,adjective,Logic 3: Affix Splicing,ಸ್ವಲ್ಪವು,suffix(2-3) + prefix(1-2),3,,
+ಷ್ಠವುಆಕಾ,pseudo,adjective,Logic 3: Affix Splicing,ಶ್ರೇಷ್ಠವು,suffix(2-3) + prefix(1-2),3,,
+ಳಾಡುಅಲು,pseudo,verb,Logic 3: Affix Splicing,ಉರುಳಾಡು,suffix(3-4) + prefix(1-2),4,,
+ರವುಒಳ್ಳೆ,pseudo,adjective,Logic 3: Affix Splicing,ಎತ್ತರವು,suffix(3-4) + prefix(1-2),4,,
+ಡುತ್ತಾಆರಿ,pseudo,verb,Logic 3: Affix Splicing,ಈಜಾಡುತ್ತಾ,suffix(3-4) + prefix(1-2),4,,
+ದಿಸುಅಗೆ,pseudo,verb,Logic 3: Affix Splicing,ಆನಂದಿಸು,suffix(3-4) + prefix(1-2),4,,
+ಜವುಯೋಜ,pseudo,noun,Logic 3: Affix Splicing,ಕಣಜವು,suffix(3-4) + prefix(1-2),4,,
+ಮೆಯುಆಹ್ವಾ,pseudo,noun,Logic 3: Affix Splicing,ಹಿರಿಮೆಯು,suffix(3-4) + prefix(1-2),4,,
+ರಿಸುನಮೂ,pseudo,verb,Logic 3: Affix Splicing,ಉದ್ಗರಿಸು,suffix(3-4) + prefix(1-2),4,,
+ತಿಯುಸಕ್ಕ,pseudo,noun,Logic 3: Affix Splicing,ಸಮಿತಿಯು,suffix(3-4) + prefix(1-2),4,,
+ಯುತ್ತಾಮಾತಾ,pseudo,verb,Logic 3: Affix Splicing,ಬರೆಯುತ್ತಾ,suffix(3-4) + prefix(1-2),4,,
+ದಾಗಿಗಟ್ಟಿ,pseudo,adverb,Logic 3: Affix Splicing,ಚಿಕ್ಕದಾಗಿ,suffix(3-4) + prefix(1-2),4,,
+ದಾಗಿಶಿಕ್ಷ,pseudo,adverb,Logic 3: Affix Splicing,ದೊಡ್ಡದಾಗಿ,suffix(3-4) + prefix(1-2),4,,
+ಕಿಯುದಯ,pseudo,noun,Logic 3: Affix Splicing,ಶಿಕ್ಷಕಿಯು,suffix(3-4) + prefix(1-2),4,,
+ಮೆಚ್ಚುದೇಶ,pseudo,adjective,Logic 3: Affix Splicing,ಅಚ್ಚುಮೆಚ್ಚು,suffix(3-4) + prefix(1-2),4,,
+ಮೆಯುವಿಜ್ಞಾ,pseudo,adjective,Logic 3: Affix Splicing,ಹುಣ್ಣಿಮೆಯು,suffix(3-4) + prefix(1-2),4,,
+ಯಲ್ಲೂಮಸೆ,pseudo,noun,Logic 3: Affix Splicing,ದಾಟಿಯಲ್ಲೂ,suffix(3-4) + prefix(1-2),4,,
+ರಿಸುಕಲ್ಪ,pseudo,verb,Logic 3: Affix Splicing,ಸತ್ಕರಿಸು,suffix(3-4) + prefix(1-2),4,,
+ಶವುತಬ್ಬಿ,pseudo,noun,Logic 3: Affix Splicing,ಕಲ್ಮಶವು,suffix(3-4) + prefix(1-2),4,,
+ಸುತ್ತಾಎಡಗ,pseudo,verb,Logic 3: Affix Splicing,ಸ್ಥಾಪಿಸುತ್ತಾ,suffix(3-4) + prefix(1-3),4,,
+ರಾಟವುಗಾಳಿಪ,pseudo,noun,Logic 3: Affix Splicing,ಉಸಿರಾಟವು,suffix(3-5) + prefix(1-3),5,,
+ಸ್ಮಾತಾಗಿಕಳುಹಿ,pseudo,adverb,Logic 3: Affix Splicing,ಅಕಸ್ಮಾತಾಗಿ,suffix(3-5) + prefix(1-3),5,,
+ಪಿಸುತ್ತಾಅಪ್ಪಳಿ,pseudo,verb,Logic 3: Affix Splicing,ನೆನಪಿಸುತ್ತಾ,suffix(3-5) + prefix(1-3),5,,
+ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ,pseudo,verb,Logic 3: Affix Splicing,ಉದ್ದೇಶಿಸುತ್ತಾ,suffix(3-5) + prefix(1-3),5,,
+ತ್ರಿಸುತ್ತಾಅವಸ,pseudo,verb,Logic 3: Affix Splicing,ನಿಯಂತ್ರಿಸುತ್ತಾ,suffix(3-5) + prefix(1-3),5,,
+ಕರವುಭರವ,pseudo,adjective,Logic 3: Affix Splicing,ಆರೋಗ್ಯಕರವು,suffix(4-6) + prefix(1-3),6,,
+ರದಿಂದಕುಳಿತು,pseudo,adverb,Logic 3: Affix Splicing,ಮುಜುಗರದಿಂದ,suffix(4-6) + prefix(1-3),6,,
+ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ,pseudo,verb,Logic 3: Affix Splicing,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,suffix(4-6) + prefix(1-3),6,,
+ಲ್ಲಿಡುತ್ತಾಕವಡೆ,pseudo,verb,Logic 3: Affix Splicing,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,suffix(4-6) + prefix(1-3),6,,
+ಬಿಡುತ್ತಾಸರಿಪ,pseudo,verb,Logic 3: Affix Splicing,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,suffix(5-7) + prefix(1-3),7,,
+ಆಟಳಿಲು,pseudo,noun,Logic 4: Prefix Shift,ಆಟವು,prefix(1-2) + suffix(2-3),3,,
+ಇಲಿಮೇಲೆ,pseudo,noun,Logic 4: Prefix Shift,ಇಲಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಆಮೆದೆಯು,pseudo,noun,Logic 4: Prefix Shift,ಆಮೆಯು,prefix(1-2) + suffix(2-3),3,,
+ಒಣಗಲೂ,pseudo,adjective,Logic 4: Prefix Shift,ಒಣಗು,prefix(1-2) + suffix(2-3),3,,
+ಉಳಿನಿಸು,pseudo,adjective,Logic 4: Prefix Shift,ಉಳಿದು,prefix(1-2) + suffix(2-3),3,,
+ಅಡಿಹಿಸು,pseudo,noun,Logic 4: Prefix Shift,ಅಡಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಆದೇಮ್ಮನು,pseudo,verb,Logic 4: Prefix Shift,ಆದೇಶ,prefix(1-2) + suffix(2-3),3,,
+ಅಪ್ಪಲಗು,pseudo,noun,Logic 4: Prefix Shift,ಅಪ್ಪನು,prefix(1-2) + suffix(2-3),3,,
+ಬಾಗಿಜ್ಜಿಯು,pseudo,noun,Logic 4: Prefix Shift,ಬಾಗಿಲು,prefix(1-2) + suffix(2-3),3,,
+ಅಜ್ಜಣ್ಣನು,pseudo,noun,Logic 4: Prefix Shift,ಅಜ್ಜನು,prefix(1-2) + suffix(2-3),3,,
+ತಾಯಿಪಿಯು,pseudo,noun,Logic 4: Prefix Shift,ತಾಯಿಯು,prefix(1-2) + suffix(2-3),3,,
+ತೋರಿತಿಯು,pseudo,verb,Logic 4: Prefix Shift,ತೋರಿಸು,prefix(1-2) + suffix(2-3),3,,
+ಸಿಹಿಡುಕು,pseudo,adjective,Logic 4: Prefix Shift,ಸಿಹಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಬಿಳಿರುಚು,pseudo,adjective,Logic 4: Prefix Shift,ಬಿಳಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಅತ್ತೆಷಿಯು,pseudo,noun,Logic 4: Prefix Shift,ಅತ್ತೆಯು,prefix(1-2) + suffix(2-3),3,,
+ಕೊಳರಾಗಿ,pseudo,adjective,Logic 4: Prefix Shift,ಕೊಳಕು,prefix(1-2) + suffix(2-3),3,,
+ಜಾಣರವು,pseudo,adjective,Logic 4: Prefix Shift,ಜಾಣನು,prefix(1-2) + suffix(2-3),3,,
+ಜಾಗಣಿಯು,pseudo,noun,Logic 4: Prefix Shift,ಜಾಗವು,prefix(1-2) + suffix(2-3),3,,
+ಕೂಡಿಲಾಗಿ,pseudo,verb,Logic 4: Prefix Shift,ಕೂಡಿಸು,prefix(1-2) + suffix(2-3),3,,
+ಹೊಸರಿಸು,pseudo,adjective,Logic 4: Prefix Shift,ಹೊಸತು,prefix(1-2) + suffix(2-3),3,,
+ಇರುಳೆಯು,pseudo,verb,Logic 4: Prefix Shift,ಇರುತ್ತಾ,prefix(1-2) + suffix(2-3),3,,
+ಬೆರೆಳತು,pseudo,verb,Logic 4: Prefix Shift,ಬೆರೆಸು,prefix(1-2) + suffix(2-3),3,,
+ಜೋಡಿದರು,pseudo,noun,Logic 4: Prefix Shift,ಜೋಡಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಧುಮುಲ್ಲೇನು,pseudo,verb,Logic 4: Prefix Shift,ಧುಮುಕು,prefix(1-2) + suffix(2-3),3,,
+ಅಟ್ಟಿರಕು,pseudo,verb,Logic 4: Prefix Shift,ಅಟ್ಟಿಸು,prefix(1-2) + suffix(2-3),3,,
+ಸಮಳಾಗಿ,pseudo,adverb,Logic 4: Prefix Shift,ಸಮನೆ,prefix(1-2) + suffix(2-3),3,,
+ಚಡಿತವು,pseudo,noun,Logic 4: Prefix Shift,ಚಡಿಯು,prefix(1-2) + suffix(2-3),3,,
+ಧಾವಿಪ್ತನು,pseudo,verb,Logic 4: Prefix Shift,ಧಾವಿಸು,prefix(1-2) + suffix(2-3),3,,
+ಭಾವಿರೆಯು,pseudo,verb,Logic 4: Prefix Shift,ಭಾವಿಸು,prefix(1-2) + suffix(2-3),3,,
+ದೋಷಳಿಚು,pseudo,noun,Logic 4: Prefix Shift,ದೋಷವು,prefix(1-2) + suffix(2-3),3,,
+ಗಂಟಡಿಲು,pseudo,noun,Logic 4: Prefix Shift,ಗಂಟಲು,prefix(1-2) + suffix(2-3),3,,
+ಉಜ್ಜುಟನು,pseudo,verb,Logic 4: Prefix Shift,ಉಜ್ಜುತ್ತಾ,prefix(1-2) + suffix(2-3),3,,
+ತಂಪಾಗೆಲ್ಲಾ,pseudo,adverb,Logic 4: Prefix Shift,ತಂಪಾಗಿ,prefix(1-2) + suffix(2-3),3,,
+ಘರ್ಜಟ್ಟನೆ,pseudo,verb,Logic 4: Prefix Shift,ಘರ್ಜನೆ,prefix(1-2) + suffix(2-3),3,,
+ಶುಭ್ರಷ್ಟನು,pseudo,adjective,Logic 4: Prefix Shift,ಶುಭ್ರವು,prefix(1-2) + suffix(2-3),3,,
+ಹೆಮ್ಮೆಚ್ಚಾಗಿ,pseudo,adjective,Logic 4: Prefix Shift,ಹೆಮ್ಮೆಯು,prefix(1-2) + suffix(2-3),3,,
+ನೇಯ್ಗೆದ್ರನು,pseudo,noun,Logic 4: Prefix Shift,ನೇಯ್ಗೆಯು,prefix(1-2) + suffix(2-3),3,,
+ಸ್ವಲ್ಪದ್ದುತ್ತಾ,pseudo,adjective,Logic 4: Prefix Shift,ಸ್ವಲ್ಪವು,prefix(1-2) + suffix(2-3),3,,
+ಶ್ರೇಷ್ಠಶವು,pseudo,adjective,Logic 4: Prefix Shift,ಶ್ರೇಷ್ಠವು,prefix(1-2) + suffix(3-4),3,,
+ಉರುಗಿಸು,pseudo,verb,Logic 4: Prefix Shift,ಉರುಳಾಡು,prefix(1-2) + suffix(3-4),4,,
+ಎತ್ತಯದು,pseudo,adjective,Logic 4: Prefix Shift,ಎತ್ತರವು,prefix(1-2) + suffix(3-4),4,,
+ಈಜಾಸುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ಈಜಾಡುತ್ತಾ,prefix(1-2) + suffix(3-4),4,,
+ಆನಂಯುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ಆನಂದಿಸು,prefix(1-2) + suffix(3-4),4,,
+ಕಣನೆಯು,pseudo,noun,Logic 4: Prefix Shift,ಕಣಜವು,prefix(1-2) + suffix(3-4),4,,
+ಹಿರಿನವು,pseudo,noun,Logic 4: Prefix Shift,ಹಿರಿಮೆಯು,prefix(1-2) + suffix(3-4),4,,
+ಉದ್ಗನೆಯು,pseudo,verb,Logic 4: Prefix Shift,ಉದ್ಗರಿಸು,prefix(1-2) + suffix(3-4),4,,
+ಸಮಿರೆಯು,pseudo,noun,Logic 4: Prefix Shift,ಸಮಿತಿಯು,prefix(1-2) + suffix(3-4),4,,
+ಬರೆಡುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ಬರೆಯುತ್ತಾ,prefix(1-2) + suffix(3-4),4,,
+ಚಿಕ್ಕಯಾಗಿ,pseudo,adverb,Logic 4: Prefix Shift,ಚಿಕ್ಕದಾಗಿ,prefix(1-2) + suffix(3-4),4,,
+ದೊಡ್ಡಕನು,pseudo,adverb,Logic 4: Prefix Shift,ದೊಡ್ಡದಾಗಿ,prefix(1-2) + suffix(3-4),4,,
+ಶಿಕ್ಷವಿಟ್ಟು,pseudo,noun,Logic 4: Prefix Shift,ಶಿಕ್ಷಕಿಯು,prefix(1-2) + suffix(3-4),4,,
+ಅಚ್ಚುಕ್ಕಾಗಿ,pseudo,adjective,Logic 4: Prefix Shift,ಅಚ್ಚುಮೆಚ್ಚು,prefix(1-2) + suffix(3-4),4,,
+ಹುಣ್ಣಿನಿಯು,pseudo,adjective,Logic 4: Prefix Shift,ಹುಣ್ಣಿಮೆಯು,prefix(1-2) + suffix(3-4),4,,
+ದಾಟಿಯುತ್ತಾ,pseudo,noun,Logic 4: Prefix Shift,ದಾಟಿಯಲ್ಲೂ,prefix(1-2) + suffix(3-4),4,,
+ಸತ್ಕನೆಯು,pseudo,verb,Logic 4: Prefix Shift,ಸತ್ಕರಿಸು,prefix(1-2) + suffix(3-4),4,,
+ಕಲ್ಮಬ್ಬಾಗಿ,pseudo,noun,Logic 4: Prefix Shift,ಕಲ್ಮಶವು,prefix(1-2) + suffix(3-4),4,,
+ಸ್ಥಾಪಿಗಡೆಯು,pseudo,verb,Logic 4: Prefix Shift,ಸ್ಥಾಪಿಸುತ್ತಾ,prefix(1-2) + suffix(3-5),4,,
+ಉಸಿರಾಪಟವು,pseudo,noun,Logic 4: Prefix Shift,ಉಸಿರಾಟವು,prefix(1-3) + suffix(3-5),5,,
+ಅಕಸ್ಮಾಹಿಸುತ್ತಾ,pseudo,adverb,Logic 4: Prefix Shift,ಅಕಸ್ಮಾತಾಗಿ,prefix(1-3) + suffix(3-5),5,,
+ನೆನಪಿಳಿಸುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ನೆನಪಿಸುತ್ತಾ,prefix(1-3) + suffix(3-5),5,,
+ಉದ್ದೇಶಿಧ್ವನಿಯು,pseudo,verb,Logic 4: Prefix Shift,ಉದ್ದೇಶಿಸುತ್ತಾ,prefix(1-3) + suffix(3-5),5,,
+ನಿಯಂತ್ರಿರದಿಂದ,pseudo,verb,Logic 4: Prefix Shift,ನಿಯಂತ್ರಿಸುತ್ತಾ,prefix(1-3) + suffix(4-6),5,,
+ಆರೋಗ್ಯಸೆಯಿಂದ,pseudo,adjective,Logic 4: Prefix Shift,ಆರೋಗ್ಯಕರವು,prefix(1-3) + suffix(4-6),6,,
+ಮುಜುಗಕೊಳ್ಳುತ್ತಾ,pseudo,adverb,Logic 4: Prefix Shift,ಮುಜುಗರದಿಂದ,prefix(1-3) + suffix(4-6),6,,
+ಅಂಟಿಸುಳೆಲ್ಲರು,pseudo,verb,Logic 4: Prefix Shift,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,prefix(1-3) + suffix(4-6),6,,
+ನಾಡಿಯಳಸುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,prefix(1-3) + suffix(5-7),6,,
+ನಿಟ್ಟುಸಿಕೊಳ್ಳುತ್ತಾ,pseudo,verb,Logic 4: Prefix Shift,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,prefix(1-3) + suffix(6-8),7,,

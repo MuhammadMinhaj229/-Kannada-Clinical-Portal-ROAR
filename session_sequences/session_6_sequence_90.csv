@@ -1,0 +1,91 @@
+trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_key,arrow_color,meaning
+1,ಎಲೆಯು,real,real,noun,,Original Real Word,3,Right,Blue,leaf
+2,ಪರೀಕ್ಷಿಸು,real,real,verb,,Original Real Word,4,Right,Blue,examine
+3,ಅಡಿಹಿಸು,pseudo,pseudo,noun,ಅಡಿಯು,Logic 4: Prefix Shift,3,Left,Red,
+4,ಅತ್ತು,real,real,verb,,Original Real Word,2,Right,Blue,cry
+5,ಜಾಮೂನು,real,real,noun,,Original Real Word,3,Right,Blue,a sweet dish
+6,ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,pseudo,pseudo,verb,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,Logic 2: Vowel Replacement,8,Left,Red,
+7,ಉಸಿರಾಪಟವು,pseudo,pseudo,noun,ಉಸಿರಾಟವು,Logic 4: Prefix Shift,5,Left,Red,
+8,ಓಟ್ಟಿಸು,pseudo,pseudo,verb,ಅಟ್ಟಿಸು,Logic 2: Vowel Replacement,3,Left,Red,
+9,ಅಜ್ಜನು,real,real,noun,,Original Real Word,3,Right,Blue,grandfather
+10,ಸ್ಪರ್ಶಿಸು,real,real,verb,,Original Real Word,3,Right,Blue,touch
+11,ಧೂಳು,real,real,noun,,Original Real Word,2,Right,Blue,dust
+12,ಯುತ್ತಾಮಾತಾ,pseudo,pseudo,verb,ಬರೆಯುತ್ತಾ,Logic 3: Affix Splicing,4,Left,Red,
+13,ಪಕ್ಷಣವು,pseudo,pseudo,noun,ಲಕ್ಷಣವು,Logic 1: Consonant Replacement,4,Left,Red,
+14,ಕವಡೆಬಳಸುತ್ತಾ,real,real,verb,,Original Real Word,7,Right,Blue,using cowry
+15,ಊಟವು,real,real,noun,,Original Real Word,3,Right,Blue,meal
+16,ಮೊರಟು,pseudo,pseudo,verb,ಹೊರಟು,Logic 1: Consonant Replacement,3,Left,Red,
+17,ಹೀ,pseudo,pseudo,noun,ಹೂ,Logic 2: Vowel Replacement,1,Left,Red,
+18,ತಿದ್ದುತ್ತೂ,pseudo,pseudo,verb,ತಿದ್ದುತ್ತಾ,Logic 2: Vowel Replacement,3,Left,Red,
+19,ಅತ್ತೆಯು,real,real,noun,,Original Real Word,3,Right,Blue,mother in law
+20,ಕೊಳಕು,real,real,adjective,,Original Real Word,3,Right,Blue,dirty
+21,ಬೇಳೆಯು,real,real,noun,,Original Real Word,3,Right,Blue,lentil
+22,ಇರಿತ್ತಾ,pseudo,pseudo,verb,ಇರುತ್ತಾ,Logic 2: Vowel Replacement,3,Left,Red,
+23,ಕಣನೆಯು,pseudo,pseudo,noun,ಕಣಜವು,Logic 4: Prefix Shift,4,Left,Red,
+24,ಬಿಳಿಚು,real,real,verb,,Original Real Word,3,Right,Blue,become pale
+25,ಗಾಜು,real,real,noun,,Original Real Word,2,Right,Blue,glass
+26,ತೋರೋಸು,pseudo,pseudo,verb,ತೋರಿಸು,Logic 2: Vowel Replacement,3,Left,Red,
+27,ರಾಣಿಯು,real,real,noun,,Original Real Word,3,Right,Blue,the queen
+28,ಊಹಿಶು,pseudo,pseudo,verb,ಊಹಿಸು,Logic 1: Consonant Replacement,3,Left,Red,
+29,ಶವುತಬ್ಬಿ,pseudo,pseudo,noun,ಕಲ್ಮಶವು,Logic 3: Affix Splicing,4,Left,Red,
+30,ಕೊಬ್ಬು,real,real,adjective,,Original Real Word,2,Right,Blue,fat
+31,ಹಕ್ಕು,real,real,noun,,Original Real Word,2,Right,Blue,right
+32,ದೇಶಅಮ್ಮ,pseudo,pseudo,verb,ಆದೇಶ,Logic 3: Affix Splicing,3,Left,Red,
+33,ಮಾತು,real,real,noun,,Original Real Word,2,Right,Blue,talk
+34,ನರ್ತನವಾಡುತ್ತಾ,real,real,verb,,Original Real Word,6,Right,Blue,performing dance
+35,ಚೂರು,real,real,noun,,Original Real Word,2,Right,Blue,"piece, little"
+36,ಧುಮುಲ್ಲೇನು,pseudo,pseudo,verb,ಧುಮುಕು,Logic 4: Prefix Shift,3,Left,Red,
+37,ದೋಷವು,real,real,noun,,Original Real Word,3,Right,Blue,flaw
+38,ಉತ್ತಮವು,real,real,adjective,,Original Real Word,4,Right,Blue,good
+39,ಕಣಜವು,real,real,noun,,Original Real Word,4,Right,Blue,place to store grains
+40,ಶುಭ್ರಷ್ಟನು,pseudo,pseudo,adjective,ಶುಭ್ರವು,Logic 4: Prefix Shift,3,Left,Red,
+41,ಈಜೊಡುತ್ತಾ,pseudo,pseudo,verb,ಈಜಾಡುತ್ತಾ,Logic 2: Vowel Replacement,4,Left,Red,
+42,ಸಮನೆ,real,real,adverb,,Original Real Word,3,Right,Blue,equally
+43,ಅವಲಂಭಿಸು,real,real,verb,,Original Real Word,5,Right,Blue,depend upon
+44,ಎಲೆಯೃ,pseudo,pseudo,noun,ಎಲೆಯು,Logic 2: Vowel Replacement,3,Left,Red,
+45,ಹಸಿರು,real,real,adjective,,Original Real Word,3,Right,Blue,green
+46,ಕಬಳೌಸು,pseudo,pseudo,verb,ಕಬಳಿಸು,Logic 2: Vowel Replacement,4,Left,Red,
+47,ಹಿಯುಹುಡು,pseudo,pseudo,adjective,ಸಿಹಿಯು,Logic 3: Affix Splicing,3,Left,Red,
+48,ಆಮೆದೆಯು,pseudo,pseudo,noun,ಆಮೆಯು,Logic 4: Prefix Shift,3,Left,Red,
+49,ಆರಿಸುತ್ತಾ,real,real,verb,,Original Real Word,4,Right,Blue,opting
+50,ಇಲಿಯು,real,real,noun,,Original Real Word,3,Right,Blue,rat
+51,ಮೆಚ್ಚುದೇಶ,pseudo,pseudo,adjective,ಅಚ್ಚುಮೆಚ್ಚು,Logic 3: Affix Splicing,4,Left,Red,
+52,ಸದಾ,real,real,adverb,,Original Real Word,2,Right,Blue,always
+53,ದಿಸುಅಗೆ,pseudo,pseudo,verb,ಆನಂದಿಸು,Logic 3: Affix Splicing,4,Left,Red,
+54,ಹಳತು,real,real,adjective,,Original Real Word,3,Right,Blue,old
+55,ಜೇನು,real,real,noun,,Original Real Word,2,Right,Blue,honey
+56,ಮೆಯುವಿಜ್ಞಾ,pseudo,pseudo,adjective,ಹುಣ್ಣಿಮೆಯು,Logic 3: Affix Splicing,4,Left,Red,
+57,ಹಿರಿನವು,pseudo,pseudo,noun,ಹಿರಿಮೆಯು,Logic 4: Prefix Shift,4,Left,Red,
+58,ಅನಿಸು,real,real,verb,,Original Real Word,3,Right,Blue,think
+59,ಈಗೂಲೂ,pseudo,pseudo,noun,ಈಗಲೂ,Logic 2: Vowel Replacement,3,Left,Red,
+60,ಹೇಗಿವೆ,real,real,adverb,,Original Real Word,3,Right,Blue,how are they
+61,ಜಿಗಿಬುತ್ತಾ,pseudo,pseudo,verb,ಜಿಗಿಯುತ್ತಾ,Logic 1: Consonant Replacement,4,Left,Red,
+62,ಒಳ್ಳೆವದು,pseudo,pseudo,adjective,ಒಳ್ಳೆಯದು,Logic 1: Consonant Replacement,4,Left,Red,
+63,ಹಾಡು,real,real,noun,,Original Real Word,2,Right,Blue,song
+64,ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ,pseudo,pseudo,verb,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,Logic 3: Affix Splicing,6,Left,Red,
+65,ಮುಖ್ಯವು,real,real,adjective,,Original Real Word,3,Right,Blue,important
+66,ಮೆಯುಎದೆ,pseudo,pseudo,noun,ಆಮೆಯು,Logic 3: Affix Splicing,3,Left,Red,
+67,ಕೂದು,pseudo,pseudo,adjective,ಬೂದು,Logic 1: Consonant Replacement,2,Left,Red,
+68,ಸವಿ,real,real,verb,,Original Real Word,2,Right,Blue,taste
+69,ಒಮ್ಮೆ,real,real,adverb,,Original Real Word,2,Right,Blue,once
+70,ಕುಂಟನು,real,real,adjective,,Original Real Word,3,Right,Blue,cripple
+71,ಉತುಳಾಡು,pseudo,pseudo,verb,ಉರುಳಾಡು,Logic 1: Consonant Replacement,4,Left,Red,
+72,ಊರು,real,real,noun,,Original Real Word,2,Right,Blue,town
+73,ಹೆಣೆ,real,real,verb,,Original Real Word,2,Right,Blue,weave
+74,ಶೂ,pseudo,pseudo,noun,ಹೂ,Logic 1: Consonant Replacement,1,Left,Red,
+75,ದೊಡ್ಡದಾಗಿ,real,real,adverb,,Original Real Word,4,Right,Blue,being big
+76,ಹಿತಾವು,pseudo,pseudo,adjective,ಹಿತವು,Logic 2: Vowel Replacement,3,Left,Red,
+77,ದೊಡ್ಡಕನು,pseudo,pseudo,adverb,ದೊಡ್ಡದಾಗಿ,Logic 4: Prefix Shift,4,Left,Red,
+78,ಉದ್ಗನೆಯು,pseudo,pseudo,verb,ಉದ್ಗರಿಸು,Logic 4: Prefix Shift,4,Left,Red,
+79,ಆದರ್ಶವು,real,real,adjective,,Original Real Word,4,Right,Blue,ideal
+80,ದೋಷಳಿಚು,pseudo,pseudo,noun,ದೋಷವು,Logic 4: Prefix Shift,3,Left,Red,
+81,ಉಯಿದು,pseudo,pseudo,adjective,ಉಳಿದು,Logic 1: Consonant Replacement,3,Left,Red,
+82,ಚಿಕ್ಕದೈಗಿ,pseudo,pseudo,adverb,ಚಿಕ್ಕದಾಗಿ,Logic 2: Vowel Replacement,4,Left,Red,
+83,ಮಗು,real,real,noun,,Original Real Word,2,Right,Blue,baby
+84,ಹಾಗು,pseudo,pseudo,verb,ಬಾಗು,Logic 1: Consonant Replacement,2,Left,Red,
+85,ಮೈಜು,pseudo,pseudo,noun,ಮೇಜು,Logic 2: Vowel Replacement,2,Left,Red,
+86,ಳುಷ್ಟನು,pseudo,pseudo,adjective,ದುಷ್ಟನು,Logic 1: Consonant Replacement,3,Left,Red,
+87,ತೀರು,real,real,verb,,Original Real Word,2,Right,Blue,die
+88,ಖಂಡಿತ,real,real,adverb,,Original Real Word,3,Right,Blue,definitely
+89,ರ್ಜನೆಥಟ್ಟ,pseudo,pseudo,verb,ಘರ್ಜನೆ,Logic 3: Affix Splicing,3,Left,Red,
+90,ಸಪನೆ,pseudo,pseudo,adverb,ಸಮನೆ,Logic 1: Consonant Replacement,3,Left,Red,
