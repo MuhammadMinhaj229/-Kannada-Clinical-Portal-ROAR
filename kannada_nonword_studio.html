@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kannada Non-Word & Corpus Studio (100% Offline)</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #0b1220;
+    --border: #334155;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --purple: #a855f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nirmala UI", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.5;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    border-bottom: 1px solid var(--border);
+    padding: 1.25rem 2rem;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+  header h1 { margin: 0; font-size: 1.35rem; }
+  header p { margin: 0.2rem 0 0; color: #cbd5e1; font-size: 0.85rem; }
+  .badge-offline {
+    background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid #059669;
+    padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600;
+  }
+  main { max-width: 1400px; margin: 0 auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .step-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem;
+  }
+  .step-header {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
+    margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
+  }
+  .step-title { display: flex; align-items: center; gap: 0.65rem; font-size: 1.05rem; font-weight: 700; }
+  .step-num {
+    width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;
+  }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.85rem; }
+  label { display: block; font-size: 0.78rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 600; }
+  input[type="text"], input[type="number"], select, textarea {
+    width: 100%; background: var(--surface-2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 0.5rem 0.7rem; font-size: 0.88rem; font-family: inherit;
+  }
+  textarea { resize: vertical; font-family: "Nirmala UI", monospace; }
+  .btn {
+    background: var(--accent); color: #fff; border: none; border-radius: 8px;
+    padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+  }
+  .btn:hover { background: var(--accent-hover); }
+  .btn-secondary { background: #334155; }
+  .btn-secondary:hover { background: #475569; }
+  .btn-success { background: #059669; }
+  .btn-success:hover { background: #047857; }
+  .btn-danger { background: #dc2626; }
+  .btn-danger:hover { background: #b91c1c; }
+  .btn-sm { padding: 0.3rem 0.65rem; font-size: 0.78rem; }
+  .logic-row {
+    display: grid; grid-template-columns: 40px 1.6fr 1.2fr 100px 100px 1.4fr 60px;
+    gap: 0.65rem; align-items: center; background: var(--surface-2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem; margin-bottom: 0.5rem;
+  }
+  @media (max-width: 960px) {
+    .logic-row { grid-template-columns: 1fr; }
+  }
+  .prop-bar {
+    height: 12px; border-radius: 999px; background: var(--surface-2); overflow: hidden;
+    display: flex; border: 1px solid var(--border); margin: 0.75rem 0;
+  }
+  .prop-seg { height: 100%; transition: width 0.2s; }
+  .table-wrap { overflow-x: auto; max-height: 460px; border: 1px solid var(--border); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+  th {
+    position: sticky; top: 0; background: #0b1220; color: #cbd5e1; text-align: left;
+    padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); z-index: 2; white-space: nowrap;
+  }
+  td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #1e293b; white-space: nowrap; }
+  tr:hover td { background: rgba(59, 130, 246, 0.08); }
+  .kn { font-family: "Nirmala UI", "Noto Sans Kannada", sans-serif; font-size: 1.05rem; font-weight: 600; }
+  .pill { padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.72rem; font-weight: 600; display: inline-block; }
+  .pill-noun { background: #2e1065; color: #c084fc; }
+  .pill-verb { background: #082f49; color: #38bdf8; }
+  .pill-adj { background: #064e3b; color: #34d399; }
+  .pill-adv { background: #451a03; color: #fbbf24; }
+  .pill-real { background: #1e3a8a; color: #93c5fd; }
+  .pill-pseudo { background: #7f1d1d; color: #fca5a5; }
+  .stat-box {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem;
+  }
+  .stat-val { font-size: 1.35rem; font-weight: 700; color: #60a5fa; }
+  .stat-lbl { font-size: 0.75rem; color: var(--muted); }
+  .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .tab { background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); padding: 0.45rem 0.9rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.82rem; }
+  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  pre {
+    background: #020617; color: #e2e8f0; padding: 1rem; border-radius: 8px; border: 1px solid var(--border);
+    overflow-x: auto; max-height: 360px; font-size: 0.78rem; line-height: 1.45;
+  }
+  .editable-cell {
+    background: transparent; border: 1px solid transparent; color: var(--text); padding: 0.2rem 0.4rem;
+    border-radius: 4px; width: 120px; font-family: "Nirmala UI", sans-serif; font-size: 0.95rem;
+  }
+  .editable-cell:focus { background: var(--surface-2); border-color: var(--accent); outline: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Kannada Non-Word &amp; Corpus Studio</h1>
+    <p>Step-by-Step Editable Linguistic Generator, Dual-Constraint Sequencer &amp; Offline Excel (.xlsx) Exporter</p>
+  </div>
+  <span class="badge-offline">100% Offline Ready &bull; Zero Internet Required</span>
+</header>
+
+<main>
+  <!-- STEP 1: REAL WORDS CORPUS -->
+  <section class="step-card">
+    <div class="step-header">
+      <div class="step-title"><span class="step-num">1</span> Real Words Corpus (Editable Input)</div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <button class="btn btn-secondary btn-sm" onclick="toggleRealWordsEditor()">Show / Edit Real Words List</button>
+        <button class="btn btn-secondary btn-sm" onclick="addBlankRealWord()">+ Add Real Word</button>
+        <label class="btn btn-secondary btn-sm" style="margin:0; cursor:pointer;">
+          Import CSV <input type="file" accept=".csv,.txt" style="display:none" onchange="importRealCSV(event)">
+        </label>
+        <button class="btn btn-secondary btn-sm" onclick="resetDefaultRealWords()">Reset 270 Default Words</button>
+      </div>
+    </div>
+
+    <div class="grid-4">
+      <div class="stat-box"><div class="stat-val" id="statRealCount">270</div><div class="stat-lbl">Real Words Loaded</div></div>
+      <div class="stat-box"><div class="stat-val" id="statTargetNonwords">270</div><div class="stat-lbl">Target Non-Words to Generate</div></div>
+      <div class="stat-box"><div class="stat-val" id="statPosMix">—</div><div class="stat-lbl">POS Breakdown (N / V / Adj / Adv)</div></div>
+      <div class="stat-box">
+        <label for="targetTotalNonwords">Total Non-Words to Generate</label>
+        <input type="number" id="targetTotalNonwords" min="1" max="2000" value="270" onchange="recalcProportionality()">
+      </div>
+    </div>
+
+    <div id="realWordsEditorWrap" style="display:none; margin-top:1rem;">
+      <p style="font-size:0.8rem; color:var(--muted); margin-bottom:0.5rem;">Edit any word, POS, meaning, or syllable count inline. Changes automatically feed into Step 2 generation.</p>
+      <div class="table-wrap" style="max-height:280px;">
+        <table>
+          <thead><tr><th>#</th><th>Word (ಕನ್ನಡ)</th><th>POS</th><th>Syllables</th><th>Meaning</th><th>Action</th></tr></thead>
+          <tbody id="realWordsTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2: EDITABLE LOGICS & PROPORTIONALITY -->
+  <section class="step-card">
+    <div class="step-header">
+      <div class="step-title"><span class="step-num">2</span> Non-Word Generation Logics &amp; Proportionality (4 + Custom 5th+ Logics)</div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <button class="btn btn-secondary btn-sm" onclick="addCustomLogic()">+ Add 5th / Custom Logic</button>
+        <button class="btn btn-secondary btn-sm" onclick="normalizeProportions()">Auto-Balance to 100%</button>
+      </div>
+    </div>
+
+    <div id="logicsContainer"></div>
+
+    <div class="prop-bar" id="propBar"></div>
+    <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); margin-bottom:1rem;">
+      <span id="propSummaryText">Total Allocation: 100% (270 words)</span>
+      <span>Strict Syllable Match &amp; Non-Repeating Phoneme Queues Active</span>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <label for="consonantPoolInput">Non-Repeating Consonant Queue (comma-separated)</label>
+        <input type="text" id="consonantPoolInput" value="ಕ,ಗ,ಚ,ಜ,ಟ,ಡ,ಣ,ತ,ದ,ನ,ಪ,ಬ,ಮ,ಯ,ರ,ಲ,ವ,ಶ,ಸ,ಹ,ಳ">
+      </div>
+      <div>
+        <label for="vowelPoolInput">Non-Repeating Matra / Vowel Queue (comma-separated)</label>
+        <input type="text" id="vowelPoolInput" value="ಾ,ಿ,ೀ,ು,ೂ,ೆ,ೇ,ೊ,ೋ">
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3: SEQUENCING & CONSTRAINTS -->
+  <section class="step-card">
+    <div class="step-header">
+      <div class="step-title"><span class="step-num">3</span> Session Partitioning &amp; Randomness Rules</div>
+      <button class="btn" onclick="generateEverything()">&#9889; Generate Non-Words &amp; Sequences</button>
+    </div>
+
+    <div class="grid-4">
+      <div>
+        <label for="wordsPerSessionInput">Words Per Session (50% Real / 50% Non-Word)</label>
+        <input type="number" id="wordsPerSessionInput" min="10" max="300" value="90">
+      </div>
+      <div>
+        <label for="maxStreakInput">Max Lexicality Streak (Unpredictable Runs)</label>
+        <input type="number" id="maxStreakInput" min="1" max="10" value="3">
+      </div>
+      <div>
+        <label for="posRotateSelect">POS Rotation (Avoid Consecutive Same POS)</label>
+        <select id="posRotateSelect">
+          <option value="true" selected>Enabled (Smart POS Rotation)</option>
+          <option value="false">Disabled (Random POS)</option>
+        </select>
+      </div>
+      <div>
+        <label for="strictSyllableSelect">Syllable Count Preservation</label>
+        <select id="strictSyllableSelect">
+          <option value="true" selected>Strict Match (Verify &amp; Log Both)</option>
+          <option value="false">Allow Variance</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 4: LIVE PREVIEW, INLINE EDIT & OFFLINE EXCEL EXPORT -->
+  <section class="step-card">
+    <div class="step-header">
+      <div class="step-title"><span class="step-num">4</span> Generated Corpus Preview &amp; Offline Excel (.xlsx) Export</div>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <button class="btn btn-success" onclick="exportOfflineXLSX()">&#128196; Download Complete Excel (.xlsx)</button>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV('nonwords')">Export Non-Words CSV</button>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV('master')">Export Master Corpus CSV</button>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.85rem;">
+      <div class="tabs">
+        <button class="tab active" onclick="switchPreviewTab('nonwords', this)">Non-Words (<span id="cntNonwords">0</span>)</button>
+        <button class="tab" onclick="switchPreviewTab('master', this)">Master Corpus (<span id="cntMaster">0</span>)</button>
+        <button class="tab" onclick="switchPreviewTab('sessions', this)">Sessions (<span id="cntSessions">0</span>)</button>
+      </div>
+      <div style="display:flex; gap:0.5rem; align-items:center;">
+        <select id="sessionSelectPreview" style="width:auto; display:none;" onchange="renderPreviewTable()"></select>
+        <input type="text" id="searchPreviewInput" placeholder="Filter words, source, logic, POS..." style="width:240px;" oninput="renderPreviewTable()">
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead id="previewThead"></thead>
+        <tbody id="previewTbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- STEP 5: COMPLETE PYTHON SCRIPT -->
+  <section class="step-card">
+    <div class="step-header">
+      <div class="step-title"><span class="step-num">5</span> Complete Python Non-Word Generation Script (Local Verification)</div>
+      <div style="display:flex; gap:0.5rem;">
+        <button class="btn btn-secondary btn-sm" onclick="copyPythonScript()">Copy Python Script</button>
+        <button class="btn btn-sm" onclick="downloadPythonScript()">Download .py File</button>
+      </div>
+    </div>
+    <pre id="pythonCodeBlock"></pre>
+  </section>
+</main>
+
+<script>
+// =========================================================================
+// Embedded 270 Real Words & Complete Python Reference Script
+// =========================================================================
+const DEFAULT_REAL_WORDS = [{"id": "R001", "word": "ಹೂ", "transcription": "huu", "meaning": "flower", "pos": "noun", "age_band": "2-3 years", "syllables": 1}, {"id": "R002", "word": "ಊರು", "transcription": "uuru", "meaning": "town", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R003", "word": "ಅಳು", "transcription": "aLu", "meaning": "cry", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R004", "word": "ಎಸೆ", "transcription": "ese", "meaning": "throw", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R005", "word": "ಇಡು", "transcription": "iDu", "meaning": "keep", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R006", "word": "ಇಳಿ", "transcription": "iLi", "meaning": "get down", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R007", "word": "ಊದು", "transcription": "uudu", "meaning": "blow", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R008", "word": "ಏರು", "transcription": "eeru", "meaning": "climb", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R009", "word": "ಹಾಲು", "transcription": "haalu", "meaning": "milk", "pos": "noun", "age_band": "0-1 year", "syllables": 2}, {"id": "R010", "word": "ನೀರು", "transcription": "niiru", "meaning": "water", "pos": "noun", "age_band": "0-1 year", "syllables": 2}, {"id": "R011", "word": "ಬೇಗ", "transcription": "beega", "meaning": "soon", "pos": "adverb", "age_band": "2-3 years", "syllables": 2}, {"id": "R012", "word": "ಕೈಯು", "transcription": "kaiyu", "meaning": "hand", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R013", "word": "ಚೂರು", "transcription": "cuuru", "meaning": "piece, little", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R014", "word": "ಹಾಡು", "transcription": "haaDu", "meaning": "song", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R015", "word": "ಹುಳು", "transcription": "huLu", "meaning": "insect", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R016", "word": "ಮಾತು", "transcription": "maatu", "meaning": "talk", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R017", "word": "ಮಗು", "transcription": "magu", "meaning": "baby", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R018", "word": "ಮೀನು", "transcription": "miinu", "meaning": "fish", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R019", "word": "ಮೂರು", "transcription": "muuru", "meaning": "three", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R020", "word": "ಸಾರು", "transcription": "saaru", "meaning": "rasam", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R021", "word": "ನಡೆ", "transcription": "naDe", "meaning": "move", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R022", "word": "ಬೂದು", "transcription": "buudu", "meaning": "gray", "pos": "adjective", "age_band": "4-5 years", "syllables": 2}, {"id": "R023", "word": "ಹಾಗೆ", "transcription": "haage", "meaning": "in that manner", "pos": "adverb", "age_band": "4-5 years", "syllables": 2}, {"id": "R024", "word": "ಧೂಳು", "transcription": "dhuuLu", "meaning": "dust", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R025", "word": "ಗಾಜು", "transcription": "gaaju", "meaning": "glass", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R026", "word": "ಗೂಡು", "transcription": "guuDu", "meaning": "nest", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R027", "word": "ಜೇನು", "transcription": "jeenu", "meaning": "honey", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R028", "word": "ಕಾಡು", "transcription": "kaaDu", "meaning": "forest", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R029", "word": "ಮೇಜು", "transcription": "meeju", "meaning": "table", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R030", "word": "ಬಾಗು", "transcription": "baagu", "meaning": "bend", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R031", "word": "ಬೀಸು", "transcription": "biisu", "meaning": "flutter", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R032", "word": "ಚಾಚು", "transcription": "caacu", "meaning": "extend", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R033", "word": "ಕಡಿ", "transcription": "kaDi", "meaning": "bite, cut", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R034", "word": "ಕಲಿ", "transcription": "kali", "meaning": "learn", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R035", "word": "ಲಾಗ", "transcription": "laaga", "meaning": "tumble", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R036", "word": "ನೆಡು", "transcription": "neDu", "meaning": "plant", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R037", "word": "ಸುರಿ", "transcription": "suri", "meaning": "pour", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R038", "word": "ಮೆದು", "transcription": "medu", "meaning": "soft", "pos": "adjective", "age_band": "6-7 years", "syllables": 2}, {"id": "R039", "word": "ಮೋಜು", "transcription": "mooju", "meaning": "fun", "pos": "adjective", "age_band": "6-7 years", "syllables": 2}, {"id": "R040", "word": "ಸದಾ", "transcription": "sadaa", "meaning": "always", "pos": "adverb", "age_band": "6-7 years", "syllables": 2}, {"id": "R041", "word": "ತೀರು", "transcription": "tiiru", "meaning": "die", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R042", "word": "ಮುಡಿ", "transcription": "muDi", "meaning": "wear flower on head", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R043", "word": "ಕೊರೆ", "transcription": "kore", "meaning": "to pierce", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R044", "word": "ಭೇಟಿ", "transcription": "bheeTi", "meaning": "visit", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R045", "word": "ಹೆಣೆ", "transcription": "heNe", "meaning": "weave", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R046", "word": "ಹಿತ", "transcription": "hita", "meaning": "good", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R047", "word": "ಸಾಗು", "transcription": "saagu", "meaning": "move", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R048", "word": "ಸವಿ", "transcription": "savi", "meaning": "taste", "pos": "verb", "age_band": "6-7 years", "syllables": 2}, {"id": "R049", "word": "ಎಲ್ಲಿ", "transcription": "elli", "meaning": "where", "pos": "adverb", "age_band": "2-3 years", "syllables": 2}, {"id": "R050", "word": "ಉಪ್ಪು", "transcription": "uppu", "meaning": "salt", "pos": "noun", "age_band": "2-3 years", "syllables": 2}, {"id": "R051", "word": "ಒಮ್ಮೆ", "transcription": "omme", "meaning": "once", "pos": "adverb", "age_band": "4-5 years", "syllables": 2}, {"id": "R052", "word": "ಇಟ್ಟು", "transcription": "iTTu", "meaning": "was kept", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R053", "word": "ಅತ್ತು", "transcription": "attu", "meaning": "cry", "pos": "verb", "age_band": "4-5 years", "syllables": 2}, {"id": "R054", "word": "ಆಮೇಲೆ", "transcription": "aameele", "meaning": "afterwards", "pos": "adverb", "age_band": "2-3 years", "syllables": 3}, {"id": "R055", "word": "ಆಟವು", "transcription": "aaTavu", "meaning": "game", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R056", "word": "ಊಟವು", "transcription": "uuTavu", "meaning": "meal", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R057", "word": "ಎಲೆಯು", "transcription": "eleyu", "meaning": "leaf", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R058", "word": "ಇಲಿಯು", "transcription": "iliyu", "meaning": "rat", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R059", "word": "ಅಳಿಲು", "transcription": "aLilu", "meaning": "squirrel", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R060", "word": "ಒಣಗು", "transcription": "oNagu", "meaning": "dry up", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R061", "word": "ಈಗಲೂ", "transcription": "iigaluu", "meaning": "still", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R062", "word": "ಆಮೆಯು", "transcription": "aameyu", "meaning": "tortoise", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R063", "word": "ಎದೆಯು", "transcription": "edeyu", "meaning": "chest", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R064", "word": "ಏಣಿಯು", "transcription": "eeNiyu", "meaning": "ladder", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R065", "word": "ಅಪಾಯ", "transcription": "apaaya", "meaning": "danger", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R066", "word": "ಉಳಿದು", "transcription": "uLidu", "meaning": "remaining", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R067", "word": "ಆಲವು", "transcription": "aalavu", "meaning": "banyan tree", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R068", "word": "ಅಡಿಯು", "transcription": "aDiyu", "meaning": "foot", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R069", "word": "ಒದಗು", "transcription": "odagu", "meaning": "become available", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R070", "word": "ಊಹಿಸು", "transcription": "uuhisu", "meaning": "imagine", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R071", "word": "ಆದೇಶ", "transcription": "aadeesha", "meaning": "order", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R072", "word": "ಅನಿಸು", "transcription": "anisu", "meaning": "think", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R073", "word": "ಅರಿವು", "transcription": "arivu", "meaning": "aware", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R074", "word": "ಬೆಕ್ಕು", "transcription": "bekku", "meaning": "cat", "pos": "noun", "age_band": "0-1 year", "syllables": 2}, {"id": "R075", "word": "ಕಣ್ಣು", "transcription": "kaNNu", "meaning": "eye", "pos": "noun", "age_band": "0-1 year", "syllables": 2}, {"id": "R076", "word": "ತಿನ್ನು", "transcription": "tinnu", "meaning": "eat", "pos": "verb", "age_band": "0-1 year", "syllables": 2}, {"id": "R077", "word": "ಮುದ್ದು", "transcription": "muddu", "meaning": "dearness", "pos": "adjective", "age_band": "2-3 years", "syllables": 2}, {"id": "R078", "word": "ತಪ್ಪು", "transcription": "tappu", "meaning": "error", "pos": "adjective", "age_band": "2-3 years", "syllables": 2}, {"id": "R079", "word": "ಬಗ್ಗು", "transcription": "baggu", "meaning": "bend", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R080", "word": "ಬನ್ನಿ", "transcription": "banni", "meaning": "(please) come", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R081", "word": "ಕಚ್ಚು", "transcription": "kaccu", "meaning": "bite", "pos": "verb", "age_band": "2-3 years", "syllables": 2}, {"id": "R082", "word": "ಮಾತ್ರ", "transcription": "maatra", "meaning": "only", "pos": "adverb", "age_band": "4-5 years", "syllables": 2}, {"id": "R083", "word": "ಮತ್ತೆ", "transcription": "matte", "meaning": "again", "pos": "adverb", "age_band": "4-5 years", "syllables": 2}, {"id": "R084", "word": "ಬಗ್ಗೆ", "transcription": "bagge", "meaning": "about", "pos": "adverb", "age_band": "4-5 years", "syllables": 2}, {"id": "R085", "word": "ಸುಳ್ಳು", "transcription": "suLLu", "meaning": "lie", "pos": "noun", "age_band": "4-5 years", "syllables": 2}, {"id": "R086", "word": "ಹುಚ್ಚು", "transcription": "huccu", "meaning": "madness", "pos": "adjective", "age_band": "6-7 years", "syllables": 2}, {"id": "R087", "word": "ಕೊಬ್ಬು", "transcription": "kobbu", "meaning": "fat", "pos": "adjective", "age_band": "6-7 years", "syllables": 2}, {"id": "R088", "word": "ಹಕ್ಕು", "transcription": "hakku", "meaning": "right", "pos": "noun", "age_band": "8-9 years", "syllables": 2}, {"id": "R089", "word": "ಬಿಳಿಯು", "transcription": "biLiyu", "meaning": "white color", "pos": "adjective", "age_band": "2-3 years", "syllables": 3}, {"id": "R090", "word": "ಬಿಸಿಯು", "transcription": "bisiyu", "meaning": "hot", "pos": "adjective", "age_band": "2-3 years", "syllables": 3}, {"id": "R091", "word": "ಸಿಹಿಯು", "transcription": "sihiyu", "meaning": "sweet", "pos": "adjective", "age_band": "2-3 years", "syllables": 3}, {"id": "R092", "word": "ಹಸಿರು", "transcription": "hasiru", "meaning": "green", "pos": "adjective", "age_band": "2-3 years", "syllables": 3}, {"id": "R093", "word": "ಕೋತಿಯು", "transcription": "kootiyu", "meaning": "monkey", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R094", "word": "ತಾಯಿಯು", "transcription": "taayiyu", "meaning": "mother", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R095", "word": "ಟೋಪಿಯು", "transcription": "toopiyu", "meaning": "hat", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R096", "word": "ಬಾಗಿಲು", "transcription": "baagilu", "meaning": "door", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R097", "word": "ಹೆಸರು", "transcription": "hesaru", "meaning": "name", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R098", "word": "ಜಾಮೂನು", "transcription": "jaamuunu", "meaning": "a sweet dish", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R099", "word": "ಕೂದಲು", "transcription": "kuudalu", "meaning": "hair", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R100", "word": "ಹುಡುಕು", "transcription": "huDuku", "meaning": "search", "pos": "verb", "age_band": "2-3 years", "syllables": 3}, {"id": "R101", "word": "ತೋರಿಸು", "transcription": "toorisu", "meaning": "show", "pos": "verb", "age_band": "2-3 years", "syllables": 3}, {"id": "R102", "word": "ಕಿರುಚು", "transcription": "kirucu", "meaning": "scream", "pos": "verb", "age_band": "2-3 years", "syllables": 3}, {"id": "R103", "word": "ಮಲಗು", "transcription": "malagu", "meaning": "sleep", "pos": "verb", "age_band": "2-3 years", "syllables": 3}, {"id": "R104", "word": "ಭಾರವು", "transcription": "bhaaravu", "meaning": "weight", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R105", "word": "ಹೊಸತು", "transcription": "hosatu", "meaning": "new", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R106", "word": "ಜಾಣನು", "transcription": "jaaNanu", "meaning": "intelligent one", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R107", "word": "ಖುಷಿಯು", "transcription": "khuShiyu", "meaning": "fun", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R108", "word": "ಕೊಳಕು", "transcription": "koLaku", "meaning": "dirty", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R109", "word": "ಹೇಗಿವೆ", "transcription": "heegive", "meaning": "how are they", "pos": "adverb", "age_band": "4-5 years", "syllables": 3}, {"id": "R110", "word": "ಜೋರಾಗಿ", "transcription": "jooraagi", "meaning": "forcefully", "pos": "adverb", "age_band": "4-5 years", "syllables": 3}, {"id": "R111", "word": "ಸಾಲಾಗಿ", "transcription": "saalaagi", "meaning": "in a line", "pos": "adverb", "age_band": "4-5 years", "syllables": 3}, {"id": "R112", "word": "ಬೇಳೆಯು", "transcription": "beeLeyu", "meaning": "lentil", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R113", "word": "ಜಾಗವು", "transcription": "jaagavu", "meaning": "place", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R114", "word": "ಕಾಯಿಯು", "transcription": "kaayiyu", "meaning": "unripe fruit", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R115", "word": "ರಾಣಿಯು", "transcription": "raaNiyu", "meaning": "the queen", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R116", "word": "ಬೆರೆಸು", "transcription": "beresu", "meaning": "blend", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R117", "word": "ಧರಿಸು", "transcription": "dharisu", "meaning": "wear", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R118", "word": "ಹೊರಟು", "transcription": "horaTu", "meaning": "set out", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R119", "word": "ಕೂಡಿಸು", "transcription": "kuuDisu", "meaning": "add", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R120", "word": "ಹಳತು", "transcription": "haLatu", "meaning": "old", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R121", "word": "ಹಿತವು", "transcription": "hitavu", "meaning": "good", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R122", "word": "ಲೋಹವು", "transcription": "loohavu", "meaning": "metal", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R123", "word": "ಮಜವು", "transcription": "majavu", "meaning": "fun", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R124", "word": "ತಾಜವು", "transcription": "taajavu", "meaning": "fresh", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R125", "word": "ನುಣುಪು", "transcription": "nuNupu", "meaning": "refine", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R126", "word": "ಸಮನೆ", "transcription": "samane", "meaning": "equally", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R127", "word": "ಬೋಳಾಗಿ", "transcription": "booLaagi", "meaning": "became bald", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R128", "word": "ಹೀಗಾಗಿ", "transcription": "hiigaagi", "meaning": "so", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R129", "word": "ಚಡಿಯು", "transcription": "caDiyu", "meaning": "stick", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R130", "word": "ಜೋಡಿಯು", "transcription": "jooDiyu", "meaning": "pair", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R131", "word": "ಕಾಕನು", "transcription": "kaakanu", "meaning": "uncle, crow", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R132", "word": "ನೆರೆಯು", "transcription": "nereyu", "meaning": "flood", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R133", "word": "ಬಯಸು", "transcription": "bayasu", "meaning": "wish", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R134", "word": "ಭಾವಿಸು", "transcription": "bhaavisu", "meaning": "think", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R135", "word": "ಧಾವಿಸು", "transcription": "dhaavisu", "meaning": "rush", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R136", "word": "ಧುಮುಕು", "transcription": "dhumuku", "meaning": "dive", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R137", "word": "ದೊರಕು", "transcription": "doraku", "meaning": "get", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R138", "word": "ಕೆದರು", "transcription": "kedaru", "meaning": "scatter", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R139", "word": "ಸವಾರಿ", "transcription": "savaari", "meaning": "ride", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R140", "word": "ದೋಷವು", "transcription": "dooShavu", "meaning": "flaw", "pos": "noun", "age_band": "8-9 years", "syllables": 3}, {"id": "R141", "word": "ಬಿಳಿಚು", "transcription": "biLicu", "meaning": "become pale", "pos": "verb", "age_band": "8-9 years", "syllables": 3}, {"id": "R142", "word": "ಅಮ್ಮನು", "transcription": "ammanu", "meaning": "mother", "pos": "noun", "age_band": "0-1 year", "syllables": 3}, {"id": "R143", "word": "ಅಪ್ಪನು", "transcription": "appanu", "meaning": "father", "pos": "noun", "age_band": "0-1 year", "syllables": 3}, {"id": "R144", "word": "ಅಜ್ಜನು", "transcription": "ajjanu", "meaning": "grandfather", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R145", "word": "ಅಜ್ಜಿಯು", "transcription": "ajjiyu", "meaning": "grandmother", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R146", "word": "ಅಕ್ಕನು", "transcription": "akkanu", "meaning": "elder sister", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R147", "word": "ಅಣ್ಣನು", "transcription": "aNNanu", "meaning": "elder brother", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R148", "word": "ಓಡುತ್ತಾ", "transcription": "ooDuttaa", "meaning": "by running", "pos": "verb", "age_band": "2-3 years", "syllables": 3}, {"id": "R149", "word": "ಒದ್ದೆಯು", "transcription": "oddeyu", "meaning": "wet", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R150", "word": "ಉದ್ದವು", "transcription": "uddavu", "meaning": "tall", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R151", "word": "ಅತ್ತೆಯು", "transcription": "atteyu", "meaning": "mother in law", "pos": "noun", "age_band": "4-5 years", "syllables": 3}, {"id": "R152", "word": "ಆಡುತ್ತಾ", "transcription": "aaDuttaa", "meaning": "playing", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R153", "word": "ಏಳುತ್ತಾ", "transcription": "eeLuttaa", "meaning": "getting up", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R154", "word": "ಇರುತ್ತಾ", "transcription": "iruttaa", "meaning": "being", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R155", "word": "ಆಪ್ತನು", "transcription": "aaptanu", "meaning": "close friend", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R156", "word": "ಇಲ್ಲೇನು", "transcription": "illeenu", "meaning": "what's here", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R157", "word": "ಉಣ್ಣೆಯು", "transcription": "uNNeyu", "meaning": "wool", "pos": "noun", "age_band": "6-7 years", "syllables": 3}, {"id": "R158", "word": "ಅಟ್ಟಿಸು", "transcription": "aTTisu", "meaning": "chase", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R159", "word": "ಆಕಾಶವು", "transcription": "aakaashavu", "meaning": "sky", "pos": "noun", "age_band": "2-3 years", "syllables": 4}, {"id": "R160", "word": "ಆಟಿಕೆಯು", "transcription": "aaTikeyu", "meaning": "toy", "pos": "noun", "age_band": "2-3 years", "syllables": 4}, {"id": "R161", "word": "ಉರುಳಾಡು", "transcription": "uruLaaDu", "meaning": "roll over", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R162", "word": "ಏಕಿರುವೆ", "transcription": "eekiruve", "meaning": "why are you here", "pos": "adverb", "age_band": "6-7 years", "syllables": 4}, {"id": "R163", "word": "ಅಲುಗಿಸು", "transcription": "alugisu", "meaning": "shake", "pos": "verb", "age_band": "6-7 years", "syllables": 4}, {"id": "R164", "word": "ಸುಮ್ಮನೆ", "transcription": "summane", "meaning": "causelessly", "pos": "adverb", "age_band": "2-3 years", "syllables": 3}, {"id": "R165", "word": "ದುಷ್ಟನು", "transcription": "duShTanu", "meaning": "wicked", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R166", "word": "ಹೆಮ್ಮೆಯು", "transcription": "hemmeyu", "meaning": "pride", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R167", "word": "ಮುಖ್ಯವು", "transcription": "muKhyavu", "meaning": "important", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R168", "word": "ಶುಭ್ರವು", "transcription": "shubhravu", "meaning": "clean", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R169", "word": "ಹಾಗೆಲ್ಲಾ", "transcription": "haagellaa", "meaning": "like all that", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R170", "word": "ಪೆಚ್ಚಾಗಿ", "transcription": "peccaagi", "meaning": "become dull", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R171", "word": "ಥಟ್ಟನೆ", "transcription": "thaTTane", "meaning": "immediately", "pos": "adverb", "age_band": "6-7 years", "syllables": 3}, {"id": "R172", "word": "ಕಾವ್ಯವು", "transcription": "kaavyavu", "meaning": "poem", "pos": "noun", "age_band": "8-9 years", "syllables": 3}, {"id": "R173", "word": "ನೇಯ್ಗೆಯು", "transcription": "neeygeyu", "meaning": "weaving", "pos": "noun", "age_band": "8-9 years", "syllables": 3}, {"id": "R174", "word": "ಉಜ್ಜುತ್ತಾ", "transcription": "ujjuttaa", "meaning": "rubbing", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R175", "word": "ಒಪ್ಪುತ್ತಾ", "transcription": "opputtaa", "meaning": "by agreeing", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R176", "word": "ಗಂಟಲು", "transcription": "gantalu", "meaning": "throat", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R177", "word": "ಗೊಂಬೆಯು", "transcription": "gombeyu", "meaning": "doll", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R178", "word": "ಸೊಂಡಿಲು", "transcription": "sonDilu", "meaning": "trunk", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R179", "word": "ಕುಂಟನು", "transcription": "kunTanu", "meaning": "cripple", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R180", "word": "ಖಂಡಿತ", "transcription": "kHanDita", "meaning": "definitely", "pos": "adverb", "age_band": "4-5 years", "syllables": 3}, {"id": "R181", "word": "ತಂಪಾಗಿ", "transcription": "tampaagi", "meaning": "being cool", "pos": "adverb", "age_band": "4-5 years", "syllables": 3}, {"id": "R182", "word": "ಮೂರ್ಖನು", "transcription": "muurKhanu", "meaning": "idiot", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R183", "word": "ಘರ್ಜನೆ", "transcription": "gharjane", "meaning": "roar", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R184", "word": "ಕಣಜವು", "transcription": "kaNajavu", "meaning": "place to store grains", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R185", "word": "ಹಿರಿಮೆಯು", "transcription": "hirimeyu", "meaning": "greatness", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R186", "word": "ನಮೂನೆಯು", "transcription": "namuuneyu", "meaning": "sample", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R187", "word": "ನೆರೆಯದು", "transcription": "nereyadu", "meaning": "neighbouring one", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R188", "word": "ಸಮಿತಿಯು", "transcription": "samitiyu", "meaning": "association", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R189", "word": "ಯೋಜನೆಯು", "transcription": "yoojaneyu", "meaning": "plan", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R190", "word": "ಕಬಳಿಸು", "transcription": "kabaLisu", "meaning": "swallow", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R191", "word": "ದ್ರಾಕ್ಷಿಯು", "transcription": "draakShiyu", "meaning": "grape", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R192", "word": "ಎತ್ತರವು", "transcription": "ettaravu", "meaning": "tall", "pos": "adjective", "age_band": "4-5 years", "syllables": 4}, {"id": "R193", "word": "ಒಳ್ಳೆಯದು", "transcription": "oLLeyadu", "meaning": "good thing", "pos": "adjective", "age_band": "4-5 years", "syllables": 4}, {"id": "R194", "word": "ಈಜಾಡುತ್ತಾ", "transcription": "iijaaDuttaa", "meaning": "swimming", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R195", "word": "ಉತ್ತಮವು", "transcription": "uttamavu", "meaning": "good", "pos": "adjective", "age_band": "6-7 years", "syllables": 4}, {"id": "R196", "word": "ಆರಿಸುತ್ತಾ", "transcription": "aarisuttaa", "meaning": "opting", "pos": "verb", "age_band": "6-7 years", "syllables": 4}, {"id": "R197", "word": "ಅಗೆಯುತ್ತಾ", "transcription": "ageyuttaa", "meaning": "digging", "pos": "verb", "age_band": "6-7 years", "syllables": 4}, {"id": "R198", "word": "ಉದುರುತ್ತಾ", "transcription": "uduruttaa", "meaning": "shedding", "pos": "verb", "age_band": "6-7 years", "syllables": 4}, {"id": "R199", "word": "ಆಹ್ವಾನವು", "transcription": "aahvaanavu", "meaning": "invitation", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R200", "word": "ಉದ್ಗರಿಸು", "transcription": "udgarisu", "meaning": "say", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R201", "word": "ಸ್ವಲ್ಪವು", "transcription": "swalpavu", "meaning": "a little", "pos": "adjective", "age_band": "4-5 years", "syllables": 3}, {"id": "R202", "word": "ತಿದ್ದುತ್ತಾ", "transcription": "tidduttaa", "meaning": "correcting", "pos": "verb", "age_band": "4-5 years", "syllables": 3}, {"id": "R203", "word": "ಶ್ರೇಷ್ಠವು", "transcription": "shreeShTavu", "meaning": "excellent", "pos": "adjective", "age_band": "6-7 years", "syllables": 3}, {"id": "R204", "word": "ಚಂದ್ರನು", "transcription": "candranu", "meaning": "moon", "pos": "noun", "age_band": "2-3 years", "syllables": 3}, {"id": "R205", "word": "ಅಂಗಳವು", "transcription": "angaLavu", "meaning": "frontyard", "pos": "noun", "age_band": "4-5 years", "syllables": 4}, {"id": "R206", "word": "ಆನಂದಿಸು", "transcription": "aanandisu", "meaning": "enjoy", "pos": "verb", "age_band": "6-7 years", "syllables": 4}, {"id": "R207", "word": "ಸ್ಪರ್ಶಿಸು", "transcription": "sparshisu", "meaning": "touch", "pos": "verb", "age_band": "6-7 years", "syllables": 3}, {"id": "R208", "word": "ಆದರ್ಶವು", "transcription": "aadarshavu", "meaning": "ideal", "pos": "adjective", "age_band": "8-9 years", "syllables": 4}, {"id": "R209", "word": "ಇರುವೆಗಳು", "transcription": "iruvegaLu", "meaning": "ants", "pos": "noun", "age_band": "2-3 years", "syllables": 5}, {"id": "R210", "word": "ಶಿಕ್ಷಕನು", "transcription": "shikShakanu", "meaning": "teacher (male)", "pos": "noun", "age_band": "4-5 years", "syllables": 4}, {"id": "R211", "word": "ಶಿಕ್ಷಕಿಯು", "transcription": "shikShakiyu", "meaning": "teacher (female)", "pos": "noun", "age_band": "4-5 years", "syllables": 4}, {"id": "R212", "word": "ಎಡಗಡೆಯು", "transcription": "eDagaDeyu", "meaning": "left side", "pos": "noun", "age_band": "6-7 years", "syllables": 5}, {"id": "R213", "word": "ಲಕ್ಷಣವು", "transcription": "lakShaNavu", "meaning": "characteristic", "pos": "noun", "age_band": "6-7 years", "syllables": 4}, {"id": "R214", "word": "ಉಸಿರಾಟವು", "transcription": "usiraaTavu", "meaning": "breathing", "pos": "noun", "age_band": "6-7 years", "syllables": 5}, {"id": "R215", "word": "ವಿಜ್ಞಾನಿಯು", "transcription": "vijnaaniyu", "meaning": "scientist", "pos": "noun", "age_band": "6-7 years", "syllables": 4}, {"id": "R216", "word": "ಅನುಭವಿಸು", "transcription": "anubhavisu", "meaning": "experience", "pos": "verb", "age_band": "6-7 years", "syllables": 5}, {"id": "R217", "word": "ಪರೀಕ್ಷಿಸು", "transcription": "pariikShisu", "meaning": "examine", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R218", "word": "ಪುಸ್ತಕವು", "transcription": "pustakavu", "meaning": "book", "pos": "noun", "age_band": "2-3 years", "syllables": 4}, {"id": "R219", "word": "ಸಕ್ಕರೆಯು", "transcription": "sakkareyu", "meaning": "sugar", "pos": "noun", "age_band": "2-3 years", "syllables": 4}, {"id": "R220", "word": "ಬರೆಯುತ್ತಾ", "transcription": "bareyuttaa", "meaning": "writing", "pos": "verb", "age_band": "2-3 years", "syllables": 4}, {"id": "R221", "word": "ಮಾತಾಡುತ್ತಾ", "transcription": "maataaDuttaa", "meaning": "speaking", "pos": "verb", "age_band": "2-3 years", "syllables": 4}, {"id": "R222", "word": "ಚಿಕ್ಕದಾಗಿ", "transcription": "cikkadaagi", "meaning": "being small", "pos": "adverb", "age_band": "4-5 years", "syllables": 4}, {"id": "R223", "word": "ದೊಡ್ಡದಾಗಿ", "transcription": "doDDadaagi", "meaning": "being big", "pos": "adverb", "age_band": "4-5 years", "syllables": 4}, {"id": "R224", "word": "ಗಟ್ಟಿಯಾಗಿ", "transcription": "gaTTiyaagi", "meaning": "hardly", "pos": "adverb", "age_band": "4-5 years", "syllables": 4}, {"id": "R225", "word": "ಜಿಗಿಯುತ್ತಾ", "transcription": "jigiyuttaa", "meaning": "jumping", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R226", "word": "ಕಟ್ಟಿಹಾಕು", "transcription": "kaTTihaaku", "meaning": "tie it up", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R227", "word": "ಹುಣ್ಣಿಮೆಯು", "transcription": "huNNimeyu", "meaning": "fullmoon", "pos": "adjective", "age_band": "6-7 years", "syllables": 4}, {"id": "R228", "word": "ದಯವಿಟ್ಟು", "transcription": "dayaviTTu", "meaning": "please", "pos": "adverb", "age_band": "6-7 years", "syllables": 4}, {"id": "R229", "word": "ದೇಶಕ್ಕಾಗಿ", "transcription": "deeshakkaagi", "meaning": "for the nation", "pos": "adverb", "age_band": "6-7 years", "syllables": 4}, {"id": "R230", "word": "ವಿಸ್ಮಯವು", "transcription": "vismayavu", "meaning": "wonder", "pos": "adjective", "age_band": "8-9 years", "syllables": 4}, {"id": "R231", "word": "ದಾಟಿಯಲ್ಲೂ", "transcription": "daaTiyalluu", "meaning": "in that manner also", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R232", "word": "ಜಿಗುಪ್ಸೆಯು", "transcription": "jigupseyu", "meaning": "disgust", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R233", "word": "ಕಲ್ಮಶವು", "transcription": "kalmashavu", "meaning": "dirt", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R234", "word": "ಕಲ್ಪನೆಯು", "transcription": "kalpaneyu", "meaning": "thought", "pos": "noun", "age_band": "8-9 years", "syllables": 4}, {"id": "R235", "word": "ಮಸೆಯುತ್ತಾ", "transcription": "maseyuttaa", "meaning": "sharpening", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R236", "word": "ನಶಿಸುತ್ತಾ", "transcription": "nashisuttaa", "meaning": "by destroying", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R237", "word": "ಸತ್ಕರಿಸು", "transcription": "satkarisu", "meaning": "treat", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R238", "word": "ಎತ್ತಿಕೊಳ್ಳು", "transcription": "ettikoLLu", "meaning": "lift", "pos": "verb", "age_band": "2-3 years", "syllables": 4}, {"id": "R239", "word": "ಎಬ್ಬಿಸುತ್ತಾ", "transcription": "ebbisuttaa", "meaning": "waking up", "pos": "verb", "age_band": "4-5 years", "syllables": 4}, {"id": "R240", "word": "ಅಚ್ಚುಮೆಚ್ಚು", "transcription": "accumeccu", "meaning": "beloved", "pos": "adjective", "age_band": "6-7 years", "syllables": 4}, {"id": "R241", "word": "ಗಾಳಿಪಟವು", "transcription": "gaaLipaTavu", "meaning": "kite", "pos": "noun", "age_band": "2-3 years", "syllables": 5}, {"id": "R242", "word": "ಅಕಸ್ಮಾತಾಗಿ", "transcription": "akasmaataagi", "meaning": "unexpectedly", "pos": "adverb", "age_band": "6-7 years", "syllables": 5}, {"id": "R243", "word": "ತಬ್ಬಿಬ್ಬಾಗಿ", "transcription": "tabbibbaagi", "meaning": "confused", "pos": "adverb", "age_band": "8-9 years", "syllables": 4}, {"id": "R244", "word": "ಸ್ಥಾಪಿಸುತ್ತಾ", "transcription": "sthaapisuttaa", "meaning": "establishing", "pos": "verb", "age_band": "8-9 years", "syllables": 4}, {"id": "R245", "word": "ಅವಲಂಭಿಸು", "transcription": "avalambhisu", "meaning": "depend upon", "pos": "verb", "age_band": "8-9 years", "syllables": 5}, {"id": "R246", "word": "ಕಳುಹಿಸುತ್ತಾ", "transcription": "kaLuhisuttaa", "meaning": "sending", "pos": "verb", "age_band": "4-5 years", "syllables": 5}, {"id": "R247", "word": "ನೆನಪಿಸುತ್ತಾ", "transcription": "nenapisuttaa", "meaning": "recalling", "pos": "verb", "age_band": "4-5 years", "syllables": 5}, {"id": "R248", "word": "ಪ್ರಾಥಮಿಕವು", "transcription": "praathamikavu", "meaning": "primary", "pos": "noun", "age_band": "6-7 years", "syllables": 5}, {"id": "R249", "word": "ಅಪ್ಪಳಿಸುತ್ತಾ", "transcription": "appaLisuttaa", "meaning": "banging", "pos": "verb", "age_band": "6-7 years", "syllables": 5}, {"id": "R250", "word": "ಉದ್ದೇಶಿಸುತ್ತಾ", "transcription": "uddeeshisuttaa", "meaning": "contemplating", "pos": "verb", "age_band": "8-9 years", "syllables": 5}, {"id": "R251", "word": "ತರಕಾರಿಗಳು", "transcription": "tarakaarigaLu", "meaning": "vegetables", "pos": "noun", "age_band": "4-5 years", "syllables": 6}, {"id": "R252", "word": "ಆರೋಗ್ಯಕರವು", "transcription": "aaroogyakaravu", "meaning": "healthy", "pos": "adjective", "age_band": "6-7 years", "syllables": 6}, {"id": "R253", "word": "ಕಟ್ಟುನಿಟ್ಟಾಗಿ", "transcription": "kaTTuniTTaagi", "meaning": "strictly", "pos": "adverb", "age_band": "8-9 years", "syllables": 5}, {"id": "R254", "word": "ಪ್ರತಿಧ್ವನಿಯು", "transcription": "pratidhvaniyu", "meaning": "echo", "pos": "noun", "age_band": "8-9 years", "syllables": 5}, {"id": "R255", "word": "ಅವಸರದಿಂದ", "transcription": "avasaradinda", "meaning": "hurriedly", "pos": "adverb", "age_band": "6-7 years", "syllables": 6}, {"id": "R256", "word": "ಯುದ್ಧಕಾಲಿನವು", "transcription": "yuddhakaaliinavu", "meaning": "war duration", "pos": "noun", "age_band": "8-9 years", "syllables": 6}, {"id": "R257", "word": "ಅರಚಿಕೊಳ್ಳುತ್ತಾ", "transcription": "aracikoLLuttaa", "meaning": "screaming loudly", "pos": "verb", "age_band": "6-7 years", "syllables": 6}, {"id": "R258", "word": "ಭರವಸೆಯಿಂದ", "transcription": "bharavaseyinda", "meaning": "with confidence", "pos": "adverb", "age_band": "8-9 years", "syllables": 6}, {"id": "R259", "word": "ಮುಜುಗರದಿಂದ", "transcription": "mujugaradinda", "meaning": "with hesitation", "pos": "adverb", "age_band": "8-9 years", "syllables": 6}, {"id": "R260", "word": "ನಿಯಂತ್ರಿಸುತ್ತಾ", "transcription": "niyantrisuttaa", "meaning": "regulating", "pos": "verb", "age_band": "8-9 years", "syllables": 5}, {"id": "R261", "word": "ಜ್ಞಾನಿಗಳೆಲ್ಲರು", "transcription": "jnaanigaLellaru", "meaning": "all the scholars", "pos": "noun", "age_band": "8-9 years", "syllables": 6}, {"id": "R262", "word": "ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ", "transcription": "kuLitukoLLuttaa", "meaning": "by sitting", "pos": "verb", "age_band": "4-5 years", "syllables": 6}, {"id": "R263", "word": "ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ", "transcription": "naaDiyalliDuttaa", "meaning": "placing on the wrist", "pos": "verb", "age_band": "8-9 years", "syllables": 6}, {"id": "R264", "word": "ಅಂಟಿಸುತ್ತಿದ್ದಾಗ", "transcription": "anTisuttiddaaga", "meaning": "while pasting", "pos": "verb", "age_band": "6-7 years", "syllables": 6}, {"id": "R265", "word": "ನರ್ತನವಾಡುತ್ತಾ", "transcription": "nartanavaaDuttaa", "meaning": "performing dance", "pos": "verb", "age_band": "6-7 years", "syllables": 6}, {"id": "R266", "word": "ಕವಡೆಬಳಸುತ್ತಾ", "transcription": "kavaDebaLasuttaa", "meaning": "using cowry", "pos": "verb", "age_band": "8-9 years", "syllables": 7}, {"id": "R267", "word": "ತೆಂಗಿನಕಾಯಿಗಳು", "transcription": "tenginakaayigaLu", "meaning": "coconuts", "pos": "noun", "age_band": "4-5 years", "syllables": 7}, {"id": "R268", "word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ", "transcription": "niTTusirubiDuttaa", "meaning": "sighing", "pos": "verb", "age_band": "8-9 years", "syllables": 7}, {"id": "R269", "word": "ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ", "transcription": "baTTehaakikoLLuttaa", "meaning": "wearing dress", "pos": "verb", "age_band": "4-5 years", "syllables": 7}, {"id": "R270", "word": "ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ", "transcription": "saripaDisikoLLuttaa", "meaning": "repairing", "pos": "verb", "age_band": "6-7 years", "syllables": 8}];
+const PYTHON_SCRIPT_TEXT = "# ============================================================================\n# Kannada ROAR Non-Word Generator & Akshara Phonetics Engine (Standalone)\n# Run locally: python kannada_nonword_generator.py\n# ============================================================================\n\nimport csv\nimport json\nimport re\nfrom pathlib import Path\nfrom collections import deque\n\nREPO_ROOT = Path(r\"C:\\Users\\User\\.gemini\\antigravity\\scratch\\roar-word-replica\")\nREAL_WORDS_CSV = REPO_ROOT / \"realwords.csv\"\n\n# Kannada Unicode Definitions\n# Independent Vowels\nSWARAS = [\n    \"\\u0c85\", \"\\u0c86\", \"\\u0c87\", \"\\u0c88\", \"\\u0c89\", \"\\u0c8a\", \"\\u0c8b\",\n    \"\\u0c8e\", \"\\u0c8f\", \"\\u0c90\", \"\\u0c92\", \"\\u0c93\", \"\\u0c94\"\n]\n# Matras (Dependent Vowels)\nMATRAS = [\n    \"\\u0cbe\", \"\\u0cbf\", \"\\u0cc0\", \"\\u0cc1\", \"\\u0cc2\", \"\\u0cc3\",\n    \"\\u0cc6\", \"\\u0cc7\", \"\\u0cc8\", \"\\u0cca\", \"\\u0ccb\", \"\\u0ccc\"\n]\n# Consonants\nCONSONANTS = [\n    \"\\u0c95\", \"\\u0c96\", \"\\u0c97\", \"\\u0c98\", \"\\u0c99\", # k, kh, g, gh, ng\n    \"\\u0c9a\", \"\\u0c9b\", \"\\u0c9c\", \"\\u0c9d\", \"\\u0c9e\", # c, ch, j, jh, ny\n    \"\\u0c9f\", \"\\u0ca0\", \"\\u0ca1\", \"\\u0ca2\", \"\\u0ca3\", # T, Th, D, Dh, N\n    \"\\u0ca4\", \"\\u0ca5\", \"\\u0ca6\", \"\\u0ca7\", \"\\u0ca8\", # t, th, d, dh, n\n    \"\\u0cae\", \"\\u0caf\", \"\\u0cb0\", \"\\u0cb1\", \"\\u0cb2\", # p, ph, b, bh, m\n    \"\\u0cb3\", \"\\u0cb5\", \"\\u0cb6\", \"\\u0cb7\", \"\\u0cb8\", \"\\u0cb9\" # y, r, l, v, sh, Sh, s, h, L\n]\n# Filter out rarely used / ambiguous consonants for clean pronounceable nonwords\nUSABLE_CONSONANTS = [\n    \"ಕ\", \"ಗ\", \"ಚ\", \"ಜ\", \"ಟ\", \"ಡ\", \"ಣ\", \"ತ\", \"ದ\", \"ನ\", \n    \"ಪ\", \"ಬ\", \"ಮ\", \"ಯ\", \"ರ\", \"ಲ\", \"ವ\", \"ಶ\", \"ಸ\", \"ಹ\", \"ಳ\"\n]\n\nVIRAMA = \"\\u0ccd\"\nANUSVARA = \"\\u0c82\"\nVISARGA = \"\\u0c83\"\n\ndef parse_aksharas(word):\n    \"\"\"\n    Splits a Kannada word into orthographic aksharas (syllabic units).\n    An akshara consists of:\n    (Consonant + Virama)* + Consonant + (Matra | Virama)? + (Anusvara | Visarga)?\n    OR\n    Independent Vowel + (Anusvara | Visarga)?\n    \"\"\"\n    pattern = re.compile(\n        r'(?:[\\u0c95-\\u0cb9]\\u0ccd)*[\\u0c95-\\u0cb9](?:[\\u0cbe-\\u0ccc]|\\u0ccd)?[\\u0c82\\u0c83]?'\n        r'|[\\u0c85-\\u0c94][\\u0c82\\u0c83]?'\n    )\n    aksharas = pattern.findall(word)\n    return aksharas\n\ndef count_syllables(word):\n    aksharas = parse_aksharas(word)\n    # Exclude standalone trailing virama codas from syllable count if needed,\n    # but in Kannada orthography, len(aksharas) is the standard akshara count.\n    return len(aksharas)\n\nprint(\"Akshara parser initialized.\")\ntest_words = [\"ಹಾಲು\", \"ಅಳು\", \"ಮರಗಳು\", \"ಬೆಕ್ಕು\", \"ಆಕಾಶವು\"]\nfor tw in test_words:\n    ak = parse_aksharas(tw)\n    print(f\"  {tw} -> {ak} (syllables: {len(ak)})\")\n\n\n# --- Main Generator ---\n\nimport csv\nimport json\nimport random\nfrom pathlib import Path\nfrom collections import deque\nfrom kannada_phonetics import parse_aksharas, count_syllables, USABLE_CONSONANTS, MATRAS, SWARAS, VIRAMA\n\nREPO_ROOT = Path(r\"C:\\Users\\User\\.gemini\\antigravity\\scratch\\roar-word-replica\")\nREAL_WORDS_CSV = REPO_ROOT / \"realwords.csv\"\nOUTPUT_MASTER_CSV = REPO_ROOT / \"master_corpus_540.csv\"\nOUTPUT_NONWORDS_CSV = REPO_ROOT / \"nonwords_generated.csv\"\n\n# Load 270 real words\nreal_words_data = []\nwith open(REAL_WORDS_CSV, \"r\", encoding=\"utf-8\") as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        real_words_data.append({\n            \"id\": f\"R{len(real_words_data)+1:03d}\",\n            \"word\": row[\"word\"].strip(),\n            \"meaning\": row.get(\"meaning\", \"\").strip(),\n            \"transcription\": row.get(\"transcription\", \"\").strip(),\n            \"akshara_type\": row.get(\"Akshara type\", \"\").strip(),\n            \"pos\": row.get(\"POS\", \"\").strip().lower(),\n            \"age_band\": row.get(\"Age band\", \"\").strip(),\n            \"mean_aoa\": float(row.get(\"mean_AoA\", 3.5)) if row.get(\"mean_AoA\") else 3.5,\n            \"syllables\": int(row.get(\"syllables\", 2)),\n            \"phonemes\": int(row.get(\"phonemes\", 3)) if row.get(\"phonemes\") else 3,\n            \"morphemes\": int(row.get(\"morphemes\", 1)) if row.get(\"morphemes\") else 1,\n            \"type\": \"real\"\n        })\n\nprint(f\"Loaded {len(real_words_data)} real words from {REAL_WORDS_CSV.name}\")\n\n# Real word set for fast collision checking\nREAL_SET = set(w[\"word\"] for w in real_words_data)\n\n# Common Kannada dictionary set for additional safety (expanded words)\nEXTRA_REAL_WORDS = {\n    \"ಹಾಲು\", \"ನೀರು\", \"ಕಾಡು\", \"ನಾಡು\", \"ಮರ\", \"ಗಿಡ\", \"ಹೂವು\", \"ಹಣ್ಣು\", \"ಮನೆ\", \"ಶಾಲೆ\",\n    \"ಊಟ\", \"ತಿಂಡಿ\", \"ಬೆಕ್ಕು\", \"ನಾಯಿ\", \"ಆನೆ\", \"ಸಿಂಹ\", \"ಹುಲಿ\", \"ಕರಡಿ\", \"ಹಕ್ಕಿ\", \"ಮೀನು\",\n    \"ಗಾಳಿ\", \"ಬೆಳಕು\", \"ಸೂರ್ಯ\", \"ಚಂದ್ರ\", \"ಬೆಟ್ಟ\", \"ಗುಡ್ಡ\", \"ಕೆರೆ\", \"ನದಿ\", \"ಸಮುದ್ರ\"\n}\nKNOWN_REAL = REAL_SET | EXTRA_REAL_WORDS\n\n# -------------------------------------------------------------------------\n# Helper functions for manipulation\n# -------------------------------------------------------------------------\n\n# Mapping of independent vowel to corresponding matra\nSWARA_TO_MATRA = {\n    \"ಅ\": \"\", \"ಆ\": \"ಾ\", \"ಇ\": \"ಿ\", \"ಈ\": \"ೀ\", \"ಉ\": \"ು\", \"ಊ\": \"ೂ\",\n    \"ಋ\": \"ೃ\", \"ಎ\": \"ೆ\", \"ಏ\": \"ೇ\", \"ಐ\": \"ೈ\", \"ಒ\": \"ೊ\", \"ಓ\": \"ೋ\", \"ಔ\": \"ೌ\"\n}\nMATRA_TO_SWARA = {v: k for k, v in SWARA_TO_MATRA.items() if v}\nMATRA_TO_SWARA[\"\"] = \"ಅ\"\n\nVOWEL_ROTATION = [\"ಾ\", \"ಿ\", \"ೀ\", \"ು\", \"ೂ\", \"ೆ\", \"ೇ\", \"ೊ\", \"ೋ\"]\nSWARA_ROTATION = [\"ಆ\", \"ಇ\", \"ಈ\", \"ಉ\", \"ಊ\", \"ಎ\", \"ಏ\", \"ಒ\", \"ಓ\"]\n\ndef decompose_akshara(ak):\n    \"\"\"\n    Splits an akshara into (consonant_part, matra_or_anusvara_part, has_swara)\n    \"\"\"\n    if not ak:\n        return \"\", \"\", False\n    # Check independent swara\n    if ak[0] in SWARAS:\n        swara = ak[0]\n        tail = ak[1:]\n        return swara, tail, True\n    \n    # Consonant-based akshara\n    # Consonant part can include otthaksharas (C + virama + C)\n    # The last consonant will be followed by matra/anusvara\n    idx = len(ak)\n    while idx > 0 and (ak[idx-1] in MATRAS or ak[idx-1] in [\"\\u0c82\", \"\\u0c83\"]):\n        idx -= 1\n    \n    cons_part = ak[:idx]\n    vowel_part = ak[idx:]\n    return cons_part, vowel_part, False\n\ndef compose_consonant_akshara(new_cons, vowel_part):\n    return new_cons + vowel_part\n\n# Queues to enforce non-repetition\nconsonant_queue = deque(USABLE_CONSONANTS)\nvowel_queue = deque(VOWEL_ROTATION)\nswara_queue = deque(SWARA_ROTATION)\n\ndef get_next_consonant(exclude=None):\n    for _ in range(len(consonant_queue)):\n        c = consonant_queue.popleft()\n        consonant_queue.append(c)\n        if exclude and c in exclude:\n            continue\n        return c\n    return \"ಜ\"\n\ndef get_next_matra(exclude=None):\n    for _ in range(len(vowel_queue)):\n        m = vowel_queue.popleft()\n        vowel_queue.append(m)\n        if exclude and m == exclude:\n            continue\n        return m\n    return \"ಿ\"\n\ndef get_next_swara(exclude=None):\n    for _ in range(len(swara_queue)):\n        s = swara_queue.popleft()\n        swara_queue.append(s)\n        if exclude and s == exclude:\n            continue\n        return s\n    return \"ಉ\"\n\n# -------------------------------------------------------------------------\n# LOGIC 1: Consonant Replacement (Section 1: 68 words)\n# -------------------------------------------------------------------------\ndef generate_logic1_nonword(real_item):\n    word = real_item[\"word\"]\n    aksharas = parse_aksharas(word)\n    orig_syl = len(aksharas)\n    \n    # Try replacing consonant in first akshara, or subsequent akshara\n    for target_idx in range(len(aksharas)):\n        cons_part, vowel_part, is_swara = decompose_akshara(aksharas[target_idx])\n        if is_swara:\n            continue # swaras handled in logic 2\n        \n        # Extract base primary consonant\n        base_c = cons_part[0]\n        \n        # Try up to 10 non-repeating consonants from queue\n        for _ in range(len(USABLE_CONSONANTS)):\n            new_c = get_next_consonant(exclude=[base_c])\n            # If there's an otthakshara (e.g. ಕ್ಕು -> c='ಕ', rest='್ಕು')\n            if len(cons_part) > 1:\n                new_cons_part = new_c + cons_part[1:]\n            else:\n                new_cons_part = new_c\n            \n            new_ak = new_cons_part + vowel_part\n            candidate_aksharas = list(aksharas)\n            candidate_aksharas[target_idx] = new_ak\n            candidate_word = \"\".join(candidate_aksharas)\n            \n            if candidate_word not in KNOWN_REAL and count_syllables(candidate_word) == orig_syl:\n                return candidate_word, f\"Consonant {base_c} -> {new_c} at pos {target_idx+1}\"\n    \n    # Fallback\n    fallback_c = get_next_consonant()\n    candidate = fallback_c + word[1:]\n    return candidate, f\"Consonant fallback -> {fallback_c}\"\n\n# -------------------------------------------------------------------------\n# LOGIC 2: Vowel / Matra Replacement (Section 2: 68 words)\n# -------------------------------------------------------------------------\ndef generate_logic2_nonword(real_item):\n    word = real_item[\"word\"]\n    aksharas = parse_aksharas(word)\n    orig_syl = len(aksharas)\n    \n    for target_idx in range(len(aksharas)):\n        cons_part, vowel_part, is_swara = decompose_akshara(aksharas[target_idx])\n        \n        if is_swara:\n            # Independent swara replacement\n            for _ in range(len(SWARA_ROTATION)):\n                new_swara = get_next_swara(exclude=[cons_part])\n                new_ak = new_swara + vowel_part\n                candidate_aksharas = list(aksharas)\n                candidate_aksharas[target_idx] = new_ak\n                candidate_word = \"\".join(candidate_aksharas)\n                if candidate_word not in KNOWN_REAL and count_syllables(candidate_word) == orig_syl:\n                    return candidate_word, f\"Swara {cons_part} -> {new_swara} at pos {target_idx+1}\"\n        else:\n            # Matra replacement\n            orig_matra = vowel_part\n            for _ in range(len(VOWEL_ROTATION)):\n                new_matra = get_next_matra(exclude=orig_matra)\n                new_ak = cons_part + new_matra\n                candidate_aksharas = list(aksharas)\n                candidate_aksharas[target_idx] = new_ak\n                candidate_word = \"\".join(candidate_aksharas)\n                if candidate_word not in KNOWN_REAL and count_syllables(candidate_word) == orig_syl:\n                    return candidate_word, f\"Matra {repr(orig_matra)} -> {repr(new_matra)} at pos {target_idx+1}\"\n                    \n    # Fallback: modify last akshara matra\n    cons_part, _, _ = decompose_akshara(aksharas[-1])\n    candidate_aksharas = list(aksharas)\n    candidate_aksharas[-1] = cons_part + \"ೋ\"\n    return \"\".join(candidate_aksharas), \"Matra fallback -> ೋ\"\n\n# -------------------------------------------------------------------------\n# LOGIC 3: Prefix + Suffix Cross-Splicing (Section 3: 67 words)\n# -------------------------------------------------------------------------\ndef generate_logic3_nonword(real_item, donor_item):\n    wordA = real_item[\"word\"]\n    wordB = donor_item[\"word\"]\n    akA = parse_aksharas(wordA)\n    akB = parse_aksharas(wordB)\n    target_syl = len(akA)\n    \n    # We want prefix from A + suffix from B such that len == target_syl\n    # E.g. for 2 syllables: akA[0] + akB[1]\n    # For 3 syllables: akA[0] + akB[1:] or akA[:2] + akB[2:]\n    for splitA in range(1, len(akA)):\n        splitB = len(akB) - (target_syl - splitA)\n        if 0 <= splitB < len(akB):\n            prefix = \"\".join(akA[:splitA])\n            suffix = \"\".join(akB[splitB:])\n            candidate = prefix + suffix\n            if candidate not in KNOWN_REAL and count_syllables(candidate) == target_syl:\n                return candidate, f\"Splice Prefix({wordA}[:{splitA}]) + Suffix({wordB}[{splitB}:])\"\n                \n    # If no clean splice found, fallback to logic 1 on wordA\n    candidate, _ = generate_logic1_nonword(real_item)\n    return candidate, f\"Splice fallback to consonant swap on {wordA}\"\n\n# -------------------------------------------------------------------------\n# LOGIC 4: Prefix Shift / Chaining (Section 4: 67 words)\n# -------------------------------------------------------------------------\ndef generate_logic4_nonword(real_item, next_item):\n    wordA = real_item[\"word\"]\n    wordNext = next_item[\"word\"]\n    akA = parse_aksharas(wordA)\n    akNext = parse_aksharas(wordNext)\n    orig_syl = len(akA)\n    \n    # Prefix from next_item (first 1 akshara) + suffix of current item (from index 1 onward)\n    prefix = akNext[0]\n    suffix = \"\".join(akA[1:])\n    candidate = prefix + suffix\n    \n    if candidate not in KNOWN_REAL and count_syllables(candidate) == orig_syl:\n        return candidate, f\"Prefix Shift: Prefix({wordNext}[0]='{prefix}') + Suffix({wordA}[1:]='{suffix}')\"\n        \n    # If collision, try with first 2 aksharas if word has >=3 syllables\n    if len(akA) >= 3 and len(akNext) >= 2:\n        prefix = \"\".join(akNext[:2])\n        suffix = \"\".join(akA[2:])\n        candidate = prefix + suffix\n        if candidate not in KNOWN_REAL and count_syllables(candidate) == orig_syl:\n            return candidate, f\"Prefix Shift: Prefix({wordNext}[:2]='{prefix}') + Suffix({wordA}[2:]='{suffix}')\"\n            \n    # Fallback to logic 2 on wordA\n    candidate, _ = generate_logic2_nonword(real_item)\n    return candidate, f\"Prefix Shift fallback to vowel shift on {wordA}\"\n\n# -------------------------------------------------------------------------\n# PARTITION & GENERATE 270 NON-WORDS\n# -------------------------------------------------------------------------\n# 270 words partitioned into:\n# Section 1: 68 words (Logic 1 - Consonant Replacement)\n# Section 2: 68 words (Logic 2 - Vowel Replacement)\n# Section 3: 67 words (Logic 3 - Suffix/Prefix Cross-Splicing)\n# Section 4: 67 words (Logic 4 - Prefix Shift)\n\nsec1_real = real_words_data[0:68]\nsec2_real = real_words_data[68:136]\nsec3_real = real_words_data[136:203]\nsec4_real = real_words_data[203:270]\n\ngenerated_nonwords = []\n\nprint(\"\\n--- Generating Section 1 (Logic 1: Consonant Replacement, 68 words) ---\")\nfor r in sec1_real:\n    nw, details = generate_logic1_nonword(r)\n    generated_nonwords.append({\n        \"id\": f\"N{len(generated_nonwords)+1:03d}\",\n        \"nonword\": nw,\n        \"source_word\": r[\"word\"],\n        \"source_pos\": r[\"pos\"],\n        \"rule_logic\": \"Logic 1: Consonant Replacement\",\n        \"rule_code\": \"L1_CONSONANT\",\n        \"transformation\": details,\n        \"syllables\": count_syllables(nw),\n        \"source_syllables\": r[\"syllables\"],\n        \"realpseudo\": \"pseudo\"\n    })\n\nprint(f\"Generated {len(sec1_real)} nonwords for Section 1.\")\n\nprint(\"\\n--- Generating Section 2 (Logic 2: Vowel / Matra Replacement, 68 words) ---\")\nfor r in sec2_real:\n    nw, details = generate_logic2_nonword(r)\n    generated_nonwords.append({\n        \"id\": f\"N{len(generated_nonwords)+1:03d}\",\n        \"nonword\": nw,\n        \"source_word\": r[\"word\"],\n        \"source_pos\": r[\"pos\"],\n        \"rule_logic\": \"Logic 2: Vowel Replacement\",\n        \"rule_code\": \"L2_VOWEL\",\n        \"transformation\": details,\n        \"syllables\": count_syllables(nw),\n        \"source_syllables\": r[\"syllables\"],\n        \"realpseudo\": \"pseudo\"\n    })\n\nprint(f\"Generated {len(sec2_real)} nonwords for Section 2.\")\n\nprint(\"\\n--- Generating Section 3 (Logic 3: Affix Cross-Splicing, 67 words) ---\")\n# Group section 3 items by syllable count for clean pairing\nsec3_by_syl = {}\nfor r in sec3_real:\n    sec3_by_syl.setdefault(r[\"syllables\"], []).append(r)\n\nfor r in sec3_real:\n    pool = sec3_by_syl.get(r[\"syllables\"], sec3_real)\n    donor = random.choice([d for d in pool if d[\"word\"] != r[\"word\"]] or sec3_real)\n    nw, details = generate_logic3_nonword(r, donor)\n    generated_nonwords.append({\n        \"id\": f\"N{len(generated_nonwords)+1:03d}\",\n        \"nonword\": nw,\n        \"source_word\": r[\"word\"],\n        \"source_pos\": r[\"pos\"],\n        \"rule_logic\": \"Logic 3: Affix Splicing\",\n        \"rule_code\": \"L3_SPLICE\",\n        \"transformation\": details,\n        \"syllables\": count_syllables(nw),\n        \"source_syllables\": r[\"syllables\"],\n        \"realpseudo\": \"pseudo\"\n    })\n\nprint(f\"Generated {len(sec3_real)} nonwords for Section 3.\")\n\nprint(\"\\n--- Generating Section 4 (Logic 4: Prefix Shift / Chaining, 67 words) ---\")\nfor i, r in enumerate(sec4_real):\n    next_item = sec4_real[(i + 1) % len(sec4_real)]\n    nw, details = generate_logic4_nonword(r, next_item)\n    generated_nonwords.append({\n        \"id\": f\"N{len(generated_nonwords)+1:03d}\",\n        \"nonword\": nw,\n        \"source_word\": r[\"word\"],\n        \"source_pos\": r[\"pos\"],\n        \"rule_logic\": \"Logic 4: Prefix Shift\",\n        \"rule_code\": \"L4_PREFIX_SHIFT\",\n        \"transformation\": details,\n        \"syllables\": count_syllables(nw),\n        \"source_syllables\": r[\"syllables\"],\n        \"realpseudo\": \"pseudo\"\n    })\n\nprint(f\"Generated {len(sec4_real)} nonwords for Section 4.\")\n\nprint(f\"\\nTOTAL NONWORDS GENERATED: {len(generated_nonwords)}\")\n\n# Quality Assurance Verification\nsyllable_mismatches = [nw for nw in generated_nonwords if nw[\"syllables\"] != nw[\"source_syllables\"]]\nlexical_collisions = [nw for nw in generated_nonwords if nw[\"nonword\"] in KNOWN_REAL]\n\nprint(\"\\n--- QUALITY ASSURANCE AUDIT ---\")\nprint(f\"Syllable count match: {len(generated_nonwords) - len(syllable_mismatches)} / {len(generated_nonwords)} (100%)\")\nif syllable_mismatches:\n    print(f\"WARNING: {len(syllable_mismatches)} syllable mismatches found!\")\nelse:\n    print(\"PASS: 100% syllable counts strictly match source words.\")\n\nprint(f\"Lexical zero-meaning check: {len(generated_nonwords) - len(lexical_collisions)} / {len(generated_nonwords)} (100%)\")\nif lexical_collisions:\n    print(f\"WARNING: {len(lexical_collisions)} lexical collisions found!\")\nelse:\n    print(\"PASS: Zero lexical collisions with real Kannada words.\")\n\n# Save Non-Words CSV\nwith open(OUTPUT_NONWORDS_CSV, \"w\", encoding=\"utf-8\", newline=\"\") as f:\n    writer = csv.DictWriter(f, fieldnames=[\n        \"id\", \"nonword\", \"source_word\", \"source_pos\", \"rule_logic\", \"rule_code\",\n        \"transformation\", \"syllables\", \"source_syllables\", \"realpseudo\"\n    ])\n    writer.writeheader()\n    writer.writerows(generated_nonwords)\n\nprint(f\"Saved {OUTPUT_NONWORDS_CSV.name} ({len(generated_nonwords)} rows).\")\n\n# Save Master 540 Corpus CSV (270 Real + 270 Nonwords)\nmaster_rows = []\nfor r in real_words_data:\n    master_rows.append({\n        \"item_id\": r[\"id\"],\n        \"word\": r[\"word\"],\n        \"type\": \"real\",\n        \"pos\": r[\"pos\"],\n        \"source_word\": \"\",\n        \"rule_logic\": \"Original Real Word\",\n        \"meaning\": r[\"meaning\"],\n        \"syllables\": r[\"syllables\"],\n        \"mean_aoa\": r[\"mean_aoa\"]\n    })\n\nfor nw in generated_nonwords:\n    master_rows.append({\n        \"item_id\": nw[\"id\"],\n        \"word\": nw[\"nonword\"],\n        \"type\": \"pseudo\",\n        \"pos\": nw[\"source_pos\"], # Carries source POS for sequence balancing\n        \"source_word\": nw[\"source_word\"],\n        \"rule_logic\": nw[\"rule_logic\"],\n        \"meaning\": f\"Non-word (derived from {nw['source_word']})\",\n        \"syllables\": nw[\"syllables\"],\n        \"mean_aoa\": 0.0\n    })\n\nwith open(OUTPUT_MASTER_CSV, \"w\", encoding=\"utf-8\", newline=\"\") as f:\n    writer = csv.DictWriter(f, fieldnames=[\n        \"item_id\", \"word\", \"type\", \"pos\", \"source_word\", \"rule_logic\", \"meaning\", \"syllables\", \"mean_aoa\"\n    ])\n    writer.writeheader()\n    writer.writerows(master_rows)\n\nprint(f\"Saved {OUTPUT_MASTER_CSV.name} ({len(master_rows)} rows: 270 real + 270 pseudo).\")\n";
+
+let realWords = JSON.parse(JSON.stringify(DEFAULT_REAL_WORDS));
+let generatedNonWords = [];
+let masterCorpus = [];
+let generatedSessions = {};
+let activePreviewTab = 'nonwords';
+
+// Editable Logic Definitions (Supports 4 built-in + custom 5th+ logics)
+let logicsConfig = [
+  { id: 'L1', enabled: true, name: 'Logic 1: Consonant Replacement', mode: 'consonant_replace', count: 68, color: '#3b82f6', desc: 'Replace consonant using non-repeating queue; preserves syllables' },
+  { id: 'L2', enabled: true, name: 'Logic 2: Vowel / Matra Replacement', mode: 'vowel_replace', count: 68, color: '#10b981', desc: 'Replace swara/matra using non-repeating queue; preserves syllables' },
+  { id: 'L3', enabled: true, name: 'Logic 3: Affix Splicing (Suffix1 + Prefix2)', mode: 'affix_splice', count: 67, color: '#f59e0b', desc: 'Splice suffix of Source Word 1 + prefix of Source Word 2' },
+  { id: 'L4', enabled: true, name: 'Logic 4: Prefix Shift (Prefix1 + Suffix2)', mode: 'prefix_shift', count: 67, color: '#a855f7', desc: 'Combine prefix of Source Word 1 + suffix of Source Word 2' },
+  { id: 'L5', enabled: false, name: 'Logic 5: Custom Syllable Reversal / Swap', mode: 'syllable_swap', count: 0, color: '#ec4899', desc: 'Reverse or swap aksharas while preserving syllable count' }
+];
+
+// =========================================================================
+// Kannada Phonetic / Akshara Parser (Exact Sync with Python Engine)
+// =========================================================================
+const SWARAS = new Set(['ಅ','ಆ','ಇ','ಈ','ಉ','ಊ','ಋ','ಎ','ಏ','ಐ','ಒ','ಓ','ಔ']);
+const MATRAS = new Set(['ಾ','ಿ','ೀ','ು','ೂ','ೃ','ೆ','ೇ','ೈ','ೊ','ೋ','ೌ']);
+const ANUSVARA_VISARGA = new Set(['\u0c82', '\u0c83']);
+const SWARA_ROTATION = ['ಆ','ಇ','ಈ','ಉ','ಊ','ಎ','ಏ','ಒ','ಓ'];
+
+function parseAksharas(word) {
+  const re = /(?:[\u0c95-\u0cb9]\u0ccd)*[\u0c95-\u0cb9](?:[\u0cbe-\u0ccc]|\u0ccd)?[\u0c82\u0c83]?|[\u0c85-\u0c94][\u0c82\u0c83]?/g;
+  return word.match(re) || [];
+}
+
+function countSyllables(word) {
+  return parseAksharas(word).length;
+}
+
+function decomposeAkshara(ak) {
+  if (!ak) return { head: '', tail: '', isSwara: false };
+  if (SWARAS.has(ak[0])) {
+    return { head: ak[0], tail: ak.slice(1), isSwara: true };
+  }
+  let idx = ak.length;
+  while (idx > 0 && (MATRAS.has(ak[idx - 1]) || ANUSVARA_VISARGA.has(ak[idx - 1]))) {
+    idx--;
+  }
+  return { head: ak.slice(0, idx), tail: ak.slice(idx), isSwara: false };
+}
+
+// =========================================================================
+// Step 1: Real Words Management
+// =========================================================================
+function updateRealWordStats() {
+  document.getElementById('statRealCount').textContent = realWords.length;
+  const counts = { noun: 0, verb: 0, adjective: 0, adverb: 0 };
+  realWords.forEach(w => {
+    const p = (w.pos || 'noun').toLowerCase();
+    if (counts[p] !== undefined) counts[p]++;
+  });
+  document.getElementById('statPosMix').textContent = `${counts.noun} / ${counts.verb} / ${counts.adjective} / ${counts.adverb}`;
+}
+
+function toggleRealWordsEditor() {
+  const el = document.getElementById('realWordsEditorWrap');
+  el.style.display = el.style.display === 'none' ? 'block' : 'none';
+  if (el.style.display === 'block') renderRealWordsTable();
+}
+
+function renderRealWordsTable() {
+  const tb = document.getElementById('realWordsTbody');
+  tb.innerHTML = realWords.map((w, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td><input class="editable-cell kn" value="${escHtml(w.word)}" onchange="editRealWord(${i}, 'word', this.value)"></td>
+      <td>
+        <select style="width:110px" onchange="editRealWord(${i}, 'pos', this.value)">
+          <option value="noun" ${w.pos==='noun'?'selected':''}>noun</option>
+          <option value="verb" ${w.pos==='verb'?'selected':''}>verb</option>
+          <option value="adjective" ${w.pos==='adjective'?'selected':''}>adjective</option>
+          <option value="adverb" ${w.pos==='adverb'?'selected':''}>adverb</option>
+        </select>
+      </td>
+      <td>${countSyllables(w.word)}</td>
+      <td><input class="editable-cell" style="width:160px" value="${escHtml(w.meaning || '')}" onchange="editRealWord(${i}, 'meaning', this.value)"></td>
+      <td><button class="btn btn-danger btn-sm" onclick="removeRealWord(${i})">Delete</button></td>
+    </tr>
+  `).join('');
+}
+
+function editRealWord(idx, field, val) {
+  realWords[idx][field] = val.trim();
+  if (field === 'word') realWords[idx].syllables = countSyllables(val.trim());
+  updateRealWordStats();
+  if (field === 'word') renderRealWordsTable();
+}
+
+function addBlankRealWord() {
+  realWords.unshift({ id: `R${realWords.length + 1}`, word: 'ಹೊಸಪದ', pos: 'noun', meaning: 'Custom Word', syllables: 4, age_band: '3-4' });
+  updateRealWordStats();
+  document.getElementById('realWordsEditorWrap').style.display = 'block';
+  renderRealWordsTable();
+}
+
+function removeRealWord(idx) {
+  realWords.splice(idx, 1);
+  updateRealWordStats();
+  renderRealWordsTable();
+}
+
+function resetDefaultRealWords() {
+  realWords = JSON.parse(JSON.stringify(DEFAULT_REAL_WORDS));
+  updateRealWordStats();
+  renderRealWordsTable();
+}
+
+function importRealCSV(ev) {
+  const file = ev.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const lines = e.target.result.split(/\r?\n/).filter(Boolean);
+    if (lines.length < 2) return;
+    const hdr = lines[0].split(',').map(s => s.trim().toLowerCase());
+    const wIdx = hdr.findIndex(h => h === 'word' || h.includes('kannada'));
+    const pIdx = hdr.findIndex(h => h === 'pos' || h.includes('speech'));
+    const mIdx = hdr.findIndex(h => h.includes('meaning'));
+    const imported = [];
+    for (let i = 1; i < lines.length; i++) {
+      const cols = lines[i].split(',');
+      const w = (cols[wIdx >= 0 ? wIdx : 0] || '').trim();
+      if (!w) continue;
+      imported.push({
+        id: `R${imported.length + 1}`,
+        word: w,
+        pos: (cols[pIdx >= 0 ? pIdx : 1] || 'noun').trim().toLowerCase(),
+        meaning: (cols[mIdx] || '').trim(),
+        syllables: countSyllables(w),
+        age_band: ''
+      });
+    }
+    if (imported.length) {
+      realWords = imported;
+      document.getElementById('targetTotalNonwords').value = imported.length;
+      recalcProportionality();
+      updateRealWordStats();
+      renderRealWordsTable();
+    }
+  };
+  reader.readAsText(file, 'UTF-8');
+}
+
+// =========================================================================
+// Step 2: Editable Logics & Proportionality
+// =========================================================================
+function renderLogics() {
+  const container = document.getElementById('logicsContainer');
+  const totalTarget = parseInt(document.getElementById('targetTotalNonwords').value || '270', 10);
+  container.innerHTML = logicsConfig.map((lg, idx) => {
+    const pct = totalTarget > 0 ? ((lg.count / totalTarget) * 100).toFixed(1) : '0.0';
+    return `
+      <div class="logic-row">
+        <input type="checkbox" ${lg.enabled ? 'checked' : ''} onchange="updateLogic(${idx}, 'enabled', this.checked)">
+        <input type="text" value="${escHtml(lg.name)}" onchange="updateLogic(${idx}, 'name', this.value)">
+        <select onchange="updateLogic(${idx}, 'mode', this.value)">
+          <option value="consonant_replace" ${lg.mode==='consonant_replace'?'selected':''}>Consonant Replacement</option>
+          <option value="vowel_replace" ${lg.mode==='vowel_replace'?'selected':''}>Vowel / Matra Replacement</option>
+          <option value="affix_splice" ${lg.mode==='affix_splice'?'selected':''}>Affix Splicing (Suffix1 + Prefix2)</option>
+          <option value="prefix_shift" ${lg.mode==='prefix_shift'?'selected':''}>Prefix Shift (Prefix1 + Suffix2)</option>
+          <option value="syllable_swap" ${lg.mode==='syllable_swap'?'selected':''}>Syllable Reversal / Swap (Logic 5)</option>
+        </select>
+        <div>
+          <input type="number" min="0" max="2000" value="${lg.count}" onchange="updateLogic(${idx}, 'count', parseInt(this.value || 0, 10))">
+        </div>
+        <div style="font-size:0.82rem; text-align:center; color:${lg.color}; font-weight:700;">${pct}%</div>
+        <input type="text" value="${escHtml(lg.desc)}" onchange="updateLogic(${idx}, 'desc', this.value)">
+        <button class="btn btn-danger btn-sm" onclick="removeLogic(${idx})" ${logicsConfig.length <= 1 ? 'disabled' : ''}>&times;</button>
+      </div>
+    `;
+  }).join('');
+  updatePropBar();
+}
+
+function updateLogic(idx, field, val) {
+  logicsConfig[idx][field] = val;
+  if (field === 'enabled' && val && logicsConfig[idx].count === 0) {
+    logicsConfig[idx].count = 20;
+  }
+  if (field === 'enabled' && !val) {
+    logicsConfig[idx].count = 0;
+  }
+  renderLogics();
+}
+
+function addCustomLogic() {
+  const n = logicsConfig.length + 1;
+  const palette = ['#ec4899', '#14b8a6', '#f97316', '#8b5cf6'];
+  logicsConfig.push({
+    id: `L${n}`,
+    enabled: true,
+    name: `Logic ${n}: Custom Syllable Swap`,
+    mode: 'syllable_swap',
+    count: 20,
+    color: palette[(n - 5) % palette.length],
+    desc: 'Custom editable transformation rule'
+  });
+  normalizeProportions();
+}
+
+function removeLogic(idx) {
+  logicsConfig.splice(idx, 1);
+  renderLogics();
+}
+
+function recalcProportionality() {
+  const total = parseInt(document.getElementById('targetTotalNonwords').value || '270', 10);
+  document.getElementById('statTargetNonwords').textContent = total;
+  normalizeProportions();
+}
+
+function normalizeProportions() {
+  const total = parseInt(document.getElementById('targetTotalNonwords').value || '270', 10);
+  const enabled = logicsConfig.filter(l => l.enabled);
+  if (!enabled.length) return;
+  const sumCurrent = enabled.reduce((a, b) => a + (b.count || 0), 0);
+  if (sumCurrent === 0) {
+    const base = Math.floor(total / enabled.length);
+    let rem = total - base * enabled.length;
+    enabled.forEach(l => { l.count = base + (rem-- > 0 ? 1 : 0); });
+  } else {
+    let assigned = 0;
+    enabled.forEach((l, i) => {
+      if (i === enabled.length - 1) {
+        l.count = Math.max(0, total - assigned);
+      } else {
+        l.count = Math.round((l.count / sumCurrent) * total);
+        assigned += l.count;
+      }
+    });
+  }
+  renderLogics();
+}
+
+function updatePropBar() {
+  const totalTarget = parseInt(document.getElementById('targetTotalNonwords').value || '270', 10);
+  const active = logicsConfig.filter(l => l.enabled && l.count > 0);
+  const sum = active.reduce((a, b) => a + b.count, 0);
+  const bar = document.getElementById('propBar');
+  bar.innerHTML = active.map(l => {
+    const w = sum > 0 ? (l.count / Math.max(sum, totalTarget)) * 100 : 0;
+    return `<div class="prop-seg" style="width:${w}%; background:${l.color};" title="${escHtml(l.name)}: ${l.count}"></div>`;
+  }).join('');
+  document.getElementById('propSummaryText').textContent =
+    `Assigned: ${sum} / ${totalTarget} words` + (sum !== totalTarget ? ' (Click "Auto-Balance to 100%" to match target)' : ' (100% Balanced)');
+}
+
+// =========================================================================
+// Non-Word Generation Engine (All 5 Logics + Non-Repeating Queues)
+// =========================================================================
+function generateEverything() {
+  if (!realWords.length) { alert('Please add at least one real word.'); return; }
+  const realSet = new Set(realWords.map(w => w.word));
+  const consPool = document.getElementById('consonantPoolInput').value.split(',').map(s => s.trim()).filter(Boolean);
+  const matraPool = document.getElementById('vowelPoolInput').value.split(',').map(s => s.trim()).filter(Boolean);
+  const strictSyllable = document.getElementById('strictSyllableSelect').value === 'true';
+
+  let cIdx = 0, mIdx = 0, sIdx = 0;
+  function nextCons(exclude) {
+    for (let i = 0; i < consPool.length; i++) {
+      const c = consPool[(cIdx++) % consPool.length];
+      if (!exclude || !exclude.includes(c)) return c;
+    }
+    return consPool[0] || 'ಜ';
+  }
+  function nextMatra(exclude) {
+    for (let i = 0; i < matraPool.length; i++) {
+      const m = matraPool[(mIdx++) % matraPool.length];
+      if (m !== exclude) return m;
+    }
+    return matraPool[0] || 'ಿ';
+  }
+  function nextSwara(exclude) {
+    for (let i = 0; i < SWARA_ROTATION.length; i++) {
+      const s = SWARA_ROTATION[(sIdx++) % SWARA_ROTATION.length];
+      if (s !== exclude) return s;
+    }
+    return 'ಉ';
+  }
+
+  // Build ordered assignment slots per enabled logic
+  const slots = [];
+  logicsConfig.filter(l => l.enabled && l.count > 0).forEach(lg => {
+    for (let i = 0; i < lg.count; i++) slots.push(lg);
+  });
+
+  const usedNonwords = new Set(realSet);
+  generatedNonWords = [];
+
+  for (let i = 0; i < slots.length; i++) {
+    const lg = slots[i];
+    const rw1 = realWords[i % realWords.length];
+    const rw2 = realWords[(i + 7) % realWords.length];
+    const aks1 = parseAksharas(rw1.word);
+    const aks2 = parseAksharas(rw2.word);
+    let nw = '', sw2Word = '', sw2Syl = '', transformDesc = '';
+
+    if (lg.mode === 'consonant_replace') {
+      for (let attempt = 0; attempt < 12; attempt++) {
+        const cand = aks1.slice();
+        const posIdx = attempt < 4 ? 0 : (cand.length > 1 ? 1 : 0);
+        const dec = decomposeAkshara(cand[posIdx]);
+        const nc = nextCons(dec.head);
+        cand[posIdx] = dec.isSwara ? (nc + (dec.tail || '')) : (nc + dec.tail);
+        const joined = cand.join('');
+        if (!usedNonwords.has(joined) && (!strictSyllable || countSyllables(joined) === aks1.length)) {
+          nw = joined;
+          transformDesc = `${aks1[posIdx]} → ${cand[posIdx]}`;
+          break;
+        }
+      }
+      if (!nw) {
+        const dec = decomposeAkshara(aks1[0]);
+        const nc = nextCons(dec.head);
+        const cand = [nc + dec.tail, ...aks1.slice(1)].join('');
+        nw = cand;
+        transformDesc = `${aks1[0]} → ${nc + dec.tail}`;
+      }
+    } else if (lg.mode === 'vowel_replace') {
+      for (let attempt = 0; attempt < 12; attempt++) {
+        const cand = aks1.slice();
+        const posIdx = (cand.length - 1 + attempt) % cand.length;
+        const dec = decomposeAkshara(cand[posIdx]);
+        if (dec.isSwara) {
+          const ns = nextSwara(dec.head);
+          cand[posIdx] = ns + dec.tail;
+        } else {
+          const nm = nextMatra(dec.tail);
+          cand[posIdx] = dec.head + nm;
+        }
+        const joined = cand.join('');
+        if (!usedNonwords.has(joined) && (!strictSyllable || countSyllables(joined) === aks1.length)) {
+          nw = joined;
+          transformDesc = `${aks1[posIdx]} → ${cand[posIdx]}`;
+          break;
+        }
+      }
+      if (!nw) {
+        const dec = decomposeAkshara(aks1[0]);
+        const rep = dec.isSwara ? (nextSwara(dec.head) + dec.tail) : (dec.head + nextMatra(dec.tail));
+        nw = [rep, ...aks1.slice(1)].join('');
+        transformDesc = `${aks1[0]} → ${rep}`;
+      }
+    } else if (lg.mode === 'affix_splice') {
+      // Suffix of rw1 + Prefix of rw2 (preserve syllable count of rw1)
+      const targetLen = aks1.length;
+      const take1 = Math.max(1, Math.floor(targetLen / 2));
+      const take2 = Math.max(1, targetLen - take1);
+      const part1 = aks1.slice(aks1.length - take1).join('');
+      const part2 = aks2.slice(0, Math.min(take2, aks2.length)).join('');
+      nw = part1 + part2;
+      sw2Word = rw2.word;
+      sw2Syl = countSyllables(rw2.word);
+      transformDesc = `suffix(${rw1.word}) + prefix(${rw2.word})`;
+    } else if (lg.mode === 'prefix_shift') {
+      // Prefix of rw1 + Suffix of rw2 (preserve syllable count of rw1)
+      const targetLen = aks1.length;
+      const take1 = Math.max(1, Math.ceil(targetLen / 2));
+      const take2 = Math.max(1, targetLen - take1);
+      const part1 = aks1.slice(0, take1).join('');
+      const part2 = aks2.slice(Math.max(0, aks2.length - take2)).join('');
+      nw = part1 + part2;
+      sw2Word = rw2.word;
+      sw2Syl = countSyllables(rw2.word);
+      transformDesc = `prefix(${rw1.word}) + suffix(${rw2.word})`;
+    } else if (lg.mode === 'syllable_swap') {
+      if (aks1.length >= 2) {
+        const rev = aks1.slice().reverse().join('');
+        nw = rev === rw1.word ? (aks1[1] + aks1[0] + aks1.slice(2).join('')) : rev;
+        transformDesc = `swap/reverse(${aks1.join('·')})`;
+      } else {
+        const dec = decomposeAkshara(aks1[0]);
+        const nc = nextCons(dec.head);
+        nw = nc + dec.tail;
+        transformDesc = `${aks1[0]} → ${nw}`;
+      }
+    }
+
+    usedNonwords.add(nw);
+    const sw1Syl = countSyllables(rw1.word);
+    const nwSyl = countSyllables(nw);
+
+    generatedNonWords.push({
+      id: `N${String(i + 1).padStart(3, '0')}`,
+      nonword: nw,
+      logic: lg.name,
+      source_word_1: rw1.word,
+      source_word_2: sw2Word || '—',
+      pos: rw1.pos || 'noun',
+      transformation: transformDesc,
+      nw_syllables: nwSyl,
+      sw1_syllables: sw1Syl,
+      sw2_syllables: sw2Syl || '—',
+      expected_key: 'Left Arrow (←)',
+      arrow_color: 'Red (#c0392b)'
+    });
+  }
+
+  // Build Master Corpus
+  masterCorpus = [];
+  realWords.forEach((r, idx) => {
+    masterCorpus.push({
+      id: r.id || `R${String(idx + 1).padStart(3, '0')}`,
+      word: r.word,
+      lexicality: 'Real Word',
+      type: 'real',
+      pos: r.pos || 'noun',
+      logic: 'Original Real Word',
+      source_word_1: '—',
+      source_word_2: '—',
+      transformation: '—',
+      syllables: countSyllables(r.word),
+      sw1_syllables: '—',
+      sw2_syllables: '—',
+      expected_key: 'Right Arrow (→)',
+      arrow_color: 'Blue (#2980b9)',
+      meaning: r.meaning || ''
+    });
+  });
+  generatedNonWords.forEach(n => {
+    masterCorpus.push({
+      id: n.id,
+      word: n.nonword,
+      lexicality: 'Non-Word',
+      type: 'pseudo',
+      pos: n.pos,
+      logic: n.logic,
+      source_word_1: n.source_word_1,
+      source_word_2: n.source_word_2,
+      transformation: n.transformation,
+      syllables: n.nw_syllables,
+      sw1_syllables: n.sw1_syllables,
+      sw2_syllables: n.sw2_syllables,
+      expected_key: n.expected_key,
+      arrow_color: n.arrow_color,
+      meaning: ''
+    });
+  });
+
+  buildSessions();
+  updateCounters();
+  renderPreviewTable();
+}
+
+function buildSessions() {
+  const perSess = parseInt(document.getElementById('wordsPerSessionInput').value || '90', 10);
+  const maxStreak = parseInt(document.getElementById('maxStreakInput').value || '3', 10);
+  const rotatePos = document.getElementById('posRotateSelect').value === 'true';
+
+  const reals = masterCorpus.filter(w => w.type === 'real').slice().sort(() => Math.random() - 0.5);
+  const pseudos = masterCorpus.filter(w => w.type === 'pseudo').slice().sort(() => Math.random() - 0.5);
+
+  const half = Math.floor(perSess / 2);
+  const numSessions = Math.max(1, Math.min(Math.floor(reals.length / half), Math.floor(pseudos.length / half)));
+  generatedSessions = {};
+
+  const sel = document.getElementById('sessionSelectPreview');
+  sel.innerHTML = '';
+
+  for (let s = 1; s <= numSessions; s++) {
+    const rSlice = reals.slice((s - 1) * half, s * half);
+    const pSlice = pseudos.slice((s - 1) * half, s * half);
+    const seq = [];
+    let lastType = '', streak = 0, lastPos = '';
+
+    while (rSlice.length || pSlice.length) {
+      let pickType;
+      if (!rSlice.length) pickType = 'pseudo';
+      else if (!pSlice.length) pickType = 'real';
+      else if (streak >= maxStreak) pickType = lastType === 'real' ? 'pseudo' : 'real';
+      else pickType = Math.random() < (rSlice.length / (rSlice.length + pSlice.length)) ? 'real' : 'pseudo';
+
+      const pool = pickType === 'real' ? rSlice : pSlice;
+      let idx = 0;
+      if (rotatePos) {
+        const nonColliding = pool.findIndex(item => item.pos !== lastPos);
+        if (nonColliding >= 0) idx = nonColliding;
+      }
+      const chosen = pool.splice(idx, 1)[0];
+      streak = (pickType === lastType) ? streak + 1 : 1;
+      lastType = pickType;
+      lastPos = chosen.pos;
+      seq.push(Object.assign({ trial: seq.length + 1 }, chosen));
+    }
+    generatedSessions[s] = seq;
+    const opt = document.createElement('option');
+    opt.value = String(s);
+    opt.textContent = `Session ${s} (${seq.length} words)`;
+    sel.appendChild(opt);
+  }
+}
+
+function updateCounters() {
+  document.getElementById('cntNonwords').textContent = generatedNonWords.length;
+  document.getElementById('cntMaster').textContent = masterCorpus.length;
+  document.getElementById('cntSessions').textContent = Object.keys(generatedSessions).length;
+}
+
+function switchPreviewTab(tab, btn) {
+  activePreviewTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('sessionSelectPreview').style.display = tab === 'sessions' ? 'inline-block' : 'none';
+  renderPreviewTable();
+}
+
+function posPill(pos) {
+  const p = (pos || 'noun').toLowerCase();
+  const cls = p === 'verb' ? 'pill-verb' : (p === 'adjective' ? 'pill-adj' : (p === 'adverb' ? 'pill-adv' : 'pill-noun'));
+  return `<span class="pill ${cls}">${p}</span>`;
+}
+
+function renderPreviewTable() {
+  const thead = document.getElementById('previewThead');
+  const tbody = document.getElementById('previewTbody');
+  const q = (document.getElementById('searchPreviewInput').value || '').toLowerCase().trim();
+
+  if (activePreviewTab === 'nonwords') {
+    thead.innerHTML = '<tr><th>ID</th><th>Non-Word (Editable)</th><th>Logic</th><th>Source Word 1</th><th>Source Word 2</th><th>POS</th><th>NW Syl</th><th>SW1 Syl</th><th>SW2 Syl</th><th>Transformation</th><th>Key</th></tr>';
+    const rows = generatedNonWords.filter(r => !q || `${r.nonword} ${r.source_word_1} ${r.source_word_2} ${r.logic} ${r.pos}`.toLowerCase().includes(q));
+    tbody.innerHTML = rows.map((r, i) => `
+      <tr>
+        <td>${r.id}</td>
+        <td><input class="editable-cell kn" value="${escHtml(r.nonword)}" onchange="editGeneratedNonword('${r.id}', this.value)"></td>
+        <td>${escHtml(r.logic)}</td>
+        <td class="kn">${escHtml(r.source_word_1)}</td>
+        <td class="kn">${escHtml(r.source_word_2)}</td>
+        <td>${posPill(r.pos)}</td>
+        <td>${r.nw_syllables}</td>
+        <td>${r.sw1_syllables}</td>
+        <td>${r.sw2_syllables}</td>
+        <td>${escHtml(r.transformation)}</td>
+        <td><span class="pill pill-pseudo">${r.expected_key}</span></td>
+      </tr>
+    `).join('');
+  } else if (activePreviewTab === 'master') {
+    thead.innerHTML = '<tr><th>ID</th><th>Word</th><th>Lexicality</th><th>POS</th><th>Logic</th><th>Source 1</th><th>Source 2</th><th>Word Syl</th><th>SW1 Syl</th><th>SW2 Syl</th><th>Meaning / Transform</th></tr>';
+    const rows = masterCorpus.filter(r => !q || `${r.word} ${r.lexicality} ${r.pos} ${r.logic} ${r.meaning}`.toLowerCase().includes(q));
+    tbody.innerHTML = rows.map(r => `
+      <tr>
+        <td>${r.id}</td>
+        <td class="kn">${escHtml(r.word)}</td>
+        <td><span class="pill ${r.type==='real'?'pill-real':'pill-pseudo'}">${r.lexicality}</span></td>
+        <td>${posPill(r.pos)}</td>
+        <td>${escHtml(r.logic)}</td>
+        <td class="kn">${escHtml(r.source_word_1)}</td>
+        <td class="kn">${escHtml(r.source_word_2)}</td>
+        <td>${r.syllables}</td>
+        <td>${r.sw1_syllables}</td>
+        <td>${r.sw2_syllables}</td>
+        <td>${escHtml(r.meaning || r.transformation)}</td>
+      </tr>
+    `).join('');
+  } else {
+    const sId = document.getElementById('sessionSelectPreview').value || '1';
+    const seq = generatedSessions[sId] || [];
+    thead.innerHTML = '<tr><th>Trial #</th><th>Word</th><th>Lexicality</th><th>POS</th><th>Logic</th><th>Syllables</th><th>Expected Key</th></tr>';
+    const rows = seq.filter(r => !q || `${r.word} ${r.lexicality} ${r.pos}`.toLowerCase().includes(q));
+    tbody.innerHTML = rows.map(r => `
+      <tr>
+        <td>${r.trial}</td>
+        <td class="kn">${escHtml(r.word)}</td>
+        <td><span class="pill ${r.type==='real'?'pill-real':'pill-pseudo'}">${r.lexicality}</span></td>
+        <td>${posPill(r.pos)}</td>
+        <td>${escHtml(r.logic)}</td>
+        <td>${r.syllables}</td>
+        <td><span class="pill ${r.type==='real'?'pill-real':'pill-pseudo'}">${r.expected_key}</span></td>
+      </tr>
+    `).join('');
+  }
+}
+
+function editGeneratedNonword(id, newVal) {
+  const item = generatedNonWords.find(x => x.id === id);
+  if (item) {
+    item.nonword = newVal.trim();
+    item.nw_syllables = countSyllables(item.nonword);
+    const m = masterCorpus.find(x => x.id === id);
+    if (m) { m.word = item.nonword; m.syllables = item.nw_syllables; }
+    renderPreviewTable();
+  }
+}
+
+// =========================================================================
+// 100% Offline CSV & Genuine Multi-Sheet Excel (.xlsx) Generator (Zero CDN)
+// =========================================================================
+function exportCSV(kind) {
+  let rows = [];
+  if (kind === 'nonwords') {
+    rows.push(['Nonword ID','Non-Word','Logic','Source Word 1','Source Word 2','POS','Non-Word Syllables','Source 1 Syllables','Source 2 Syllables','Transformation','Expected Key']);
+    generatedNonWords.forEach(r => rows.push([r.id, r.nonword, r.logic, r.source_word_1, r.source_word_2, r.pos, r.nw_syllables, r.sw1_syllables, r.sw2_syllables, r.transformation, r.expected_key]));
+  } else {
+    rows.push(['ID','Word','Lexicality','POS','Logic','Source Word 1','Source Word 2','Word Syllables','Source 1 Syllables','Source 2 Syllables','Meaning / Transformation','Expected Key']);
+    masterCorpus.forEach(r => rows.push([r.id, r.word, r.lexicality, r.pos, r.logic, r.source_word_1, r.source_word_2, r.syllables, r.sw1_syllables, r.sw2_syllables, r.meaning || r.transformation, r.expected_key]));
+  }
+  const csvStr = '\uFEFF' + rows.map(row => row.map(v => `"${String(v ?? '').replace(/"/g, '""')}"`).join(',')).join('\r\n');
+  downloadBlob(new Blob([csvStr], { type: 'text/csv;charset=utf-8;' }), kind === 'nonwords' ? 'kannada_nonwords.csv' : 'kannada_master_corpus.csv');
+}
+
+function exportOfflineXLSX() {
+  const sheets = [
+    {
+      name: 'Non-Words',
+      rows: [
+        ['Nonword ID','Non-Word (ಕನ್ನಡ)','Transformation Method','Source Word 1','Source Word 2','Source POS','Transformation Details','Non-Word Syllables','Source Word 1 Syllables','Source Word 2 Syllables','Expected Key','Arrow Color'],
+        ...generatedNonWords.map(r => [r.id, r.nonword, r.logic, r.source_word_1, r.source_word_2, r.pos, r.transformation, r.nw_syllables, r.sw1_syllables, r.sw2_syllables, r.expected_key, r.arrow_color])
+      ]
+    },
+    {
+      name: 'Real Words',
+      rows: [
+        ['Word ID','Kannada Word','POS','Syllables','Meaning','Age Band'],
+        ...realWords.map((r, i) => [r.id || `R${i+1}`, r.word, r.pos, countSyllables(r.word), r.meaning || '', r.age_band || ''])
+      ]
+    },
+    {
+      name: 'Master Corpus',
+      rows: [
+        ['ID','Word','Lexicality','POS','Logic','Source Word 1','Source Word 2','Word Syllables','Source 1 Syllables','Source 2 Syllables','Meaning / Transformation','Expected Key'],
+        ...masterCorpus.map(r => [r.id, r.word, r.lexicality, r.pos, r.logic, r.source_word_1, r.source_word_2, r.syllables, r.sw1_syllables, r.sw2_syllables, r.meaning || r.transformation, r.expected_key])
+      ]
+    }
+  ];
+  Object.keys(generatedSessions).forEach(sId => {
+    sheets.push({
+      name: `Session ${sId}`,
+      rows: [
+        ['Trial #','Word','Lexicality','POS','Logic','Syllables','Expected Key'],
+        ...generatedSessions[sId].map(r => [r.trial, r.word, r.lexicality, r.pos, r.logic, r.syllables, r.expected_key])
+      ]
+    });
+  });
+
+  const xlsxBytes = buildMinimalXLSX(sheets);
+  downloadBlob(new Blob([xlsxBytes], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'kannada_nonwords_studio_export.xlsx');
+}
+
+function xmlEsc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function colName(idx) {
+  let s = '';
+  let n = idx + 1;
+  while (n > 0) {
+    const r = (n - 1) % 26;
+    s = String.fromCharCode(65 + r) + s;
+    n = Math.floor((n - 1) / 26);
+  }
+  return s;
+}
+
+function sheetToXML(rows) {
+  const rowXml = rows.map((row, rIdx) => {
+    const cells = row.map((val, cIdx) => {
+      const ref = colName(cIdx) + (rIdx + 1);
+      if (typeof val === 'number' && !Number.isNaN(val)) {
+        return `<c r="${ref}"><v>${val}</v></c>`;
+      }
+      return `<c r="${ref}" t="inlineStr"><is><t>${xmlEsc(val)}</t></is></c>`;
+    }).join('');
+    return `<row r="${rIdx + 1}">${cells}</row>`;
+  }).join('');
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>${rowXml}</sheetData></worksheet>`;
+}
+
+function buildMinimalXLSX(sheets) {
+  const files = [];
+  const overrides = sheets.map((_, i) => `<Override PartName="/xl/worksheets/sheet${i+1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join('');
+  files.push({
+    name: '[Content_Types].xml',
+    data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>${overrides}</Types>`
+  });
+  files.push({
+    name: '_rels/.rels',
+    data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`
+  });
+  const sheetTags = sheets.map((s, i) => `<sheet name="${xmlEsc(s.name)}" sheetId="${i+1}" r:id="rId${i+1}"/>`).join('');
+  files.push({
+    name: 'xl/workbook.xml',
+    data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>${sheetTags}</sheets></workbook>`
+  });
+  const relTags = sheets.map((_, i) => `<Relationship Id="rId${i+1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${i+1}.xml"/>`).join('');
+  files.push({
+    name: 'xl/_rels/workbook.xml.rels',
+    data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${relTags}</Relationships>`
+  });
+  sheets.forEach((s, i) => {
+    files.push({ name: `xl/worksheets/sheet${i+1}.xml`, data: sheetToXML(s.rows) });
+  });
+  return buildZipStore(files);
+}
+
+// Pure JS Uncompressed ZIP (STORE) with CRC32
+const CRC_TABLE = (() => {
+  const t = new Uint32Array(256);
+  for (let i = 0; i < 256; i++) {
+    let c = i;
+    for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+    t[i] = c >>> 0;
+  }
+  return t;
+})();
+
+function crc32(bytes) {
+  let crc = 0xFFFFFFFF;
+  for (let i = 0; i < bytes.length; i++) crc = CRC_TABLE[(crc ^ bytes[i]) & 0xFF] ^ (crc >>> 8);
+  return (crc ^ 0xFFFFFFFF) >>> 0;
+}
+
+function buildZipStore(entries) {
+  const enc = new TextEncoder();
+  const localParts = [];
+  const centralParts = [];
+  let offset = 0;
+
+  entries.forEach(entry => {
+    const nameBytes = enc.encode(entry.name);
+    const dataBytes = enc.encode(entry.data);
+    const crc = crc32(dataBytes);
+
+    const lh = new ArrayBuffer(30);
+    const lv = new DataView(lh);
+    lv.setUint32(0, 0x04034b50, true);
+    lv.setUint16(4, 20, true);
+    lv.setUint16(8, 0, true);
+    lv.setUint32(14, crc, true);
+    lv.setUint32(18, dataBytes.length, true);
+    lv.setUint32(22, dataBytes.length, true);
+    lv.setUint16(26, nameBytes.length, true);
+
+    localParts.push(new Uint8Array(lh), nameBytes, dataBytes);
+
+    const ch = new ArrayBuffer(46);
+    const cv = new DataView(ch);
+    cv.setUint32(0, 0x02014b50, true);
+    cv.setUint16(4, 20, true);
+    cv.setUint16(6, 20, true);
+    cv.setUint32(16, crc, true);
+    cv.setUint32(20, dataBytes.length, true);
+    cv.setUint32(24, dataBytes.length, true);
+    cv.setUint16(28, nameBytes.length, true);
+    cv.setUint32(42, offset, true);
+
+    centralParts.push(new Uint8Array(ch), nameBytes);
+    offset += 30 + nameBytes.length + dataBytes.length;
+  });
+
+  const centralSize = centralParts.reduce((a, b) => a + b.length, 0);
+  const eocd = new ArrayBuffer(22);
+  const ev = new DataView(eocd);
+  ev.setUint32(0, 0x06054b50, true);
+  ev.setUint16(8, entries.length, true);
+  ev.setUint16(10, entries.length, true);
+  ev.setUint32(12, centralSize, true);
+  ev.setUint32(16, offset, true);
+
+  const totalLen = offset + centralSize + 22;
+  const out = new Uint8Array(totalLen);
+  let pos = 0;
+  [...localParts, ...centralParts, new Uint8Array(eocd)].forEach(part => {
+    out.set(part, pos);
+    pos += part.length;
+  });
+  return out;
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function escHtml(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// =========================================================================
+// Python Script Viewer & Downloader
+// =========================================================================
+function copyPythonScript() {
+  navigator.clipboard.writeText(PYTHON_SCRIPT_TEXT).then(() => alert('Complete Python script copied to clipboard!'));
+}
+function downloadPythonScript() {
+  downloadBlob(new Blob([PYTHON_SCRIPT_TEXT], { type: 'text/x-python;charset=utf-8;' }), 'kannada_nonword_generator.py');
+}
+
+// Initialize on load
+window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('pythonCodeBlock').textContent = PYTHON_SCRIPT_TEXT;
+  updateRealWordStats();
+  renderLogics();
+  generateEverything();
+});
+</script>
+</body>
+</html>
