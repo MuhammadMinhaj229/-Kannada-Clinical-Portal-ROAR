@@ -3,145 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<meta name="theme-color" content="#0f172a">
-<title>Kannada Non-Word & Corpus Studio (100% Offline &amp; Mobile Ready)</title>
+<meta name="theme-color" content="#ffffff">
+<title>Kannada Non-Word Generator</title>
 <style>
   :root {
-    --bg: #0f172a;
-    --surface: #1e293b;
-    --surface-2: #0b1220;
-    --border: #334155;
-    --text: #f8fafc;
-    --muted: #94a3b8;
-    --accent: #3b82f6;
-    --accent-hover: #2563eb;
-    --success: #10b981;
-    --warning: #f59e0b;
-    --danger: #ef4444;
-    --purple: #a855f7;
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f7f7f7;
+    --border: #d4d4d4;
+    --border-strong: #111111;
+    --text: #111111;
+    --muted: #525252;
+    --btn-bg: #111111;
+    --btn-text: #ffffff;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html { scroll-behavior: smooth; }
   body {
-    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nirmala UI", sans-serif;
-    background: var(--bg); color: var(--text); line-height: 1.5; overflow-x: hidden;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nirmala UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    overflow-x: hidden;
   }
-  header {
-    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-strong);
+  }
+  .topbar h1 {
+    margin: 0;
+    font-size: clamp(1.15rem, 3.5vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .topbar-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.15rem;
+  }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.65rem;
     border-bottom: 1px solid var(--border);
-    padding: 1.1rem 1.25rem;
-    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
   }
-  header h1 { margin: 0; font-size: clamp(1.1rem, 3.5vw, 1.4rem); }
-  header p { margin: 0.2rem 0 0; color: #cbd5e1; font-size: 0.82rem; }
-  .badge-offline {
-    background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid #059669;
-    padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+  .card-title {
+    font-size: 0.98rem;
+    font-weight: 700;
+    margin: 0;
   }
-  .quick-nav {
-    position: sticky; top: 0; z-index: 20; background: rgba(15, 23, 42, 0.94);
-    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
-    padding: 0.5rem 1rem; display: flex; gap: 0.45rem; overflow-x: auto; -webkit-overflow-scrolling: touch;
-  }
-  .quick-nav a {
-    color: #cbd5e1; text-decoration: none; font-size: 0.78rem; font-weight: 600;
-    background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
-    padding: 0.35rem 0.75rem; white-space: nowrap; flex-shrink: 0;
-  }
-  .quick-nav a:hover, .quick-nav a:active { background: var(--accent); color: #fff; border-color: var(--accent); }
-  main { max-width: 1400px; margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; gap: 1.15rem; }
-  .step-card {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.15rem;
-    scroll-margin-top: 56px;
-  }
-  .step-header {
-    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
-    margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
-  }
-  .step-title { display: flex; align-items: center; gap: 0.65rem; font-size: 1rem; font-weight: 700; }
-  .step-num {
-    width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; flex-shrink: 0;
-    display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;
-  }
-  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.85rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0.85rem; }
   .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
-  label { display: block; font-size: 0.78rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 600; }
+  label {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
   input[type="text"], input[type="number"], select, textarea {
-    width: 100%; background: var(--surface-2); color: var(--text); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.55rem 0.7rem; font-size: 0.9rem; font-family: inherit; min-height: 40px;
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.88rem;
+    font-family: inherit;
+    min-height: 40px;
   }
-  input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; }
-  textarea { resize: vertical; font-family: "Nirmala UI", monospace; }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--border-strong);
+  }
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #111111;
+    cursor: pointer;
+  }
   .btn {
-    background: var(--accent); color: #fff; border: none; border-radius: 8px;
-    padding: 0.55rem 0.95rem; font-size: 0.84rem; font-weight: 600; cursor: pointer;
-    display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 40px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid var(--btn-bg);
+    border-radius: 6px;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-height: 40px;
   }
-  .btn:hover { background: var(--accent-hover); }
-  .btn-secondary { background: #334155; }
-  .btn-secondary:hover { background: #475569; }
-  .btn-success { background: #059669; }
-  .btn-success:hover { background: #047857; }
-  .btn-danger { background: #dc2626; }
-  .btn-danger:hover { background: #b91c1c; }
-  .btn-sm { padding: 0.4rem 0.7rem; font-size: 0.78rem; min-height: 36px; }
+  .btn:hover { background: #262626; }
+  .btn-secondary {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
+  }
+  .btn-secondary:hover { background: #f3f3f3; }
+  .btn-success { background: #111111; color: #ffffff; border: 1px solid #111111; }
+  .btn-success:hover { background: #262626; }
+  .btn-danger {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid var(--border);
+  }
+  .btn-danger:hover { background: #111111; color: #ffffff; border-color: #111111; }
+  .btn-sm { padding: 0.35rem 0.65rem; font-size: 0.78rem; min-height: 34px; }
   .logic-row {
-    display: grid; grid-template-columns: 36px 1.6fr 1.2fr 95px 75px 1.4fr 48px;
-    gap: 0.6rem; align-items: center; background: var(--surface-2);
-    border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem; margin-bottom: 0.55rem;
+    display: grid;
+    grid-template-columns: 32px 1.6fr 1.2fr 90px 65px 1.4fr 42px;
+    gap: 0.55rem;
+    align-items: center;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
   }
   .prop-bar {
-    height: 12px; border-radius: 999px; background: var(--surface-2); overflow: hidden;
-    display: flex; border: 1px solid var(--border); margin: 0.75rem 0;
+    height: 8px;
+    border-radius: 999px;
+    background: #e5e5e5;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid var(--border);
+    margin: 0.75rem 0 0.4rem;
   }
-  .prop-seg { height: 100%; transition: width 0.2s; }
+  .prop-seg { height: 100%; transition: width 0.2s; border-right: 1px solid #ffffff; }
   .table-wrap {
-    overflow-x: auto; -webkit-overflow-scrolling: touch; max-height: 460px;
-    border: 1px solid var(--border); border-radius: 8px; width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 460px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
   }
-  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
   th {
-    position: sticky; top: 0; background: #0b1220; color: #cbd5e1; text-align: left;
-    padding: 0.6rem 0.65rem; border-bottom: 1px solid var(--border); z-index: 2; white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: #111111;
+    color: #ffffff;
+    text-align: left;
+    padding: 0.6rem 0.65rem;
+    z-index: 2;
+    white-space: nowrap;
+    font-weight: 600;
   }
-  td { padding: 0.5rem 0.65rem; border-bottom: 1px solid #1e293b; white-space: nowrap; }
-  tr:hover td { background: rgba(59, 130, 246, 0.08); }
+  td {
+    padding: 0.5rem 0.65rem;
+    border-bottom: 1px solid #e5e5e5;
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) td { background: #fafafa; }
+  tbody tr:hover td { background: #f0f0f0; }
   .kn { font-family: "Nirmala UI", "Noto Sans Kannada", sans-serif; font-size: 1.02rem; font-weight: 600; }
-  .pill { padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.72rem; font-weight: 600; display: inline-block; }
-  .pill-noun { background: #2e1065; color: #c084fc; }
-  .pill-verb { background: #082f49; color: #38bdf8; }
-  .pill-adj { background: #064e3b; color: #34d399; }
-  .pill-adv { background: #451a03; color: #fbbf24; }
-  .pill-real { background: #1e3a8a; color: #93c5fd; }
-  .pill-pseudo { background: #7f1d1d; color: #fca5a5; }
-  .stat-box {
-    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.9rem;
+  .pill {
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    background: #f5f5f5;
+    color: #111111;
   }
-  .stat-val { font-size: 1.25rem; font-weight: 700; color: #60a5fa; }
+  .pill-real { background: #111111; color: #ffffff; border-color: #111111; }
+  .pill-pseudo { background: #ffffff; color: #111111; border-color: #111111; }
+  .stat-box {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 0.9rem;
+  }
+  .stat-val { font-size: 1.25rem; font-weight: 700; color: #111111; }
   .stat-lbl { font-size: 0.75rem; color: var(--muted); }
   .tabs { display: flex; gap: 0.45rem; flex-wrap: wrap; }
   .tab {
-    background: var(--surface-2); color: var(--muted); border: 1px solid var(--border);
-    padding: 0.45rem 0.85rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.82rem; min-height: 38px;
+    background: #ffffff;
+    color: #525252;
+    border: 1px solid var(--border);
+    padding: 0.42rem 0.85rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.82rem;
+    min-height: 36px;
   }
-  .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .tab.active {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+  }
   pre {
-    background: #020617; color: #e2e8f0; padding: 0.9rem; border-radius: 8px; border: 1px solid var(--border);
-    overflow-x: auto; -webkit-overflow-scrolling: touch; max-height: 340px; font-size: 0.76rem; line-height: 1.45;
+    background: #fafafa;
+    color: #111111;
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 340px;
+    font-size: 0.76rem;
+    line-height: 1.45;
   }
   .editable-cell {
-    background: transparent; border: 1px solid transparent; color: var(--text); padding: 0.25rem 0.4rem;
-    border-radius: 4px; width: 120px; font-family: "Nirmala UI", sans-serif; font-size: 0.95rem;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text);
+    padding: 0.25rem 0.4rem;
+    border-radius: 4px;
+    width: 120px;
+    font-family: "Nirmala UI", sans-serif;
+    font-size: 0.95rem;
   }
-  .editable-cell:focus { background: var(--surface-2); border-color: var(--accent); outline: none; }
+  .editable-cell:focus { background: #ffffff; border-color: #111111; outline: none; }
+  details summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  details summary::-webkit-details-marker { display: none; }
 
   @media (max-width: 768px) {
-    header { padding: 0.9rem 1rem; }
-    main { padding: 0.75rem; gap: 0.9rem; }
-    .step-card { padding: 0.95rem 0.85rem; border-radius: 10px; }
+    main { padding: 0.75rem; gap: 0.85rem; }
+    .card { padding: 0.9rem 0.8rem; }
     .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .logic-row {
-      grid-template-columns: 32px 1fr 44px;
+      grid-template-columns: 30px 1fr 40px;
       grid-template-areas:
         "chk name del"
         "mode mode mode"
@@ -160,146 +280,135 @@
   }
   @media (max-width: 440px) {
     .grid-4 { grid-template-columns: 1fr; }
+    .topbar-actions { width: 100%; }
+    .topbar-actions .btn { flex: 1; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div>
-    <h1>Kannada Non-Word &amp; Corpus Studio</h1>
-    <p>Step-by-Step Editable Linguistic Generator, Dual-Constraint Sequencer &amp; Offline Excel (.xlsx) Exporter</p>
-  </div>
-  <span class="badge-offline">100% Offline &amp; Mobile Ready</span>
-</header>
-
-<nav class="quick-nav" aria-label="Step navigation">
-  <a href="#step1">1. Real Words</a>
-  <a href="#step2">2. Logics &amp; Proportions</a>
-  <a href="#step3">3. Sequencing</a>
-  <a href="#step4">4. Preview &amp; Excel</a>
-  <a href="#step5">5. Python Script</a>
-</nav>
-
 <main>
-  <!-- STEP 1: REAL WORDS CORPUS -->
-  <section class="step-card" id="step1">
-    <div class="step-header">
-      <div class="step-title"><span class="step-num">1</span> Real Words Corpus (Editable Input)</div>
-      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-        <button class="btn btn-secondary btn-sm" onclick="toggleRealWordsEditor()">Show / Edit Real Words List</button>
-        <button class="btn btn-secondary btn-sm" onclick="addBlankRealWord()">+ Add Real Word</button>
+  <div class="topbar">
+    <h1>Kannada Word &amp; Non-Word Generator</h1>
+    <div class="topbar-actions">
+      <button class="btn" onclick="generateEverything()">Generate</button>
+      <button class="btn btn-secondary" onclick="exportOfflineXLSX()">Download Excel (.xlsx)</button>
+    </div>
+  </div>
+
+  <!-- REAL WORDS -->
+  <section class="card">
+    <div class="card-head">
+      <h2 class="card-title">Words Input</h2>
+      <div style="display:flex; gap:0.45rem; flex-wrap:wrap;">
+        <button class="btn btn-secondary btn-sm" onclick="toggleRealWordsEditor()">Edit Real Words</button>
+        <button class="btn btn-secondary btn-sm" onclick="addBlankRealWord()">+ Add Word</button>
         <label class="btn btn-secondary btn-sm" style="margin:0; cursor:pointer;">
           Import CSV <input type="file" accept=".csv,.txt" style="display:none" onchange="importRealCSV(event)">
         </label>
-        <button class="btn btn-secondary btn-sm" onclick="resetDefaultRealWords()">Reset 270 Default Words</button>
+        <button class="btn btn-secondary btn-sm" onclick="resetDefaultRealWords()">Reset 270</button>
       </div>
     </div>
 
     <div class="grid-4">
-      <div class="stat-box"><div class="stat-val" id="statRealCount">270</div><div class="stat-lbl">Real Words Loaded</div></div>
-      <div class="stat-box"><div class="stat-val" id="statTargetNonwords">270</div><div class="stat-lbl">Target Non-Words to Generate</div></div>
-      <div class="stat-box"><div class="stat-val" id="statPosMix">—</div><div class="stat-lbl">POS Breakdown (N / V / Adj / Adv)</div></div>
+      <div class="stat-box"><div class="stat-val" id="statRealCount">270</div><div class="stat-lbl">Real Words</div></div>
+      <div class="stat-box"><div class="stat-val" id="statTargetNonwords">270</div><div class="stat-lbl">Non-Words Target</div></div>
+      <div class="stat-box"><div class="stat-val" id="statPosMix">—</div><div class="stat-lbl">N / V / Adj / Adv</div></div>
       <div class="stat-box">
-        <label for="targetTotalNonwords">Total Non-Words to Generate</label>
+        <label for="targetTotalNonwords">Total Non-Words</label>
         <input type="number" id="targetTotalNonwords" min="1" max="2000" value="270" onchange="recalcProportionality()">
       </div>
     </div>
 
-    <div id="realWordsEditorWrap" style="display:none; margin-top:1rem;">
-      <p style="font-size:0.8rem; color:var(--muted); margin-bottom:0.5rem;">Edit any word, POS, meaning, or syllable count inline. Changes automatically feed into Step 2 generation.</p>
-      <div class="table-wrap" style="max-height:280px;">
+    <div id="realWordsEditorWrap" style="display:none; margin-top:0.85rem;">
+      <div class="table-wrap" style="max-height:260px;">
         <table>
-          <thead><tr><th>#</th><th>Word (ಕನ್ನಡ)</th><th>POS</th><th>Syllables</th><th>Meaning</th><th>Action</th></tr></thead>
+          <thead><tr><th>#</th><th>Word (ಕನ್ನಡ)</th><th>POS</th><th>Syllables</th><th>Meaning</th><th></th></tr></thead>
           <tbody id="realWordsTbody"></tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- STEP 2: EDITABLE LOGICS & PROPORTIONALITY -->
-  <section class="step-card" id="step2">
-    <div class="step-header">
-      <div class="step-title"><span class="step-num">2</span> Non-Word Generation Logics &amp; Proportionality (4 + Custom 5th+ Logics)</div>
-      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-        <button class="btn btn-secondary btn-sm" onclick="addCustomLogic()">+ Add 5th / Custom Logic</button>
-        <button class="btn btn-secondary btn-sm" onclick="normalizeProportions()">Auto-Balance to 100%</button>
+  <!-- LOGICS & PROPORTIONS -->
+  <section class="card">
+    <div class="card-head">
+      <h2 class="card-title">Logics &amp; Proportions</h2>
+      <div style="display:flex; gap:0.45rem; flex-wrap:wrap;">
+        <button class="btn btn-secondary btn-sm" onclick="addCustomLogic()">+ Add Logic</button>
+        <button class="btn btn-secondary btn-sm" onclick="normalizeProportions()">Balance 100%</button>
       </div>
     </div>
 
     <div id="logicsContainer"></div>
 
     <div class="prop-bar" id="propBar"></div>
-    <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--muted); margin-bottom:1rem;">
-      <span id="propSummaryText">Total Allocation: 100% (270 words)</span>
-      <span>Strict Syllable Match &amp; Non-Repeating Phoneme Queues Active</span>
+    <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; font-size:0.78rem; color:var(--muted); margin-bottom:0.85rem;">
+      <span id="propSummaryText">Assigned: 270 / 270</span>
+      <span>Non-repeating consonant &amp; vowel queues enabled</span>
     </div>
 
-    <div class="grid-2">
-      <div>
-        <label for="consonantPoolInput">Non-Repeating Consonant Queue (comma-separated)</label>
-        <input type="text" id="consonantPoolInput" value="ಕ,ಗ,ಚ,ಜ,ಟ,ಡ,ಣ,ತ,ದ,ನ,ಪ,ಬ,ಮ,ಯ,ರ,ಲ,ವ,ಶ,ಸ,ಹ,ಳ">
+    <details>
+      <summary>Phoneme Queues &amp; Session Rules <span style="font-size:0.78rem;color:var(--muted);font-weight:500;">Tap to expand</span></summary>
+      <div style="margin-top:0.85rem; display:flex; flex-direction:column; gap:0.85rem;">
+        <div class="grid-2">
+          <div>
+            <label for="consonantPoolInput">Consonant Queue (comma-separated)</label>
+            <input type="text" id="consonantPoolInput" value="ಕ,ಗ,ಚ,ಜ,ಟ,ಡ,ಣ,ತ,ದ,ನ,ಪ,ಬ,ಮ,ಯ,ರ,ಲ,ವ,ಶ,ಸ,ಹ,ಳ">
+          </div>
+          <div>
+            <label for="vowelPoolInput">Vowel / Matra Queue (comma-separated)</label>
+            <input type="text" id="vowelPoolInput" value="ಾ,ಿ,ೀ,ು,ೂ,ೆ,ೇ,ೊ,ೋ">
+          </div>
+        </div>
+        <div class="grid-4">
+          <div>
+            <label for="wordsPerSessionInput">Words Per Session</label>
+            <input type="number" id="wordsPerSessionInput" min="10" max="300" value="90">
+          </div>
+          <div>
+            <label for="maxStreakInput">Max Same-Type Streak</label>
+            <input type="number" id="maxStreakInput" min="1" max="10" value="3">
+          </div>
+          <div>
+            <label for="posRotateSelect">POS Rotation</label>
+            <select id="posRotateSelect">
+              <option value="true" selected>On (Avoid Repeats)</option>
+              <option value="false">Off</option>
+            </select>
+          </div>
+          <div>
+            <label for="strictSyllableSelect">Syllable Match</label>
+            <select id="strictSyllableSelect">
+              <option value="true" selected>Strict Match</option>
+              <option value="false">Allow Variance</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="vowelPoolInput">Non-Repeating Matra / Vowel Queue (comma-separated)</label>
-        <input type="text" id="vowelPoolInput" value="ಾ,ಿ,ೀ,ು,ೂ,ೆ,ೇ,ೊ,ೋ">
-      </div>
-    </div>
+    </details>
   </section>
 
-  <!-- STEP 3: SEQUENCING & CONSTRAINTS -->
-  <section class="step-card" id="step3">
-    <div class="step-header">
-      <div class="step-title"><span class="step-num">3</span> Session Partitioning &amp; Randomness Rules</div>
-      <button class="btn" onclick="generateEverything()">&#9889; Generate Non-Words &amp; Sequences</button>
-    </div>
-
-    <div class="grid-4">
-      <div>
-        <label for="wordsPerSessionInput">Words Per Session (50% Real / 50% Non-Word)</label>
-        <input type="number" id="wordsPerSessionInput" min="10" max="300" value="90">
-      </div>
-      <div>
-        <label for="maxStreakInput">Max Lexicality Streak (Unpredictable Runs)</label>
-        <input type="number" id="maxStreakInput" min="1" max="10" value="3">
-      </div>
-      <div>
-        <label for="posRotateSelect">POS Rotation (Avoid Consecutive Same POS)</label>
-        <select id="posRotateSelect">
-          <option value="true" selected>Enabled (Smart POS Rotation)</option>
-          <option value="false">Disabled (Random POS)</option>
-        </select>
-      </div>
-      <div>
-        <label for="strictSyllableSelect">Syllable Count Preservation</label>
-        <select id="strictSyllableSelect">
-          <option value="true" selected>Strict Match (Verify &amp; Log Both)</option>
-          <option value="false">Allow Variance</option>
-        </select>
-      </div>
-    </div>
-  </section>
-
-  <!-- STEP 4: LIVE PREVIEW, INLINE EDIT & OFFLINE EXCEL EXPORT -->
-  <section class="step-card" id="step4">
-    <div class="step-header">
-      <div class="step-title"><span class="step-num">4</span> Generated Corpus Preview &amp; Offline Excel (.xlsx) Export</div>
-      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-        <button class="btn btn-success" onclick="exportOfflineXLSX()">&#128196; Download Complete Excel (.xlsx)</button>
-        <button class="btn btn-secondary btn-sm" onclick="exportCSV('nonwords')">Export Non-Words CSV</button>
-        <button class="btn btn-secondary btn-sm" onclick="exportCSV('master')">Export Master Corpus CSV</button>
+  <!-- PREVIEW & EXPORT -->
+  <section class="card">
+    <div class="card-head">
+      <h2 class="card-title">Preview &amp; Export</h2>
+      <div style="display:flex; gap:0.45rem; flex-wrap:wrap;">
+        <button class="btn btn-sm" onclick="exportOfflineXLSX()">Download Excel (.xlsx)</button>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV('nonwords')">Non-Words CSV</button>
+        <button class="btn btn-secondary btn-sm" onclick="exportCSV('master')">Master CSV</button>
       </div>
     </div>
 
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.85rem;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.65rem; margin-bottom:0.8rem;">
       <div class="tabs">
         <button class="tab active" onclick="switchPreviewTab('nonwords', this)">Non-Words (<span id="cntNonwords">0</span>)</button>
-        <button class="tab" onclick="switchPreviewTab('master', this)">Master Corpus (<span id="cntMaster">0</span>)</button>
+        <button class="tab" onclick="switchPreviewTab('master', this)">Master (<span id="cntMaster">0</span>)</button>
         <button class="tab" onclick="switchPreviewTab('sessions', this)">Sessions (<span id="cntSessions">0</span>)</button>
       </div>
-      <div style="display:flex; gap:0.5rem; align-items:center;">
+      <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
         <select id="sessionSelectPreview" style="width:auto; display:none;" onchange="renderPreviewTable()"></select>
-        <input type="text" id="searchPreviewInput" placeholder="Filter words, source, logic, POS..." style="width:240px;" oninput="renderPreviewTable()">
+        <input type="text" id="searchPreviewInput" placeholder="Search word, logic, POS..." style="width:220px;" oninput="renderPreviewTable()">
       </div>
     </div>
 
@@ -311,16 +420,18 @@
     </div>
   </section>
 
-  <!-- STEP 5: COMPLETE PYTHON SCRIPT -->
-  <section class="step-card" id="step5">
-    <div class="step-header">
-      <div class="step-title"><span class="step-num">5</span> Complete Python Non-Word Generation Script (Local Verification)</div>
-      <div style="display:flex; gap:0.5rem;">
-        <button class="btn btn-secondary btn-sm" onclick="copyPythonScript()">Copy Python Script</button>
-        <button class="btn btn-sm" onclick="downloadPythonScript()">Download .py File</button>
+  <!-- PYTHON SCRIPT (COLLAPSED BY DEFAULT FOR SIMPLICITY) -->
+  <section class="card">
+    <details>
+      <summary>Python Script (Local Reference) <span style="font-size:0.78rem;color:var(--muted);font-weight:500;">Tap to view / download</span></summary>
+      <div style="margin-top:0.85rem;">
+        <div style="display:flex; gap:0.5rem; margin-bottom:0.65rem; flex-wrap:wrap;">
+          <button class="btn btn-secondary btn-sm" onclick="copyPythonScript()">Copy Script</button>
+          <button class="btn btn-sm" onclick="downloadPythonScript()">Download .py</button>
+        </div>
+        <pre id="pythonCodeBlock"></pre>
       </div>
-    </div>
-    <pre id="pythonCodeBlock"></pre>
+    </details>
   </section>
 </main>
 
@@ -339,11 +450,11 @@ let activePreviewTab = 'nonwords';
 
 // Editable Logic Definitions (Supports 4 built-in + custom 5th+ logics)
 let logicsConfig = [
-  { id: 'L1', enabled: true, name: 'Logic 1: Consonant Replacement', mode: 'consonant_replace', count: 68, color: '#3b82f6', desc: 'Replace consonant using non-repeating queue; preserves syllables' },
-  { id: 'L2', enabled: true, name: 'Logic 2: Vowel / Matra Replacement', mode: 'vowel_replace', count: 68, color: '#10b981', desc: 'Replace swara/matra using non-repeating queue; preserves syllables' },
-  { id: 'L3', enabled: true, name: 'Logic 3: Affix Splicing (Suffix1 + Prefix2)', mode: 'affix_splice', count: 67, color: '#f59e0b', desc: 'Splice suffix of Source Word 1 + prefix of Source Word 2' },
-  { id: 'L4', enabled: true, name: 'Logic 4: Prefix Shift (Prefix1 + Suffix2)', mode: 'prefix_shift', count: 67, color: '#a855f7', desc: 'Combine prefix of Source Word 1 + suffix of Source Word 2' },
-  { id: 'L5', enabled: false, name: 'Logic 5: Custom Syllable Reversal / Swap', mode: 'syllable_swap', count: 0, color: '#ec4899', desc: 'Reverse or swap aksharas while preserving syllable count' }
+  { id: 'L1', enabled: true, name: 'Logic 1: Consonant Replacement', mode: 'consonant_replace', count: 68, color: '#111111', desc: 'Replace consonant using non-repeating queue; preserves syllables' },
+  { id: 'L2', enabled: true, name: 'Logic 2: Vowel / Matra Replacement', mode: 'vowel_replace', count: 68, color: '#404040', desc: 'Replace swara/matra using non-repeating queue; preserves syllables' },
+  { id: 'L3', enabled: true, name: 'Logic 3: Affix Splicing (Suffix1 + Prefix2)', mode: 'affix_splice', count: 67, color: '#737373', desc: 'Splice suffix of Source Word 1 + prefix of Source Word 2' },
+  { id: 'L4', enabled: true, name: 'Logic 4: Prefix Shift (Prefix1 + Suffix2)', mode: 'prefix_shift', count: 67, color: '#a3a3a3', desc: 'Combine prefix of Source Word 1 + suffix of Source Word 2' },
+  { id: 'L5', enabled: false, name: 'Logic 5: Custom Syllable Reversal / Swap', mode: 'syllable_swap', count: 0, color: '#d4d4d4', desc: 'Reverse or swap aksharas while preserving syllable count' }
 ];
 
 // =========================================================================
@@ -499,7 +610,7 @@ function renderLogics() {
         <div>
           <input type="number" min="0" max="2000" value="${lg.count}" onchange="updateLogic(${idx}, 'count', parseInt(this.value || 0, 10))">
         </div>
-        <div style="font-size:0.82rem; text-align:center; color:${lg.color}; font-weight:700;">${pct}%</div>
+        <div style="font-size:0.82rem; text-align:center; color:#111111; font-weight:700;">${pct}%</div>
         <input type="text" value="${escHtml(lg.desc)}" onchange="updateLogic(${idx}, 'desc', this.value)">
         <button class="btn btn-danger btn-sm" onclick="removeLogic(${idx})" ${logicsConfig.length <= 1 ? 'disabled' : ''}>&times;</button>
       </div>
