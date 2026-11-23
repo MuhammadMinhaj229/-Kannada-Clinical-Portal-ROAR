@@ -1189,9 +1189,9 @@ function deleteStudent(idx) {
 //  TAB 2 — Word Bank & Master Corpus Management
 // ================================================================
 function initWordsTab() {
-  if (localStorage.getItem('roarCorpusVersion') !== 'kn13') {
+  if (localStorage.getItem('roarCorpusVersion') !== 'kn14') {
     localStorage.removeItem('roarCustomSessionsData');
-    localStorage.setItem('roarCorpusVersion', 'kn13');
+    localStorage.setItem('roarCorpusVersion', 'kn14');
   }
   var stored = LS.get('roarCustomSessionsData', null);
   if (stored && stored['1'] && stored['1'].sequence) {

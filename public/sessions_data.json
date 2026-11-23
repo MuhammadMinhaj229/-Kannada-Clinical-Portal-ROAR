@@ -81,7 +81,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಟ್ಟಿಸುದೊರ",
+        "word": "ಟ್ಟಿಸುರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -172,7 +172,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ಉದ್ದೇಶಿಧ್ವನಿಯು",
+        "word": "ಉದ್ದೇಶಿಧ್ವಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -224,7 +224,7 @@
       },
       {
         "trial_number": 14,
-        "word": "ವಿಸುನೆರೆ",
+        "word": "ವಿಸುರೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -386,7 +386,7 @@
         "pos": "verb",
         "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 5,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -464,7 +464,7 @@
         "pos": "verb",
         "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 7,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -484,7 +484,7 @@
       },
       {
         "trial_number": 34,
-        "word": "ರೆಸುಹಳ",
+        "word": "ರೆಸುಳ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -523,7 +523,7 @@
       },
       {
         "trial_number": 37,
-        "word": "ಡಿಯುಹಿತ",
+        "word": "ಡಿಯುತ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -536,7 +536,7 @@
       },
       {
         "trial_number": 38,
-        "word": "ಡಿಸುಸಾಲಾ",
+        "word": "ಡಿಸುಲಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -601,7 +601,7 @@
       },
       {
         "trial_number": 43,
-        "word": "ರಾಟವುಗಾಳಿಪ",
+        "word": "ರಾಟವುಗಾಪ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -653,7 +653,7 @@
       },
       {
         "trial_number": 47,
-        "word": "ಚಡಿತವು",
+        "word": "ಚಡಿವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -679,7 +679,7 @@
       },
       {
         "trial_number": 49,
-        "word": "ಳಿದುಅನಿ",
+        "word": "ಳಿದುನಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -900,7 +900,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಬಿಳಿರುಚು",
+        "word": "ಬಿಳಿಚು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -913,7 +913,7 @@
       },
       {
         "trial_number": 67,
-        "word": "ಬೆರೆಳತು",
+        "word": "ಬೆರೆತು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -945,7 +945,7 @@
         "pos": "verb",
         "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 7,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -978,7 +978,7 @@
       },
       {
         "trial_number": 72,
-        "word": "ಟವುಅಳಿ",
+        "word": "ಟವುಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -1004,7 +1004,7 @@
       },
       {
         "trial_number": 74,
-        "word": "ಸಮಳಾಗಿ",
+        "word": "ಸಮಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -1108,7 +1108,7 @@
       },
       {
         "trial_number": 82,
-        "word": "ಮನೆಬೋಳಾ",
+        "word": "ಮನೆಳಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -1199,7 +1199,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ಒಣಗಲೂ",
+        "word": "ಒಣಲೂ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -1827,7 +1827,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಟ್ಟಿಸುದೊರ",
+        "word": "ಟ್ಟಿಸುರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -1866,7 +1866,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ಉದ್ದೇಶಿಧ್ವನಿಯು",
+        "word": "ಉದ್ದೇಶಿಧ್ವಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -1892,7 +1892,7 @@
       },
       {
         "trial_number": 14,
-        "word": "ವಿಸುನೆರೆ",
+        "word": "ವಿಸುರೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2002,7 +2002,7 @@
         "pos": "verb",
         "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 5,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -2028,7 +2028,7 @@
         "pos": "verb",
         "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 7,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -2048,7 +2048,7 @@
       },
       {
         "trial_number": 34,
-        "word": "ರೆಸುಹಳ",
+        "word": "ರೆಸುಳ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2061,7 +2061,7 @@
       },
       {
         "trial_number": 37,
-        "word": "ಡಿಯುಹಿತ",
+        "word": "ಡಿಯುತ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -2074,7 +2074,7 @@
       },
       {
         "trial_number": 38,
-        "word": "ಡಿಸುಸಾಲಾ",
+        "word": "ಡಿಸುಲಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2100,7 +2100,7 @@
       },
       {
         "trial_number": 43,
-        "word": "ರಾಟವುಗಾಳಿಪ",
+        "word": "ರಾಟವುಗಾಪ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -2139,7 +2139,7 @@
       },
       {
         "trial_number": 47,
-        "word": "ಚಡಿತವು",
+        "word": "ಚಡಿವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -2152,7 +2152,7 @@
       },
       {
         "trial_number": 49,
-        "word": "ಳಿದುಅನಿ",
+        "word": "ಳಿದುನಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -2256,7 +2256,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಬಿಳಿರುಚು",
+        "word": "ಬಿಳಿಚು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -2269,7 +2269,7 @@
       },
       {
         "trial_number": 67,
-        "word": "ಬೆರೆಳತು",
+        "word": "ಬೆರೆತು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2288,14 +2288,14 @@
         "pos": "verb",
         "source_word": "ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 7,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
       },
       {
         "trial_number": 72,
-        "word": "ಟವುಅಳಿ",
+        "word": "ಟವುಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -2308,7 +2308,7 @@
       },
       {
         "trial_number": 74,
-        "word": "ಸಮಳಾಗಿ",
+        "word": "ಸಮಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -2360,7 +2360,7 @@
       },
       {
         "trial_number": 82,
-        "word": "ಮನೆಬೋಳಾ",
+        "word": "ಮನೆಳಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -2386,7 +2386,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ಒಣಗಲೂ",
+        "word": "ಒಣಲೂ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -2611,7 +2611,7 @@
       },
       {
         "trial_number": 13,
-        "word": "ಜ್ಜುತ್ತಾಕುಂಟ",
+        "word": "ಜ್ಜುತ್ತಾಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2650,7 +2650,7 @@
       },
       {
         "trial_number": 16,
-        "word": "ಟಲುಸೊಂಡಿ",
+        "word": "ಟಲುಡಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -2767,7 +2767,7 @@
       },
       {
         "trial_number": 25,
-        "word": "ಪಿಸುತ್ತಾಅಪ್ಪಳಿ",
+        "word": "ಪಿಸುತ್ತಾಅಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2780,7 +2780,7 @@
       },
       {
         "trial_number": 26,
-        "word": "ಹೊಸರಿಸು",
+        "word": "ಹೊಸಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -2858,7 +2858,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ಧಾವಿಪ್ತನು",
+        "word": "ಧಾವಿನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -2975,7 +2975,7 @@
       },
       {
         "trial_number": 41,
-        "word": "ಆದೇಮ್ಮನು",
+        "word": "ಆದೇನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -3079,7 +3079,7 @@
       },
       {
         "trial_number": 49,
-        "word": "ತ್ತೆಯುಖುಷಿ",
+        "word": "ತ್ತೆಯುಷಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -3111,7 +3111,7 @@
         "pos": "adjective",
         "source_word": "ಶ್ರೇಷ್ಠವು",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 3,
+        "syllables": 4,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -3196,7 +3196,7 @@
       },
       {
         "trial_number": 58,
-        "word": "ಉಜ್ಜುಟನು",
+        "word": "ಉಜ್ಜುನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -3261,7 +3261,7 @@
       },
       {
         "trial_number": 63,
-        "word": "ಆಟಳಿಲು",
+        "word": "ಆಟಲು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -3456,7 +3456,7 @@
       },
       {
         "trial_number": 78,
-        "word": "ತಂಪಾಗೆಲ್ಲಾ",
+        "word": "ತಂಪಾಲ್ಲಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -3501,7 +3501,7 @@
         "pos": "adjective",
         "source_word": "ಶ್ರೇಷ್ಠವು",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 3,
+        "syllables": 4,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -3547,7 +3547,7 @@
       },
       {
         "trial_number": 85,
-        "word": "ಕೂಡಿಲಾಗಿ",
+        "word": "ಕೂಡಿಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4292,7 +4292,7 @@
       },
       {
         "trial_number": 13,
-        "word": "ಜ್ಜುತ್ತಾಕುಂಟ",
+        "word": "ಜ್ಜುತ್ತಾಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4318,7 +4318,7 @@
       },
       {
         "trial_number": 16,
-        "word": "ಟಲುಸೊಂಡಿ",
+        "word": "ಟಲುಡಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -4383,7 +4383,7 @@
       },
       {
         "trial_number": 25,
-        "word": "ಪಿಸುತ್ತಾಅಪ್ಪಳಿ",
+        "word": "ಪಿಸುತ್ತಾಅಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4396,7 +4396,7 @@
       },
       {
         "trial_number": 26,
-        "word": "ಹೊಸರಿಸು",
+        "word": "ಹೊಸಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -4435,7 +4435,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ಧಾವಿಪ್ತನು",
+        "word": "ಧಾವಿನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4474,7 +4474,7 @@
       },
       {
         "trial_number": 41,
-        "word": "ಆದೇಮ್ಮನು",
+        "word": "ಆದೇನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4526,7 +4526,7 @@
       },
       {
         "trial_number": 49,
-        "word": "ತ್ತೆಯುಖುಷಿ",
+        "word": "ತ್ತೆಯುಷಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -4558,7 +4558,7 @@
         "pos": "adjective",
         "source_word": "ಶ್ರೇಷ್ಠವು",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 3,
+        "syllables": 4,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -4591,7 +4591,7 @@
       },
       {
         "trial_number": 58,
-        "word": "ಉಜ್ಜುಟನು",
+        "word": "ಉಜ್ಜುನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4630,7 +4630,7 @@
       },
       {
         "trial_number": 63,
-        "word": "ಆಟಳಿಲು",
+        "word": "ಆಟಲು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -4708,7 +4708,7 @@
       },
       {
         "trial_number": 78,
-        "word": "ತಂಪಾಗೆಲ್ಲಾ",
+        "word": "ತಂಪಾಲ್ಲಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -4727,7 +4727,7 @@
         "pos": "adjective",
         "source_word": "ಶ್ರೇಷ್ಠವು",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 3,
+        "syllables": 4,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -4760,7 +4760,7 @@
       },
       {
         "trial_number": 85,
-        "word": "ಕೂಡಿಲಾಗಿ",
+        "word": "ಕೂಡಿಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -4881,7 +4881,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಅತ್ತೆಷಿಯು",
+        "word": "ಅತ್ತೆಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -4933,7 +4933,7 @@
       },
       {
         "trial_number": 7,
-        "word": "ಗಂಟಡಿಲು",
+        "word": "ಗಂಟಲು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -4972,7 +4972,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ನೆನಪಿಳಿಸುತ್ತಾ",
+        "word": "ನೆನಪಿಳಿತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -5011,7 +5011,7 @@
       },
       {
         "trial_number": 13,
-        "word": "ಇಲಿಮೇಲೆ",
+        "word": "ಇಲಿಲೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -5206,7 +5206,7 @@
       },
       {
         "trial_number": 28,
-        "word": "ಲ್ಪವುತಿದ್ದು",
+        "word": "ಲ್ಪವುದ್ದು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -5245,7 +5245,7 @@
       },
       {
         "trial_number": 31,
-        "word": "ಗವುರಾಣಿ",
+        "word": "ಗವುಣಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -5297,7 +5297,7 @@
       },
       {
         "trial_number": 35,
-        "word": "ಪ್ಪನುಮಲ",
+        "word": "ಪ್ಪನುಲ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -5401,7 +5401,7 @@
       },
       {
         "trial_number": 43,
-        "word": "ಯಿಯುಟೋಪಿ",
+        "word": "ಯಿಯುಪಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -5414,7 +5414,7 @@
       },
       {
         "trial_number": 44,
-        "word": "ಉಳಿನಿಸು",
+        "word": "ಉಳಿಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -5635,7 +5635,7 @@
       },
       {
         "trial_number": 61,
-        "word": "ರಿಸುಕೋತಿ",
+        "word": "ರಿಸುತಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -5700,7 +5700,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಅಪ್ಪಲಗು",
+        "word": "ಅಪ್ಪಗು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -5843,7 +5843,7 @@
       },
       {
         "trial_number": 77,
-        "word": "ತೋರಿತಿಯು",
+        "word": "ತೋರಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -5856,7 +5856,7 @@
       },
       {
         "trial_number": 78,
-        "word": "ಅಕಸ್ಮಾಹಿಸುತ್ತಾ",
+        "word": "ಅಕಸ್ಮಾಹಿತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -5895,7 +5895,7 @@
       },
       {
         "trial_number": 81,
-        "word": "ಸ್ವಲ್ಪದ್ದುತ್ತಾ",
+        "word": "ಸ್ವಲ್ಪತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -5953,7 +5953,7 @@
         "pos": "verb",
         "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 4,
+        "syllables": 5,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -6614,7 +6614,7 @@
     "pseudo": [
       {
         "trial_number": 3,
-        "word": "ಅತ್ತೆಷಿಯು",
+        "word": "ಅತ್ತೆಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6653,7 +6653,7 @@
       },
       {
         "trial_number": 7,
-        "word": "ಗಂಟಡಿಲು",
+        "word": "ಗಂಟಲು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6679,7 +6679,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ನೆನಪಿಳಿಸುತ್ತಾ",
+        "word": "ನೆನಪಿಳಿತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -6692,7 +6692,7 @@
       },
       {
         "trial_number": 13,
-        "word": "ಇಲಿಮೇಲೆ",
+        "word": "ಇಲಿಲೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6783,7 +6783,7 @@
       },
       {
         "trial_number": 28,
-        "word": "ಲ್ಪವುತಿದ್ದು",
+        "word": "ಲ್ಪವುದ್ದು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -6809,7 +6809,7 @@
       },
       {
         "trial_number": 31,
-        "word": "ಗವುರಾಣಿ",
+        "word": "ಗವುಣಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6835,7 +6835,7 @@
       },
       {
         "trial_number": 35,
-        "word": "ಪ್ಪನುಮಲ",
+        "word": "ಪ್ಪನುಲ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6887,7 +6887,7 @@
       },
       {
         "trial_number": 43,
-        "word": "ಯಿಯುಟೋಪಿ",
+        "word": "ಯಿಯುಪಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -6900,7 +6900,7 @@
       },
       {
         "trial_number": 44,
-        "word": "ಉಳಿನಿಸು",
+        "word": "ಉಳಿಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -6991,7 +6991,7 @@
       },
       {
         "trial_number": 61,
-        "word": "ರಿಸುಕೋತಿ",
+        "word": "ರಿಸುತಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -7030,7 +7030,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಅಪ್ಪಲಗು",
+        "word": "ಅಪ್ಪಗು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -7108,7 +7108,7 @@
       },
       {
         "trial_number": 77,
-        "word": "ತೋರಿತಿಯು",
+        "word": "ತೋರಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -7121,7 +7121,7 @@
       },
       {
         "trial_number": 78,
-        "word": "ಅಕಸ್ಮಾಹಿಸುತ್ತಾ",
+        "word": "ಅಕಸ್ಮಾಹಿತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -7147,7 +7147,7 @@
       },
       {
         "trial_number": 81,
-        "word": "ಸ್ವಲ್ಪದ್ದುತ್ತಾ",
+        "word": "ಸ್ವಲ್ಪತ್ತಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -7166,7 +7166,7 @@
         "pos": "verb",
         "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 4,
+        "syllables": 5,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -7255,7 +7255,7 @@
     "sequence": [
       {
         "trial_number": 1,
-        "word": "ರುತ್ತಾಬೇಳೆ",
+        "word": "ರುತ್ತಾಳೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -7372,7 +7372,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ಡಿಯುಊಹಿ",
+        "word": "ಡಿಯುಹಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -7398,7 +7398,7 @@
       },
       {
         "trial_number": 12,
-        "word": "ಲಿಯುಆಮೇ",
+        "word": "ಲಿಯುಮೇ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -7489,7 +7489,7 @@
       },
       {
         "trial_number": 19,
-        "word": "ನೇಯ್ಗೆದ್ರನು",
+        "word": "ನೇಯ್ಗೆನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -7541,7 +7541,7 @@
       },
       {
         "trial_number": 23,
-        "word": "ಸತುಧರಿ",
+        "word": "ಸತುರಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -7554,7 +7554,7 @@
       },
       {
         "trial_number": 24,
-        "word": "ಮುಕುಇಲ್ಲೇ",
+        "word": "ಮುಕುಲ್ಲೇ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -7840,7 +7840,7 @@
       },
       {
         "trial_number": 46,
-        "word": "ಜಾಣರವು",
+        "word": "ಜಾಣವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -7944,7 +7944,7 @@
       },
       {
         "trial_number": 54,
-        "word": "ಣಗುಈಗ",
+        "word": "ಣಗುಗ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -7976,7 +7976,7 @@
         "pos": "verb",
         "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 4,
+        "syllables": 5,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -8009,7 +8009,7 @@
       },
       {
         "trial_number": 59,
-        "word": "ಜಾಗಣಿಯು",
+        "word": "ಜಾಗಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -8048,7 +8048,7 @@
       },
       {
         "trial_number": 62,
-        "word": "ಳಕುಜೋರಾ",
+        "word": "ಳಕುರಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -8100,7 +8100,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ",
+        "word": "ಶಿಸುತ್ತಾಪ್ರಧ್ವ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -8204,7 +8204,7 @@
       },
       {
         "trial_number": 74,
-        "word": "ವಿಸುಆಪ್ತ",
+        "word": "ವಿಸುಪ್ತ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -8334,7 +8334,7 @@
       },
       {
         "trial_number": 84,
-        "word": "ಘರ್ಜಟ್ಟನೆ",
+        "word": "ಘರ್ಜನೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -8386,7 +8386,7 @@
       },
       {
         "trial_number": 88,
-        "word": "ಬಾಗಿಜ್ಜಿಯು",
+        "word": "ಬಾಗಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -8412,7 +8412,7 @@
       },
       {
         "trial_number": 90,
-        "word": "ಭ್ರವುದುಷ್ಟ",
+        "word": "ಭ್ರವುಷ್ಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9014,7 +9014,7 @@
     "pseudo": [
       {
         "trial_number": 1,
-        "word": "ರುತ್ತಾಬೇಳೆ",
+        "word": "ರುತ್ತಾಳೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9079,7 +9079,7 @@
       },
       {
         "trial_number": 10,
-        "word": "ಡಿಯುಊಹಿ",
+        "word": "ಡಿಯುಹಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9092,7 +9092,7 @@
       },
       {
         "trial_number": 12,
-        "word": "ಲಿಯುಆಮೇ",
+        "word": "ಲಿಯುಮೇ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9144,7 +9144,7 @@
       },
       {
         "trial_number": 19,
-        "word": "ನೇಯ್ಗೆದ್ರನು",
+        "word": "ನೇಯ್ಗೆನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9157,7 +9157,7 @@
       },
       {
         "trial_number": 23,
-        "word": "ಸತುಧರಿ",
+        "word": "ಸತುರಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9170,7 +9170,7 @@
       },
       {
         "trial_number": 24,
-        "word": "ಮುಕುಇಲ್ಲೇ",
+        "word": "ಮುಕುಲ್ಲೇ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9313,7 +9313,7 @@
       },
       {
         "trial_number": 46,
-        "word": "ಜಾಣರವು",
+        "word": "ಜಾಣವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9365,7 +9365,7 @@
       },
       {
         "trial_number": 54,
-        "word": "ಣಗುಈಗ",
+        "word": "ಣಗುಗ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9397,14 +9397,14 @@
         "pos": "verb",
         "source_word": "ಸ್ಥಾಪಿಸುತ್ತಾ",
         "rule_logic": "Logic 3: Affix Splicing",
-        "syllables": 4,
+        "syllables": 5,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
       },
       {
         "trial_number": 59,
-        "word": "ಜಾಗಣಿಯು",
+        "word": "ಜಾಗಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9430,7 +9430,7 @@
       },
       {
         "trial_number": 62,
-        "word": "ಳಕುಜೋರಾ",
+        "word": "ಳಕುರಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9443,7 +9443,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ",
+        "word": "ಶಿಸುತ್ತಾಪ್ರಧ್ವ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9495,7 +9495,7 @@
       },
       {
         "trial_number": 74,
-        "word": "ವಿಸುಆಪ್ತ",
+        "word": "ವಿಸುಪ್ತ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9547,7 +9547,7 @@
       },
       {
         "trial_number": 84,
-        "word": "ಘರ್ಜಟ್ಟನೆ",
+        "word": "ಘರ್ಜನೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9560,7 +9560,7 @@
       },
       {
         "trial_number": 88,
-        "word": "ಬಾಗಿಜ್ಜಿಯು",
+        "word": "ಬಾಗಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9586,7 +9586,7 @@
       },
       {
         "trial_number": 90,
-        "word": "ಭ್ರವುದುಷ್ಟ",
+        "word": "ಭ್ರವುಷ್ಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -9681,7 +9681,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಅಟ್ಟಿರಕು",
+        "word": "ಅಟ್ಟಿಕು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -9791,7 +9791,7 @@
         "pos": "verb",
         "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 5,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
@@ -9824,7 +9824,7 @@
       },
       {
         "trial_number": 14,
-        "word": "ಗಿಲುಅಜ್ಜಿ",
+        "word": "ಗಿಲುಜ್ಜಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9850,7 +9850,7 @@
       },
       {
         "trial_number": 16,
-        "word": "ಯ್ಗೆಯುಚಂದ್ರ",
+        "word": "ಯ್ಗೆಯುದ್ರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9876,7 +9876,7 @@
       },
       {
         "trial_number": 18,
-        "word": "ತಾಯಿಪಿಯು",
+        "word": "ತಾಯಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -9954,7 +9954,7 @@
       },
       {
         "trial_number": 24,
-        "word": "ಜ್ಜನುಅಣ್ಣ",
+        "word": "ಜ್ಜನುಣ್ಣ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -10058,7 +10058,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ಷವುಬಿಳಿ",
+        "word": "ಷವುಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -10136,7 +10136,7 @@
       },
       {
         "trial_number": 38,
-        "word": "ಡಿಯುಕೆದ",
+        "word": "ಡಿಯುದ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -10149,7 +10149,7 @@
       },
       {
         "trial_number": 39,
-        "word": "ಭಾವಿರೆಯು",
+        "word": "ಭಾವಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -10162,7 +10162,7 @@
       },
       {
         "trial_number": 40,
-        "word": "ಸಿಹಿಡುಕು",
+        "word": "ಸಿಹಿಕು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -10214,7 +10214,7 @@
       },
       {
         "trial_number": 44,
-        "word": "ಇರುಳೆಯು",
+        "word": "ಇರುಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -10370,7 +10370,7 @@
       },
       {
         "trial_number": 56,
-        "word": "ಪಾಗಿಹಾಗೆ",
+        "word": "ಪಾಗಿಗೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -10383,7 +10383,7 @@
       },
       {
         "trial_number": 57,
-        "word": "ಣನುಭಾರ",
+        "word": "ಣನುರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -10422,7 +10422,7 @@
       },
       {
         "trial_number": 60,
-        "word": "ಸ್ಮಾತಾಗಿಕಳುಹಿ",
+        "word": "ಸ್ಮಾತಾಗಿಕಹಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -10500,7 +10500,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಕೊಳರಾಗಿ",
+        "word": "ಕೊಳಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -10513,7 +10513,7 @@
       },
       {
         "trial_number": 67,
-        "word": "ಅಜ್ಜಣ್ಣನು",
+        "word": "ಅಜ್ಜನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -10565,7 +10565,7 @@
       },
       {
         "trial_number": 71,
-        "word": "ಮ್ಮೆಯುಪೆಚ್ಚಾ",
+        "word": "ಮ್ಮೆಯುಚ್ಚಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -10617,7 +10617,7 @@
       },
       {
         "trial_number": 75,
-        "word": "ಜೋಡಿದರು",
+        "word": "ಜೋಡಿರು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -10669,7 +10669,7 @@
       },
       {
         "trial_number": 79,
-        "word": "ಳಿಯುಕಿರು",
+        "word": "ಳಿಯುರು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -10799,7 +10799,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ಹೆಮ್ಮೆಚ್ಚಾಗಿ",
+        "word": "ಹೆಮ್ಮೆಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11427,7 +11427,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಅಟ್ಟಿರಕು",
+        "word": "ಅಟ್ಟಿಕು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -11511,14 +11511,14 @@
         "pos": "verb",
         "source_word": "ನಿಯಂತ್ರಿಸುತ್ತಾ",
         "rule_logic": "Logic 4: Prefix Shift",
-        "syllables": 5,
+        "syllables": 6,
         "expected_key": "Left",
         "arrow_color": "Red",
         "meaning": ""
       },
       {
         "trial_number": 14,
-        "word": "ಗಿಲುಅಜ್ಜಿ",
+        "word": "ಗಿಲುಜ್ಜಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11544,7 +11544,7 @@
       },
       {
         "trial_number": 16,
-        "word": "ಯ್ಗೆಯುಚಂದ್ರ",
+        "word": "ಯ್ಗೆಯುದ್ರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11557,7 +11557,7 @@
       },
       {
         "trial_number": 18,
-        "word": "ತಾಯಿಪಿಯು",
+        "word": "ತಾಯಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11596,7 +11596,7 @@
       },
       {
         "trial_number": 24,
-        "word": "ಜ್ಜನುಅಣ್ಣ",
+        "word": "ಜ್ಜನುಣ್ಣ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11622,7 +11622,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ಷವುಬಿಳಿ",
+        "word": "ಷವುಳಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11648,7 +11648,7 @@
       },
       {
         "trial_number": 38,
-        "word": "ಡಿಯುಕೆದ",
+        "word": "ಡಿಯುದ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11661,7 +11661,7 @@
       },
       {
         "trial_number": 39,
-        "word": "ಭಾವಿರೆಯು",
+        "word": "ಭಾವಿಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -11674,7 +11674,7 @@
       },
       {
         "trial_number": 40,
-        "word": "ಸಿಹಿಡುಕು",
+        "word": "ಸಿಹಿಕು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11700,7 +11700,7 @@
       },
       {
         "trial_number": 44,
-        "word": "ಇರುಳೆಯು",
+        "word": "ಇರುಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -11765,7 +11765,7 @@
       },
       {
         "trial_number": 56,
-        "word": "ಪಾಗಿಹಾಗೆ",
+        "word": "ಪಾಗಿಗೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -11778,7 +11778,7 @@
       },
       {
         "trial_number": 57,
-        "word": "ಣನುಭಾರ",
+        "word": "ಣನುರ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11804,7 +11804,7 @@
       },
       {
         "trial_number": 60,
-        "word": "ಸ್ಮಾತಾಗಿಕಳುಹಿ",
+        "word": "ಸ್ಮಾತಾಗಿಕಹಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adverb",
@@ -11830,7 +11830,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಕೊಳರಾಗಿ",
+        "word": "ಕೊಳಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11843,7 +11843,7 @@
       },
       {
         "trial_number": 67,
-        "word": "ಅಜ್ಜಣ್ಣನು",
+        "word": "ಅಜ್ಜನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11882,7 +11882,7 @@
       },
       {
         "trial_number": 71,
-        "word": "ಮ್ಮೆಯುಪೆಚ್ಚಾ",
+        "word": "ಮ್ಮೆಯುಚ್ಚಾ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11908,7 +11908,7 @@
       },
       {
         "trial_number": 75,
-        "word": "ಜೋಡಿದರು",
+        "word": "ಜೋಡಿರು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -11934,7 +11934,7 @@
       },
       {
         "trial_number": 79,
-        "word": "ಳಿಯುಕಿರು",
+        "word": "ಳಿಯುರು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -11986,7 +11986,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ಹೆಮ್ಮೆಚ್ಚಾಗಿ",
+        "word": "ಹೆಮ್ಮೆಗಿ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -12081,7 +12081,7 @@
       },
       {
         "trial_number": 3,
-        "word": "ಅಡಿಹಿಸು",
+        "word": "ಅಡಿಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -12133,7 +12133,7 @@
       },
       {
         "trial_number": 7,
-        "word": "ಉಸಿರಾಪಟವು",
+        "word": "ಉಸಿರಾಪವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -12458,7 +12458,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ದೇಶಅಮ್ಮ",
+        "word": "ದೇಶಮ್ಮ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -12510,7 +12510,7 @@
       },
       {
         "trial_number": 36,
-        "word": "ಧುಮುಲ್ಲೇನು",
+        "word": "ಧುಮುನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -12562,7 +12562,7 @@
       },
       {
         "trial_number": 40,
-        "word": "ಶುಭ್ರಷ್ಟನು",
+        "word": "ಶುಭ್ರನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -12653,7 +12653,7 @@
       },
       {
         "trial_number": 47,
-        "word": "ಹಿಯುಹುಡು",
+        "word": "ಹಿಯುಡು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -12666,7 +12666,7 @@
       },
       {
         "trial_number": 48,
-        "word": "ಆಮೆದೆಯು",
+        "word": "ಆಮೆಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -12900,7 +12900,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಮೆಯುಎದೆ",
+        "word": "ಮೆಯುದೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -13082,7 +13082,7 @@
       },
       {
         "trial_number": 80,
-        "word": "ದೋಷಳಿಚು",
+        "word": "ದೋಷಚು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -13199,7 +13199,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ರ್ಜನೆಥಟ್ಟ",
+        "word": "ರ್ಜನೆಟ್ಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -13814,7 +13814,7 @@
     "pseudo": [
       {
         "trial_number": 3,
-        "word": "ಅಡಿಹಿಸು",
+        "word": "ಅಡಿಸು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -13840,7 +13840,7 @@
       },
       {
         "trial_number": 7,
-        "word": "ಉಸಿರಾಪಟವು",
+        "word": "ಉಸಿರಾಪವು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -13996,7 +13996,7 @@
       },
       {
         "trial_number": 32,
-        "word": "ದೇಶಅಮ್ಮ",
+        "word": "ದೇಶಮ್ಮ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -14009,7 +14009,7 @@
       },
       {
         "trial_number": 36,
-        "word": "ಧುಮುಲ್ಲೇನು",
+        "word": "ಧುಮುನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",
@@ -14022,7 +14022,7 @@
       },
       {
         "trial_number": 40,
-        "word": "ಶುಭ್ರಷ್ಟನು",
+        "word": "ಶುಭ್ರನು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -14074,7 +14074,7 @@
       },
       {
         "trial_number": 47,
-        "word": "ಹಿಯುಹುಡು",
+        "word": "ಹಿಯುಡು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "adjective",
@@ -14087,7 +14087,7 @@
       },
       {
         "trial_number": 48,
-        "word": "ಆಮೆದೆಯು",
+        "word": "ಆಮೆಯು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -14204,7 +14204,7 @@
       },
       {
         "trial_number": 66,
-        "word": "ಮೆಯುಎದೆ",
+        "word": "ಮೆಯುದೆ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -14295,7 +14295,7 @@
       },
       {
         "trial_number": 80,
-        "word": "ದೋಷಳಿಚು",
+        "word": "ದೋಷಚು",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "noun",
@@ -14373,7 +14373,7 @@
       },
       {
         "trial_number": 89,
-        "word": "ರ್ಜನೆಥಟ್ಟ",
+        "word": "ರ್ಜನೆಟ್ಟ",
         "type": "pseudo",
         "realpseudo": "pseudo",
         "pos": "verb",

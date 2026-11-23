@@ -11,10 +11,10 @@ trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_
 10,ಚಡಿಯು,real,real,noun,,Original Real Word,3,Right,Blue,stick
 11,ಕಬಳಿಸು,real,real,verb,,Original Real Word,4,Right,Blue,swallow
 12,ನೇಯ್ಗೆಜು,pseudo,pseudo,noun,ನೇಯ್ಗೆಯು,Logic 1: Consonant Replacement,3,Left,Red,
-13,ಜ್ಜುತ್ತಾಕುಂಟ,pseudo,pseudo,verb,ಉಜ್ಜುತ್ತಾ,Logic 3: Affix Splicing,3,Left,Red,
+13,ಜ್ಜುತ್ತಾಟ,pseudo,pseudo,verb,ಉಜ್ಜುತ್ತಾ,Logic 3: Affix Splicing,3,Left,Red,
 14,ಲೋಸವು,pseudo,pseudo,adjective,ಲೋಹವು,Logic 1: Consonant Replacement,3,Left,Red,
 15,ಬೀಸು,real,real,verb,,Original Real Word,2,Right,Blue,flutter
-16,ಟಲುಸೊಂಡಿ,pseudo,pseudo,noun,ಗಂಟಲು,Logic 3: Affix Splicing,3,Left,Red,
+16,ಟಲುಡಿ,pseudo,pseudo,noun,ಗಂಟಲು,Logic 3: Affix Splicing,3,Left,Red,
 17,ಇಟ್ಟು,real,real,verb,,Original Real Word,2,Right,Blue,was kept
 18,ಒದ್ದೆಕು,pseudo,pseudo,adjective,ಒದ್ದೆಯು,Logic 1: Consonant Replacement,3,Left,Red,
 19,ಭಾವಿಸು,real,real,verb,,Original Real Word,3,Right,Blue,think
@@ -23,14 +23,14 @@ trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_
 22,ಉಳಿದು,real,real,adjective,,Original Real Word,3,Right,Blue,remaining
 23,ಟಿರುಚು,pseudo,pseudo,verb,ಕಿರುಚು,Logic 1: Consonant Replacement,3,Left,Red,
 24,ಆಟಿಕೆಯು,real,real,noun,,Original Real Word,4,Right,Blue,toy
-25,ಪಿಸುತ್ತಾಅಪ್ಪಳಿ,pseudo,pseudo,verb,ನೆನಪಿಸುತ್ತಾ,Logic 3: Affix Splicing,5,Left,Red,
-26,ಹೊಸರಿಸು,pseudo,pseudo,adjective,ಹೊಸತು,Logic 4: Prefix Shift,3,Left,Red,
+25,ಪಿಸುತ್ತಾಅಳಿ,pseudo,pseudo,verb,ನೆನಪಿಸುತ್ತಾ,Logic 3: Affix Splicing,5,Left,Red,
+26,ಹೊಸಸು,pseudo,pseudo,adjective,ಹೊಸತು,Logic 4: Prefix Shift,3,Left,Red,
 27,ಸೊಂಡಿಲೆ,pseudo,pseudo,noun,ಸೊಂಡಿಲು,Logic 2: Vowel Replacement,3,Left,Red,
 28,ನಿಯಂತ್ರಿಸುತ್ತಾ,real,real,verb,,Original Real Word,5,Right,Blue,regulating
 29,ಊದ್ದವು,pseudo,pseudo,adjective,ಉದ್ದವು,Logic 2: Vowel Replacement,3,Left,Red,
 30,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,real,real,verb,,Original Real Word,8,Right,Blue,repairing
 31,ಸಾಲಾಗಿ,real,real,adverb,,Original Real Word,3,Right,Blue,in a line
-32,ಧಾವಿಪ್ತನು,pseudo,pseudo,verb,ಧಾವಿಸು,Logic 4: Prefix Shift,3,Left,Red,
+32,ಧಾವಿನು,pseudo,pseudo,verb,ಧಾವಿಸು,Logic 4: Prefix Shift,3,Left,Red,
 33,ಬೂದು,real,real,adjective,,Original Real Word,2,Right,Blue,gray
 34,ತೆಕ್ಕು,pseudo,pseudo,noun,ಬೆಕ್ಕು,Logic 1: Consonant Replacement,2,Left,Red,
 35,ಸಾಗು,real,real,verb,,Original Real Word,2,Right,Blue,move
@@ -39,7 +39,7 @@ trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_
 38,ಸ್ವಲ್ಪದು,pseudo,pseudo,adjective,ಸ್ವಲ್ಪವು,Logic 1: Consonant Replacement,3,Left,Red,
 39,ಏರು,real,real,verb,,Original Real Word,2,Right,Blue,climb
 40,ತಬ್ಬಿಬ್ಬಾಗಿ,real,real,adverb,,Original Real Word,4,Right,Blue,confused
-41,ಆದೇಮ್ಮನು,pseudo,pseudo,verb,ಆದೇಶ,Logic 4: Prefix Shift,3,Left,Red,
+41,ಆದೇನು,pseudo,pseudo,verb,ಆದೇಶ,Logic 4: Prefix Shift,3,Left,Red,
 42,ಹುಚ್ಚು,real,real,adjective,,Original Real Word,2,Right,Blue,madness
 43,ಘರ್ಜನೆ,real,real,verb,,Original Real Word,3,Right,Blue,roar
 44,ಈಗಲೂ,real,real,noun,,Original Real Word,3,Right,Blue,still
@@ -47,21 +47,21 @@ trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_
 46,ಚೃರು,pseudo,pseudo,noun,ಚೂರು,Logic 2: Vowel Replacement,2,Left,Red,
 47,ಅಚ್ಚುಕ್ಕಾಗಿ,pseudo,pseudo,adjective,ಅಚ್ಚುಮೆಚ್ಚು,Logic 4: Prefix Shift,4,Left,Red,
 48,ಬನ್ನಿ,real,real,verb,,Original Real Word,2,Right,Blue,(please) come
-49,ತ್ತೆಯುಖುಷಿ,pseudo,pseudo,noun,ಅತ್ತೆಯು,Logic 3: Affix Splicing,3,Left,Red,
+49,ತ್ತೆಯುಷಿ,pseudo,pseudo,noun,ಅತ್ತೆಯು,Logic 3: Affix Splicing,3,Left,Red,
 50,ಆನಂದಿಸೌ,pseudo,pseudo,verb,ಆನಂದಿಸು,Logic 2: Vowel Replacement,4,Left,Red,
-51,ಶ್ರೇಷ್ಠಶವು,pseudo,pseudo,adjective,ಶ್ರೇಷ್ಠವು,Logic 4: Prefix Shift,3,Left,Red,
+51,ಶ್ರೇಷ್ಠಶವು,pseudo,pseudo,adjective,ಶ್ರೇಷ್ಠವು,Logic 4: Prefix Shift,4,Left,Red,
 52,ಅಕಸ್ಮಾತಾಗಿ,real,real,adverb,,Original Real Word,5,Right,Blue,unexpectedly
 53,ಕಳುಹಿಸುತ್ತಾ,real,real,verb,,Original Real Word,5,Right,Blue,sending
 54,ರದಿಂದಕುಳಿತು,pseudo,pseudo,adverb,ಮುಜುಗರದಿಂದ,Logic 3: Affix Splicing,6,Left,Red,
 55,ಹೆಸರೀ,pseudo,pseudo,noun,ಹೆಸರು,Logic 2: Vowel Replacement,3,Left,Red,
 56,ಹಿತವು,real,real,adjective,,Original Real Word,3,Right,Blue,good
 57,ಕಾಡು,real,real,noun,,Original Real Word,2,Right,Blue,forest
-58,ಉಜ್ಜುಟನು,pseudo,pseudo,verb,ಉಜ್ಜುತ್ತಾ,Logic 4: Prefix Shift,3,Left,Red,
+58,ಉಜ್ಜುನು,pseudo,pseudo,verb,ಉಜ್ಜುತ್ತಾ,Logic 4: Prefix Shift,3,Left,Red,
 59,ಬೇಗ,real,real,adverb,,Original Real Word,2,Right,Blue,soon
 60,ಇಡು,real,real,verb,,Original Real Word,2,Right,Blue,keep
 61,ಹುಣ್ಣಿನಿಯು,pseudo,pseudo,adjective,ಹುಣ್ಣಿಮೆಯು,Logic 4: Prefix Shift,4,Left,Red,
 62,ಪೃಚ್ಚಾಗಿ,pseudo,pseudo,adverb,ಪೆಚ್ಚಾಗಿ,Logic 2: Vowel Replacement,3,Left,Red,
-63,ಆಟಳಿಲು,pseudo,pseudo,noun,ಆಟವು,Logic 4: Prefix Shift,3,Left,Red,
+63,ಆಟಲು,pseudo,pseudo,noun,ಆಟವು,Logic 4: Prefix Shift,3,Left,Red,
 64,ಎತ್ತರವು,real,real,adjective,,Original Real Word,4,Right,Blue,tall
 65,ಯೋಜನೆಯು,real,real,noun,,Original Real Word,4,Right,Blue,plan
 66,ಭರವಸೆಯಿಂದ,real,real,adverb,,Original Real Word,6,Right,Blue,with confidence
@@ -76,14 +76,14 @@ trial_number,word,type,realpseudo,pos,source_word,rule_logic,syllables,expected_
 75,ಚೀಡಿಯು,pseudo,pseudo,noun,ಚಡಿಯು,Logic 2: Vowel Replacement,3,Left,Red,
 76,ಳಾಡುಅಲು,pseudo,pseudo,verb,ಉರುಳಾಡು,Logic 3: Affix Splicing,4,Left,Red,
 77,ಒದ್ದೆಯು,real,real,adjective,,Original Real Word,3,Right,Blue,wet
-78,ತಂಪಾಗೆಲ್ಲಾ,pseudo,pseudo,adverb,ತಂಪಾಗಿ,Logic 4: Prefix Shift,3,Left,Red,
+78,ತಂಪಾಲ್ಲಾ,pseudo,pseudo,adverb,ತಂಪಾಗಿ,Logic 4: Prefix Shift,3,Left,Red,
 79,ಸೊಂಡಿಲು,real,real,noun,,Original Real Word,3,Right,Blue,trunk
 80,ಗಟ್ಟಿಯಾಗಿ,real,real,adverb,,Original Real Word,4,Right,Blue,hardly
-81,ಷ್ಠವುಆಕಾ,pseudo,pseudo,adjective,ಶ್ರೇಷ್ಠವು,Logic 3: Affix Splicing,3,Left,Red,
+81,ಷ್ಠವುಆಕಾ,pseudo,pseudo,adjective,ಶ್ರೇಷ್ಠವು,Logic 3: Affix Splicing,4,Left,Red,
 82,ಜಾಗೃವು,pseudo,pseudo,noun,ಜಾಗವು,Logic 2: Vowel Replacement,3,Left,Red,
 83,ಅಟ್ಟಿಸು,real,real,verb,,Original Real Word,3,Right,Blue,chase
 84,ಬಿಳಿಯಿ,pseudo,pseudo,adjective,ಬಿಳಿಯು,Logic 2: Vowel Replacement,3,Left,Red,
-85,ಕೂಡಿಲಾಗಿ,pseudo,pseudo,verb,ಕೂಡಿಸು,Logic 4: Prefix Shift,3,Left,Red,
+85,ಕೂಡಿಗಿ,pseudo,pseudo,verb,ಕೂಡಿಸು,Logic 4: Prefix Shift,3,Left,Red,
 86,ನುಣುಪು,real,real,adjective,,Original Real Word,3,Right,Blue,refine
 87,ಸುಳ್ಳು,real,real,noun,,Original Real Word,2,Right,Blue,lie
 88,ಕಟ್ಟುನಿಟ್ಟಾಗಿ,real,real,adverb,,Original Real Word,5,Right,Blue,strictly

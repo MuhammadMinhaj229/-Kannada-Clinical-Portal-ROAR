@@ -1,271 +1,271 @@
 id,nonword,source_word,source_word_2,source_pos,rule_logic,method,transformation,syllables,source_word_1_syllables,source_word_2_syllables,realpseudo
-N001,ಹೀ,ಹೂ,,noun,Logic 2: Vowel Replacement,A_vowel,ಹೂ → ಹೀ,1,1,,pseudo
-N002,ಊಡು,ಇಡು,,verb,Logic 2: Vowel Replacement,A_vowel,ಇ → ಊ,2,2,,pseudo
-N003,ಹಾಲೊ,ಹಾಲು,,noun,Logic 2: Vowel Replacement,A_vowel,ಲು → ಲೊ,2,2,,pseudo
-N004,ಚೃರು,ಚೂರು,,noun,Logic 2: Vowel Replacement,A_vowel,ಚೂ → ಚೃ,2,2,,pseudo
-N005,ಮಗಾ,ಮಗು,,noun,Logic 2: Vowel Replacement,A_vowel,ಗು → ಗಾ,2,2,,pseudo
-N006,ನೃಡೆ,ನಡೆ,,verb,Logic 2: Vowel Replacement,A_vowel,ನ → ನೃ,2,2,,pseudo
-N007,ಗೋಜು,ಗಾಜು,,noun,Logic 2: Vowel Replacement,A_vowel,ಗಾ → ಗೋ,2,2,,pseudo
-N008,ಮೈಜು,ಮೇಜು,,noun,Logic 2: Vowel Replacement,A_vowel,ಮೇ → ಮೈ,2,2,,pseudo
-N009,ಕೌಡಿ,ಕಡಿ,,verb,Logic 2: Vowel Replacement,A_vowel,ಕ → ಕೌ,2,2,,pseudo
-N010,ಸುರೈ,ಸುರಿ,,verb,Logic 2: Vowel Replacement,A_vowel,ರಿ → ರೈ,2,2,,pseudo
-N011,ತೂರು,ತೀರು,,verb,Logic 2: Vowel Replacement,A_vowel,ತೀ → ತೂ,2,2,,pseudo
-N012,ಹುಣೆ,ಹೆಣೆ,,verb,Logic 2: Vowel Replacement,A_vowel,ಹೆ → ಹು,2,2,,pseudo
-N013,ಒಲ್ಲಿ,ಎಲ್ಲಿ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಎ → ಒ,2,2,,pseudo
-N014,ಅತ್ತೇ,ಅತ್ತು,,verb,Logic 2: Vowel Replacement,A_vowel,ತು → ತೇ,2,2,,pseudo
-N015,ಎಲೆಯೃ,ಎಲೆಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ಯು → ಯೃ,3,3,,pseudo
-N016,ಈಗೂಲೂ,ಈಗಲೂ,,noun,Logic 2: Vowel Replacement,A_vowel,ಗ → ಗೂ,3,3,,pseudo
-N017,ಅಪಾಯಿ,ಅಪಾಯ,,verb,Logic 2: Vowel Replacement,A_vowel,ಯ → ಯಿ,3,3,,pseudo
-N018,ಒದಗೋ,ಒದಗು,,verb,Logic 2: Vowel Replacement,A_vowel,ಗು → ಗೋ,3,3,,pseudo
-N019,ಅರಿವೊ,ಅರಿವು,,verb,Logic 2: Vowel Replacement,A_vowel,ವು → ವೊ,3,3,,pseudo
-N020,ಮೂದ್ದು,ಮುದ್ದು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಮು → ಮೂ,2,2,,pseudo
-N021,ಕೃಚ್ಚು,ಕಚ್ಚು,,verb,Logic 2: Vowel Replacement,A_vowel,ಕ → ಕೃ,2,2,,pseudo
-N022,ಸುಳ್ಳಿ,ಸುಳ್ಳು,,noun,Logic 2: Vowel Replacement,A_vowel,ಳು → ಳಿ,2,2,,pseudo
-N023,ಬಿಳಿಯಿ,ಬಿಳಿಯು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಯು → ಯಿ,3,3,,pseudo
-N024,ಕೋತಿಯೌ,ಕೋತಿಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ಯು → ಯೌ,3,3,,pseudo
-N025,ಹೆಸರೀ,ಹೆಸರು,,noun,Logic 2: Vowel Replacement,A_vowel,ರು → ರೀ,3,3,,pseudo
-N026,ತೋರೋಸು,ತೋರಿಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ರಿ → ರೋ,3,3,,pseudo
-N027,ಹೊಸೇತು,ಹೊಸತು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಸ → ಸೇ,3,3,,pseudo
-N028,ಹೇಗೆವೆ,ಹೇಗಿವೆ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಗಿ → ಗೆ,3,3,,pseudo
-N029,ಜಾಗೃವು,ಜಾಗವು,,noun,Logic 2: Vowel Replacement,A_vowel,ಗ → ಗೃ,3,3,,pseudo
-N030,ಧರೇಸು,ಧರಿಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ರಿ → ರೇ,3,3,,pseudo
-N031,ಹಿತಾವು,ಹಿತವು,,adjective,Logic 2: Vowel Replacement,A_vowel,ತ → ತಾ,3,3,,pseudo
-N032,ನಾಣುಪು,ನುಣುಪು,,adjective,Logic 2: Vowel Replacement,A_vowel,ನು → ನಾ,3,3,,pseudo
-N033,ಚೀಡಿಯು,ಚಡಿಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ಚ → ಚೀ,3,3,,pseudo
-N034,ಬೀಯಸು,ಬಯಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ಬ → ಬೀ,3,3,,pseudo
-N035,ಕೆದರೆ,ಕೆದರು,,verb,Logic 2: Vowel Replacement,A_vowel,ರು → ರೆ,3,3,,pseudo
-N036,ಐಮ್ಮನು,ಅಮ್ಮನು,,noun,Logic 2: Vowel Replacement,A_vowel,ಅ → ಐ,3,3,,pseudo
-N037,ಅಕ್ಕನೆ,ಅಕ್ಕನು,,noun,Logic 2: Vowel Replacement,A_vowel,ನು → ನೆ,3,3,,pseudo
-N038,ಊದ್ದವು,ಉದ್ದವು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಉ → ಊ,3,3,,pseudo
-N039,ಇರಿತ್ತಾ,ಇರುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ರು → ರಿ,3,3,,pseudo
-N040,ಓಟ್ಟಿಸು,ಅಟ್ಟಿಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ಅ → ಓ,3,3,,pseudo
-N041,ಏಕೆರುವೆ,ಏಕಿರುವೆ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಕಿ → ಕೆ,4,4,,pseudo
-N042,ಹೆಮ್ಮೂಯು,ಹೆಮ್ಮೆಯು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಮೆ → ಮೂ,3,3,,pseudo
-N043,ಪೃಚ್ಚಾಗಿ,ಪೆಚ್ಚಾಗಿ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಪೆ → ಪೃ,3,3,,pseudo
-N044,ಒಜ್ಜುತ್ತಾ,ಉಜ್ಜುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಉ → ಒ,3,3,,pseudo
-N045,ಸೊಂಡಿಲೆ,ಸೊಂಡಿಲು,,noun,Logic 2: Vowel Replacement,A_vowel,ಲು → ಲೆ,3,3,,pseudo
-N046,ಮೂರ್ಖನೂ,ಮೂರ್ಖನು,,adjective,Logic 2: Vowel Replacement,A_vowel,ನು → ನೂ,3,3,,pseudo
-N047,ನಮೂನೇಯು,ನಮೂನೆಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ನೆ → ನೇ,4,4,,pseudo
-N048,ಕಬಳೌಸು,ಕಬಳಿಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ಳಿ → ಳೌ,4,4,,pseudo
-N049,ಈಜೊಡುತ್ತಾ,ಈಜಾಡುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಜಾ → ಜೊ,4,4,,pseudo
-N050,ಎದುರುತ್ತಾ,ಉದುರುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಉ → ಎ,4,4,,pseudo
-N051,ತಿದ್ದುತ್ತೂ,ತಿದ್ದುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ತಾ → ತೂ,3,3,,pseudo
-N052,ಆನಂದಿಸೌ,ಆನಂದಿಸು,,verb,Logic 2: Vowel Replacement,A_vowel,ಸು → ಸೌ,4,4,,pseudo
-N053,ಶಿಕ್ಷಕನೃ,ಶಿಕ್ಷಕನು,,noun,Logic 2: Vowel Replacement,A_vowel,ನು → ನೃ,4,4,,pseudo
-N054,ಉಸಿರಾಟೇವು,ಉಸಿರಾಟವು,,noun,Logic 2: Vowel Replacement,A_vowel,ಟ → ಟೇ,5,5,,pseudo
-N055,ಪುಸ್ತುಕವು,ಪುಸ್ತಕವು,,noun,Logic 2: Vowel Replacement,A_vowel,ತ → ತು,4,4,,pseudo
-N056,ಚಿಕ್ಕದೈಗಿ,ಚಿಕ್ಕದಾಗಿ,,adverb,Logic 2: Vowel Replacement,A_vowel,ದಾ → ದೈ,4,4,,pseudo
-N057,ಕಟ್ಟಿಹುಕು,ಕಟ್ಟಿಹಾಕು,,verb,Logic 2: Vowel Replacement,A_vowel,ಹಾ → ಹು,4,4,,pseudo
-N058,ವಿಸ್ಮಯೇವು,ವಿಸ್ಮಯವು,,adjective,Logic 2: Vowel Replacement,A_vowel,ಯ → ಯೇ,4,4,,pseudo
-N059,ಕಲ್ಪನೌಯು,ಕಲ್ಪನೆಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ನೆ → ನೌ,4,4,,pseudo
-N060,ಎತ್ತೆಕೊಳ್ಳು,ಎತ್ತಿಕೊಳ್ಳು,,verb,Logic 2: Vowel Replacement,A_vowel,ತಿ → ತೆ,4,4,,pseudo
-N061,ಅಕೇಸ್ಮಾತಾಗಿ,ಅಕಸ್ಮಾತಾಗಿ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಕ → ಕೇ,5,5,,pseudo
-N062,ಕೆಳುಹಿಸುತ್ತಾ,ಕಳುಹಿಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಕ → ಕೆ,5,5,,pseudo
-N063,ಉದ್ದೇಶೃಸುತ್ತಾ,ಉದ್ದೇಶಿಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಶಿ → ಶೃ,5,5,,pseudo
-N064,ಪ್ರತಿಧ್ವನಿಯೃ,ಪ್ರತಿಧ್ವನಿಯು,,noun,Logic 2: Vowel Replacement,A_vowel,ಯು → ಯೃ,5,5,,pseudo
-N065,ಭರವಸೇಯಿಂದ,ಭರವಸೆಯಿಂದ,,adverb,Logic 2: Vowel Replacement,A_vowel,ಸೆ → ಸೇ,6,6,,pseudo
-N066,ಕುಳಿತುಕಿಳ್ಳುತ್ತಾ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಕೊ → ಕಿ,6,6,,pseudo
-N067,ಕವೃಡೆಬಳಸುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ವ → ವೃ,7,7,,pseudo
-N068,ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 2: Vowel Replacement,A_vowel,ಸ → ಸೂ,8,8,,pseudo
-N069,ಊಗು,ಊರು,,noun,Logic 1: Consonant Replacement,B_consonant,ರ → ಗ,2,2,,pseudo
-N070,ಇಜಿ,ಇಳಿ,,verb,Logic 1: Consonant Replacement,B_consonant,ಳ → ಜ,2,2,,pseudo
-N071,ಮೀರು,ನೀರು,,noun,Logic 1: Consonant Replacement,B_consonant,ನ → ಮ,2,2,,pseudo
-N072,ರಾಡು,ಹಾಡು,,noun,Logic 1: Consonant Replacement,B_consonant,ಹ → ರ,2,2,,pseudo
-N073,ದೀನು,ಮೀನು,,noun,Logic 1: Consonant Replacement,B_consonant,ಮ → ದ,2,2,,pseudo
-N074,ಕೂದು,ಬೂದು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಬ → ಕ,2,2,,pseudo
-N075,ಹೂಡು,ಗೂಡು,,noun,Logic 1: Consonant Replacement,B_consonant,ಗ → ಹ,2,2,,pseudo
-N076,ಹಾಗು,ಬಾಗು,,verb,Logic 1: Consonant Replacement,B_consonant,ಬ → ಹ,2,2,,pseudo
-N077,ಕಮಿ,ಕಲಿ,,verb,Logic 1: Consonant Replacement,B_consonant,ಲ → ಮ,2,2,,pseudo
-N078,ಮೆಜು,ಮೆದು,,adjective,Logic 1: Consonant Replacement,B_consonant,ದ → ಜ,2,2,,pseudo
-N079,ಟುಡಿ,ಮುಡಿ,,verb,Logic 1: Consonant Replacement,B_consonant,ಮ → ಟ,2,2,,pseudo
-N080,ಹಿಮ,ಹಿತ,,verb,Logic 1: Consonant Replacement,B_consonant,ತ → ಮ,2,2,,pseudo
-N081,ಶೂ,ಹೂ,,noun,Logic 1: Consonant Replacement,B_consonant,ಹ → ಶ,1,1,,pseudo
-N082,ಆರೇಲೆ,ಆಮೇಲೆ,,adverb,Logic 1: Consonant Replacement,B_consonant,ಮ → ರ,3,3,,pseudo
-N083,ಇನಿಯು,ಇಲಿಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಲ → ನ,3,3,,pseudo
-N084,ಆಮೆಜು,ಆಮೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಜ,3,3,,pseudo
-N085,ಉಯಿದು,ಉಳಿದು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಳ → ಯ,3,3,,pseudo
-N086,ಊಹಿಶು,ಊಹಿಸು,,verb,Logic 1: Consonant Replacement,B_consonant,ಸ → ಶ,3,3,,pseudo
-N087,ತೆಕ್ಕು,ಬೆಕ್ಕು,,noun,Logic 1: Consonant Replacement,B_consonant,ಬ → ತ,2,2,,pseudo
-N088,ಮಪ್ಪು,ತಪ್ಪು,,adjective,Logic 1: Consonant Replacement,B_consonant,ತ → ಮ,2,2,,pseudo
-N089,ಶಾತ್ರ,ಮಾತ್ರ,,adverb,Logic 1: Consonant Replacement,B_consonant,ಮ → ಶ,2,2,,pseudo
-N090,ರುಚ್ಚು,ಹುಚ್ಚು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಹ → ರ,2,2,,pseudo
-N091,ನಿಸಿಯು,ಬಿಸಿಯು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಬ → ನ,3,3,,pseudo
-N092,ಜಾಯಿಯು,ತಾಯಿಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ತ → ಜ,3,3,,pseudo
-N093,ಜಾಮೂಕು,ಜಾಮೂನು,,noun,Logic 1: Consonant Replacement,B_consonant,ನ → ಕ,3,3,,pseudo
-N094,ಟಿರುಚು,ಕಿರುಚು,,verb,Logic 1: Consonant Replacement,B_consonant,ಕ → ಟ,3,3,,pseudo
-N095,ಶಾಣನು,ಜಾಣನು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಜ → ಶ,3,3,,pseudo
-N096,ಜೋದಾಗಿ,ಜೋರಾಗಿ,,adverb,Logic 1: Consonant Replacement,B_consonant,ರ → ದ,3,3,,pseudo
-N097,ಪಾಯಿಯು,ಕಾಯಿಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಕ → ಪ,3,3,,pseudo
-N098,ಮೊರಟು,ಹೊರಟು,,verb,Logic 1: Consonant Replacement,B_consonant,ಹ → ಮ,3,3,,pseudo
-N099,ಲೋಸವು,ಲೋಹವು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಹ → ಸ,3,3,,pseudo
-N100,ಸಪನೆ,ಸಮನೆ,,adverb,Logic 1: Consonant Replacement,B_consonant,ಮ → ಪ,3,3,,pseudo
-N101,ಜೋಜಿಯು,ಜೋಡಿಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಡ → ಜ,3,3,,pseudo
-N102,ಭಾಚಿಸು,ಭಾವಿಸು,,verb,Logic 1: Consonant Replacement,B_consonant,ವ → ಚ,3,3,,pseudo
-N103,ಶೊರಕು,ದೊರಕು,,verb,Logic 1: Consonant Replacement,B_consonant,ದ → ಶ,3,3,,pseudo
-N104,ಬಿಳಿಜು,ಬಿಳಿಚು,,verb,Logic 1: Consonant Replacement,B_consonant,ಚ → ಜ,3,3,,pseudo
-N105,ಅಜ್ಜಿಟು,ಅಜ್ಜಿಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಟ,3,3,,pseudo
-N106,ಒದ್ದೆಕು,ಒದ್ದೆಯು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಯ → ಕ,3,3,,pseudo
-N107,ಏಡುತ್ತಾ,ಏಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಳ → ಡ,3,3,,pseudo
-N108,ಉಣ್ಣೆಪು,ಉಣ್ಣೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಪ,3,3,,pseudo
-N109,ಉತುಳಾಡು,ಉರುಳಾಡು,,verb,Logic 1: Consonant Replacement,B_consonant,ರ → ತ,4,4,,pseudo
-N110,ಳುಷ್ಟನು,ದುಷ್ಟನು,,adjective,Logic 1: Consonant Replacement,B_consonant,ದ → ಳ,3,3,,pseudo
-N111,ಹಾಪೆಲ್ಲಾ,ಹಾಗೆಲ್ಲಾ,,adverb,Logic 1: Consonant Replacement,B_consonant,ಗ → ಪ,3,3,,pseudo
-N112,ನೇಯ್ಗೆಜು,ನೇಯ್ಗೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಜ,3,3,,pseudo
-N113,ಗೊಂಬೆಪು,ಗೊಂಬೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಪ,3,3,,pseudo
-N114,ತಂಪಾಳಿ,ತಂಪಾಗಿ,,adverb,Logic 1: Consonant Replacement,B_consonant,ಗ → ಳ,3,3,,pseudo
-N115,ಹಿಪಿಮೆಯು,ಹಿರಿಮೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ರ → ಪ,4,4,,pseudo
-N116,ಯೋಜನೆಮು,ಯೋಜನೆಯು,,noun,Logic 1: Consonant Replacement,B_consonant,ಯ → ಮ,4,4,,pseudo
-N117,ಒಳ್ಳೆವದು,ಒಳ್ಳೆಯದು,,adjective,Logic 1: Consonant Replacement,B_consonant,ಯ → ವ,4,4,,pseudo
-N118,ಅಗೆನುತ್ತಾ,ಅಗೆಯುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಯ → ನ,4,4,,pseudo
-N119,ಸ್ವಲ್ಪದು,ಸ್ವಲ್ಪವು,,adjective,Logic 1: Consonant Replacement,B_consonant,ವ → ದ,3,3,,pseudo
-N120,ಅಂಗಜವು,ಅಂಗಳವು,,noun,Logic 1: Consonant Replacement,B_consonant,ಳ → ಜ,4,4,,pseudo
-N121,ಇರುರೆಗಳು,ಇರುವೆಗಳು,,noun,Logic 1: Consonant Replacement,B_consonant,ವ → ರ,5,5,,pseudo
-N122,ಪಕ್ಷಣವು,ಲಕ್ಷಣವು,,noun,Logic 1: Consonant Replacement,B_consonant,ಲ → ಪ,4,4,,pseudo
-N123,ದರೀಕ್ಷಿಸು,ಪರೀಕ್ಷಿಸು,,verb,Logic 1: Consonant Replacement,B_consonant,ಪ → ದ,4,4,,pseudo
-N124,ಮಾತಾಳುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಡ → ಳ,4,4,,pseudo
-N125,ಜಿಗಿಬುತ್ತಾ,ಜಿಗಿಯುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಯ → ಬ,4,4,,pseudo
-N126,ಬೇಶಕ್ಕಾಗಿ,ದೇಶಕ್ಕಾಗಿ,,adverb,Logic 1: Consonant Replacement,B_consonant,ದ → ಬ,4,4,,pseudo
-N127,ಜಲ್ಮಶವು,ಕಲ್ಮಶವು,,noun,Logic 1: Consonant Replacement,B_consonant,ಕ → ಜ,4,4,,pseudo
-N128,ಸತ್ಕತಿಸು,ಸತ್ಕರಿಸು,,verb,Logic 1: Consonant Replacement,B_consonant,ರ → ತ,4,4,,pseudo
-N129,ಚಾಳಿಪಟವು,ಗಾಳಿಪಟವು,,noun,Logic 1: Consonant Replacement,B_consonant,ಗ → ಚ,5,5,,pseudo
-N130,ಅವಲಂಭಿನು,ಅವಲಂಭಿಸು,,verb,Logic 1: Consonant Replacement,B_consonant,ಸ → ನ,5,5,,pseudo
-N131,ಅಪ್ಪಳಿನುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಸ → ನ,5,5,,pseudo
-N132,ಕಟ್ಟುಹಿಟ್ಟಾಗಿ,ಕಟ್ಟುನಿಟ್ಟಾಗಿ,,adverb,Logic 1: Consonant Replacement,B_consonant,ನ → ಹ,5,5,,pseudo
-N133,ಅರಟಿಕೊಳ್ಳುತ್ತಾ,ಅರಚಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಚ → ಟ,6,6,,pseudo
-N134,ಜ್ಞಾನಿಗಶೆಲ್ಲರು,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,,noun,Logic 1: Consonant Replacement,B_consonant,ಳ → ಶ,6,6,,pseudo
-N135,ನರ್ತನಶಾಡುತ್ತಾ,ನರ್ತನವಾಡುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ವ → ಶ,6,6,,pseudo
-N136,ಲಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,B_consonant,ಬ → ಲ,7,7,,pseudo
-N137,ಟವುಅಳಿ,ಆಟವು,ಅಳಿಲು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N138,ಲಿಯುಆಮೇ,ಇಲಿಯು,ಆಮೇಲೆ,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N139,ಮೆಯುಎದೆ,ಆಮೆಯು,ಎದೆಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N140,ಣಗುಈಗ,ಒಣಗು,ಈಗಲೂ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N141,ಳಿದುಅನಿ,ಉಳಿದು,ಅನಿಸು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N142,ಡಿಯುಊಹಿ,ಅಡಿಯು,ಊಹಿಸು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N143,ದೇಶಅಮ್ಮ,ಆದೇಶ,ಅಮ್ಮನು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N144,ಪ್ಪನುಮಲ,ಅಪ್ಪನು,ಮಲಗು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N145,ಗಿಲುಅಜ್ಜಿ,ಬಾಗಿಲು,ಅಜ್ಜಿಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N146,ಜ್ಜನುಅಣ್ಣ,ಅಜ್ಜನು,ಅಣ್ಣನು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N147,ಯಿಯುಟೋಪಿ,ತಾಯಿಯು,ಟೋಪಿಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N148,ರಿಸುಕೋತಿ,ತೋರಿಸು,ಕೋತಿಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N149,ಹಿಯುಹುಡು,ಸಿಹಿಯು,ಹುಡುಕು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N150,ಳಿಯುಕಿರು,ಬಿಳಿಯು,ಕಿರುಚು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N151,ತ್ತೆಯುಖುಷಿ,ಅತ್ತೆಯು,ಖುಷಿಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N152,ಳಕುಜೋರಾ,ಕೊಳಕು,ಜೋರಾಗಿ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N153,ಣನುಭಾರ,ಜಾಣನು,ಭಾರವು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N154,ಗವುರಾಣಿ,ಜಾಗವು,ರಾಣಿಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N155,ಡಿಸುಸಾಲಾ,ಕೂಡಿಸು,ಸಾಲಾಗಿ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N156,ಸತುಧರಿ,ಹೊಸತು,ಧರಿಸು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N157,ರುತ್ತಾಬೇಳೆ,ಇರುತ್ತಾ,ಬೇಳೆಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N158,ರೆಸುಹಳ,ಬೆರೆಸು,ಹಳತು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N159,ಡಿಯುಕೆದ,ಜೋಡಿಯು,ಕೆದರು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N160,ಮುಕುಇಲ್ಲೇ,ಧುಮುಕು,ಇಲ್ಲೇನು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N161,ಟ್ಟಿಸುದೊರ,ಅಟ್ಟಿಸು,ದೊರಕು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N162,ಮನೆಬೋಳಾ,ಸಮನೆ,ಬೋಳಾಗಿ,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N163,ಡಿಯುಹಿತ,ಚಡಿಯು,ಹಿತವು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N164,ವಿಸುಆಪ್ತ,ಧಾವಿಸು,ಆಪ್ತನು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N165,ವಿಸುನೆರೆ,ಭಾವಿಸು,ನೆರೆಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N166,ಷವುಬಿಳಿ,ದೋಷವು,ಬಿಳಿಚು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N167,ಟಲುಸೊಂಡಿ,ಗಂಟಲು,ಸೊಂಡಿಲು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N168,ಜ್ಜುತ್ತಾಕುಂಟ,ಉಜ್ಜುತ್ತಾ,ಕುಂಟನು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N169,ಪಾಗಿಹಾಗೆ,ತಂಪಾಗಿ,ಹಾಗೆಲ್ಲಾ,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N170,ರ್ಜನೆಥಟ್ಟ,ಘರ್ಜನೆ,ಥಟ್ಟನೆ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N171,ಭ್ರವುದುಷ್ಟ,ಶುಭ್ರವು,ದುಷ್ಟನು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N172,ಮ್ಮೆಯುಪೆಚ್ಚಾ,ಹೆಮ್ಮೆಯು,ಪೆಚ್ಚಾಗಿ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N173,ಯ್ಗೆಯುಚಂದ್ರ,ನೇಯ್ಗೆಯು,ಚಂದ್ರನು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N174,ಲ್ಪವುತಿದ್ದು,ಸ್ವಲ್ಪವು,ತಿದ್ದುತ್ತಾ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,3,pseudo
-N175,ಷ್ಠವುಆಕಾ,ಶ್ರೇಷ್ಠವು,ಆಕಾಶವು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(2-3) + prefix(1-2),4,3,4,pseudo
-N176,ಳಾಡುಅಲು,ಉರುಳಾಡು,ಅಲುಗಿಸು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N177,ರವುಒಳ್ಳೆ,ಎತ್ತರವು,ಒಳ್ಳೆಯದು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N178,ಡುತ್ತಾಆರಿ,ಈಜಾಡುತ್ತಾ,ಆರಿಸುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N179,ದಿಸುಅಗೆ,ಆನಂದಿಸು,ಅಗೆಯುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N180,ಜವುಯೋಜ,ಕಣಜವು,ಯೋಜನೆಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N181,ಮೆಯುಆಹ್ವಾ,ಹಿರಿಮೆಯು,ಆಹ್ವಾನವು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N182,ರಿಸುನಮೂ,ಉದ್ಗರಿಸು,ನಮೂನೆಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N183,ತಿಯುಸಕ್ಕ,ಸಮಿತಿಯು,ಸಕ್ಕರೆಯು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N184,ಯುತ್ತಾಮಾತಾ,ಬರೆಯುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N185,ದಾಗಿಗಟ್ಟಿ,ಚಿಕ್ಕದಾಗಿ,ಗಟ್ಟಿಯಾಗಿ,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N186,ದಾಗಿಶಿಕ್ಷ,ದೊಡ್ಡದಾಗಿ,ಶಿಕ್ಷಕನು,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N187,ಕಿಯುದಯ,ಶಿಕ್ಷಕಿಯು,ದಯವಿಟ್ಟು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N188,ಮೆಚ್ಚುದೇಶ,ಅಚ್ಚುಮೆಚ್ಚು,ದೇಶಕ್ಕಾಗಿ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N189,ಮೆಯುವಿಜ್ಞಾ,ಹುಣ್ಣಿಮೆಯು,ವಿಜ್ಞಾನಿಯು,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N190,ಯಲ್ಲೂಮಸೆ,ದಾಟಿಯಲ್ಲೂ,ಮಸೆಯುತ್ತಾ,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N191,ರಿಸುಕಲ್ಪ,ಸತ್ಕರಿಸು,ಕಲ್ಪನೆಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N192,ಶವುತಬ್ಬಿ,ಕಲ್ಮಶವು,ತಬ್ಬಿಬ್ಬಾಗಿ,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-2),4,4,4,pseudo
-N193,ಸುತ್ತಾಎಡಗ,ಸ್ಥಾಪಿಸುತ್ತಾ,ಎಡಗಡೆಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-4) + prefix(1-3),5,4,5,pseudo
-N194,ರಾಟವುಗಾಳಿಪ,ಉಸಿರಾಟವು,ಗಾಳಿಪಟವು,noun,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-5) + prefix(1-3),6,5,5,pseudo
-N195,ಸ್ಮಾತಾಗಿಕಳುಹಿ,ಅಕಸ್ಮಾತಾಗಿ,ಕಳುಹಿಸುತ್ತಾ,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-5) + prefix(1-3),6,5,5,pseudo
-N196,ಪಿಸುತ್ತಾಅಪ್ಪಳಿ,ನೆನಪಿಸುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-5) + prefix(1-3),6,5,5,pseudo
-N197,ಶಿಸುತ್ತಾಪ್ರತಿಧ್ವ,ಉದ್ದೇಶಿಸುತ್ತಾ,ಪ್ರತಿಧ್ವನಿಯು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-5) + prefix(1-3),6,5,5,pseudo
-N198,ತ್ರಿಸುತ್ತಾಅವಸ,ನಿಯಂತ್ರಿಸುತ್ತಾ,ಅವಸರದಿಂದ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(3-5) + prefix(1-3),6,5,6,pseudo
-N199,ಕರವುಭರವ,ಆರೋಗ್ಯಕರವು,ಭರವಸೆಯಿಂದ,adjective,Logic 3: Affix Splicing,C_suffix_prefix,suffix(4-6) + prefix(1-3),6,6,6,pseudo
-N200,ರದಿಂದಕುಳಿತು,ಮುಜುಗರದಿಂದ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,adverb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(4-6) + prefix(1-3),6,6,6,pseudo
-N201,ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(4-6) + prefix(1-3),6,6,6,pseudo
-N202,ಲ್ಲಿಡುತ್ತಾಕವಡೆ,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(4-6) + prefix(1-3),6,6,7,pseudo
-N203,ಬಿಡುತ್ತಾಸರಿಪ,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,verb,Logic 3: Affix Splicing,C_suffix_prefix,suffix(5-7) + prefix(1-3),6,7,8,pseudo
-N204,ಆಟಳಿಲು,ಆಟವು,ಅಳಿಲು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N205,ಇಲಿಮೇಲೆ,ಇಲಿಯು,ಆಮೇಲೆ,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N206,ಆಮೆದೆಯು,ಆಮೆಯು,ಎದೆಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N207,ಒಣಗಲೂ,ಒಣಗು,ಈಗಲೂ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N208,ಉಳಿನಿಸು,ಉಳಿದು,ಅನಿಸು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N209,ಅಡಿಹಿಸು,ಅಡಿಯು,ಊಹಿಸು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N210,ಆದೇಮ್ಮನು,ಆದೇಶ,ಅಮ್ಮನು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N211,ಅಪ್ಪಲಗು,ಅಪ್ಪನು,ಮಲಗು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N212,ಬಾಗಿಜ್ಜಿಯು,ಬಾಗಿಲು,ಅಜ್ಜಿಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N213,ಅಜ್ಜಣ್ಣನು,ಅಜ್ಜನು,ಅಣ್ಣನು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N214,ತಾಯಿಪಿಯು,ತಾಯಿಯು,ಟೋಪಿಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N215,ತೋರಿತಿಯು,ತೋರಿಸು,ಕೋತಿಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N216,ಸಿಹಿಡುಕು,ಸಿಹಿಯು,ಹುಡುಕು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N217,ಬಿಳಿರುಚು,ಬಿಳಿಯು,ಕಿರುಚು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N218,ಅತ್ತೆಷಿಯು,ಅತ್ತೆಯು,ಖುಷಿಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N219,ಕೊಳರಾಗಿ,ಕೊಳಕು,ಜೋರಾಗಿ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N220,ಜಾಣರವು,ಜಾಣನು,ಭಾರವು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N221,ಜಾಗಣಿಯು,ಜಾಗವು,ರಾಣಿಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N222,ಕೂಡಿಲಾಗಿ,ಕೂಡಿಸು,ಸಾಲಾಗಿ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N223,ಹೊಸರಿಸು,ಹೊಸತು,ಧರಿಸು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N224,ಇರುಳೆಯು,ಇರುತ್ತಾ,ಬೇಳೆಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N225,ಬೆರೆಳತು,ಬೆರೆಸು,ಹಳತು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N226,ಜೋಡಿದರು,ಜೋಡಿಯು,ಕೆದರು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N227,ಧುಮುಲ್ಲೇನು,ಧುಮುಕು,ಇಲ್ಲೇನು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N228,ಅಟ್ಟಿರಕು,ಅಟ್ಟಿಸು,ದೊರಕು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N229,ಸಮಳಾಗಿ,ಸಮನೆ,ಬೋಳಾಗಿ,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N230,ಚಡಿತವು,ಚಡಿಯು,ಹಿತವು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N231,ಧಾವಿಪ್ತನು,ಧಾವಿಸು,ಆಪ್ತನು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N232,ಭಾವಿರೆಯು,ಭಾವಿಸು,ನೆರೆಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N233,ದೋಷಳಿಚು,ದೋಷವು,ಬಿಳಿಚು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N234,ಗಂಟಡಿಲು,ಗಂಟಲು,ಸೊಂಡಿಲು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N235,ಉಜ್ಜುಟನು,ಉಜ್ಜುತ್ತಾ,ಕುಂಟನು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N236,ತಂಪಾಗೆಲ್ಲಾ,ತಂಪಾಗಿ,ಹಾಗೆಲ್ಲಾ,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N237,ಘರ್ಜಟ್ಟನೆ,ಘರ್ಜನೆ,ಥಟ್ಟನೆ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N238,ಶುಭ್ರಷ್ಟನು,ಶುಭ್ರವು,ದುಷ್ಟನು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N239,ಹೆಮ್ಮೆಚ್ಚಾಗಿ,ಹೆಮ್ಮೆಯು,ಪೆಚ್ಚಾಗಿ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N240,ನೇಯ್ಗೆದ್ರನು,ನೇಯ್ಗೆಯು,ಚಂದ್ರನು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N241,ಸ್ವಲ್ಪದ್ದುತ್ತಾ,ಸ್ವಲ್ಪವು,ತಿದ್ದುತ್ತಾ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(2-3),4,3,3,pseudo
-N242,ಶ್ರೇಷ್ಠಶವು,ಶ್ರೇಷ್ಠವು,ಆಕಾಶವು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,3,4,pseudo
-N243,ಉರುಗಿಸು,ಉರುಳಾಡು,ಅಲುಗಿಸು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N244,ಎತ್ತಯದು,ಎತ್ತರವು,ಒಳ್ಳೆಯದು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N245,ಈಜಾಸುತ್ತಾ,ಈಜಾಡುತ್ತಾ,ಆರಿಸುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N246,ಆನಂಯುತ್ತಾ,ಆನಂದಿಸು,ಅಗೆಯುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N247,ಕಣನೆಯು,ಕಣಜವು,ಯೋಜನೆಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N248,ಹಿರಿನವು,ಹಿರಿಮೆಯು,ಆಹ್ವಾನವು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N249,ಉದ್ಗನೆಯು,ಉದ್ಗರಿಸು,ನಮೂನೆಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N250,ಸಮಿರೆಯು,ಸಮಿತಿಯು,ಸಕ್ಕರೆಯು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N251,ಬರೆಡುತ್ತಾ,ಬರೆಯುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N252,ಚಿಕ್ಕಯಾಗಿ,ಚಿಕ್ಕದಾಗಿ,ಗಟ್ಟಿಯಾಗಿ,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N253,ದೊಡ್ಡಕನು,ದೊಡ್ಡದಾಗಿ,ಶಿಕ್ಷಕನು,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N254,ಶಿಕ್ಷವಿಟ್ಟು,ಶಿಕ್ಷಕಿಯು,ದಯವಿಟ್ಟು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N255,ಅಚ್ಚುಕ್ಕಾಗಿ,ಅಚ್ಚುಮೆಚ್ಚು,ದೇಶಕ್ಕಾಗಿ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N256,ಹುಣ್ಣಿನಿಯು,ಹುಣ್ಣಿಮೆಯು,ವಿಜ್ಞಾನಿಯು,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N257,ದಾಟಿಯುತ್ತಾ,ದಾಟಿಯಲ್ಲೂ,ಮಸೆಯುತ್ತಾ,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N258,ಸತ್ಕನೆಯು,ಸತ್ಕರಿಸು,ಕಲ್ಪನೆಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N259,ಕಲ್ಮಬ್ಬಾಗಿ,ಕಲ್ಮಶವು,ತಬ್ಬಿಬ್ಬಾಗಿ,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-4),4,4,4,pseudo
-N260,ಸ್ಥಾಪಿಗಡೆಯು,ಸ್ಥಾಪಿಸುತ್ತಾ,ಎಡಗಡೆಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-2) + suffix(3-5),5,4,5,pseudo
-N261,ಉಸಿರಾಪಟವು,ಉಸಿರಾಟವು,ಗಾಳಿಪಟವು,noun,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(3-5),6,5,5,pseudo
-N262,ಅಕಸ್ಮಾಹಿಸುತ್ತಾ,ಅಕಸ್ಮಾತಾಗಿ,ಕಳುಹಿಸುತ್ತಾ,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(3-5),6,5,5,pseudo
-N263,ನೆನಪಿಳಿಸುತ್ತಾ,ನೆನಪಿಸುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(3-5),6,5,5,pseudo
-N264,ಉದ್ದೇಶಿಧ್ವನಿಯು,ಉದ್ದೇಶಿಸುತ್ತಾ,ಪ್ರತಿಧ್ವನಿಯು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(3-5),6,5,5,pseudo
-N265,ನಿಯಂತ್ರಿರದಿಂದ,ನಿಯಂತ್ರಿಸುತ್ತಾ,ಅವಸರದಿಂದ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(4-6),6,5,6,pseudo
-N266,ಆರೋಗ್ಯಸೆಯಿಂದ,ಆರೋಗ್ಯಕರವು,ಭರವಸೆಯಿಂದ,adjective,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(4-6),6,6,6,pseudo
-N267,ಮುಜುಗಕೊಳ್ಳುತ್ತಾ,ಮುಜುಗರದಿಂದ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,adverb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(4-6),6,6,6,pseudo
-N268,ಅಂಟಿಸುಳೆಲ್ಲರು,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(4-6),6,6,6,pseudo
-N269,ನಾಡಿಯಳಸುತ್ತಾ,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(5-7),6,6,7,pseudo
-N270,ನಿಟ್ಟುಸಿಕೊಳ್ಳುತ್ತಾ,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,verb,Logic 4: Prefix Shift,D_prefix_suffix,prefix(1-3) + suffix(6-8),6,7,8,pseudo
+N001,ಹೀ,ಹೂ,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಹೂ → ಹೀ,1,1,,pseudo
+N002,ಊಡು,ಇಡು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಇ → ಊ,2,2,,pseudo
+N003,ಹಾಲೊ,ಹಾಲು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಲು → ಲೊ,2,2,,pseudo
+N004,ಚೃರು,ಚೂರು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಚೂ → ಚೃ,2,2,,pseudo
+N005,ಮಗಾ,ಮಗು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗು → ಗಾ,2,2,,pseudo
+N006,ನೃಡೆ,ನಡೆ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನ → ನೃ,2,2,,pseudo
+N007,ಗೋಜು,ಗಾಜು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗಾ → ಗೋ,2,2,,pseudo
+N008,ಮೈಜು,ಮೇಜು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಮೇ → ಮೈ,2,2,,pseudo
+N009,ಕೌಡಿ,ಕಡಿ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕ → ಕೌ,2,2,,pseudo
+N010,ಸುರೈ,ಸುರಿ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರಿ → ರೈ,2,2,,pseudo
+N011,ತೂರು,ತೀರು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತೀ → ತೂ,2,2,,pseudo
+N012,ಹುಣೆ,ಹೆಣೆ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಹೆ → ಹು,2,2,,pseudo
+N013,ಒಲ್ಲಿ,ಎಲ್ಲಿ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಎ → ಒ,2,2,,pseudo
+N014,ಅತ್ತೇ,ಅತ್ತು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತು → ತೇ,2,2,,pseudo
+N015,ಎಲೆಯೃ,ಎಲೆಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯು → ಯೃ,3,3,,pseudo
+N016,ಈಗೂಲೂ,ಈಗಲೂ,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗ → ಗೂ,3,3,,pseudo
+N017,ಅಪಾಯಿ,ಅಪಾಯ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯ → ಯಿ,3,3,,pseudo
+N018,ಒದಗೋ,ಒದಗು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗು → ಗೋ,3,3,,pseudo
+N019,ಅರಿವೊ,ಅರಿವು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ವು → ವೊ,3,3,,pseudo
+N020,ಮೂದ್ದು,ಮುದ್ದು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಮು → ಮೂ,2,2,,pseudo
+N021,ಕೃಚ್ಚು,ಕಚ್ಚು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕ → ಕೃ,2,2,,pseudo
+N022,ಸುಳ್ಳಿ,ಸುಳ್ಳು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಳು → ಳಿ,2,2,,pseudo
+N023,ಬಿಳಿಯಿ,ಬಿಳಿಯು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯು → ಯಿ,3,3,,pseudo
+N024,ಕೋತಿಯೌ,ಕೋತಿಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯು → ಯೌ,3,3,,pseudo
+N025,ಹೆಸರೀ,ಹೆಸರು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರು → ರೀ,3,3,,pseudo
+N026,ತೋರೋಸು,ತೋರಿಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರಿ → ರೋ,3,3,,pseudo
+N027,ಹೊಸೇತು,ಹೊಸತು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಸ → ಸೇ,3,3,,pseudo
+N028,ಹೇಗೆವೆ,ಹೇಗಿವೆ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗಿ → ಗೆ,3,3,,pseudo
+N029,ಜಾಗೃವು,ಜಾಗವು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಗ → ಗೃ,3,3,,pseudo
+N030,ಧರೇಸು,ಧರಿಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರಿ → ರೇ,3,3,,pseudo
+N031,ಹಿತಾವು,ಹಿತವು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತ → ತಾ,3,3,,pseudo
+N032,ನಾಣುಪು,ನುಣುಪು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನು → ನಾ,3,3,,pseudo
+N033,ಚೀಡಿಯು,ಚಡಿಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಚ → ಚೀ,3,3,,pseudo
+N034,ಬೀಯಸು,ಬಯಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಬ → ಬೀ,3,3,,pseudo
+N035,ಕೆದರೆ,ಕೆದರು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರು → ರೆ,3,3,,pseudo
+N036,ಐಮ್ಮನು,ಅಮ್ಮನು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಅ → ಐ,3,3,,pseudo
+N037,ಅಕ್ಕನೆ,ಅಕ್ಕನು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನು → ನೆ,3,3,,pseudo
+N038,ಊದ್ದವು,ಉದ್ದವು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಉ → ಊ,3,3,,pseudo
+N039,ಇರಿತ್ತಾ,ಇರುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ರು → ರಿ,3,3,,pseudo
+N040,ಓಟ್ಟಿಸು,ಅಟ್ಟಿಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಅ → ಓ,3,3,,pseudo
+N041,ಏಕೆರುವೆ,ಏಕಿರುವೆ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕಿ → ಕೆ,4,4,,pseudo
+N042,ಹೆಮ್ಮೂಯು,ಹೆಮ್ಮೆಯು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಮೆ → ಮೂ,3,3,,pseudo
+N043,ಪೃಚ್ಚಾಗಿ,ಪೆಚ್ಚಾಗಿ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಪೆ → ಪೃ,3,3,,pseudo
+N044,ಒಜ್ಜುತ್ತಾ,ಉಜ್ಜುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಉ → ಒ,3,3,,pseudo
+N045,ಸೊಂಡಿಲೆ,ಸೊಂಡಿಲು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಲು → ಲೆ,3,3,,pseudo
+N046,ಮೂರ್ಖನೂ,ಮೂರ್ಖನು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನು → ನೂ,3,3,,pseudo
+N047,ನಮೂನೇಯು,ನಮೂನೆಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನೆ → ನೇ,4,4,,pseudo
+N048,ಕಬಳೌಸು,ಕಬಳಿಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಳಿ → ಳೌ,4,4,,pseudo
+N049,ಈಜೊಡುತ್ತಾ,ಈಜಾಡುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಜಾ → ಜೊ,4,4,,pseudo
+N050,ಎದುರುತ್ತಾ,ಉದುರುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಉ → ಎ,4,4,,pseudo
+N051,ತಿದ್ದುತ್ತೂ,ತಿದ್ದುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತಾ → ತೂ,3,3,,pseudo
+N052,ಆನಂದಿಸೌ,ಆನಂದಿಸು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಸು → ಸೌ,4,4,,pseudo
+N053,ಶಿಕ್ಷಕನೃ,ಶಿಕ್ಷಕನು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನು → ನೃ,4,4,,pseudo
+N054,ಉಸಿರಾಟೇವು,ಉಸಿರಾಟವು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಟ → ಟೇ,5,5,,pseudo
+N055,ಪುಸ್ತುಕವು,ಪುಸ್ತಕವು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತ → ತು,4,4,,pseudo
+N056,ಚಿಕ್ಕದೈಗಿ,ಚಿಕ್ಕದಾಗಿ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ದಾ → ದೈ,4,4,,pseudo
+N057,ಕಟ್ಟಿಹುಕು,ಕಟ್ಟಿಹಾಕು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಹಾ → ಹು,4,4,,pseudo
+N058,ವಿಸ್ಮಯೇವು,ವಿಸ್ಮಯವು,,adjective,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯ → ಯೇ,4,4,,pseudo
+N059,ಕಲ್ಪನೌಯು,ಕಲ್ಪನೆಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ನೆ → ನೌ,4,4,,pseudo
+N060,ಎತ್ತೆಕೊಳ್ಳು,ಎತ್ತಿಕೊಳ್ಳು,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ತಿ → ತೆ,4,4,,pseudo
+N061,ಅಕೇಸ್ಮಾತಾಗಿ,ಅಕಸ್ಮಾತಾಗಿ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕ → ಕೇ,5,5,,pseudo
+N062,ಕೆಳುಹಿಸುತ್ತಾ,ಕಳುಹಿಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕ → ಕೆ,5,5,,pseudo
+N063,ಉದ್ದೇಶೃಸುತ್ತಾ,ಉದ್ದೇಶಿಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಶಿ → ಶೃ,5,5,,pseudo
+N064,ಪ್ರತಿಧ್ವನಿಯೃ,ಪ್ರತಿಧ್ವನಿಯು,,noun,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಯು → ಯೃ,5,5,,pseudo
+N065,ಭರವಸೇಯಿಂದ,ಭರವಸೆಯಿಂದ,,adverb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಸೆ → ಸೇ,6,6,,pseudo
+N066,ಕುಳಿತುಕಿಳ್ಳುತ್ತಾ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಕೊ → ಕಿ,6,6,,pseudo
+N067,ಕವೃಡೆಬಳಸುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ವ → ವೃ,7,7,,pseudo
+N068,ಸೂರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 2: Vowel Replacement,Logic 2: Vowel Replacement,ಸ → ಸೂ,8,8,,pseudo
+N069,ಊಗು,ಊರು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ರ → ಗ,2,2,,pseudo
+N070,ಇಜಿ,ಇಳಿ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಳ → ಜ,2,2,,pseudo
+N071,ಮೀರು,ನೀರು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ನ → ಮ,2,2,,pseudo
+N072,ರಾಡು,ಹಾಡು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಹ → ರ,2,2,,pseudo
+N073,ದೀನು,ಮೀನು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಮ → ದ,2,2,,pseudo
+N074,ಕೂದು,ಬೂದು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಬ → ಕ,2,2,,pseudo
+N075,ಹೂಡು,ಗೂಡು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಗ → ಹ,2,2,,pseudo
+N076,ಹಾಗು,ಬಾಗು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಬ → ಹ,2,2,,pseudo
+N077,ಕಮಿ,ಕಲಿ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಲ → ಮ,2,2,,pseudo
+N078,ಮೆಜು,ಮೆದು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ದ → ಜ,2,2,,pseudo
+N079,ಟುಡಿ,ಮುಡಿ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಮ → ಟ,2,2,,pseudo
+N080,ಹಿಮ,ಹಿತ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ತ → ಮ,2,2,,pseudo
+N081,ಶೂ,ಹೂ,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಹ → ಶ,1,1,,pseudo
+N082,ಆರೇಲೆ,ಆಮೇಲೆ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಮ → ರ,3,3,,pseudo
+N083,ಇನಿಯು,ಇಲಿಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಲ → ನ,3,3,,pseudo
+N084,ಆಮೆಜು,ಆಮೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಜ,3,3,,pseudo
+N085,ಉಯಿದು,ಉಳಿದು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಳ → ಯ,3,3,,pseudo
+N086,ಊಹಿಶು,ಊಹಿಸು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಸ → ಶ,3,3,,pseudo
+N087,ತೆಕ್ಕು,ಬೆಕ್ಕು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಬ → ತ,2,2,,pseudo
+N088,ಮಪ್ಪು,ತಪ್ಪು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ತ → ಮ,2,2,,pseudo
+N089,ಶಾತ್ರ,ಮಾತ್ರ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಮ → ಶ,2,2,,pseudo
+N090,ರುಚ್ಚು,ಹುಚ್ಚು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಹ → ರ,2,2,,pseudo
+N091,ನಿಸಿಯು,ಬಿಸಿಯು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಬ → ನ,3,3,,pseudo
+N092,ಜಾಯಿಯು,ತಾಯಿಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ತ → ಜ,3,3,,pseudo
+N093,ಜಾಮೂಕು,ಜಾಮೂನು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ನ → ಕ,3,3,,pseudo
+N094,ಟಿರುಚು,ಕಿರುಚು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಕ → ಟ,3,3,,pseudo
+N095,ಶಾಣನು,ಜಾಣನು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಜ → ಶ,3,3,,pseudo
+N096,ಜೋದಾಗಿ,ಜೋರಾಗಿ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ರ → ದ,3,3,,pseudo
+N097,ಪಾಯಿಯು,ಕಾಯಿಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಕ → ಪ,3,3,,pseudo
+N098,ಮೊರಟು,ಹೊರಟು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಹ → ಮ,3,3,,pseudo
+N099,ಲೋಸವು,ಲೋಹವು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಹ → ಸ,3,3,,pseudo
+N100,ಸಪನೆ,ಸಮನೆ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಮ → ಪ,3,3,,pseudo
+N101,ಜೋಜಿಯು,ಜೋಡಿಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಡ → ಜ,3,3,,pseudo
+N102,ಭಾಚಿಸು,ಭಾವಿಸು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ವ → ಚ,3,3,,pseudo
+N103,ಶೊರಕು,ದೊರಕು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ದ → ಶ,3,3,,pseudo
+N104,ಬಿಳಿಜು,ಬಿಳಿಚು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಚ → ಜ,3,3,,pseudo
+N105,ಅಜ್ಜಿಟು,ಅಜ್ಜಿಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಟ,3,3,,pseudo
+N106,ಒದ್ದೆಕು,ಒದ್ದೆಯು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಕ,3,3,,pseudo
+N107,ಏಡುತ್ತಾ,ಏಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಳ → ಡ,3,3,,pseudo
+N108,ಉಣ್ಣೆಪು,ಉಣ್ಣೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಪ,3,3,,pseudo
+N109,ಉತುಳಾಡು,ಉರುಳಾಡು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ರ → ತ,4,4,,pseudo
+N110,ಳುಷ್ಟನು,ದುಷ್ಟನು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ದ → ಳ,3,3,,pseudo
+N111,ಹಾಪೆಲ್ಲಾ,ಹಾಗೆಲ್ಲಾ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಗ → ಪ,3,3,,pseudo
+N112,ನೇಯ್ಗೆಜು,ನೇಯ್ಗೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಜ,3,3,,pseudo
+N113,ಗೊಂಬೆಪು,ಗೊಂಬೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಪ,3,3,,pseudo
+N114,ತಂಪಾಳಿ,ತಂಪಾಗಿ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಗ → ಳ,3,3,,pseudo
+N115,ಹಿಪಿಮೆಯು,ಹಿರಿಮೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ರ → ಪ,4,4,,pseudo
+N116,ಯೋಜನೆಮು,ಯೋಜನೆಯು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಮ,4,4,,pseudo
+N117,ಒಳ್ಳೆವದು,ಒಳ್ಳೆಯದು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ವ,4,4,,pseudo
+N118,ಅಗೆನುತ್ತಾ,ಅಗೆಯುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ನ,4,4,,pseudo
+N119,ಸ್ವಲ್ಪದು,ಸ್ವಲ್ಪವು,,adjective,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ವ → ದ,3,3,,pseudo
+N120,ಅಂಗಜವು,ಅಂಗಳವು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಳ → ಜ,4,4,,pseudo
+N121,ಇರುರೆಗಳು,ಇರುವೆಗಳು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ವ → ರ,5,5,,pseudo
+N122,ಪಕ್ಷಣವು,ಲಕ್ಷಣವು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಲ → ಪ,4,4,,pseudo
+N123,ದರೀಕ್ಷಿಸು,ಪರೀಕ್ಷಿಸು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಪ → ದ,4,4,,pseudo
+N124,ಮಾತಾಳುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಡ → ಳ,4,4,,pseudo
+N125,ಜಿಗಿಬುತ್ತಾ,ಜಿಗಿಯುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಯ → ಬ,4,4,,pseudo
+N126,ಬೇಶಕ್ಕಾಗಿ,ದೇಶಕ್ಕಾಗಿ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ದ → ಬ,4,4,,pseudo
+N127,ಜಲ್ಮಶವು,ಕಲ್ಮಶವು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಕ → ಜ,4,4,,pseudo
+N128,ಸತ್ಕತಿಸು,ಸತ್ಕರಿಸು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ರ → ತ,4,4,,pseudo
+N129,ಚಾಳಿಪಟವು,ಗಾಳಿಪಟವು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಗ → ಚ,5,5,,pseudo
+N130,ಅವಲಂಭಿನು,ಅವಲಂಭಿಸು,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಸ → ನ,5,5,,pseudo
+N131,ಅಪ್ಪಳಿನುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಸ → ನ,5,5,,pseudo
+N132,ಕಟ್ಟುಹಿಟ್ಟಾಗಿ,ಕಟ್ಟುನಿಟ್ಟಾಗಿ,,adverb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ನ → ಹ,5,5,,pseudo
+N133,ಅರಟಿಕೊಳ್ಳುತ್ತಾ,ಅರಚಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಚ → ಟ,6,6,,pseudo
+N134,ಜ್ಞಾನಿಗಶೆಲ್ಲರು,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,,noun,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಳ → ಶ,6,6,,pseudo
+N135,ನರ್ತನಶಾಡುತ್ತಾ,ನರ್ತನವಾಡುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ವ → ಶ,6,6,,pseudo
+N136,ಲಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,ಬಟ್ಟೆಹಾಕಿಕೊಳ್ಳುತ್ತಾ,,verb,Logic 1: Consonant Replacement,Logic 1: Consonant Replacement,ಬ → ಲ,7,7,,pseudo
+N137,ಟವುಳಿ,ಆಟವು,ಅಳಿಲು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N138,ಲಿಯುಮೇ,ಇಲಿಯು,ಆಮೇಲೆ,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N139,ಮೆಯುದೆ,ಆಮೆಯು,ಎದೆಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N140,ಣಗುಗ,ಒಣಗು,ಈಗಲೂ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N141,ಳಿದುನಿ,ಉಳಿದು,ಅನಿಸು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N142,ಡಿಯುಹಿ,ಅಡಿಯು,ಊಹಿಸು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N143,ದೇಶಮ್ಮ,ಆದೇಶ,ಅಮ್ಮನು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N144,ಪ್ಪನುಲ,ಅಪ್ಪನು,ಮಲಗು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N145,ಗಿಲುಜ್ಜಿ,ಬಾಗಿಲು,ಅಜ್ಜಿಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N146,ಜ್ಜನುಣ್ಣ,ಅಜ್ಜನು,ಅಣ್ಣನು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N147,ಯಿಯುಪಿ,ತಾಯಿಯು,ಟೋಪಿಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N148,ರಿಸುತಿ,ತೋರಿಸು,ಕೋತಿಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N149,ಹಿಯುಡು,ಸಿಹಿಯು,ಹುಡುಕು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N150,ಳಿಯುರು,ಬಿಳಿಯು,ಕಿರುಚು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N151,ತ್ತೆಯುಷಿ,ಅತ್ತೆಯು,ಖುಷಿಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N152,ಳಕುರಾ,ಕೊಳಕು,ಜೋರಾಗಿ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N153,ಣನುರ,ಜಾಣನು,ಭಾರವು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N154,ಗವುಣಿ,ಜಾಗವು,ರಾಣಿಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N155,ಡಿಸುಲಾ,ಕೂಡಿಸು,ಸಾಲಾಗಿ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N156,ಸತುರಿ,ಹೊಸತು,ಧರಿಸು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N157,ರುತ್ತಾಳೆ,ಇರುತ್ತಾ,ಬೇಳೆಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N158,ರೆಸುಳ,ಬೆರೆಸು,ಹಳತು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N159,ಡಿಯುದ,ಜೋಡಿಯು,ಕೆದರು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N160,ಮುಕುಲ್ಲೇ,ಧುಮುಕು,ಇಲ್ಲೇನು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N161,ಟ್ಟಿಸುರ,ಅಟ್ಟಿಸು,ದೊರಕು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N162,ಮನೆಳಾ,ಸಮನೆ,ಬೋಳಾಗಿ,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N163,ಡಿಯುತ,ಚಡಿಯು,ಹಿತವು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N164,ವಿಸುಪ್ತ,ಧಾವಿಸು,ಆಪ್ತನು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N165,ವಿಸುರೆ,ಭಾವಿಸು,ನೆರೆಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N166,ಷವುಳಿ,ದೋಷವು,ಬಿಳಿಚು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N167,ಟಲುಡಿ,ಗಂಟಲು,ಸೊಂಡಿಲು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N168,ಜ್ಜುತ್ತಾಟ,ಉಜ್ಜುತ್ತಾ,ಕುಂಟನು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N169,ಪಾಗಿಗೆ,ತಂಪಾಗಿ,ಹಾಗೆಲ್ಲಾ,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N170,ರ್ಜನೆಟ್ಟ,ಘರ್ಜನೆ,ಥಟ್ಟನೆ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N171,ಭ್ರವುಷ್ಟ,ಶುಭ್ರವು,ದುಷ್ಟನು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N172,ಮ್ಮೆಯುಚ್ಚಾ,ಹೆಮ್ಮೆಯು,ಪೆಚ್ಚಾಗಿ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N173,ಯ್ಗೆಯುದ್ರ,ನೇಯ್ಗೆಯು,ಚಂದ್ರನು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N174,ಲ್ಪವುದ್ದು,ಸ್ವಲ್ಪವು,ತಿದ್ದುತ್ತಾ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),3,3,3,pseudo
+N175,ಷ್ಠವುಆಕಾ,ಶ್ರೇಷ್ಠವು,ಆಕಾಶವು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(2-3) + prefix(1-2),4,3,4,pseudo
+N176,ಳಾಡುಅಲು,ಉರುಳಾಡು,ಅಲುಗಿಸು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N177,ರವುಒಳ್ಳೆ,ಎತ್ತರವು,ಒಳ್ಳೆಯದು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N178,ಡುತ್ತಾಆರಿ,ಈಜಾಡುತ್ತಾ,ಆರಿಸುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N179,ದಿಸುಅಗೆ,ಆನಂದಿಸು,ಅಗೆಯುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N180,ಜವುಯೋಜ,ಕಣಜವು,ಯೋಜನೆಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N181,ಮೆಯುಆಹ್ವಾ,ಹಿರಿಮೆಯು,ಆಹ್ವಾನವು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N182,ರಿಸುನಮೂ,ಉದ್ಗರಿಸು,ನಮೂನೆಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N183,ತಿಯುಸಕ್ಕ,ಸಮಿತಿಯು,ಸಕ್ಕರೆಯು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N184,ಯುತ್ತಾಮಾತಾ,ಬರೆಯುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N185,ದಾಗಿಗಟ್ಟಿ,ಚಿಕ್ಕದಾಗಿ,ಗಟ್ಟಿಯಾಗಿ,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N186,ದಾಗಿಶಿಕ್ಷ,ದೊಡ್ಡದಾಗಿ,ಶಿಕ್ಷಕನು,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N187,ಕಿಯುದಯ,ಶಿಕ್ಷಕಿಯು,ದಯವಿಟ್ಟು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N188,ಮೆಚ್ಚುದೇಶ,ಅಚ್ಚುಮೆಚ್ಚು,ದೇಶಕ್ಕಾಗಿ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N189,ಮೆಯುವಿಜ್ಞಾ,ಹುಣ್ಣಿಮೆಯು,ವಿಜ್ಞಾನಿಯು,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N190,ಯಲ್ಲೂಮಸೆ,ದಾಟಿಯಲ್ಲೂ,ಮಸೆಯುತ್ತಾ,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N191,ರಿಸುಕಲ್ಪ,ಸತ್ಕರಿಸು,ಕಲ್ಪನೆಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N192,ಶವುತಬ್ಬಿ,ಕಲ್ಮಶವು,ತಬ್ಬಿಬ್ಬಾಗಿ,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-2),4,4,4,pseudo
+N193,ಸುತ್ತಾಎಡಗ,ಸ್ಥಾಪಿಸುತ್ತಾ,ಎಡಗಡೆಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-4) + prefix(1-3),5,4,5,pseudo
+N194,ರಾಟವುಗಾಪ,ಉಸಿರಾಟವು,ಗಾಳಿಪಟವು,noun,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-5) + prefix(1-3),5,5,5,pseudo
+N195,ಸ್ಮಾತಾಗಿಕಹಿ,ಅಕಸ್ಮಾತಾಗಿ,ಕಳುಹಿಸುತ್ತಾ,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-5) + prefix(1-3),5,5,5,pseudo
+N196,ಪಿಸುತ್ತಾಅಳಿ,ನೆನಪಿಸುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-5) + prefix(1-3),5,5,5,pseudo
+N197,ಶಿಸುತ್ತಾಪ್ರಧ್ವ,ಉದ್ದೇಶಿಸುತ್ತಾ,ಪ್ರತಿಧ್ವನಿಯು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-5) + prefix(1-3),5,5,5,pseudo
+N198,ತ್ರಿಸುತ್ತಾಅವಸ,ನಿಯಂತ್ರಿಸುತ್ತಾ,ಅವಸರದಿಂದ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(3-5) + prefix(1-3),6,5,6,pseudo
+N199,ಕರವುಭರವ,ಆರೋಗ್ಯಕರವು,ಭರವಸೆಯಿಂದ,adjective,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(4-6) + prefix(1-3),6,6,6,pseudo
+N200,ರದಿಂದಕುಳಿತು,ಮುಜುಗರದಿಂದ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,adverb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(4-6) + prefix(1-3),6,6,6,pseudo
+N201,ತ್ತಿದ್ದಾಗಜ್ಞಾನಿಗ,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(4-6) + prefix(1-3),6,6,6,pseudo
+N202,ಲ್ಲಿಡುತ್ತಾಕವಡೆ,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(4-6) + prefix(1-3),6,6,7,pseudo
+N203,ಬಿಡುತ್ತಾಸರಿಪ,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,verb,Logic 3: Affix Splicing,Logic 3: Affix Splicing,suffix(5-7) + prefix(1-3),6,7,8,pseudo
+N204,ಆಟಲು,ಆಟವು,ಅಳಿಲು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N205,ಇಲಿಲೆ,ಇಲಿಯು,ಆಮೇಲೆ,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N206,ಆಮೆಯು,ಆಮೆಯು,ಎದೆಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N207,ಒಣಲೂ,ಒಣಗು,ಈಗಲೂ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N208,ಉಳಿಸು,ಉಳಿದು,ಅನಿಸು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N209,ಅಡಿಸು,ಅಡಿಯು,ಊಹಿಸು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N210,ಆದೇನು,ಆದೇಶ,ಅಮ್ಮನು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N211,ಅಪ್ಪಗು,ಅಪ್ಪನು,ಮಲಗು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N212,ಬಾಗಿಯು,ಬಾಗಿಲು,ಅಜ್ಜಿಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N213,ಅಜ್ಜನು,ಅಜ್ಜನು,ಅಣ್ಣನು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N214,ತಾಯಿಯು,ತಾಯಿಯು,ಟೋಪಿಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N215,ತೋರಿಯು,ತೋರಿಸು,ಕೋತಿಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N216,ಸಿಹಿಕು,ಸಿಹಿಯು,ಹುಡುಕು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N217,ಬಿಳಿಚು,ಬಿಳಿಯು,ಕಿರುಚು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N218,ಅತ್ತೆಯು,ಅತ್ತೆಯು,ಖುಷಿಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N219,ಕೊಳಗಿ,ಕೊಳಕು,ಜೋರಾಗಿ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N220,ಜಾಣವು,ಜಾಣನು,ಭಾರವು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N221,ಜಾಗಯು,ಜಾಗವು,ರಾಣಿಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N222,ಕೂಡಿಗಿ,ಕೂಡಿಸು,ಸಾಲಾಗಿ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N223,ಹೊಸಸು,ಹೊಸತು,ಧರಿಸು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N224,ಇರುಯು,ಇರುತ್ತಾ,ಬೇಳೆಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N225,ಬೆರೆತು,ಬೆರೆಸು,ಹಳತು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N226,ಜೋಡಿರು,ಜೋಡಿಯು,ಕೆದರು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N227,ಧುಮುನು,ಧುಮುಕು,ಇಲ್ಲೇನು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N228,ಅಟ್ಟಿಕು,ಅಟ್ಟಿಸು,ದೊರಕು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N229,ಸಮಗಿ,ಸಮನೆ,ಬೋಳಾಗಿ,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N230,ಚಡಿವು,ಚಡಿಯು,ಹಿತವು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N231,ಧಾವಿನು,ಧಾವಿಸು,ಆಪ್ತನು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N232,ಭಾವಿಯು,ಭಾವಿಸು,ನೆರೆಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N233,ದೋಷಚು,ದೋಷವು,ಬಿಳಿಚು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N234,ಗಂಟಲು,ಗಂಟಲು,ಸೊಂಡಿಲು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N235,ಉಜ್ಜುನು,ಉಜ್ಜುತ್ತಾ,ಕುಂಟನು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N236,ತಂಪಾಲ್ಲಾ,ತಂಪಾಗಿ,ಹಾಗೆಲ್ಲಾ,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N237,ಘರ್ಜನೆ,ಘರ್ಜನೆ,ಥಟ್ಟನೆ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N238,ಶುಭ್ರನು,ಶುಭ್ರವು,ದುಷ್ಟನು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N239,ಹೆಮ್ಮೆಗಿ,ಹೆಮ್ಮೆಯು,ಪೆಚ್ಚಾಗಿ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N240,ನೇಯ್ಗೆನು,ನೇಯ್ಗೆಯು,ಚಂದ್ರನು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N241,ಸ್ವಲ್ಪತ್ತಾ,ಸ್ವಲ್ಪವು,ತಿದ್ದುತ್ತಾ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(2-3),3,3,3,pseudo
+N242,ಶ್ರೇಷ್ಠಶವು,ಶ್ರೇಷ್ಠವು,ಆಕಾಶವು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,3,4,pseudo
+N243,ಉರುಗಿಸು,ಉರುಳಾಡು,ಅಲುಗಿಸು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N244,ಎತ್ತಯದು,ಎತ್ತರವು,ಒಳ್ಳೆಯದು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N245,ಈಜಾಸುತ್ತಾ,ಈಜಾಡುತ್ತಾ,ಆರಿಸುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N246,ಆನಂಯುತ್ತಾ,ಆನಂದಿಸು,ಅಗೆಯುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N247,ಕಣನೆಯು,ಕಣಜವು,ಯೋಜನೆಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N248,ಹಿರಿನವು,ಹಿರಿಮೆಯು,ಆಹ್ವಾನವು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N249,ಉದ್ಗನೆಯು,ಉದ್ಗರಿಸು,ನಮೂನೆಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N250,ಸಮಿರೆಯು,ಸಮಿತಿಯು,ಸಕ್ಕರೆಯು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N251,ಬರೆಡುತ್ತಾ,ಬರೆಯುತ್ತಾ,ಮಾತಾಡುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N252,ಚಿಕ್ಕಯಾಗಿ,ಚಿಕ್ಕದಾಗಿ,ಗಟ್ಟಿಯಾಗಿ,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N253,ದೊಡ್ಡಕನು,ದೊಡ್ಡದಾಗಿ,ಶಿಕ್ಷಕನು,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N254,ಶಿಕ್ಷವಿಟ್ಟು,ಶಿಕ್ಷಕಿಯು,ದಯವಿಟ್ಟು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N255,ಅಚ್ಚುಕ್ಕಾಗಿ,ಅಚ್ಚುಮೆಚ್ಚು,ದೇಶಕ್ಕಾಗಿ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N256,ಹುಣ್ಣಿನಿಯು,ಹುಣ್ಣಿಮೆಯು,ವಿಜ್ಞಾನಿಯು,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N257,ದಾಟಿಯುತ್ತಾ,ದಾಟಿಯಲ್ಲೂ,ಮಸೆಯುತ್ತಾ,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N258,ಸತ್ಕನೆಯು,ಸತ್ಕರಿಸು,ಕಲ್ಪನೆಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N259,ಕಲ್ಮಬ್ಬಾಗಿ,ಕಲ್ಮಶವು,ತಬ್ಬಿಬ್ಬಾಗಿ,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-4),4,4,4,pseudo
+N260,ಸ್ಥಾಪಿಗಡೆಯು,ಸ್ಥಾಪಿಸುತ್ತಾ,ಎಡಗಡೆಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-2) + suffix(3-5),5,4,5,pseudo
+N261,ಉಸಿರಾಪವು,ಉಸಿರಾಟವು,ಗಾಳಿಪಟವು,noun,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(3-5),5,5,5,pseudo
+N262,ಅಕಸ್ಮಾಹಿತ್ತಾ,ಅಕಸ್ಮಾತಾಗಿ,ಕಳುಹಿಸುತ್ತಾ,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(3-5),5,5,5,pseudo
+N263,ನೆನಪಿಳಿತ್ತಾ,ನೆನಪಿಸುತ್ತಾ,ಅಪ್ಪಳಿಸುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(3-5),5,5,5,pseudo
+N264,ಉದ್ದೇಶಿಧ್ವಯು,ಉದ್ದೇಶಿಸುತ್ತಾ,ಪ್ರತಿಧ್ವನಿಯು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(3-5),5,5,5,pseudo
+N265,ನಿಯಂತ್ರಿರದಿಂದ,ನಿಯಂತ್ರಿಸುತ್ತಾ,ಅವಸರದಿಂದ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(4-6),6,5,6,pseudo
+N266,ಆರೋಗ್ಯಸೆಯಿಂದ,ಆರೋಗ್ಯಕರವು,ಭರವಸೆಯಿಂದ,adjective,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(4-6),6,6,6,pseudo
+N267,ಮುಜುಗಕೊಳ್ಳುತ್ತಾ,ಮುಜುಗರದಿಂದ,ಕುಳಿತುಕೊಳ್ಳುತ್ತಾ,adverb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(4-6),6,6,6,pseudo
+N268,ಅಂಟಿಸುಳೆಲ್ಲರು,ಅಂಟಿಸುತ್ತಿದ್ದಾಗ,ಜ್ಞಾನಿಗಳೆಲ್ಲರು,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(4-6),6,6,6,pseudo
+N269,ನಾಡಿಯಳಸುತ್ತಾ,ನಾಡಿಯಲ್ಲಿಡುತ್ತಾ,ಕವಡೆಬಳಸುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(5-7),6,6,7,pseudo
+N270,ನಿಟ್ಟುಸಿಕೊಳ್ಳುತ್ತಾ,ನಿಟ್ಟುಸಿರುಬಿಡುತ್ತಾ,ಸರಿಪಡಿಸಿಕೊಳ್ಳುತ್ತಾ,verb,Logic 4: Prefix Shift,Logic 4: Prefix Shift,prefix(1-3) + suffix(6-8),6,7,8,pseudo

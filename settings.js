@@ -23,7 +23,7 @@ window.ROAR_SETTINGS = (function() {
 // Active Session Words Initializer
 (function() {
   try {
-    var CORPUS_VER = 'kn13';
+    var CORPUS_VER = 'kn14';
     if (localStorage.getItem('roarCorpusVersion') !== CORPUS_VER) {
       localStorage.removeItem('roarCustomSessionsData');
       localStorage.setItem('roarCorpusVersion', CORPUS_VER);
@@ -69,7 +69,7 @@ window.ROAR_SETTINGS = (function() {
     } else {
       // Synchronous XMLHttpRequest or fast fetch for initial setup before bundle run
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', '/sessions_data.json?v=kn13', false); // synchronous to guarantee execution before bundle
+      xhr.open('GET', '/sessions_data.json?v=kn14', false); // synchronous to guarantee execution before bundle
       xhr.onload = function() {
         if (xhr.status === 200) {
           try {
