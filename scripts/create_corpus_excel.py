@@ -188,8 +188,9 @@ ws_m.views.sheetView[0].showGridLines = True
 
 headers_m = [
     "Trial #", "Kannada Word", "Lexicality", "Part of Speech",
-    "Generation Logic", "Source Real Word", "Transformation Rule",
-    "Syllables", "Target Key", "Arrow Color", "Meaning / Gloss", "Age Band"
+    "Generation Logic", "Source Word 1", "Source Word 2", "Transformation Rule",
+    "Word Syllables", "Source 1 Syllables", "Source 2 Syllables",
+    "Target Key", "Arrow Color", "Meaning / Gloss", "Age Band"
 ]
 for col_idx, h in enumerate(headers_m, start=1):
     c = ws_m.cell(row=1, column=col_idx, value=h)
@@ -223,14 +224,19 @@ for idx, r in enumerate(master_rows, start=2):
     
     ws_m.cell(row=idx, column=5, value=r.get("rule_logic")).alignment = align_left
     ws_m.cell(row=idx, column=6, value=r.get("source_word") or "—").alignment = align_center
-    ws_m.cell(row=idx, column=7, value=r.get("transformation") or "—").alignment = align_left
-    ws_m.cell(row=idx, column=8, value=int(r.get("syllables") or 1)).alignment = align_center
-    ws_m.cell(row=idx, column=9, value="Right Arrow (→)" if is_real else "Left Arrow (←)").alignment = align_center
-    ws_m.cell(row=idx, column=10, value="Blue" if is_real else "Red").alignment = align_center
-    ws_m.cell(row=idx, column=11, value=r.get("meaning") or "—").alignment = align_left
-    ws_m.cell(row=idx, column=12, value=r.get("age_band") or "—").alignment = align_center
+    ws_m.cell(row=idx, column=7, value=r.get("source_word_2") or "—").alignment = align_center
+    ws_m.cell(row=idx, column=8, value=r.get("transformation") or "—").alignment = align_left
+    ws_m.cell(row=idx, column=9, value=int(r.get("syllables") or 1)).alignment = align_center
+    sw1_syl = r.get("source_word_1_syllables")
+    sw2_syl = r.get("source_word_2_syllables")
+    ws_m.cell(row=idx, column=10, value=int(sw1_syl) if sw1_syl else "—").alignment = align_center
+    ws_m.cell(row=idx, column=11, value=int(sw2_syl) if sw2_syl else "—").alignment = align_center
+    ws_m.cell(row=idx, column=12, value="Right Arrow (→)" if is_real else "Left Arrow (←)").alignment = align_center
+    ws_m.cell(row=idx, column=13, value="Blue" if is_real else "Red").alignment = align_center
+    ws_m.cell(row=idx, column=14, value=r.get("meaning") or "—").alignment = align_left
+    ws_m.cell(row=idx, column=15, value=r.get("age_band") or "—").alignment = align_center
 
-    for c in range(1, 13):
+    for c in range(1, 16):
         ws_m.cell(row=idx, column=c).border = cell_border
         if not ws_m.cell(row=idx, column=c).font:
             ws_m.cell(row=idx, column=c).font = font_regular
@@ -293,7 +299,8 @@ ws_nw.views.sheetView[0].showGridLines = True
 headers_nw = [
     "Nonword ID", "Non-Word (ಕಾಲ್ಪನಿಕ ಪದ)", "Transformation Method",
     "Source Word 1", "Source Word 2", "Source POS", "Transformation Details",
-    "Syllables", "Expected Key", "Arrow Indicator", "Clinical Review"
+    "Non-Word Syllables", "Source Word 1 Syllables", "Source Word 2 Syllables",
+    "Expected Key", "Arrow Indicator", "Clinical Review"
 ]
 for col_idx, h in enumerate(headers_nw, start=1):
     c = ws_nw.cell(row=1, column=col_idx, value=h)
@@ -326,11 +333,15 @@ for idx, r in enumerate(nw_rows, start=2):
     
     ws_nw.cell(row=idx, column=7, value=r.get("transformation") or "—").alignment = align_left
     ws_nw.cell(row=idx, column=8, value=int(r.get("syllables") or 1)).alignment = align_center
-    ws_nw.cell(row=idx, column=9, value="Left Arrow (←)").alignment = align_center
-    ws_nw.cell(row=idx, column=10, value="Red (#c0392b)").alignment = align_center
-    ws_nw.cell(row=idx, column=11, value="Validated (Zero Meaning)").alignment = align_center
+    sw1_syl = r.get("source_word_1_syllables")
+    sw2_syl = r.get("source_word_2_syllables")
+    ws_nw.cell(row=idx, column=9, value=int(sw1_syl) if sw1_syl else "—").alignment = align_center
+    ws_nw.cell(row=idx, column=10, value=int(sw2_syl) if sw2_syl else "—").alignment = align_center
+    ws_nw.cell(row=idx, column=11, value="Left Arrow (←)").alignment = align_center
+    ws_nw.cell(row=idx, column=12, value="Red (#c0392b)").alignment = align_center
+    ws_nw.cell(row=idx, column=13, value="Validated (Zero Meaning)").alignment = align_center
 
-    for c in range(1, 12):
+    for c in range(1, 14):
         ws_nw.cell(row=idx, column=c).border = cell_border
         if not ws_nw.cell(row=idx, column=c).font:
             ws_nw.cell(row=idx, column=c).font = font_regular
