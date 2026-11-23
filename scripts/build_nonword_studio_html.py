@@ -41,8 +41,9 @@ html_template = r'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kannada Non-Word & Corpus Studio (100% Offline)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0f172a">
+<title>Kannada Non-Word & Corpus Studio (100% Offline &amp; Mobile Ready)</title>
 <style>
   :root {
     --bg: #0f172a;
@@ -58,48 +59,62 @@ html_template = r'''<!DOCTYPE html>
     --danger: #ef4444;
     --purple: #a855f7;
   }
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nirmala UI", sans-serif;
-    background: var(--bg); color: var(--text); line-height: 1.5;
+    background: var(--bg); color: var(--text); line-height: 1.5; overflow-x: hidden;
   }
   header {
     background: linear-gradient(135deg, #1e3a8a, #0f172a);
     border-bottom: 1px solid var(--border);
-    padding: 1.25rem 2rem;
-    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    padding: 1.1rem 1.25rem;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
   }
-  header h1 { margin: 0; font-size: 1.35rem; }
-  header p { margin: 0.2rem 0 0; color: #cbd5e1; font-size: 0.85rem; }
+  header h1 { margin: 0; font-size: clamp(1.1rem, 3.5vw, 1.4rem); }
+  header p { margin: 0.2rem 0 0; color: #cbd5e1; font-size: 0.82rem; }
   .badge-offline {
     background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid #059669;
-    padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600;
+    padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
   }
-  main { max-width: 1400px; margin: 0 auto; padding: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .quick-nav {
+    position: sticky; top: 0; z-index: 20; background: rgba(15, 23, 42, 0.94);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+    padding: 0.5rem 1rem; display: flex; gap: 0.45rem; overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .quick-nav a {
+    color: #cbd5e1; text-decoration: none; font-size: 0.78rem; font-weight: 600;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
+    padding: 0.35rem 0.75rem; white-space: nowrap; flex-shrink: 0;
+  }
+  .quick-nav a:hover, .quick-nav a:active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  main { max-width: 1400px; margin: 0 auto; padding: 1rem; display: flex; flex-direction: column; gap: 1.15rem; }
   .step-card {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.15rem;
+    scroll-margin-top: 56px;
   }
   .step-header {
     display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;
     margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
   }
-  .step-title { display: flex; align-items: center; gap: 0.65rem; font-size: 1.05rem; font-weight: 700; }
+  .step-title { display: flex; align-items: center; gap: 0.65rem; font-size: 1rem; font-weight: 700; }
   .step-num {
-    width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff;
+    width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; flex-shrink: 0;
     display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;
   }
-  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
-  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.85rem; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.85rem; }
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
   label { display: block; font-size: 0.78rem; color: var(--muted); margin-bottom: 0.25rem; font-weight: 600; }
   input[type="text"], input[type="number"], select, textarea {
     width: 100%; background: var(--surface-2); color: var(--text); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.5rem 0.7rem; font-size: 0.88rem; font-family: inherit;
+    border-radius: 8px; padding: 0.55rem 0.7rem; font-size: 0.9rem; font-family: inherit; min-height: 40px;
   }
+  input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; }
   textarea { resize: vertical; font-family: "Nirmala UI", monospace; }
   .btn {
     background: var(--accent); color: #fff; border: none; border-radius: 8px;
-    padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer;
-    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.55rem 0.95rem; font-size: 0.84rem; font-weight: 600; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 40px;
   }
   .btn:hover { background: var(--accent-hover); }
   .btn-secondary { background: #334155; }
@@ -108,29 +123,29 @@ html_template = r'''<!DOCTYPE html>
   .btn-success:hover { background: #047857; }
   .btn-danger { background: #dc2626; }
   .btn-danger:hover { background: #b91c1c; }
-  .btn-sm { padding: 0.3rem 0.65rem; font-size: 0.78rem; }
+  .btn-sm { padding: 0.4rem 0.7rem; font-size: 0.78rem; min-height: 36px; }
   .logic-row {
-    display: grid; grid-template-columns: 40px 1.6fr 1.2fr 100px 100px 1.4fr 60px;
-    gap: 0.65rem; align-items: center; background: var(--surface-2);
-    border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem; margin-bottom: 0.5rem;
-  }
-  @media (max-width: 960px) {
-    .logic-row { grid-template-columns: 1fr; }
+    display: grid; grid-template-columns: 36px 1.6fr 1.2fr 95px 75px 1.4fr 48px;
+    gap: 0.6rem; align-items: center; background: var(--surface-2);
+    border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem; margin-bottom: 0.55rem;
   }
   .prop-bar {
     height: 12px; border-radius: 999px; background: var(--surface-2); overflow: hidden;
     display: flex; border: 1px solid var(--border); margin: 0.75rem 0;
   }
   .prop-seg { height: 100%; transition: width 0.2s; }
-  .table-wrap { overflow-x: auto; max-height: 460px; border: 1px solid var(--border); border-radius: 8px; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+  .table-wrap {
+    overflow-x: auto; -webkit-overflow-scrolling: touch; max-height: 460px;
+    border: 1px solid var(--border); border-radius: 8px; width: 100%;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   th {
     position: sticky; top: 0; background: #0b1220; color: #cbd5e1; text-align: left;
-    padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); z-index: 2; white-space: nowrap;
+    padding: 0.6rem 0.65rem; border-bottom: 1px solid var(--border); z-index: 2; white-space: nowrap;
   }
-  td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #1e293b; white-space: nowrap; }
+  td { padding: 0.5rem 0.65rem; border-bottom: 1px solid #1e293b; white-space: nowrap; }
   tr:hover td { background: rgba(59, 130, 246, 0.08); }
-  .kn { font-family: "Nirmala UI", "Noto Sans Kannada", sans-serif; font-size: 1.05rem; font-weight: 600; }
+  .kn { font-family: "Nirmala UI", "Noto Sans Kannada", sans-serif; font-size: 1.02rem; font-weight: 600; }
   .pill { padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.72rem; font-weight: 600; display: inline-block; }
   .pill-noun { background: #2e1065; color: #c084fc; }
   .pill-verb { background: #082f49; color: #38bdf8; }
@@ -139,22 +154,52 @@ html_template = r'''<!DOCTYPE html>
   .pill-real { background: #1e3a8a; color: #93c5fd; }
   .pill-pseudo { background: #7f1d1d; color: #fca5a5; }
   .stat-box {
-    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem;
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 0.9rem;
   }
-  .stat-val { font-size: 1.35rem; font-weight: 700; color: #60a5fa; }
+  .stat-val { font-size: 1.25rem; font-weight: 700; color: #60a5fa; }
   .stat-lbl { font-size: 0.75rem; color: var(--muted); }
-  .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-  .tab { background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); padding: 0.45rem 0.9rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.82rem; }
+  .tabs { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+  .tab {
+    background: var(--surface-2); color: var(--muted); border: 1px solid var(--border);
+    padding: 0.45rem 0.85rem; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.82rem; min-height: 38px;
+  }
   .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
   pre {
-    background: #020617; color: #e2e8f0; padding: 1rem; border-radius: 8px; border: 1px solid var(--border);
-    overflow-x: auto; max-height: 360px; font-size: 0.78rem; line-height: 1.45;
+    background: #020617; color: #e2e8f0; padding: 0.9rem; border-radius: 8px; border: 1px solid var(--border);
+    overflow-x: auto; -webkit-overflow-scrolling: touch; max-height: 340px; font-size: 0.76rem; line-height: 1.45;
   }
   .editable-cell {
-    background: transparent; border: 1px solid transparent; color: var(--text); padding: 0.2rem 0.4rem;
+    background: transparent; border: 1px solid transparent; color: var(--text); padding: 0.25rem 0.4rem;
     border-radius: 4px; width: 120px; font-family: "Nirmala UI", sans-serif; font-size: 0.95rem;
   }
   .editable-cell:focus { background: var(--surface-2); border-color: var(--accent); outline: none; }
+
+  @media (max-width: 768px) {
+    header { padding: 0.9rem 1rem; }
+    main { padding: 0.75rem; gap: 0.9rem; }
+    .step-card { padding: 0.95rem 0.85rem; border-radius: 10px; }
+    .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .logic-row {
+      grid-template-columns: 32px 1fr 44px;
+      grid-template-areas:
+        "chk name del"
+        "mode mode mode"
+        "cnt pct pct"
+        "desc desc desc";
+    }
+    .logic-row > *:nth-child(1) { grid-area: chk; }
+    .logic-row > *:nth-child(2) { grid-area: name; }
+    .logic-row > *:nth-child(3) { grid-area: mode; }
+    .logic-row > *:nth-child(4) { grid-area: cnt; }
+    .logic-row > *:nth-child(5) { grid-area: pct; text-align: left !important; }
+    .logic-row > *:nth-child(6) { grid-area: desc; }
+    .logic-row > *:nth-child(7) { grid-area: del; justify-self: end; }
+    input[type="text"], input[type="number"], select, textarea { font-size: 16px; }
+    #searchPreviewInput { width: 100% !important; }
+  }
+  @media (max-width: 440px) {
+    .grid-4 { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -164,12 +209,20 @@ html_template = r'''<!DOCTYPE html>
     <h1>Kannada Non-Word &amp; Corpus Studio</h1>
     <p>Step-by-Step Editable Linguistic Generator, Dual-Constraint Sequencer &amp; Offline Excel (.xlsx) Exporter</p>
   </div>
-  <span class="badge-offline">100% Offline Ready &bull; Zero Internet Required</span>
+  <span class="badge-offline">100% Offline &amp; Mobile Ready</span>
 </header>
+
+<nav class="quick-nav" aria-label="Step navigation">
+  <a href="#step1">1. Real Words</a>
+  <a href="#step2">2. Logics &amp; Proportions</a>
+  <a href="#step3">3. Sequencing</a>
+  <a href="#step4">4. Preview &amp; Excel</a>
+  <a href="#step5">5. Python Script</a>
+</nav>
 
 <main>
   <!-- STEP 1: REAL WORDS CORPUS -->
-  <section class="step-card">
+  <section class="step-card" id="step1">
     <div class="step-header">
       <div class="step-title"><span class="step-num">1</span> Real Words Corpus (Editable Input)</div>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
@@ -204,7 +257,7 @@ html_template = r'''<!DOCTYPE html>
   </section>
 
   <!-- STEP 2: EDITABLE LOGICS & PROPORTIONALITY -->
-  <section class="step-card">
+  <section class="step-card" id="step2">
     <div class="step-header">
       <div class="step-title"><span class="step-num">2</span> Non-Word Generation Logics &amp; Proportionality (4 + Custom 5th+ Logics)</div>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
@@ -234,7 +287,7 @@ html_template = r'''<!DOCTYPE html>
   </section>
 
   <!-- STEP 3: SEQUENCING & CONSTRAINTS -->
-  <section class="step-card">
+  <section class="step-card" id="step3">
     <div class="step-header">
       <div class="step-title"><span class="step-num">3</span> Session Partitioning &amp; Randomness Rules</div>
       <button class="btn" onclick="generateEverything()">&#9889; Generate Non-Words &amp; Sequences</button>
@@ -267,7 +320,7 @@ html_template = r'''<!DOCTYPE html>
   </section>
 
   <!-- STEP 4: LIVE PREVIEW, INLINE EDIT & OFFLINE EXCEL EXPORT -->
-  <section class="step-card">
+  <section class="step-card" id="step4">
     <div class="step-header">
       <div class="step-title"><span class="step-num">4</span> Generated Corpus Preview &amp; Offline Excel (.xlsx) Export</div>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
@@ -298,7 +351,7 @@ html_template = r'''<!DOCTYPE html>
   </section>
 
   <!-- STEP 5: COMPLETE PYTHON SCRIPT -->
-  <section class="step-card">
+  <section class="step-card" id="step5">
     <div class="step-header">
       <div class="step-title"><span class="step-num">5</span> Complete Python Non-Word Generation Script (Local Verification)</div>
       <div style="display:flex; gap:0.5rem;">
@@ -1092,10 +1145,11 @@ function downloadBlob(blob, filename) {
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;
+  a.style.display = 'none';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
 }
 
 function escHtml(s) {
@@ -1103,10 +1157,32 @@ function escHtml(s) {
 }
 
 // =========================================================================
-// Python Script Viewer & Downloader
+// Python Script Viewer & Downloader (with Mobile Chrome Clipboard Fallback)
 // =========================================================================
 function copyPythonScript() {
-  navigator.clipboard.writeText(PYTHON_SCRIPT_TEXT).then(() => alert('Complete Python script copied to clipboard!'));
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(PYTHON_SCRIPT_TEXT)
+      .then(() => alert('Complete Python script copied to clipboard!'))
+      .catch(() => fallbackCopy(PYTHON_SCRIPT_TEXT));
+  } else {
+    fallbackCopy(PYTHON_SCRIPT_TEXT);
+  }
+}
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand('copy');
+    alert('Complete Python script copied to clipboard!');
+  } catch (e) {
+    alert('Please tap "Download .py File" to save the script.');
+  }
+  document.body.removeChild(ta);
 }
 function downloadPythonScript() {
   downloadBlob(new Blob([PYTHON_SCRIPT_TEXT], { type: 'text/x-python;charset=utf-8;' }), 'kannada_nonword_generator.py');
