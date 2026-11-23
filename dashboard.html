@@ -747,7 +747,7 @@
             <div style="display: grid; grid-template-columns: 1fr; gap: 0.75rem;">
               <!-- Option 1: Strict Alternating -->
               <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Strict Alternating')">
-                <input type="radio" name="shufflePattern" value="alternating" id="patternAlternating" checked style="margin-top: 0.25rem;">
+                <input type="radio" name="shufflePattern" value="alternating" id="patternAlternating" style="margin-top: 0.25rem;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
                     <strong style="color: #38bdf8;">Strict Alternating (1 Real : 1 Non-Word)</strong>
@@ -767,7 +767,7 @@
 
               <!-- Option 2: Constrained Balanced -->
               <label style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.85rem; border: 1px solid #334155; border-radius: 6px; cursor: pointer; background: #131d31;" onclick="updateShuffleLabel('Constrained Balanced')">
-                <input type="radio" name="shufflePattern" value="constrained" id="patternConstrained" style="margin-top: 0.25rem;">
+                <input type="radio" name="shufflePattern" value="constrained" id="patternConstrained" checked style="margin-top: 0.25rem;">
                 <div style="flex: 1;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
                     <strong style="color: #38bdf8;">Constrained Balanced (Max 2 in a Row)</strong>
@@ -993,7 +993,7 @@ function getSettings()  {
   return LS.get('roarSettings', {
     stimulusDisplayMode: 'infinite', stimulusTimeMs: 10000, trialTimeoutMs: 12000,
     fixationTimeMs: 1000, practiceCount: 5, wordsPerSession: 90,
-    shufflePattern: 'alternating'
+    shufflePattern: 'constrained'
   });
 }
 function setSettings(s) { LS.set('roarSettings', s); }
@@ -1787,7 +1787,7 @@ function initSettingsTab() {
   if (wpEl) wpEl.value = s.wordsPerSession || 90;
 
   // Shuffle Pattern Radio
-  var pat = s.shufflePattern || 'alternating';
+  var pat = s.shufflePattern || 'constrained';
   if (pat === 'alternating') { document.getElementById('patternAlternating').checked = true; updateShuffleLabel('Strict Alternating'); }
   if (pat === 'constrained') { document.getElementById('patternConstrained').checked = true; updateShuffleLabel('Constrained Balanced'); }
   if (pat === 'blocks')      { document.getElementById('patternBlocks').checked = true; updateShuffleLabel('Block Clusters'); }
